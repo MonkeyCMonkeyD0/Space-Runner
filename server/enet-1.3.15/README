@@ -10,6 +10,6 @@ autoreconf -vfi
 
 # Compile and install the library.
 
-./configure && make && make install
+./configure && make && make install && make distclean
 
 
