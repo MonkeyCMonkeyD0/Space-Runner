@@ -110,7 +110,7 @@ class Knapsack(object):
 	# run the GA algorithm
 	def run(self):
 
-		while (self.iterated<self.maxit):
+		while (self.iterated < self.maxit):
 			# evaluate the current population
 			self.evaluation()
 			#print("self.best_p",self.best_p)

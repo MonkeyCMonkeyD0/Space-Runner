@@ -1,31 +1,40 @@
 #include <iostream>
+#include <vector>
 
-class Knapsack
-{
-private:
-	int C;
-	int * weights;
-	int * profits ;
-	int * opt ;
-	int * parents ;
-	int * newparents ;
-	int * bests ;
-	int * best_p ;
-	int iterated;
-	int population;
+
+
+class Knapsack {
 
 public:
-	void initialize();
-	void properties(int * weights, int * profits, int * sz, int * opt, int C, int population);
-	int fitness(int * item);
-	void evaluation();
+	Knapsack(
+		std::vector<unsigned int> weights,
+		std::vector<unsigned int> profits,
+		unsigned int population,
+		unsigned int max_weight,
+		double survival_rate = 0.5,
+		unsigned int max_iteration = 15000
+	);
+	~Knapsack();
 
-	int * mutation(int * ch);
-
-	std::vector<int *> crossover(int * ch1, int * ch2);
+	void add_pop(unsigned int);
+	void mutation(std::vector<int> &);
+	std::vector<std::vector<int>> crossover(std::vector<int>, std::vector<int>);
 	void run();
 
-	Knapsack();
-	~Knapsack();
+
+private:
+	int maxScore;
+	int population;
+	std::vector<int> weights;
+	std::vector<int> profits;
+	std::vector<unsigned long long int> pop;
+
+	std::vector<int> opt;
+	std::vector<int> parents;
+	std::vector<int> newparents;
+	std::vector<int> bests;
+	std::vector<int> best_p;
+	int iterated;
+
 	
 };
