@@ -2,7 +2,7 @@
 #include <map>
 #include <list>
 #include <algorithm>
-
+#include <random>
 
 
 class Knapsack {
@@ -26,13 +26,15 @@ public:
 	void run();
 
 private:
+	std::vector<unsigned int> weights;
+	std::vector<unsigned int> profits;
 	unsigned int maxWeight;
 	unsigned int population;
-	unsigned int geneSize;
 	double survivalRate;
-	std::vector<int> weights;
-	std::vector<int> profits;
-	std::map<unsigned long long int, int> pop;
+	unsigned int geneSize;
+	unsigned int maxIteration;
+
+	std::map<unsigned long long int,unsigned int> pop;
 
 	// std::vector<int> opt;
 	// std::vector<int> parents;
