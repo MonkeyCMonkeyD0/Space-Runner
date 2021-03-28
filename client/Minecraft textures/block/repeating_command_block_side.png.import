@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/repeating_command_block_side.png-2aafb9050574592ecb7c39c9ba8ddeb2.stex"
+path="res://.import/repeating_command_block_side.png-50a7ddafeb9fe6193ca546d8c3a890dd.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/repeating_command_block_side.png"
-dest_files=[ "res://.import/repeating_command_block_side.png-2aafb9050574592ecb7c39c9ba8ddeb2.stex" ]
+source_file="res://Minecraft textures/block/repeating_command_block_side.png"
+dest_files=[ "res://.import/repeating_command_block_side.png-50a7ddafeb9fe6193ca546d8c3a890dd.stex" ]
 
 [params]
 

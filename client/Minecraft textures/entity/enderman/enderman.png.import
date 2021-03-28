@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/enderman.png-a705592dc17437e33c71bf44b3360f55.stex"
+path="res://.import/enderman.png-f35dcac182499642dfa03ca80b9edc87.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/enderman/enderman.png"
-dest_files=[ "res://.import/enderman.png-a705592dc17437e33c71bf44b3360f55.stex" ]
+source_file="res://Minecraft textures/entity/enderman/enderman.png"
+dest_files=[ "res://.import/enderman.png-f35dcac182499642dfa03ca80b9edc87.stex" ]
 
 [params]
 

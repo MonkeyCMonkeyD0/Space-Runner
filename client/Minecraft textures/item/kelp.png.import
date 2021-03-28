@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/kelp.png-2bf593d312bde6bbf592e9adb24534bb.stex"
+path="res://.import/kelp.png-f0260e372b3f475a4cb114c367dc4d47.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/kelp.png"
-dest_files=[ "res://.import/kelp.png-2bf593d312bde6bbf592e9adb24534bb.stex" ]
+source_file="res://Minecraft textures/item/kelp.png"
+dest_files=[ "res://.import/kelp.png-f0260e372b3f475a4cb114c367dc4d47.stex" ]
 
 [params]
 

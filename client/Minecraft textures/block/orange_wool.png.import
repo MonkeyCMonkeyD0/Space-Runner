@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/orange_wool.png-848c0ab8cbb5bfa2baf4ca36090917e7.stex"
+path="res://.import/orange_wool.png-aad772b04cc8127a9d255ca1a3323589.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/orange_wool.png"
-dest_files=[ "res://.import/orange_wool.png-848c0ab8cbb5bfa2baf4ca36090917e7.stex" ]
+source_file="res://Minecraft textures/block/orange_wool.png"
+dest_files=[ "res://.import/orange_wool.png-aad772b04cc8127a9d255ca1a3323589.stex" ]
 
 [params]
 

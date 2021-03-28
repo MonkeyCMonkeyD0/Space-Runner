@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/iron_helmet.png-819f685dd3ce8d3378cba0b2fa0c111c.stex"
+path="res://.import/iron_helmet.png-247d23f8fc6bfc728283125b69583a1a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/iron_helmet.png"
-dest_files=[ "res://.import/iron_helmet.png-819f685dd3ce8d3378cba0b2fa0c111c.stex" ]
+source_file="res://Minecraft textures/item/iron_helmet.png"
+dest_files=[ "res://.import/iron_helmet.png-247d23f8fc6bfc728283125b69583a1a.stex" ]
 
 [params]
 

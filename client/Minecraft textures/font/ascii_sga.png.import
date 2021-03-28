@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ascii_sga.png-5a6c9089fdb1eeb3e5fb9a5a4690e11f.stex"
+path="res://.import/ascii_sga.png-45cf5793ace9f225afda799c6b731fb1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/font/ascii_sga.png"
-dest_files=[ "res://.import/ascii_sga.png-5a6c9089fdb1eeb3e5fb9a5a4690e11f.stex" ]
+source_file="res://Minecraft textures/font/ascii_sga.png"
+dest_files=[ "res://.import/ascii_sga.png-45cf5793ace9f225afda799c6b731fb1.stex" ]
 
 [params]
 

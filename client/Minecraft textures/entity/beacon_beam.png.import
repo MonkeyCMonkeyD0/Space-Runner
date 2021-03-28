@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/beacon_beam.png-46ff8af66d9bdc24ae539e9b8aae439d.stex"
+path="res://.import/beacon_beam.png-cbefcfbbe35162264488dd5edee4e6cb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/beacon_beam.png"
-dest_files=[ "res://.import/beacon_beam.png-46ff8af66d9bdc24ae539e9b8aae439d.stex" ]
+source_file="res://Minecraft textures/entity/beacon_beam.png"
+dest_files=[ "res://.import/beacon_beam.png-cbefcfbbe35162264488dd5edee4e6cb.stex" ]
 
 [params]
 

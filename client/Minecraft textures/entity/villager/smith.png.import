@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/smith.png-4bed27e7939f943512802553c90e70ad.stex"
+path="res://.import/smith.png-9772b2b7a17f68a5ea5de1b896dd130b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/villager/smith.png"
-dest_files=[ "res://.import/smith.png-4bed27e7939f943512802553c90e70ad.stex" ]
+source_file="res://Minecraft textures/entity/villager/smith.png"
+dest_files=[ "res://.import/smith.png-9772b2b7a17f68a5ea5de1b896dd130b.stex" ]
 
 [params]
 

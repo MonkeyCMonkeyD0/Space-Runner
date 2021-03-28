@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/witch.png-7141930593ddb18a04dfacedc8afafc4.stex"
+path="res://.import/witch.png-0977f5704276fc38c2e745ccb07ba855.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/witch.png"
-dest_files=[ "res://.import/witch.png-7141930593ddb18a04dfacedc8afafc4.stex" ]
+source_file="res://Minecraft textures/entity/witch.png"
+dest_files=[ "res://.import/witch.png-0977f5704276fc38c2e745ccb07ba855.stex" ]
 
 [params]
 

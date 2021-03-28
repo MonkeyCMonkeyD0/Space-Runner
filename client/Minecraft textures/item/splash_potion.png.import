@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/splash_potion.png-dee767cdd8dd0b10d2999a34d44333dc.stex"
+path="res://.import/splash_potion.png-b279ace2d7d3220a9274a2e034bd23fe.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/splash_potion.png"
-dest_files=[ "res://.import/splash_potion.png-dee767cdd8dd0b10d2999a34d44333dc.stex" ]
+source_file="res://Minecraft textures/item/splash_potion.png"
+dest_files=[ "res://.import/splash_potion.png-b279ace2d7d3220a9274a2e034bd23fe.stex" ]
 
 [params]
 

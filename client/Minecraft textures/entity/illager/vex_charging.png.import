@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/vex_charging.png-10421ff4b9ee76d7f2c4edbd69a51354.stex"
+path="res://.import/vex_charging.png-afc827a070a65cab1a90e0af531a5068.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/illager/vex_charging.png"
-dest_files=[ "res://.import/vex_charging.png-10421ff4b9ee76d7f2c4edbd69a51354.stex" ]
+source_file="res://Minecraft textures/entity/illager/vex_charging.png"
+dest_files=[ "res://.import/vex_charging.png-afc827a070a65cab1a90e0af531a5068.stex" ]
 
 [params]
 

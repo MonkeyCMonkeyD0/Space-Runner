@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cocoa_beans.png-9a052cb3285385a2a1c450db4c90c902.stex"
+path="res://.import/cocoa_beans.png-8ac688cfdf4d211d9f7439d8a3af09c4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/cocoa_beans.png"
-dest_files=[ "res://.import/cocoa_beans.png-9a052cb3285385a2a1c450db4c90c902.stex" ]
+source_file="res://Minecraft textures/item/cocoa_beans.png"
+dest_files=[ "res://.import/cocoa_beans.png-8ac688cfdf4d211d9f7439d8a3af09c4.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/zombie_librarian.png-d17ca8df61efeb20b49012642d38327d.stex"
+path="res://.import/zombie_librarian.png-400baaa1558d5f3e8117f75d38831abd.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/zombie_villager/zombie_librarian.png"
-dest_files=[ "res://.import/zombie_librarian.png-d17ca8df61efeb20b49012642d38327d.stex" ]
+source_file="res://Minecraft textures/entity/zombie_villager/zombie_librarian.png"
+dest_files=[ "res://.import/zombie_librarian.png-400baaa1558d5f3e8117f75d38831abd.stex" ]
 
 [params]
 

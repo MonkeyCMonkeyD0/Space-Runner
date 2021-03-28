@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/written_book.png-65a5f81bc80f64add6fc8096532d6c49.stex"
+path="res://.import/written_book.png-c777cbe3ff39f5e652028eb2a90b37d7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/written_book.png"
-dest_files=[ "res://.import/written_book.png-65a5f81bc80f64add6fc8096532d6c49.stex" ]
+source_file="res://Minecraft textures/item/written_book.png"
+dest_files=[ "res://.import/written_book.png-c777cbe3ff39f5e652028eb2a90b37d7.stex" ]
 
 [params]
 

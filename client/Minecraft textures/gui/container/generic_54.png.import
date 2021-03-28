@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/generic_54.png-9591d9c845651eff57a249b5b4d41530.stex"
+path="res://.import/generic_54.png-c8db8c7a20207c11229e9b84efc4b22d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/gui/container/generic_54.png"
-dest_files=[ "res://.import/generic_54.png-9591d9c845651eff57a249b5b4d41530.stex" ]
+source_file="res://Minecraft textures/gui/container/generic_54.png"
+dest_files=[ "res://.import/generic_54.png-c8db8c7a20207c11229e9b84efc4b22d.stex" ]
 
 [params]
 

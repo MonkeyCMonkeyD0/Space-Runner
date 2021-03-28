@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bricks.png-8c6709284f169c93026410f0d1859bda.stex"
+path="res://.import/bricks.png-9b6ff3a0eb16121a952af4540ce163be.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/banner/bricks.png"
-dest_files=[ "res://.import/bricks.png-8c6709284f169c93026410f0d1859bda.stex" ]
+source_file="res://Minecraft textures/entity/banner/bricks.png"
+dest_files=[ "res://.import/bricks.png-9b6ff3a0eb16121a952af4540ce163be.stex" ]
 
 [params]
 

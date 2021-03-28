@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bowl.png-877fb692e62daed71a049b80b12308ef.stex"
+path="res://.import/bowl.png-1581fca6fe05255b861fd62d19c0e5a6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/bowl.png"
-dest_files=[ "res://.import/bowl.png-877fb692e62daed71a049b80b12308ef.stex" ]
+source_file="res://Minecraft textures/item/bowl.png"
+dest_files=[ "res://.import/bowl.png-1581fca6fe05255b861fd62d19c0e5a6.stex" ]
 
 [params]
 

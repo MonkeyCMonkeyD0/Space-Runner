@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/quartz_pillar_top.png-52bb6a88b7cac1422335acfc2f798e14.stex"
+path="res://.import/quartz_pillar_top.png-9918ad6b3966f6be447da444d4f125de.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/quartz_pillar_top.png"
-dest_files=[ "res://.import/quartz_pillar_top.png-52bb6a88b7cac1422335acfc2f798e14.stex" ]
+source_file="res://Minecraft textures/block/quartz_pillar_top.png"
+dest_files=[ "res://.import/quartz_pillar_top.png-9918ad6b3966f6be447da444d4f125de.stex" ]
 
 [params]
 

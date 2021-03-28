@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/horse_markings_whitefield.png-b1302291c89332e8e7d0b9f5e9bc56b8.stex"
+path="res://.import/horse_markings_whitefield.png-150ad2a7e232c87a8236ee89312952a6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/horse/horse_markings_whitefield.png"
-dest_files=[ "res://.import/horse_markings_whitefield.png-b1302291c89332e8e7d0b9f5e9bc56b8.stex" ]
+source_file="res://Minecraft textures/entity/horse/horse_markings_whitefield.png"
+dest_files=[ "res://.import/horse_markings_whitefield.png-150ad2a7e232c87a8236ee89312952a6.stex" ]
 
 [params]
 

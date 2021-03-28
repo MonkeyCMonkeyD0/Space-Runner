@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/window.png-b50c012c8ddbb8573a5a37504a3145df.stex"
+path="res://.import/window.png-abdf616b0a736c0511b5da1264ddda87.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/gui/advancements/window.png"
-dest_files=[ "res://.import/window.png-b50c012c8ddbb8573a5a37504a3145df.stex" ]
+source_file="res://Minecraft textures/gui/advancements/window.png"
+dest_files=[ "res://.import/window.png-abdf616b0a736c0511b5da1264ddda87.stex" ]
 
 [params]
 

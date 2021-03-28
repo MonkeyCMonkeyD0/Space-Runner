@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/end_portal_frame_side.png-166f52c277c1e97a580c5bf44272178c.stex"
+path="res://.import/end_portal_frame_side.png-01ded1677122197a2bda25d619653fba.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/end_portal_frame_side.png"
-dest_files=[ "res://.import/end_portal_frame_side.png-166f52c277c1e97a580c5bf44272178c.stex" ]
+source_file="res://Minecraft textures/block/end_portal_frame_side.png"
+dest_files=[ "res://.import/end_portal_frame_side.png-01ded1677122197a2bda25d619653fba.stex" ]
 
 [params]
 

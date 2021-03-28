@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/red_sand.png-c636a37f715b3f53a56c0faebfa611fc.stex"
+path="res://.import/red_sand.png-8941f65d81c18a63be2eea8656cb4635.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/red_sand.png"
-dest_files=[ "res://.import/red_sand.png-c636a37f715b3f53a56c0faebfa611fc.stex" ]
+source_file="res://Minecraft textures/block/red_sand.png"
+dest_files=[ "res://.import/red_sand.png-8941f65d81c18a63be2eea8656cb4635.stex" ]
 
 [params]
 

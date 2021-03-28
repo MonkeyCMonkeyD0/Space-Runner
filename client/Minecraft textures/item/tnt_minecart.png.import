@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tnt_minecart.png-05590985b401cf6947d8e0e7b277aeaa.stex"
+path="res://.import/tnt_minecart.png-378526e8b5af92a4f4df03beb4b6fed2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/tnt_minecart.png"
-dest_files=[ "res://.import/tnt_minecart.png-05590985b401cf6947d8e0e7b277aeaa.stex" ]
+source_file="res://Minecraft textures/item/tnt_minecart.png"
+dest_files=[ "res://.import/tnt_minecart.png-378526e8b5af92a4f4df03beb4b6fed2.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/chain_command_block_front.png-68da67e7f324c74e1def61a27bccbc86.stex"
+path="res://.import/chain_command_block_front.png-dc06d51609493eb405df6943288716f7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/chain_command_block_front.png"
-dest_files=[ "res://.import/chain_command_block_front.png-68da67e7f324c74e1def61a27bccbc86.stex" ]
+source_file="res://Minecraft textures/block/chain_command_block_front.png"
+dest_files=[ "res://.import/chain_command_block_front.png-dc06d51609493eb405df6943288716f7.stex" ]
 
 [params]
 

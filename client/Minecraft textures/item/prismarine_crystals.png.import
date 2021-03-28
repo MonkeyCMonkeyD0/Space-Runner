@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/prismarine_crystals.png-5f5740c6aca8022f54bedb96502fb326.stex"
+path="res://.import/prismarine_crystals.png-0c570b9fa2fd1010e467295114388982.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/prismarine_crystals.png"
-dest_files=[ "res://.import/prismarine_crystals.png-5f5740c6aca8022f54bedb96502fb326.stex" ]
+source_file="res://Minecraft textures/item/prismarine_crystals.png"
+dest_files=[ "res://.import/prismarine_crystals.png-0c570b9fa2fd1010e467295114388982.stex" ]
 
 [params]
 

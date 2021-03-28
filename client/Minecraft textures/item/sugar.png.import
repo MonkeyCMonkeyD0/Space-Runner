@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sugar.png-6c5d1d305558bff31b2afa51e9d9fb23.stex"
+path="res://.import/sugar.png-617a7d71394b72ea31b231f347f5b3cf.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/sugar.png"
-dest_files=[ "res://.import/sugar.png-6c5d1d305558bff31b2afa51e9d9fb23.stex" ]
+source_file="res://Minecraft textures/item/sugar.png"
+dest_files=[ "res://.import/sugar.png-617a7d71394b72ea31b231f347f5b3cf.stex" ]
 
 [params]
 

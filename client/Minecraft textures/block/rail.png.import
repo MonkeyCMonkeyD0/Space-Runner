@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/rail.png-f6e5fea6fa7c025b9b2a154cc91ece5c.stex"
+path="res://.import/rail.png-6c440f9cc363a45f978f21f4e46d5e72.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/rail.png"
-dest_files=[ "res://.import/rail.png-f6e5fea6fa7c025b9b2a154cc91ece5c.stex" ]
+source_file="res://Minecraft textures/block/rail.png"
+dest_files=[ "res://.import/rail.png-6c440f9cc363a45f978f21f4e46d5e72.stex" ]
 
 [params]
 

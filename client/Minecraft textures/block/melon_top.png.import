@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/melon_top.png-a65cd2f492d37ceba2e8352cbcc8b1d4.stex"
+path="res://.import/melon_top.png-db1b81a36a146ee59191fc060452b639.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/melon_top.png"
-dest_files=[ "res://.import/melon_top.png-a65cd2f492d37ceba2e8352cbcc8b1d4.stex" ]
+source_file="res://Minecraft textures/block/melon_top.png"
+dest_files=[ "res://.import/melon_top.png-db1b81a36a146ee59191fc060452b639.stex" ]
 
 [params]
 

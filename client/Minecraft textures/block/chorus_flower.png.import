@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/chorus_flower.png-a477cc523eff2010c5163aca76d54f3a.stex"
+path="res://.import/chorus_flower.png-066b2500c0cf2fbefdb73198830ca79b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/chorus_flower.png"
-dest_files=[ "res://.import/chorus_flower.png-a477cc523eff2010c5163aca76d54f3a.stex" ]
+source_file="res://Minecraft textures/block/chorus_flower.png"
+dest_files=[ "res://.import/chorus_flower.png-066b2500c0cf2fbefdb73198830ca79b.stex" ]
 
 [params]
 

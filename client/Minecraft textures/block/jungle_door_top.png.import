@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/jungle_door_top.png-bfe8b28f1504db554bf317e0c6261713.stex"
+path="res://.import/jungle_door_top.png-7c791182b0b5a32e43f29a2f6a941398.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/jungle_door_top.png"
-dest_files=[ "res://.import/jungle_door_top.png-bfe8b28f1504db554bf317e0c6261713.stex" ]
+source_file="res://Minecraft textures/block/jungle_door_top.png"
+dest_files=[ "res://.import/jungle_door_top.png-7c791182b0b5a32e43f29a2f6a941398.stex" ]
 
 [params]
 

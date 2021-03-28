@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/donkey.png-0ef9f23d50a197039b524cc6232426ae.stex"
+path="res://.import/donkey.png-9f6627b6f112c1b2f9a09d8389af9338.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/horse/donkey.png"
-dest_files=[ "res://.import/donkey.png-0ef9f23d50a197039b524cc6232426ae.stex" ]
+source_file="res://Minecraft textures/entity/horse/donkey.png"
+dest_files=[ "res://.import/donkey.png-9f6627b6f112c1b2f9a09d8389af9338.stex" ]
 
 [params]
 

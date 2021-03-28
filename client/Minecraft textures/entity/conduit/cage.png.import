@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cage.png-54d199535684b104320f7f167b952ada.stex"
+path="res://.import/cage.png-4657faf76c8244dc0444d8d080dbf4d5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/conduit/cage.png"
-dest_files=[ "res://.import/cage.png-54d199535684b104320f7f167b952ada.stex" ]
+source_file="res://Minecraft textures/entity/conduit/cage.png"
+dest_files=[ "res://.import/cage.png-4657faf76c8244dc0444d8d080dbf4d5.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/half_horizontal_bottom.png-870c29487519cad51bcb1fb335dfe2e3.stex"
+path="res://.import/half_horizontal_bottom.png-6a09a05c92f5f79c7ef5f0e0d807015c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/banner/half_horizontal_bottom.png"
-dest_files=[ "res://.import/half_horizontal_bottom.png-870c29487519cad51bcb1fb335dfe2e3.stex" ]
+source_file="res://Minecraft textures/entity/banner/half_horizontal_bottom.png"
+dest_files=[ "res://.import/half_horizontal_bottom.png-6a09a05c92f5f79c7ef5f0e0d807015c.stex" ]
 
 [params]
 

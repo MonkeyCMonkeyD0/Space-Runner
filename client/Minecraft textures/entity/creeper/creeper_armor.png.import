@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/creeper_armor.png-f040e6a961d8f9bc602d8d2ecd928783.stex"
+path="res://.import/creeper_armor.png-6be15751f5e692aa3d4bd4dcdb86d50a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/creeper/creeper_armor.png"
-dest_files=[ "res://.import/creeper_armor.png-f040e6a961d8f9bc602d8d2ecd928783.stex" ]
+source_file="res://Minecraft textures/entity/creeper/creeper_armor.png"
+dest_files=[ "res://.import/creeper_armor.png-6be15751f5e692aa3d4bd4dcdb86d50a.stex" ]
 
 [params]
 

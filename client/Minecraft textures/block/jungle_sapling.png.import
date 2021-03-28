@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/jungle_sapling.png-cdf3b3815e6b6088c9989b62a1908daf.stex"
+path="res://.import/jungle_sapling.png-f035a5a524a7490bfaf90326fc2c1c50.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/jungle_sapling.png"
-dest_files=[ "res://.import/jungle_sapling.png-cdf3b3815e6b6088c9989b62a1908daf.stex" ]
+source_file="res://Minecraft textures/block/jungle_sapling.png"
+dest_files=[ "res://.import/jungle_sapling.png-f035a5a524a7490bfaf90326fc2c1c50.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/iron_block.png-c5908d610d3c3534567a70f998c1a3fd.stex"
+path="res://.import/iron_block.png-84880e5ae68f2e9d4329a1cb223e36d5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/iron_block.png"
-dest_files=[ "res://.import/iron_block.png-c5908d610d3c3534567a70f998c1a3fd.stex" ]
+source_file="res://Minecraft textures/block/iron_block.png"
+dest_files=[ "res://.import/iron_block.png-84880e5ae68f2e9d4329a1cb223e36d5.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/beetroot.png-559652495dee287646622b9a51f36f38.stex"
+path="res://.import/beetroot.png-381c1fb383ff11e23e7f6f4dfd6ee50d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/beetroot.png"
-dest_files=[ "res://.import/beetroot.png-559652495dee287646622b9a51f36f38.stex" ]
+source_file="res://Minecraft textures/item/beetroot.png"
+dest_files=[ "res://.import/beetroot.png-381c1fb383ff11e23e7f6f4dfd6ee50d.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tipped_arrow_head.png-4c086d5e58387cf66dd2102aeb7219cc.stex"
+path="res://.import/tipped_arrow_head.png-f2b752a60349bcb856a73f0ab3d9e310.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/tipped_arrow_head.png"
-dest_files=[ "res://.import/tipped_arrow_head.png-4c086d5e58387cf66dd2102aeb7219cc.stex" ]
+source_file="res://Minecraft textures/item/tipped_arrow_head.png"
+dest_files=[ "res://.import/tipped_arrow_head.png-f2b752a60349bcb856a73f0ab3d9e310.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/slime_block.png-c52265377d5387d77d730b6da8fc08cb.stex"
+path="res://.import/slime_block.png-47b86c239579e0a16c081c69a9bc708a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/slime_block.png"
-dest_files=[ "res://.import/slime_block.png-c52265377d5387d77d730b6da8fc08cb.stex" ]
+source_file="res://Minecraft textures/block/slime_block.png"
+dest_files=[ "res://.import/slime_block.png-47b86c239579e0a16c081c69a9bc708a.stex" ]
 
 [params]
 

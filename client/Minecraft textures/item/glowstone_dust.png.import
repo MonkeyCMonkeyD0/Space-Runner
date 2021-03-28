@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/glowstone_dust.png-02204eccc6b926f2584f48132eacef49.stex"
+path="res://.import/glowstone_dust.png-e068e6298b9430d8da4f921370dbbc52.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/glowstone_dust.png"
-dest_files=[ "res://.import/glowstone_dust.png-02204eccc6b926f2584f48132eacef49.stex" ]
+source_file="res://Minecraft textures/item/glowstone_dust.png"
+dest_files=[ "res://.import/glowstone_dust.png-e068e6298b9430d8da4f921370dbbc52.stex" ]
 
 [params]
 

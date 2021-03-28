@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cactus_top.png-78cd36ba65bdbf288cb485838d9f4ad7.stex"
+path="res://.import/cactus_top.png-f4a27ff7211603a7640c20fb56769731.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/cactus_top.png"
-dest_files=[ "res://.import/cactus_top.png-78cd36ba65bdbf288cb485838d9f4ad7.stex" ]
+source_file="res://Minecraft textures/block/cactus_top.png"
+dest_files=[ "res://.import/cactus_top.png-f4a27ff7211603a7640c20fb56769731.stex" ]
 
 [params]
 

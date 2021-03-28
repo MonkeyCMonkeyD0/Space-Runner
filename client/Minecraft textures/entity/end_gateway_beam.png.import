@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/end_gateway_beam.png-4860c7aff5b28fd67b5625b78e2632b2.stex"
+path="res://.import/end_gateway_beam.png-1269ca814c4a296e22e422eab4fcc4f2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/end_gateway_beam.png"
-dest_files=[ "res://.import/end_gateway_beam.png-4860c7aff5b28fd67b5625b78e2632b2.stex" ]
+source_file="res://Minecraft textures/entity/end_gateway_beam.png"
+dest_files=[ "res://.import/end_gateway_beam.png-1269ca814c4a296e22e422eab4fcc4f2.stex" ]
 
 [params]
 

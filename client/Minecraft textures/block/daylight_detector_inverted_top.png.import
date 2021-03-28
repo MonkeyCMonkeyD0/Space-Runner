@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/daylight_detector_inverted_top.png-19467e6ac0b2e920c65aec0b8172b62b.stex"
+path="res://.import/daylight_detector_inverted_top.png-cedaeb5122d2061ca6370574666aff40.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/daylight_detector_inverted_top.png"
-dest_files=[ "res://.import/daylight_detector_inverted_top.png-19467e6ac0b2e920c65aec0b8172b62b.stex" ]
+source_file="res://Minecraft textures/block/daylight_detector_inverted_top.png"
+dest_files=[ "res://.import/daylight_detector_inverted_top.png-cedaeb5122d2061ca6370574666aff40.stex" ]
 
 [params]
 

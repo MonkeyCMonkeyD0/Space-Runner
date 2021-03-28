@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/black.png-d0440525814a2de767b39cd4cda31742.stex"
+path="res://.import/black.png-2056bacaa9e498d4c7e9460b38ea15da.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/rabbit/black.png"
-dest_files=[ "res://.import/black.png-d0440525814a2de767b39cd4cda31742.stex" ]
+source_file="res://Minecraft textures/entity/rabbit/black.png"
+dest_files=[ "res://.import/black.png-2056bacaa9e498d4c7e9460b38ea15da.stex" ]
 
 [params]
 

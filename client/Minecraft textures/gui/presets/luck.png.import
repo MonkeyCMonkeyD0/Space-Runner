@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/luck.png-653aadfeade722e4a2655ac46513858d.stex"
+path="res://.import/luck.png-9067dbf2ef4596bcf245a16c6e21b765.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/gui/presets/luck.png"
-dest_files=[ "res://.import/luck.png-653aadfeade722e4a2655ac46513858d.stex" ]
+source_file="res://Minecraft textures/gui/presets/luck.png"
+dest_files=[ "res://.import/luck.png-9067dbf2ef4596bcf245a16c6e21b765.stex" ]
 
 [params]
 

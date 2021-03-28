@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/observer_front.png-09adc5adac8d426bf7f7b30a8bbe9fc1.stex"
+path="res://.import/observer_front.png-0b67963f86fe3c1ed5b9cd59ae4ca858.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/observer_front.png"
-dest_files=[ "res://.import/observer_front.png-09adc5adac8d426bf7f7b30a8bbe9fc1.stex" ]
+source_file="res://Minecraft textures/block/observer_front.png"
+dest_files=[ "res://.import/observer_front.png-0b67963f86fe3c1ed5b9cd59ae4ca858.stex" ]
 
 [params]
 

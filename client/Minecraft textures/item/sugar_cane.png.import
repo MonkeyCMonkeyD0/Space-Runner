@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sugar_cane.png-195da90ac4eabf9a64a963894a823cc1.stex"
+path="res://.import/sugar_cane.png-95b08893f944816c57a73aeb1c2af898.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/sugar_cane.png"
-dest_files=[ "res://.import/sugar_cane.png-195da90ac4eabf9a64a963894a823cc1.stex" ]
+source_file="res://Minecraft textures/item/sugar_cane.png"
+dest_files=[ "res://.import/sugar_cane.png-95b08893f944816c57a73aeb1c2af898.stex" ]
 
 [params]
 

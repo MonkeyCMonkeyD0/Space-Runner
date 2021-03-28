@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/chainmail_chestplate.png-2d08c976ee1c4533d441257dd305fe5e.stex"
+path="res://.import/chainmail_chestplate.png-7b52063a5f4d8faf8a3c548deda6543d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/chainmail_chestplate.png"
-dest_files=[ "res://.import/chainmail_chestplate.png-2d08c976ee1c4533d441257dd305fe5e.stex" ]
+source_file="res://Minecraft textures/item/chainmail_chestplate.png"
+dest_files=[ "res://.import/chainmail_chestplate.png-7b52063a5f4d8faf8a3c548deda6543d.stex" ]
 
 [params]
 

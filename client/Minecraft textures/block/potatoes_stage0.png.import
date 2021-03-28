@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/potatoes_stage0.png-24fa64147d4aeeaa090a6065b6b1622b.stex"
+path="res://.import/potatoes_stage0.png-dd58a78aa0366acf0ad549e95d4c345a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/potatoes_stage0.png"
-dest_files=[ "res://.import/potatoes_stage0.png-24fa64147d4aeeaa090a6065b6b1622b.stex" ]
+source_file="res://Minecraft textures/block/potatoes_stage0.png"
+dest_files=[ "res://.import/potatoes_stage0.png-dd58a78aa0366acf0ad549e95d4c345a.stex" ]
 
 [params]
 

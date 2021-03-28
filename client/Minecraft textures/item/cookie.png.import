@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cookie.png-79c9b62515b2d119ac2ae5ecf776ea79.stex"
+path="res://.import/cookie.png-fdb231d4b1482ea423f59889fee8423b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/cookie.png"
-dest_files=[ "res://.import/cookie.png-79c9b62515b2d119ac2ae5ecf776ea79.stex" ]
+source_file="res://Minecraft textures/item/cookie.png"
+dest_files=[ "res://.import/cookie.png-fdb231d4b1482ea423f59889fee8423b.stex" ]
 
 [params]
 

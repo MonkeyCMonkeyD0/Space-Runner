@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/redstone_dust_dot.png-8f66a48f9996fae3569b9a01debe6c31.stex"
+path="res://.import/redstone_dust_dot.png-57dae9dddc02c3c11de9a944442ef15d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/redstone_dust_dot.png"
-dest_files=[ "res://.import/redstone_dust_dot.png-8f66a48f9996fae3569b9a01debe6c31.stex" ]
+source_file="res://Minecraft textures/block/redstone_dust_dot.png"
+dest_files=[ "res://.import/redstone_dust_dot.png-57dae9dddc02c3c11de9a944442ef15d.stex" ]
 
 [params]
 

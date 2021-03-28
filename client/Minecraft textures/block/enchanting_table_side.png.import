@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/enchanting_table_side.png-e5b75eaec964b09994c79414bd1a2bc8.stex"
+path="res://.import/enchanting_table_side.png-e21c5b9098af5be76dc7194961c8b5dc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/enchanting_table_side.png"
-dest_files=[ "res://.import/enchanting_table_side.png-e5b75eaec964b09994c79414bd1a2bc8.stex" ]
+source_file="res://Minecraft textures/block/enchanting_table_side.png"
+dest_files=[ "res://.import/enchanting_table_side.png-e21c5b9098af5be76dc7194961c8b5dc.stex" ]
 
 [params]
 

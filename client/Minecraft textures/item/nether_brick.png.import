@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/nether_brick.png-82d747ef54071b317b508a0acbeac33b.stex"
+path="res://.import/nether_brick.png-960ba3801b1fd89ccafb191fd58c1650.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/nether_brick.png"
-dest_files=[ "res://.import/nether_brick.png-82d747ef54071b317b508a0acbeac33b.stex" ]
+source_file="res://Minecraft textures/item/nether_brick.png"
+dest_files=[ "res://.import/nether_brick.png-960ba3801b1fd89ccafb191fd58c1650.stex" ]
 
 [params]
 

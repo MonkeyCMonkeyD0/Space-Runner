@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/widgets.png-e422f7211d31c6a32bf3adcf8e0f15eb.stex"
+path="res://.import/widgets.png-cc44a0daba0f98d38cced83947412aca.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/gui/widgets.png"
-dest_files=[ "res://.import/widgets.png-e422f7211d31c6a32bf3adcf8e0f15eb.stex" ]
+source_file="res://Minecraft textures/gui/widgets.png"
+dest_files=[ "res://.import/widgets.png-cc44a0daba0f98d38cced83947412aca.stex" ]
 
 [params]
 

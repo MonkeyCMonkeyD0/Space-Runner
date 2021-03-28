@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/brown_mushroom.png-40259c61efe4ebf51bd0d23138afd9af.stex"
+path="res://.import/brown_mushroom.png-483015ef0b46591db89ade35d71a7a04.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/brown_mushroom.png"
-dest_files=[ "res://.import/brown_mushroom.png-40259c61efe4ebf51bd0d23138afd9af.stex" ]
+source_file="res://Minecraft textures/block/brown_mushroom.png"
+dest_files=[ "res://.import/brown_mushroom.png-483015ef0b46591db89ade35d71a7a04.stex" ]
 
 [params]
 

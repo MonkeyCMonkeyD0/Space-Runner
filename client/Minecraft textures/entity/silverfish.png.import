@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/silverfish.png-f0245f0ce97b91a164425165fc7f2ad6.stex"
+path="res://.import/silverfish.png-3481ec217f83ef24978593b58da307a2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/silverfish.png"
-dest_files=[ "res://.import/silverfish.png-f0245f0ce97b91a164425165fc7f2ad6.stex" ]
+source_file="res://Minecraft textures/entity/silverfish.png"
+dest_files=[ "res://.import/silverfish.png-3481ec217f83ef24978593b58da307a2.stex" ]
 
 [params]
 

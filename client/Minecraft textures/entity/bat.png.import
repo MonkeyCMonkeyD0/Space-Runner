@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bat.png-a098ff4e9c2859261d8779e51e48fc65.stex"
+path="res://.import/bat.png-929cb2938c6792884ee3c03707d3e613.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/bat.png"
-dest_files=[ "res://.import/bat.png-a098ff4e9c2859261d8779e51e48fc65.stex" ]
+source_file="res://Minecraft textures/entity/bat.png"
+dest_files=[ "res://.import/bat.png-929cb2938c6792884ee3c03707d3e613.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/phantom_membrane.png-a0218ceae9e59b24ecd5e77bc7095b46.stex"
+path="res://.import/phantom_membrane.png-302f80f4b73847362590e2847ef24a69.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/phantom_membrane.png"
-dest_files=[ "res://.import/phantom_membrane.png-a0218ceae9e59b24ecd5e77bc7095b46.stex" ]
+source_file="res://Minecraft textures/item/phantom_membrane.png"
+dest_files=[ "res://.import/phantom_membrane.png-302f80f4b73847362590e2847ef24a69.stex" ]
 
 [params]
 

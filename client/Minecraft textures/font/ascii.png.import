@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ascii.png-b94489b575550f1b0920f135cf6d7a59.stex"
+path="res://.import/ascii.png-6294d4fcc2f368a0a13314b0b52ea9b8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/font/ascii.png"
-dest_files=[ "res://.import/ascii.png-b94489b575550f1b0920f135cf6d7a59.stex" ]
+source_file="res://Minecraft textures/font/ascii.png"
+dest_files=[ "res://.import/ascii.png-6294d4fcc2f368a0a13314b0b52ea9b8.stex" ]
 
 [params]
 

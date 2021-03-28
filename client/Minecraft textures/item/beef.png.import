@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/beef.png-31e49d52f0f20d41c7df13a5e3905483.stex"
+path="res://.import/beef.png-f3a4bb3f6c3a48a26b06628e4876c18f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/beef.png"
-dest_files=[ "res://.import/beef.png-31e49d52f0f20d41c7df13a5e3905483.stex" ]
+source_file="res://Minecraft textures/item/beef.png"
+dest_files=[ "res://.import/beef.png-f3a4bb3f6c3a48a26b06628e4876c18f.stex" ]
 
 [params]
 

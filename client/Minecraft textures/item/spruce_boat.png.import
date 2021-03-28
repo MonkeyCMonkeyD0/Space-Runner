@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/spruce_boat.png-6c92f4e2d8fca0666e81a81325279cf9.stex"
+path="res://.import/spruce_boat.png-0753fa05cbe5ea296a8f6984b709650c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/spruce_boat.png"
-dest_files=[ "res://.import/spruce_boat.png-6c92f4e2d8fca0666e81a81325279cf9.stex" ]
+source_file="res://Minecraft textures/item/spruce_boat.png"
+dest_files=[ "res://.import/spruce_boat.png-0753fa05cbe5ea296a8f6984b709650c.stex" ]
 
 [params]
 

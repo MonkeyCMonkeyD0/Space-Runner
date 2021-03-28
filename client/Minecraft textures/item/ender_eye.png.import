@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ender_eye.png-9c4307dcb6160ecd8def526afc009230.stex"
+path="res://.import/ender_eye.png-1cb3e26e0dfc6c547644aa75dd66ddf3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/ender_eye.png"
-dest_files=[ "res://.import/ender_eye.png-9c4307dcb6160ecd8def526afc009230.stex" ]
+source_file="res://Minecraft textures/item/ender_eye.png"
+dest_files=[ "res://.import/ender_eye.png-1cb3e26e0dfc6c547644aa75dd66ddf3.stex" ]
 
 [params]
 

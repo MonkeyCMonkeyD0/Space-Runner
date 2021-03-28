@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/chiseled_stone_bricks.png-b115af36f30a861fd10f3b5841397877.stex"
+path="res://.import/chiseled_stone_bricks.png-58f5c804d95d67bb35dc359ba82b728c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/chiseled_stone_bricks.png"
-dest_files=[ "res://.import/chiseled_stone_bricks.png-b115af36f30a861fd10f3b5841397877.stex" ]
+source_file="res://Minecraft textures/block/chiseled_stone_bricks.png"
+dest_files=[ "res://.import/chiseled_stone_bricks.png-58f5c804d95d67bb35dc359ba82b728c.stex" ]
 
 [params]
 

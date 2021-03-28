@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/chiseled_sandstone.png-5841d9194a144b0c22ce66668f4b673a.stex"
+path="res://.import/chiseled_sandstone.png-c6de19095028df9f024fdbd969fb50ce.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/chiseled_sandstone.png"
-dest_files=[ "res://.import/chiseled_sandstone.png-5841d9194a144b0c22ce66668f4b673a.stex" ]
+source_file="res://Minecraft textures/block/chiseled_sandstone.png"
+dest_files=[ "res://.import/chiseled_sandstone.png-c6de19095028df9f024fdbd969fb50ce.stex" ]
 
 [params]
 

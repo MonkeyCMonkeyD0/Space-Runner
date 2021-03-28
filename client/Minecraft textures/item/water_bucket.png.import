@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/water_bucket.png-522c567d866f91291703cdcdb4a96a31.stex"
+path="res://.import/water_bucket.png-33fddb392e5b0f929530598939c89e12.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/water_bucket.png"
-dest_files=[ "res://.import/water_bucket.png-522c567d866f91291703cdcdb4a96a31.stex" ]
+source_file="res://Minecraft textures/item/water_bucket.png"
+dest_files=[ "res://.import/water_bucket.png-33fddb392e5b0f929530598939c89e12.stex" ]
 
 [params]
 

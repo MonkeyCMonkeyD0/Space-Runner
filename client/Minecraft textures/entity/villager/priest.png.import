@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/priest.png-bb8d4dfeb10b53d98751fa40ee076dd6.stex"
+path="res://.import/priest.png-2d936be142a8fc2131c4ab74e3758e5e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/villager/priest.png"
-dest_files=[ "res://.import/priest.png-bb8d4dfeb10b53d98751fa40ee076dd6.stex" ]
+source_file="res://Minecraft textures/entity/villager/priest.png"
+dest_files=[ "res://.import/priest.png-2d936be142a8fc2131c4ab74e3758e5e.stex" ]
 
 [params]
 

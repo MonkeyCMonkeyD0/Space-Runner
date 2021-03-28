@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/stone_axe.png-3ca9613e97106e49dc212988dbf11e4c.stex"
+path="res://.import/stone_axe.png-002c7af24e646557d274c35087655b7a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/stone_axe.png"
-dest_files=[ "res://.import/stone_axe.png-3ca9613e97106e49dc212988dbf11e4c.stex" ]
+source_file="res://Minecraft textures/item/stone_axe.png"
+dest_files=[ "res://.import/stone_axe.png-002c7af24e646557d274c35087655b7a.stex" ]
 
 [params]
 

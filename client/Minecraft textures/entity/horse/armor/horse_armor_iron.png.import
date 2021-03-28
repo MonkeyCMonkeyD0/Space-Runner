@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/horse_armor_iron.png-0092fe47edfcbb70dd0f9b4319b042aa.stex"
+path="res://.import/horse_armor_iron.png-3e1d68bd804a201b81011af904515046.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/horse/armor/horse_armor_iron.png"
-dest_files=[ "res://.import/horse_armor_iron.png-0092fe47edfcbb70dd0f9b4319b042aa.stex" ]
+source_file="res://Minecraft textures/entity/horse/armor/horse_armor_iron.png"
+dest_files=[ "res://.import/horse_armor_iron.png-3e1d68bd804a201b81011af904515046.stex" ]
 
 [params]
 

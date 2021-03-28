@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/evoker.png-56c3b5862ae8f7bd3fc455e4a5c01ccf.stex"
+path="res://.import/evoker.png-1c2fd799cd2ef9a8a12011f3021e554c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/illager/evoker.png"
-dest_files=[ "res://.import/evoker.png-56c3b5862ae8f7bd3fc455e4a5c01ccf.stex" ]
+source_file="res://Minecraft textures/entity/illager/evoker.png"
+dest_files=[ "res://.import/evoker.png-1c2fd799cd2ef9a8a12011f3021e554c.stex" ]
 
 [params]
 

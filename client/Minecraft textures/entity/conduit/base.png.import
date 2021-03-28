@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/base.png-726476894454344a74953c821503e7bf.stex"
+path="res://.import/base.png-f1247dfd2e9b5b4d17aa94cd4f15df4a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/conduit/base.png"
-dest_files=[ "res://.import/base.png-726476894454344a74953c821503e7bf.stex" ]
+source_file="res://Minecraft textures/entity/conduit/base.png"
+dest_files=[ "res://.import/base.png-f1247dfd2e9b5b4d17aa94cd4f15df4a.stex" ]
 
 [params]
 

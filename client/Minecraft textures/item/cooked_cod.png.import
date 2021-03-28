@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cooked_cod.png-3c73f065b7c09bec5dc613e8a7163c18.stex"
+path="res://.import/cooked_cod.png-4174760fa357625aa09bee9e4f1eb6ea.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/cooked_cod.png"
-dest_files=[ "res://.import/cooked_cod.png-3c73f065b7c09bec5dc613e8a7163c18.stex" ]
+source_file="res://Minecraft textures/item/cooked_cod.png"
+dest_files=[ "res://.import/cooked_cod.png-4174760fa357625aa09bee9e4f1eb6ea.stex" ]
 
 [params]
 

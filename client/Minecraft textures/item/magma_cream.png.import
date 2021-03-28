@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/magma_cream.png-353c88a33eba7d94102c3326c91b6995.stex"
+path="res://.import/magma_cream.png-ffaa3e2151c16da3d1bca4bdb1a6234a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/magma_cream.png"
-dest_files=[ "res://.import/magma_cream.png-353c88a33eba7d94102c3326c91b6995.stex" ]
+source_file="res://Minecraft textures/item/magma_cream.png"
+dest_files=[ "res://.import/magma_cream.png-ffaa3e2151c16da3d1bca4bdb1a6234a.stex" ]
 
 [params]
 

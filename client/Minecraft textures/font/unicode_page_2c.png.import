@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/unicode_page_2c.png-81620d7fe0c005cd0b2d733a66510ea0.stex"
+path="res://.import/unicode_page_2c.png-77b3e0631a64eb22881d3e82eff2b4e6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/font/unicode_page_2c.png"
-dest_files=[ "res://.import/unicode_page_2c.png-81620d7fe0c005cd0b2d733a66510ea0.stex" ]
+source_file="res://Minecraft textures/font/unicode_page_2c.png"
+dest_files=[ "res://.import/unicode_page_2c.png-77b3e0631a64eb22881d3e82eff2b4e6.stex" ]
 
 [params]
 

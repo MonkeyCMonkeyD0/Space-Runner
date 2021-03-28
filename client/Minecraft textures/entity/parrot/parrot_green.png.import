@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/parrot_green.png-6cf0f9b626ae8c7953567c6c7fa0ba81.stex"
+path="res://.import/parrot_green.png-47af30005329b649f1d358b0a498487b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/parrot/parrot_green.png"
-dest_files=[ "res://.import/parrot_green.png-6cf0f9b626ae8c7953567c6c7fa0ba81.stex" ]
+source_file="res://Minecraft textures/entity/parrot/parrot_green.png"
+dest_files=[ "res://.import/parrot_green.png-47af30005329b649f1d358b0a498487b.stex" ]
 
 [params]
 

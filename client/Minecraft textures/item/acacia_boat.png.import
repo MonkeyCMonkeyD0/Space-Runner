@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/acacia_boat.png-c5a5ca60761c259f2428ba009c3d43d1.stex"
+path="res://.import/acacia_boat.png-9c9da9738665d50fee9ba22f1f191797.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/acacia_boat.png"
-dest_files=[ "res://.import/acacia_boat.png-c5a5ca60761c259f2428ba009c3d43d1.stex" ]
+source_file="res://Minecraft textures/item/acacia_boat.png"
+dest_files=[ "res://.import/acacia_boat.png-9c9da9738665d50fee9ba22f1f191797.stex" ]
 
 [params]
 

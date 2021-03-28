@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/packed_ice.png-8bd27d19454bb3746e7bbb2d601b8e51.stex"
+path="res://.import/packed_ice.png-44236123e1e147109bc1918639d2c5f6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/packed_ice.png"
-dest_files=[ "res://.import/packed_ice.png-8bd27d19454bb3746e7bbb2d601b8e51.stex" ]
+source_file="res://Minecraft textures/block/packed_ice.png"
+dest_files=[ "res://.import/packed_ice.png-44236123e1e147109bc1918639d2c5f6.stex" ]
 
 [params]
 

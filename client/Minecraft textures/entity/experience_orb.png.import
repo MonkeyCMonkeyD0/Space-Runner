@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/experience_orb.png-f9122b990bef0fb211bf4454c125f787.stex"
+path="res://.import/experience_orb.png-f21b4f2ecfc2ac6b8021875e9944bf65.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/experience_orb.png"
-dest_files=[ "res://.import/experience_orb.png-f9122b990bef0fb211bf4454c125f787.stex" ]
+source_file="res://Minecraft textures/entity/experience_orb.png"
+dest_files=[ "res://.import/experience_orb.png-f21b4f2ecfc2ac6b8021875e9944bf65.stex" ]
 
 [params]
 

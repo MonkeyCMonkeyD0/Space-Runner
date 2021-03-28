@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/rabbit_hide.png-acf88444c4a27a2bba7810be21b60134.stex"
+path="res://.import/rabbit_hide.png-655745cb804644c67d2f321d9c471c73.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/rabbit_hide.png"
-dest_files=[ "res://.import/rabbit_hide.png-acf88444c4a27a2bba7810be21b60134.stex" ]
+source_file="res://Minecraft textures/item/rabbit_hide.png"
+dest_files=[ "res://.import/rabbit_hide.png-655745cb804644c67d2f321d9c471c73.stex" ]
 
 [params]
 

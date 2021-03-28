@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/edition.png-6f3742f1095662835a755a165ceb7e9c.stex"
+path="res://.import/edition.png-b10ffb45044ddc5d57fa3436b18603b9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/gui/title/edition.png"
-dest_files=[ "res://.import/edition.png-6f3742f1095662835a755a165ceb7e9c.stex" ]
+source_file="res://Minecraft textures/gui/title/edition.png"
+dest_files=[ "res://.import/edition.png-b10ffb45044ddc5d57fa3436b18603b9.stex" ]
 
 [params]
 

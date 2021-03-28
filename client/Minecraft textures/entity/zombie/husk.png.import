@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/husk.png-dd94a54c652c8172d868aa6ab16893d1.stex"
+path="res://.import/husk.png-7f616769f842bae093e5fe9277480df6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/zombie/husk.png"
-dest_files=[ "res://.import/husk.png-dd94a54c652c8172d868aa6ab16893d1.stex" ]
+source_file="res://Minecraft textures/entity/zombie/husk.png"
+dest_files=[ "res://.import/husk.png-7f616769f842bae093e5fe9277480df6.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/charcoal.png-f39a64216db47a9d7cd6d3636054daea.stex"
+path="res://.import/charcoal.png-5f230523d247b9ff1e55663a928e896b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/charcoal.png"
-dest_files=[ "res://.import/charcoal.png-f39a64216db47a9d7cd6d3636054daea.stex" ]
+source_file="res://Minecraft textures/item/charcoal.png"
+dest_files=[ "res://.import/charcoal.png-5f230523d247b9ff1e55663a928e896b.stex" ]
 
 [params]
 

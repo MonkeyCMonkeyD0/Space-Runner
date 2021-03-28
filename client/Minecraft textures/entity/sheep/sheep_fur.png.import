@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sheep_fur.png-89934f5c36d1b6be0350d38c92289776.stex"
+path="res://.import/sheep_fur.png-ef80f9bf343329accef7cc434d6cef1e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/sheep/sheep_fur.png"
-dest_files=[ "res://.import/sheep_fur.png-89934f5c36d1b6be0350d38c92289776.stex" ]
+source_file="res://Minecraft textures/entity/sheep/sheep_fur.png"
+dest_files=[ "res://.import/sheep_fur.png-ef80f9bf343329accef7cc434d6cef1e.stex" ]
 
 [params]
 

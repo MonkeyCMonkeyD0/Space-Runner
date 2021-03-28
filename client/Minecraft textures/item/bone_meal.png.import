@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bone_meal.png-56c4bc19f24f353f82db506b8fdf880f.stex"
+path="res://.import/bone_meal.png-8c67c31e617b30ec7cf2c5f6f710bcfc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/bone_meal.png"
-dest_files=[ "res://.import/bone_meal.png-56c4bc19f24f353f82db506b8fdf880f.stex" ]
+source_file="res://Minecraft textures/item/bone_meal.png"
+dest_files=[ "res://.import/bone_meal.png-8c67c31e617b30ec7cf2c5f6f710bcfc.stex" ]
 
 [params]
 

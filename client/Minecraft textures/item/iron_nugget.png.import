@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/iron_nugget.png-293bbd81972a52012c581f3addd0e5d2.stex"
+path="res://.import/iron_nugget.png-e2ff0b52eba37a7a07e15a514f9b8644.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/iron_nugget.png"
-dest_files=[ "res://.import/iron_nugget.png-293bbd81972a52012c581f3addd0e5d2.stex" ]
+source_file="res://Minecraft textures/item/iron_nugget.png"
+dest_files=[ "res://.import/iron_nugget.png-e2ff0b52eba37a7a07e15a514f9b8644.stex" ]
 
 [params]
 

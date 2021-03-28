@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/powered_rail_on.png-1df406db62426021532792e0d63edd9a.stex"
+path="res://.import/powered_rail_on.png-87f989d21aa0155e84946a8fec625dae.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/powered_rail_on.png"
-dest_files=[ "res://.import/powered_rail_on.png-1df406db62426021532792e0d63edd9a.stex" ]
+source_file="res://Minecraft textures/block/powered_rail_on.png"
+dest_files=[ "res://.import/powered_rail_on.png-87f989d21aa0155e84946a8fec625dae.stex" ]
 
 [params]
 

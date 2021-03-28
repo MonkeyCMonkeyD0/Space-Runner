@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/stripped_oak_log_top.png-24650ab5997f1a3629ec5cf72eb1744b.stex"
+path="res://.import/stripped_oak_log_top.png-ff16fbc73fb27ce4806da3967205dd30.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/stripped_oak_log_top.png"
-dest_files=[ "res://.import/stripped_oak_log_top.png-24650ab5997f1a3629ec5cf72eb1744b.stex" ]
+source_file="res://Minecraft textures/block/stripped_oak_log_top.png"
+dest_files=[ "res://.import/stripped_oak_log_top.png-ff16fbc73fb27ce4806da3967205dd30.stex" ]
 
 [params]
 

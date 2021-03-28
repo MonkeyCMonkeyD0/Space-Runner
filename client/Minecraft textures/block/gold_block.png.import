@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/gold_block.png-a609aec3503c4df049414b831c2e8807.stex"
+path="res://.import/gold_block.png-ebe70978157993e211ebc6f342a86b5c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/gold_block.png"
-dest_files=[ "res://.import/gold_block.png-a609aec3503c4df049414b831c2e8807.stex" ]
+source_file="res://Minecraft textures/block/gold_block.png"
+dest_files=[ "res://.import/gold_block.png-ebe70978157993e211ebc6f342a86b5c.stex" ]
 
 [params]
 

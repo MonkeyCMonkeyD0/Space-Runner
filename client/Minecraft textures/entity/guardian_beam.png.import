@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/guardian_beam.png-af06086731a432dbc567221f5ebc61a1.stex"
+path="res://.import/guardian_beam.png-21158857b1175f5a6a6da6265c56a6bd.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/guardian_beam.png"
-dest_files=[ "res://.import/guardian_beam.png-af06086731a432dbc567221f5ebc61a1.stex" ]
+source_file="res://Minecraft textures/entity/guardian_beam.png"
+dest_files=[ "res://.import/guardian_beam.png-21158857b1175f5a6a6da6265c56a6bd.stex" ]
 
 [params]
 

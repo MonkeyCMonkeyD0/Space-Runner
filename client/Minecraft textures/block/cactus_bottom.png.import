@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cactus_bottom.png-5418f9c94c3cf9e64b32520c144a6888.stex"
+path="res://.import/cactus_bottom.png-1abddc2fe737750ca713178b0a01e75f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/cactus_bottom.png"
-dest_files=[ "res://.import/cactus_bottom.png-5418f9c94c3cf9e64b32520c144a6888.stex" ]
+source_file="res://Minecraft textures/block/cactus_bottom.png"
+dest_files=[ "res://.import/cactus_bottom.png-1abddc2fe737750ca713178b0a01e75f.stex" ]
 
 [params]
 

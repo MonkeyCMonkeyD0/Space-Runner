@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/dropper_front_vertical.png-49d2e31c1b19165e277ebcb090c73eca.stex"
+path="res://.import/dropper_front_vertical.png-c1073a174eae60a232b42f3d39e4ed44.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/dropper_front_vertical.png"
-dest_files=[ "res://.import/dropper_front_vertical.png-49d2e31c1b19165e277ebcb090c73eca.stex" ]
+source_file="res://Minecraft textures/block/dropper_front_vertical.png"
+dest_files=[ "res://.import/dropper_front_vertical.png-c1073a174eae60a232b42f3d39e4ed44.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/stone_bricks.png-117cb29c0acf02ff0a48750f7f626149.stex"
+path="res://.import/stone_bricks.png-56db2e02a277887b443c36800c7144d2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/stone_bricks.png"
-dest_files=[ "res://.import/stone_bricks.png-117cb29c0acf02ff0a48750f7f626149.stex" ]
+source_file="res://Minecraft textures/block/stone_bricks.png"
+dest_files=[ "res://.import/stone_bricks.png-56db2e02a277887b443c36800c7144d2.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cross.png-ed6cf495b24079ed92cf5c45f6737162.stex"
+path="res://.import/cross.png-c0cec43b5ae523b08239ca74e9297330.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/banner/cross.png"
-dest_files=[ "res://.import/cross.png-ed6cf495b24079ed92cf5c45f6737162.stex" ]
+source_file="res://Minecraft textures/entity/banner/cross.png"
+dest_files=[ "res://.import/cross.png-c0cec43b5ae523b08239ca74e9297330.stex" ]
 
 [params]
 

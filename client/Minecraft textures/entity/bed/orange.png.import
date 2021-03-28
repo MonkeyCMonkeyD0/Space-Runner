@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/orange.png-9c7c2e6ac98c68dd6d9e828bf6176a66.stex"
+path="res://.import/orange.png-5bc4d02aa8555535f8c554d42c1a2177.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/bed/orange.png"
-dest_files=[ "res://.import/orange.png-9c7c2e6ac98c68dd6d9e828bf6176a66.stex" ]
+source_file="res://Minecraft textures/entity/bed/orange.png"
+dest_files=[ "res://.import/orange.png-5bc4d02aa8555535f8c554d42c1a2177.stex" ]
 
 [params]
 

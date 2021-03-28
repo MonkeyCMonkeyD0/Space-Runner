@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/glass.png-f090cd70645cf1baef8af4a2f055f688.stex"
+path="res://.import/glass.png-95e5d21ac111aa6252223ce65bed8d8a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/glass.png"
-dest_files=[ "res://.import/glass.png-f090cd70645cf1baef8af4a2f055f688.stex" ]
+source_file="res://Minecraft textures/block/glass.png"
+dest_files=[ "res://.import/glass.png-95e5d21ac111aa6252223ce65bed8d8a.stex" ]
 
 [params]
 

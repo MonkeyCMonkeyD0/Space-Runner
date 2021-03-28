@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/leather_layer_1_overlay.png-ce69a935c8fb8d9f6fc70f2f6541de8f.stex"
+path="res://.import/leather_layer_1_overlay.png-7f8536c6de76e35cd49b177d26b6cf79.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/models/armor/leather_layer_1_overlay.png"
-dest_files=[ "res://.import/leather_layer_1_overlay.png-ce69a935c8fb8d9f6fc70f2f6541de8f.stex" ]
+source_file="res://Minecraft textures/models/armor/leather_layer_1_overlay.png"
+dest_files=[ "res://.import/leather_layer_1_overlay.png-7f8536c6de76e35cd49b177d26b6cf79.stex" ]
 
 [params]
 

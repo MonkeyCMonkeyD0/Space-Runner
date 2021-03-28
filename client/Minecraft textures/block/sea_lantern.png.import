@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sea_lantern.png-f82957e3e7e478009db0a937e53cd553.stex"
+path="res://.import/sea_lantern.png-ba266874607767a9f0beda982859dca4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/sea_lantern.png"
-dest_files=[ "res://.import/sea_lantern.png-f82957e3e7e478009db0a937e53cd553.stex" ]
+source_file="res://Minecraft textures/block/sea_lantern.png"
+dest_files=[ "res://.import/sea_lantern.png-ba266874607767a9f0beda982859dca4.stex" ]
 
 [params]
 

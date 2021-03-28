@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tall_grass_bottom.png-939a77f4153592b6bee5a0cef0f62167.stex"
+path="res://.import/tall_grass_bottom.png-a9626fe997b8ef39502e4ec8baa601b7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/tall_grass_bottom.png"
-dest_files=[ "res://.import/tall_grass_bottom.png-939a77f4153592b6bee5a0cef0f62167.stex" ]
+source_file="res://Minecraft textures/block/tall_grass_bottom.png"
+dest_files=[ "res://.import/tall_grass_bottom.png-a9626fe997b8ef39502e4ec8baa601b7.stex" ]
 
 [params]
 

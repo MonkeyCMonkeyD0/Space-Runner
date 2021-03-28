@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/stone_shovel.png-0a7e5d6d80a2c7702f8abf8228338577.stex"
+path="res://.import/stone_shovel.png-1f7fae593626588f54edbb0b42972022.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/stone_shovel.png"
-dest_files=[ "res://.import/stone_shovel.png-0a7e5d6d80a2c7702f8abf8228338577.stex" ]
+source_file="res://Minecraft textures/item/stone_shovel.png"
+dest_files=[ "res://.import/stone_shovel.png-1f7fae593626588f54edbb0b42972022.stex" ]
 
 [params]
 

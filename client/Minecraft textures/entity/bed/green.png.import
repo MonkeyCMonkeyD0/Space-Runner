@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/green.png-949fa016299324c95fd899271d538f3a.stex"
+path="res://.import/green.png-875cd2116f9a72dad1d038a6045a681a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/bed/green.png"
-dest_files=[ "res://.import/green.png-949fa016299324c95fd899271d538f3a.stex" ]
+source_file="res://Minecraft textures/entity/bed/green.png"
+dest_files=[ "res://.import/green.png-875cd2116f9a72dad1d038a6045a681a.stex" ]
 
 [params]
 

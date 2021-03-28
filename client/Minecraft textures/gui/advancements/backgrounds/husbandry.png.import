@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/husbandry.png-d31dd5ce12e38ccb921180f9d9d8674a.stex"
+path="res://.import/husbandry.png-cdbd6d5343841280f8e72879c5b69ab5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/gui/advancements/backgrounds/husbandry.png"
-dest_files=[ "res://.import/husbandry.png-d31dd5ce12e38ccb921180f9d9d8674a.stex" ]
+source_file="res://Minecraft textures/gui/advancements/backgrounds/husbandry.png"
+dest_files=[ "res://.import/husbandry.png-cdbd6d5343841280f8e72879c5b69ab5.stex" ]
 
 [params]
 

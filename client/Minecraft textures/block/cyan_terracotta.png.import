@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cyan_terracotta.png-97ac9cf1d0efd902d4686141a1de5d0f.stex"
+path="res://.import/cyan_terracotta.png-5ffa48aab82539755d3127dcb1ca6c91.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/cyan_terracotta.png"
-dest_files=[ "res://.import/cyan_terracotta.png-97ac9cf1d0efd902d4686141a1de5d0f.stex" ]
+source_file="res://Minecraft textures/block/cyan_terracotta.png"
+dest_files=[ "res://.import/cyan_terracotta.png-5ffa48aab82539755d3127dcb1ca6c91.stex" ]
 
 [params]
 

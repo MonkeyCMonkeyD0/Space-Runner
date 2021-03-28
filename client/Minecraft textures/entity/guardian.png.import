@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/guardian.png-e636739736f9d27c6f79a0fe47325087.stex"
+path="res://.import/guardian.png-19bfc90affb49796430bcc6ea479151e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/guardian.png"
-dest_files=[ "res://.import/guardian.png-e636739736f9d27c6f79a0fe47325087.stex" ]
+source_file="res://Minecraft textures/entity/guardian.png"
+dest_files=[ "res://.import/guardian.png-19bfc90affb49796430bcc6ea479151e.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/barrier.png-96bf7bd64f64989a32c1974a919321ed.stex"
+path="res://.import/barrier.png-bfc677b50805168e56ec05042f2963b2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/barrier.png"
-dest_files=[ "res://.import/barrier.png-96bf7bd64f64989a32c1974a919321ed.stex" ]
+source_file="res://Minecraft textures/item/barrier.png"
+dest_files=[ "res://.import/barrier.png-bfc677b50805168e56ec05042f2963b2.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/magenta_dye.png-804f57113117bf1bb634ebaca32a80a2.stex"
+path="res://.import/magenta_dye.png-f20ecb1c3ce39a28942481a2f3762576.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/magenta_dye.png"
-dest_files=[ "res://.import/magenta_dye.png-804f57113117bf1bb634ebaca32a80a2.stex" ]
+source_file="res://Minecraft textures/item/magenta_dye.png"
+dest_files=[ "res://.import/magenta_dye.png-f20ecb1c3ce39a28942481a2f3762576.stex" ]
 
 [params]
 

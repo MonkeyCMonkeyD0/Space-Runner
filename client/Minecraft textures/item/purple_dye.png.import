@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/purple_dye.png-5a8504d54e0d4c1d025207b5198ddbc9.stex"
+path="res://.import/purple_dye.png-857214e48556985d80a415764d9b454a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/purple_dye.png"
-dest_files=[ "res://.import/purple_dye.png-5a8504d54e0d4c1d025207b5198ddbc9.stex" ]
+source_file="res://Minecraft textures/item/purple_dye.png"
+dest_files=[ "res://.import/purple_dye.png-857214e48556985d80a415764d9b454a.stex" ]
 
 [params]
 

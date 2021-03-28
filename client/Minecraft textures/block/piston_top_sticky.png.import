@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/piston_top_sticky.png-c944882953686c3da2baafb4ed91fae1.stex"
+path="res://.import/piston_top_sticky.png-f0b62344ee8d779607d72b602232ef44.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/piston_top_sticky.png"
-dest_files=[ "res://.import/piston_top_sticky.png-c944882953686c3da2baafb4ed91fae1.stex" ]
+source_file="res://Minecraft textures/block/piston_top_sticky.png"
+dest_files=[ "res://.import/piston_top_sticky.png-f0b62344ee8d779607d72b602232ef44.stex" ]
 
 [params]
 

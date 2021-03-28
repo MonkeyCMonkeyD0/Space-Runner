@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/birch_sapling.png-918cc4f92ae11b82798a59000deb8efa.stex"
+path="res://.import/birch_sapling.png-4f341b4e10e7ab8fb47d069a3964f8b6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/birch_sapling.png"
-dest_files=[ "res://.import/birch_sapling.png-918cc4f92ae11b82798a59000deb8efa.stex" ]
+source_file="res://Minecraft textures/block/birch_sapling.png"
+dest_files=[ "res://.import/birch_sapling.png-4f341b4e10e7ab8fb47d069a3964f8b6.stex" ]
 
 [params]
 

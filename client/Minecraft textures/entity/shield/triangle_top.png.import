@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/triangle_top.png-d7772838ff37d6bee537857ac6dc0b54.stex"
+path="res://.import/triangle_top.png-ef3864208979980a793b8eb69deef9ec.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/shield/triangle_top.png"
-dest_files=[ "res://.import/triangle_top.png-d7772838ff37d6bee537857ac6dc0b54.stex" ]
+source_file="res://Minecraft textures/entity/shield/triangle_top.png"
+dest_files=[ "res://.import/triangle_top.png-ef3864208979980a793b8eb69deef9ec.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/dragon_eyes.png-5ea606611f9d74e674148394332af9b0.stex"
+path="res://.import/dragon_eyes.png-9a5dbbbe4e3bb2250e831edad0fd33c6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/enderdragon/dragon_eyes.png"
-dest_files=[ "res://.import/dragon_eyes.png-5ea606611f9d74e674148394332af9b0.stex" ]
+source_file="res://Minecraft textures/entity/enderdragon/dragon_eyes.png"
+dest_files=[ "res://.import/dragon_eyes.png-9a5dbbbe4e3bb2250e831edad0fd33c6.stex" ]
 
 [params]
 

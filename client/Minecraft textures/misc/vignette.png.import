@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/vignette.png-10931aa4c3b5b4c1424e95810283d90b.stex"
+path="res://.import/vignette.png-f7703f3543cff93b3ecb45aaa747604f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/misc/vignette.png"
-dest_files=[ "res://.import/vignette.png-10931aa4c3b5b4c1424e95810283d90b.stex" ]
+source_file="res://Minecraft textures/misc/vignette.png"
+dest_files=[ "res://.import/vignette.png-f7703f3543cff93b3ecb45aaa747604f.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/end_stone_bricks.png-0f7f5de2efc065523f8704e4c4b72875.stex"
+path="res://.import/end_stone_bricks.png-3c45ce003a9e0a757be3af29b2c737bd.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/end_stone_bricks.png"
-dest_files=[ "res://.import/end_stone_bricks.png-0f7f5de2efc065523f8704e4c4b72875.stex" ]
+source_file="res://Minecraft textures/block/end_stone_bricks.png"
+dest_files=[ "res://.import/end_stone_bricks.png-3c45ce003a9e0a757be3af29b2c737bd.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/jungle.png-4c5578a3052a0bfcff330105f556a1de.stex"
+path="res://.import/jungle.png-862cd79b93e6e1c2feceb77d486f7221.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/boat/jungle.png"
-dest_files=[ "res://.import/jungle.png-4c5578a3052a0bfcff330105f556a1de.stex" ]
+source_file="res://Minecraft textures/entity/boat/jungle.png"
+dest_files=[ "res://.import/jungle.png-862cd79b93e6e1c2feceb77d486f7221.stex" ]
 
 [params]
 

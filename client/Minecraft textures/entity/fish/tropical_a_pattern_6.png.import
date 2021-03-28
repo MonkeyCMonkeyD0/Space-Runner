@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tropical_a_pattern_6.png-9b4f33a8dcb110ddaa8f57fce42a225c.stex"
+path="res://.import/tropical_a_pattern_6.png-36ed5922da65e420f7968c4830e7d423.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/fish/tropical_a_pattern_6.png"
-dest_files=[ "res://.import/tropical_a_pattern_6.png-9b4f33a8dcb110ddaa8f57fce42a225c.stex" ]
+source_file="res://Minecraft textures/entity/fish/tropical_a_pattern_6.png"
+dest_files=[ "res://.import/tropical_a_pattern_6.png-36ed5922da65e420f7968c4830e7d423.stex" ]
 
 [params]
 

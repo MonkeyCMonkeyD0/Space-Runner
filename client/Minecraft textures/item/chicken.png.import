@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/chicken.png-41eeca3a191c03043a3ecd92ea52dd79.stex"
+path="res://.import/chicken.png-89266a861cb8eca722c7ee83f7649d2e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/chicken.png"
-dest_files=[ "res://.import/chicken.png-41eeca3a191c03043a3ecd92ea52dd79.stex" ]
+source_file="res://Minecraft textures/item/chicken.png"
+dest_files=[ "res://.import/chicken.png-89266a861cb8eca722c7ee83f7649d2e.stex" ]
 
 [params]
 

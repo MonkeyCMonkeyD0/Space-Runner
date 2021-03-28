@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cyan_wool.png-886eaed06b8ae47cef934f46fb62c823.stex"
+path="res://.import/cyan_wool.png-cc1ea4ad99f0cea04032411b4c5259b4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/cyan_wool.png"
-dest_files=[ "res://.import/cyan_wool.png-886eaed06b8ae47cef934f46fb62c823.stex" ]
+source_file="res://Minecraft textures/block/cyan_wool.png"
+dest_files=[ "res://.import/cyan_wool.png-cc1ea4ad99f0cea04032411b4c5259b4.stex" ]
 
 [params]
 

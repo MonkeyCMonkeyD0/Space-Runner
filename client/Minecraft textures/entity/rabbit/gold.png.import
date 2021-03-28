@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/gold.png-c9e6761fc0c4202ba30e11c15395afbe.stex"
+path="res://.import/gold.png-c132c01393be30405f3627ab78a3ae7d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/rabbit/gold.png"
-dest_files=[ "res://.import/gold.png-c9e6761fc0c4202ba30e11c15395afbe.stex" ]
+source_file="res://Minecraft textures/entity/rabbit/gold.png"
+dest_files=[ "res://.import/gold.png-c132c01393be30405f3627ab78a3ae7d.stex" ]
 
 [params]
 

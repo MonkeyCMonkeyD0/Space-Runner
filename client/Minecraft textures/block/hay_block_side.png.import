@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/hay_block_side.png-77d10e8143974a08373a818c605cd428.stex"
+path="res://.import/hay_block_side.png-a8b67e7b6a0b45361b8ea0ed172f60d1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/hay_block_side.png"
-dest_files=[ "res://.import/hay_block_side.png-77d10e8143974a08373a818c605cd428.stex" ]
+source_file="res://Minecraft textures/block/hay_block_side.png"
+dest_files=[ "res://.import/hay_block_side.png-a8b67e7b6a0b45361b8ea0ed172f60d1.stex" ]
 
 [params]
 

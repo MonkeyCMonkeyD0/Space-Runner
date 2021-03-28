@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/coal_ore.png-b3a59e3ad055266f2681d19faeed934f.stex"
+path="res://.import/coal_ore.png-a5713683cbf790f7700cab64db0f7251.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/coal_ore.png"
-dest_files=[ "res://.import/coal_ore.png-b3a59e3ad055266f2681d19faeed934f.stex" ]
+source_file="res://Minecraft textures/block/coal_ore.png"
+dest_files=[ "res://.import/coal_ore.png-a5713683cbf790f7700cab64db0f7251.stex" ]
 
 [params]
 

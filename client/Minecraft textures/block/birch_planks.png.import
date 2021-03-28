@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/birch_planks.png-4679a56b3b2ecacb4aa2704e342ade78.stex"
+path="res://.import/birch_planks.png-7f07e2e718160d6bfd4d86d8706bf46b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/birch_planks.png"
-dest_files=[ "res://.import/birch_planks.png-4679a56b3b2ecacb4aa2704e342ade78.stex" ]
+source_file="res://Minecraft textures/block/birch_planks.png"
+dest_files=[ "res://.import/birch_planks.png-7f07e2e718160d6bfd4d86d8706bf46b.stex" ]
 
 [params]
 

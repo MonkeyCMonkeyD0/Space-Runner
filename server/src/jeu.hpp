@@ -5,6 +5,9 @@
 
 class Jeu {
 
+private : 
+
+
 public:
 
 	char mess[400];

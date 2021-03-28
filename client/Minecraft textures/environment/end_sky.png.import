@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/end_sky.png-7db81977eda1ef66ee94f73b1b0ccc08.stex"
+path="res://.import/end_sky.png-0c2355818f8227899bb663a20f2af94d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/environment/end_sky.png"
-dest_files=[ "res://.import/end_sky.png-7db81977eda1ef66ee94f73b1b0ccc08.stex" ]
+source_file="res://Minecraft textures/environment/end_sky.png"
+dest_files=[ "res://.import/end_sky.png-0c2355818f8227899bb663a20f2af94d.stex" ]
 
 [params]
 

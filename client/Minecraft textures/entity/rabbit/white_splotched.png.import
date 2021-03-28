@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/white_splotched.png-8af3b78927c1b0fc3b8bc521b0b450df.stex"
+path="res://.import/white_splotched.png-57be0022b9ba975d961ee56859aad28f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/rabbit/white_splotched.png"
-dest_files=[ "res://.import/white_splotched.png-8af3b78927c1b0fc3b8bc521b0b450df.stex" ]
+source_file="res://Minecraft textures/entity/rabbit/white_splotched.png"
+dest_files=[ "res://.import/white_splotched.png-57be0022b9ba975d961ee56859aad28f.stex" ]
 
 [params]
 

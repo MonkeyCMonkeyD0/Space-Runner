@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/knowledge_book.png-ec7c97170d5fb37ebd88c44ae2f15a95.stex"
+path="res://.import/knowledge_book.png-fec0454beedf88890cba790ceef79a7d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/knowledge_book.png"
-dest_files=[ "res://.import/knowledge_book.png-ec7c97170d5fb37ebd88c44ae2f15a95.stex" ]
+source_file="res://Minecraft textures/item/knowledge_book.png"
+dest_files=[ "res://.import/knowledge_book.png-fec0454beedf88890cba790ceef79a7d.stex" ]
 
 [params]
 

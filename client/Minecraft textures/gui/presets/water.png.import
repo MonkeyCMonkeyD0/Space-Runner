@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/water.png-84512865dc1248adf2c63907bb17e603.stex"
+path="res://.import/water.png-ef674f74509b1e425ce9135ceb131f71.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/gui/presets/water.png"
-dest_files=[ "res://.import/water.png-84512865dc1248adf2c63907bb17e603.stex" ]
+source_file="res://Minecraft textures/gui/presets/water.png"
+dest_files=[ "res://.import/water.png-ef674f74509b1e425ce9135ceb131f71.stex" ]
 
 [params]
 

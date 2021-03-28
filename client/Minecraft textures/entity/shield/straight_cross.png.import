@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/straight_cross.png-3ed538def38004c62626310c43562f14.stex"
+path="res://.import/straight_cross.png-f7a05c3c455be547106f7128c1893134.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/shield/straight_cross.png"
-dest_files=[ "res://.import/straight_cross.png-3ed538def38004c62626310c43562f14.stex" ]
+source_file="res://Minecraft textures/entity/shield/straight_cross.png"
+dest_files=[ "res://.import/straight_cross.png-f7a05c3c455be547106f7128c1893134.stex" ]
 
 [params]
 

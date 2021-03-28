@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/wheat.png-caed63584f058003dd2a8a44fb9a4e87.stex"
+path="res://.import/wheat.png-94ccbc28b8166b435a81bcfa24b48350.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/wheat.png"
-dest_files=[ "res://.import/wheat.png-caed63584f058003dd2a8a44fb9a4e87.stex" ]
+source_file="res://Minecraft textures/item/wheat.png"
+dest_files=[ "res://.import/wheat.png-94ccbc28b8166b435a81bcfa24b48350.stex" ]
 
 [params]
 

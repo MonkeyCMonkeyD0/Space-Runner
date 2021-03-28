@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/wolf_angry.png-2282fb8f4340ec5ff776080ab83826e6.stex"
+path="res://.import/wolf_angry.png-369ed135b6caed082bbfd6a72e704acc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/wolf/wolf_angry.png"
-dest_files=[ "res://.import/wolf_angry.png-2282fb8f4340ec5ff776080ab83826e6.stex" ]
+source_file="res://Minecraft textures/entity/wolf/wolf_angry.png"
+dest_files=[ "res://.import/wolf_angry.png-369ed135b6caed082bbfd6a72e704acc.stex" ]
 
 [params]
 

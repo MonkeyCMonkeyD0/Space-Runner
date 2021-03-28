@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/spectator_widgets.png-2b1a0c72830682786ea32aef68b56c24.stex"
+path="res://.import/spectator_widgets.png-7c592d659332feb7f7b184b0a69963be.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/gui/spectator_widgets.png"
-dest_files=[ "res://.import/spectator_widgets.png-2b1a0c72830682786ea32aef68b56c24.stex" ]
+source_file="res://Minecraft textures/gui/spectator_widgets.png"
+dest_files=[ "res://.import/spectator_widgets.png-7c592d659332feb7f7b184b0a69963be.stex" ]
 
 [params]
 

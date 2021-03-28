@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/iron_shovel.png-154f01a5f8a9f4bf56ef51d91db26c9d.stex"
+path="res://.import/iron_shovel.png-8420fe5042cb6a6c1dccaa739fa10939.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/iron_shovel.png"
-dest_files=[ "res://.import/iron_shovel.png-154f01a5f8a9f4bf56ef51d91db26c9d.stex" ]
+source_file="res://Minecraft textures/item/iron_shovel.png"
+dest_files=[ "res://.import/iron_shovel.png-8420fe5042cb6a6c1dccaa739fa10939.stex" ]
 
 [params]
 

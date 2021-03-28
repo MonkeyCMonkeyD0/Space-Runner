@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/oak_planks.png-22c751a50e75ae886b129bd9c89cbb76.stex"
+path="res://.import/oak_planks.png-d675d24166e8ddd3cd76ccc3bb9fd0b6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/oak_planks.png"
-dest_files=[ "res://.import/oak_planks.png-22c751a50e75ae886b129bd9c89cbb76.stex" ]
+source_file="res://Minecraft textures/block/oak_planks.png"
+dest_files=[ "res://.import/oak_planks.png-d675d24166e8ddd3cd76ccc3bb9fd0b6.stex" ]
 
 [params]
 

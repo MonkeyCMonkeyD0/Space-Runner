@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sponge.png-9c6c0b7ec02235e433f3fb946c6cc091.stex"
+path="res://.import/sponge.png-d6673e6bfb4b08c76f4b9e56504c972a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/sponge.png"
-dest_files=[ "res://.import/sponge.png-9c6c0b7ec02235e433f3fb946c6cc091.stex" ]
+source_file="res://Minecraft textures/block/sponge.png"
+dest_files=[ "res://.import/sponge.png-d6673e6bfb4b08c76f4b9e56504c972a.stex" ]
 
 [params]
 

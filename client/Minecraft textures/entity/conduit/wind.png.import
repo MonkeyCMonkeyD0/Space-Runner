@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/wind.png-a21fd2eb674001d6a4a8dfe188a446bb.stex"
+path="res://.import/wind.png-ebc637f01d67273cf6f00152b55d3107.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/conduit/wind.png"
-dest_files=[ "res://.import/wind.png-a21fd2eb674001d6a4a8dfe188a446bb.stex" ]
+source_file="res://Minecraft textures/entity/conduit/wind.png"
+dest_files=[ "res://.import/wind.png-ebc637f01d67273cf6f00152b55d3107.stex" ]
 
 [params]
 

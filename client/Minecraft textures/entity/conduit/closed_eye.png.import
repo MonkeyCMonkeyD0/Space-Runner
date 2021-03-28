@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/closed_eye.png-ed49a35f2fc221ce77952090710bf786.stex"
+path="res://.import/closed_eye.png-84d7f101118c8c5ff4b98e9c299ea176.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/conduit/closed_eye.png"
-dest_files=[ "res://.import/closed_eye.png-ed49a35f2fc221ce77952090710bf786.stex" ]
+source_file="res://Minecraft textures/entity/conduit/closed_eye.png"
+dest_files=[ "res://.import/closed_eye.png-84d7f101118c8c5ff4b98e9c299ea176.stex" ]
 
 [params]
 

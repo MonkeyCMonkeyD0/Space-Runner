@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/stone_hoe.png-5a22fb6ab672b43f03c029680da25854.stex"
+path="res://.import/stone_hoe.png-a33b7f9976c58c4f6ddeafd482c9ae74.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/stone_hoe.png"
-dest_files=[ "res://.import/stone_hoe.png-5a22fb6ab672b43f03c029680da25854.stex" ]
+source_file="res://Minecraft textures/item/stone_hoe.png"
+dest_files=[ "res://.import/stone_hoe.png-a33b7f9976c58c4f6ddeafd482c9ae74.stex" ]
 
 [params]
 

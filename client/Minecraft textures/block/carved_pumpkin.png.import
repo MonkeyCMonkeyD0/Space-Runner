@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/carved_pumpkin.png-ab262db2cdf20b50b6a726e08be4f64c.stex"
+path="res://.import/carved_pumpkin.png-b1c5709e14cabfeec7219e91d4654547.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/carved_pumpkin.png"
-dest_files=[ "res://.import/carved_pumpkin.png-ab262db2cdf20b50b6a726e08be4f64c.stex" ]
+source_file="res://Minecraft textures/block/carved_pumpkin.png"
+dest_files=[ "res://.import/carved_pumpkin.png-b1c5709e14cabfeec7219e91d4654547.stex" ]
 
 [params]
 

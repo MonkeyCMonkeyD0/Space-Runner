@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/birch_door_bottom.png-07b1dd2cfab5c3efd32e55cefe13e660.stex"
+path="res://.import/birch_door_bottom.png-d5d4afc0de140511e7967a5a105cb5ce.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/birch_door_bottom.png"
-dest_files=[ "res://.import/birch_door_bottom.png-07b1dd2cfab5c3efd32e55cefe13e660.stex" ]
+source_file="res://Minecraft textures/block/birch_door_bottom.png"
+dest_files=[ "res://.import/birch_door_bottom.png-d5d4afc0de140511e7967a5a105cb5ce.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/spider.png-6fa9bad8ebcd1561a2db1630607d3f26.stex"
+path="res://.import/spider.png-332c986fda298896db2f22d60a3de052.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/spider/spider.png"
-dest_files=[ "res://.import/spider.png-6fa9bad8ebcd1561a2db1630607d3f26.stex" ]
+source_file="res://Minecraft textures/entity/spider/spider.png"
+dest_files=[ "res://.import/spider.png-332c986fda298896db2f22d60a3de052.stex" ]
 
 [params]
 

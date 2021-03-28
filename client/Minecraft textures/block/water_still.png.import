@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/water_still.png-92e88db4757776aea0355bce64776d04.stex"
+path="res://.import/water_still.png-4f4d65e9767f1c0acd5fc57f5e5816bb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/water_still.png"
-dest_files=[ "res://.import/water_still.png-92e88db4757776aea0355bce64776d04.stex" ]
+source_file="res://Minecraft textures/block/water_still.png"
+dest_files=[ "res://.import/water_still.png-4f4d65e9767f1c0acd5fc57f5e5816bb.stex" ]
 
 [params]
 

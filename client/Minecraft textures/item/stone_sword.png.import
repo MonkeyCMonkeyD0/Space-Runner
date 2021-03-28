@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/stone_sword.png-14051202e883f0e97de71248aee6aa28.stex"
+path="res://.import/stone_sword.png-730aa53efd1ad960015cee9e5374c664.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/stone_sword.png"
-dest_files=[ "res://.import/stone_sword.png-14051202e883f0e97de71248aee6aa28.stex" ]
+source_file="res://Minecraft textures/item/stone_sword.png"
+dest_files=[ "res://.import/stone_sword.png-730aa53efd1ad960015cee9e5374c664.stex" ]
 
 [params]
 

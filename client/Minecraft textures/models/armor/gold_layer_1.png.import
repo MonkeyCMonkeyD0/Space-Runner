@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/gold_layer_1.png-d5fe03fa7a5431459b781813658e1967.stex"
+path="res://.import/gold_layer_1.png-8e1b698a42f242a083781eb1670a2916.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/models/armor/gold_layer_1.png"
-dest_files=[ "res://.import/gold_layer_1.png-d5fe03fa7a5431459b781813658e1967.stex" ]
+source_file="res://Minecraft textures/models/armor/gold_layer_1.png"
+dest_files=[ "res://.import/gold_layer_1.png-8e1b698a42f242a083781eb1670a2916.stex" ]
 
 [params]
 

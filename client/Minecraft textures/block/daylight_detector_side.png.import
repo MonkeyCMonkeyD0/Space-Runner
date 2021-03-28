@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/daylight_detector_side.png-aca4d8f051ea02576574a27ea1420355.stex"
+path="res://.import/daylight_detector_side.png-a32b768df81e3ebe9442845bf7c3a911.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/daylight_detector_side.png"
-dest_files=[ "res://.import/daylight_detector_side.png-aca4d8f051ea02576574a27ea1420355.stex" ]
+source_file="res://Minecraft textures/block/daylight_detector_side.png"
+dest_files=[ "res://.import/daylight_detector_side.png-a32b768df81e3ebe9442845bf7c3a911.stex" ]
 
 [params]
 

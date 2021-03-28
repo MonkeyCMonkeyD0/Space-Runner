@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/brown_shulker_box.png-fb4eba9991912055333057805bf839d3.stex"
+path="res://.import/brown_shulker_box.png-2d23bed93cab1bec6a55080c13173739.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/brown_shulker_box.png"
-dest_files=[ "res://.import/brown_shulker_box.png-fb4eba9991912055333057805bf839d3.stex" ]
+source_file="res://Minecraft textures/block/brown_shulker_box.png"
+dest_files=[ "res://.import/brown_shulker_box.png-2d23bed93cab1bec6a55080c13173739.stex" ]
 
 [params]
 

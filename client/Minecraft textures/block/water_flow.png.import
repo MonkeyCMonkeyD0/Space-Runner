@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/water_flow.png-32e8aaf55844d304873d2cde1fb51a78.stex"
+path="res://.import/water_flow.png-0233f0ec4760efcdfe90d957d83ca52b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/water_flow.png"
-dest_files=[ "res://.import/water_flow.png-32e8aaf55844d304873d2cde1fb51a78.stex" ]
+source_file="res://Minecraft textures/block/water_flow.png"
+dest_files=[ "res://.import/water_flow.png-0233f0ec4760efcdfe90d957d83ca52b.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/obsidian.png-67540e035fd19c86bdaab8df395d9e3a.stex"
+path="res://.import/obsidian.png-17331bdd548147eb7bb075b115180862.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/obsidian.png"
-dest_files=[ "res://.import/obsidian.png-67540e035fd19c86bdaab8df395d9e3a.stex" ]
+source_file="res://Minecraft textures/block/obsidian.png"
+dest_files=[ "res://.import/obsidian.png-17331bdd548147eb7bb075b115180862.stex" ]
 
 [params]
 

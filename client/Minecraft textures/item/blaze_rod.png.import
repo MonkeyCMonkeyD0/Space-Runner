@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/blaze_rod.png-3bbd8a94387a8f5701ab4115ced31834.stex"
+path="res://.import/blaze_rod.png-6b1325f4c4f75efae42efe4af0312d69.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/blaze_rod.png"
-dest_files=[ "res://.import/blaze_rod.png-3bbd8a94387a8f5701ab4115ced31834.stex" ]
+source_file="res://Minecraft textures/item/blaze_rod.png"
+dest_files=[ "res://.import/blaze_rod.png-6b1325f4c4f75efae42efe4af0312d69.stex" ]
 
 [params]
 

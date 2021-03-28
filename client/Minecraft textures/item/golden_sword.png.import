@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/golden_sword.png-952bf7ea01f828f4bcc4eab298e773c0.stex"
+path="res://.import/golden_sword.png-8fdcd7711551ccab54a13b44ec3bf9fc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/golden_sword.png"
-dest_files=[ "res://.import/golden_sword.png-952bf7ea01f828f4bcc4eab298e773c0.stex" ]
+source_file="res://Minecraft textures/item/golden_sword.png"
+dest_files=[ "res://.import/golden_sword.png-8fdcd7711551ccab54a13b44ec3bf9fc.stex" ]
 
 [params]
 

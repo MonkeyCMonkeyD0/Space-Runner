@@ -2,7 +2,7 @@
 #include <map>
 #include <list>
 #include <algorithm>
-
+#include <random>
 
 
 class Knapsack {
@@ -31,11 +31,18 @@ private:
 	unsigned int maxWeight;
 	unsigned int population;
 	double survivalRate;
+<<<<<<< HEAD:server/knapsack algo/knapsack.hpp
 	unsigned int maxIteration;
 	unsigned int geneSize;
 
 
 	std::map<unsigned long long int, int> pop;
+=======
+	unsigned int geneSize;
+	unsigned int maxIteration;
+
+	std::map<unsigned long long int,unsigned int> pop;
+>>>>>>> 5157d59378d9227ea5494492d37668d8d297fed2:server/src/knapsack.hpp
 
 	// std::vector<int> opt;
 	// std::vector<int> parents;

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/gradient_up.png-b76607bc4c953cee70c6c96f7b2e95f5.stex"
+path="res://.import/gradient_up.png-b329b772d9e20b1ecb7539d5328e081a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/shield/gradient_up.png"
-dest_files=[ "res://.import/gradient_up.png-b76607bc4c953cee70c6c96f7b2e95f5.stex" ]
+source_file="res://Minecraft textures/entity/shield/gradient_up.png"
+dest_files=[ "res://.import/gradient_up.png-b329b772d9e20b1ecb7539d5328e081a.stex" ]
 
 [params]
 

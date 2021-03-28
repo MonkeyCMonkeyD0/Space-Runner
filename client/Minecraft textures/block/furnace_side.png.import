@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/furnace_side.png-089063b15a0999c2cabe7f7b72bab1e3.stex"
+path="res://.import/furnace_side.png-86a10cb5c6806d0accb9c0684f7c0beb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/furnace_side.png"
-dest_files=[ "res://.import/furnace_side.png-089063b15a0999c2cabe7f7b72bab1e3.stex" ]
+source_file="res://Minecraft textures/block/furnace_side.png"
+dest_files=[ "res://.import/furnace_side.png-86a10cb5c6806d0accb9c0684f7c0beb.stex" ]
 
 [params]
 

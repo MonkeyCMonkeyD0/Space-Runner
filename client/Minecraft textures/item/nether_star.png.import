@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/nether_star.png-c7a8f11d8d536b2938e3f5f395a6a31e.stex"
+path="res://.import/nether_star.png-53bed6433e97d1d7b4b006d4818c1cf9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/nether_star.png"
-dest_files=[ "res://.import/nether_star.png-c7a8f11d8d536b2938e3f5f395a6a31e.stex" ]
+source_file="res://Minecraft textures/item/nether_star.png"
+dest_files=[ "res://.import/nether_star.png-53bed6433e97d1d7b4b006d4818c1cf9.stex" ]
 
 [params]
 

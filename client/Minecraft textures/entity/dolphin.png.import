@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/dolphin.png-38ae75659edc4166dc3cbd92b63ca22f.stex"
+path="res://.import/dolphin.png-983bc3f637ba0bdc057397b545e7f64d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/dolphin.png"
-dest_files=[ "res://.import/dolphin.png-38ae75659edc4166dc3cbd92b63ca22f.stex" ]
+source_file="res://Minecraft textures/entity/dolphin.png"
+dest_files=[ "res://.import/dolphin.png-983bc3f637ba0bdc057397b545e7f64d.stex" ]
 
 [params]
 

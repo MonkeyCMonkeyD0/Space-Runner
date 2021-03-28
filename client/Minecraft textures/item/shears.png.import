@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/shears.png-bccfcf4ca8c81ad5a10327b68e4e162e.stex"
+path="res://.import/shears.png-8bab12bcc3ca202f047bdf09d4dfcbb4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/shears.png"
-dest_files=[ "res://.import/shears.png-bccfcf4ca8c81ad5a10327b68e4e162e.stex" ]
+source_file="res://Minecraft textures/item/shears.png"
+dest_files=[ "res://.import/shears.png-8bab12bcc3ca202f047bdf09d4dfcbb4.stex" ]
 
 [params]
 

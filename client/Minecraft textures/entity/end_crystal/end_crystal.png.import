@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/end_crystal.png-f4896896766064cb81e9935da009678b.stex"
+path="res://.import/end_crystal.png-dbe7ee8dceb6a50ec9663512e3dd353e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/end_crystal/end_crystal.png"
-dest_files=[ "res://.import/end_crystal.png-f4896896766064cb81e9935da009678b.stex" ]
+source_file="res://Minecraft textures/entity/end_crystal/end_crystal.png"
+dest_files=[ "res://.import/end_crystal.png-dbe7ee8dceb6a50ec9663512e3dd353e.stex" ]
 
 [params]
 

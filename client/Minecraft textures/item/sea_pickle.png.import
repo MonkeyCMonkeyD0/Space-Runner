@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sea_pickle.png-e56827e0d2dfb28f66c3121a895f6e6a.stex"
+path="res://.import/sea_pickle.png-ac1101f77f695d059e41bc67bc84967d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/sea_pickle.png"
-dest_files=[ "res://.import/sea_pickle.png-e56827e0d2dfb28f66c3121a895f6e6a.stex" ]
+source_file="res://Minecraft textures/item/sea_pickle.png"
+dest_files=[ "res://.import/sea_pickle.png-ac1101f77f695d059e41bc67bc84967d.stex" ]
 
 [params]
 

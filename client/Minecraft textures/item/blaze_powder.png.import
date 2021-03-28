@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/blaze_powder.png-ec04850239cff821c693a7e26f5e247c.stex"
+path="res://.import/blaze_powder.png-f8f7b0a4808cf0425cb515f4406c9ac1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/blaze_powder.png"
-dest_files=[ "res://.import/blaze_powder.png-ec04850239cff821c693a7e26f5e247c.stex" ]
+source_file="res://Minecraft textures/item/blaze_powder.png"
+dest_files=[ "res://.import/blaze_powder.png-f8f7b0a4808cf0425cb515f4406c9ac1.stex" ]
 
 [params]
 

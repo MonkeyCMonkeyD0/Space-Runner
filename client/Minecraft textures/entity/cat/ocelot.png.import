@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ocelot.png-a39118eb123e0bfd6feed7a14e8a270c.stex"
+path="res://.import/ocelot.png-9f1b1b99865bb2b52f4f9036a684ab7e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/cat/ocelot.png"
-dest_files=[ "res://.import/ocelot.png-a39118eb123e0bfd6feed7a14e8a270c.stex" ]
+source_file="res://Minecraft textures/entity/cat/ocelot.png"
+dest_files=[ "res://.import/ocelot.png-9f1b1b99865bb2b52f4f9036a684ab7e.stex" ]
 
 [params]
 

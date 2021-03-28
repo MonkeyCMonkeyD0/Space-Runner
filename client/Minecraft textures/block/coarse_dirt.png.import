@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/coarse_dirt.png-fb47cd530d7cb456fc00bd1808085a55.stex"
+path="res://.import/coarse_dirt.png-04308bf4c309f8ffa6dcb51de3389d57.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/coarse_dirt.png"
-dest_files=[ "res://.import/coarse_dirt.png-fb47cd530d7cb456fc00bd1808085a55.stex" ]
+source_file="res://Minecraft textures/block/coarse_dirt.png"
+dest_files=[ "res://.import/coarse_dirt.png-04308bf4c309f8ffa6dcb51de3389d57.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/big_sea_turtle.png-a0be44d45008aae8a94028db4fc47e54.stex"
+path="res://.import/big_sea_turtle.png-1f2fadc01e390b46103bcacccb37c5fd.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/turtle/big_sea_turtle.png"
-dest_files=[ "res://.import/big_sea_turtle.png-a0be44d45008aae8a94028db4fc47e54.stex" ]
+source_file="res://Minecraft textures/entity/turtle/big_sea_turtle.png"
+dest_files=[ "res://.import/big_sea_turtle.png-1f2fadc01e390b46103bcacccb37c5fd.stex" ]
 
 [params]
 

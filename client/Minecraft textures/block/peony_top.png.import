@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/peony_top.png-f4147ae5d923d0a2cac00f64a794d3b5.stex"
+path="res://.import/peony_top.png-b6413e6f0c68144c0c69cdef637f2dd6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/peony_top.png"
-dest_files=[ "res://.import/peony_top.png-f4147ae5d923d0a2cac00f64a794d3b5.stex" ]
+source_file="res://Minecraft textures/block/peony_top.png"
+dest_files=[ "res://.import/peony_top.png-b6413e6f0c68144c0c69cdef637f2dd6.stex" ]
 
 [params]
 

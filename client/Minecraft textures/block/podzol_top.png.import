@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/podzol_top.png-007bb09c1dfa45edf2d0c38c556bfbf1.stex"
+path="res://.import/podzol_top.png-4860bcea6153afb799ca6b78a4cc548e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/podzol_top.png"
-dest_files=[ "res://.import/podzol_top.png-007bb09c1dfa45edf2d0c38c556bfbf1.stex" ]
+source_file="res://Minecraft textures/block/podzol_top.png"
+dest_files=[ "res://.import/podzol_top.png-4860bcea6153afb799ca6b78a4cc548e.stex" ]
 
 [params]
 
