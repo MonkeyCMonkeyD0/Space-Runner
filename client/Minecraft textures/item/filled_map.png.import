@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/filled_map.png-f733d1be2fb9008ba37692b3714cb7a7.stex"
+path="res://.import/filled_map.png-187fc055c601a266be42dedff70fd9e9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/filled_map.png"
-dest_files=[ "res://.import/filled_map.png-f733d1be2fb9008ba37692b3714cb7a7.stex" ]
+source_file="res://Minecraft textures/item/filled_map.png"
+dest_files=[ "res://.import/filled_map.png-187fc055c601a266be42dedff70fd9e9.stex" ]
 
 [params]
 

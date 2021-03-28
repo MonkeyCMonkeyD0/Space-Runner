@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/crafting_table.png-689ca5e756d42fe29c2cf23941be6fac.stex"
+path="res://.import/crafting_table.png-9975cbbb030d0df120236307f23a225e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/gui/container/crafting_table.png"
-dest_files=[ "res://.import/crafting_table.png-689ca5e756d42fe29c2cf23941be6fac.stex" ]
+source_file="res://Minecraft textures/gui/container/crafting_table.png"
+dest_files=[ "res://.import/crafting_table.png-9975cbbb030d0df120236307f23a225e.stex" ]
 
 [params]
 

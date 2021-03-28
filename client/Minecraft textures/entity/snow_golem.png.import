@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/snow_golem.png-b416fab74df6ac0c07e768a2e09e770e.stex"
+path="res://.import/snow_golem.png-2d748b76c560ea241bf8c7d63a72c353.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/snow_golem.png"
-dest_files=[ "res://.import/snow_golem.png-b416fab74df6ac0c07e768a2e09e770e.stex" ]
+source_file="res://Minecraft textures/entity/snow_golem.png"
+dest_files=[ "res://.import/snow_golem.png-2d748b76c560ea241bf8c7d63a72c353.stex" ]
 
 [params]
 

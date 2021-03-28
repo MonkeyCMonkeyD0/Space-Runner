@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cooked_rabbit.png-6af8d125554065a3c4b42c419f85888f.stex"
+path="res://.import/cooked_rabbit.png-e99e12a8f4dcf119af969ed891e22318.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/cooked_rabbit.png"
-dest_files=[ "res://.import/cooked_rabbit.png-6af8d125554065a3c4b42c419f85888f.stex" ]
+source_file="res://Minecraft textures/item/cooked_rabbit.png"
+dest_files=[ "res://.import/cooked_rabbit.png-e99e12a8f4dcf119af969ed891e22318.stex" ]
 
 [params]
 

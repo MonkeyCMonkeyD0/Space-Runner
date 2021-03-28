@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/spit.png-9778c862a3a0d8756ab0b6e9962f86ec.stex"
+path="res://.import/spit.png-76e87041cade7023e72513677ccae078.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/llama/spit.png"
-dest_files=[ "res://.import/spit.png-9778c862a3a0d8756ab0b6e9962f86ec.stex" ]
+source_file="res://Minecraft textures/entity/llama/spit.png"
+dest_files=[ "res://.import/spit.png-76e87041cade7023e72513677ccae078.stex" ]
 
 [params]
 

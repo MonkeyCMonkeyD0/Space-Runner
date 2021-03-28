@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/purple.png-a389f442cf9d0424a410f71fdbafb573.stex"
+path="res://.import/purple.png-ed3c79773e2db4842e33d0b26d0b8d01.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/llama/decor/purple.png"
-dest_files=[ "res://.import/purple.png-a389f442cf9d0424a410f71fdbafb573.stex" ]
+source_file="res://Minecraft textures/entity/llama/decor/purple.png"
+dest_files=[ "res://.import/purple.png-ed3c79773e2db4842e33d0b26d0b8d01.stex" ]
 
 [params]
 

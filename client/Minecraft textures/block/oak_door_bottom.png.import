@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/oak_door_bottom.png-29de1db941cd0f97a1217521feded773.stex"
+path="res://.import/oak_door_bottom.png-bc687682deb89e5d4d8a9ea181c9e64b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/oak_door_bottom.png"
-dest_files=[ "res://.import/oak_door_bottom.png-29de1db941cd0f97a1217521feded773.stex" ]
+source_file="res://Minecraft textures/block/oak_door_bottom.png"
+dest_files=[ "res://.import/oak_door_bottom.png-bc687682deb89e5d4d8a9ea181c9e64b.stex" ]
 
 [params]
 

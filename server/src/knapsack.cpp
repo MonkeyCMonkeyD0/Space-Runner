@@ -1,11 +1,6 @@
 #include "knapsack.hpp"
 
 
-bool cmp(std::pair<unsigned long long int, int> & a, std::pair<unsigned long long int, int> & b)
-{
-	return a.second < b.second;
-}
-
 
 Knapsack::Knapsack(std::vector<unsigned int> weights, std::vector<unsigned int> profits, unsigned int max_weight, unsigned int population = 500, double survival_rate = 0.5, unsigned int max_iteration = 15000)
 	: weights(weights), profits(profits), maxWeight(max_weight), population(population), survivalRate(survival_rate), maxIteration(max_iteration), geneSize(weights.size())
@@ -44,6 +39,12 @@ int Knapsack::fitness(unsigned long long int gene)
 		return sum_p;
 }
 
+
+bool cmp(std::pair<unsigned long long int, int> & a, std::pair<unsigned long long int, int> & b)
+{
+	return a.second < b.second;
+}
+
 void Knapsack::evaluation()
 {
 	std::vector<std::pair<unsigned long long int, int>> sorted_map;
@@ -71,15 +72,17 @@ unsigned long long int Knapsack::mutation(unsigned long long int gene, int n)
 		gene ^= 1UL << distrib(gen);
 }
 
-std::vector<unsigned long long int> Knapsack::crossover(unsigned long long int g1, unsigned long long int g2, unsigned int break_point)
+unsigned long long int Knapsack::crossover(unsigned long long int g1, unsigned long long int g2, unsigned int break_point)
 {
-	return std::vector<unsigned long long int>({
-		((g1 >> break_point) << break_point) | (g2 & ((1 << break_point) - 1)),
-		((g2 >> break_point) << break_point) | (g1 & ((1 << break_point) - 1))
-	});
+	return ((g1 >> break_point) << break_point) | (g2 & ((1 << break_point) - 1));
 }
 
 void Knapsack::run()
 {
-	
+	for (unsigned int iteration = 0; iteration < this->maxIteration; ++iteration) {
+		this->evaluation();
+		for (unsigned int i = this->pop.size(); i < this->population; ++i) {
+			
+		}
+	}
 }

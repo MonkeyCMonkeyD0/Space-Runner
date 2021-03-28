@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/leather_helmet_overlay.png-0928158b606765a5044aa8d2de75549c.stex"
+path="res://.import/leather_helmet_overlay.png-1ab9ab7b6d46d709764e8c44e7f53517.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/leather_helmet_overlay.png"
-dest_files=[ "res://.import/leather_helmet_overlay.png-0928158b606765a5044aa8d2de75549c.stex" ]
+source_file="res://Minecraft textures/item/leather_helmet_overlay.png"
+dest_files=[ "res://.import/leather_helmet_overlay.png-1ab9ab7b6d46d709764e8c44e7f53517.stex" ]
 
 [params]
 

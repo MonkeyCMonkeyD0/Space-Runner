@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/activator_rail.png-825d35d006599bd68ce59c3b5b02ed36.stex"
+path="res://.import/activator_rail.png-305c73fa491e3f8a9e731ea2719999d6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/activator_rail.png"
-dest_files=[ "res://.import/activator_rail.png-825d35d006599bd68ce59c3b5b02ed36.stex" ]
+source_file="res://Minecraft textures/block/activator_rail.png"
+dest_files=[ "res://.import/activator_rail.png-305c73fa491e3f8a9e731ea2719999d6.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/toast.png-bf09894908e74d6f72ce35ea5cc0f5e0.stex"
+path="res://.import/toast.png-2c01f940ec5eade027bd1e7e0f67ef85.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/rabbit/toast.png"
-dest_files=[ "res://.import/toast.png-bf09894908e74d6f72ce35ea5cc0f5e0.stex" ]
+source_file="res://Minecraft textures/entity/rabbit/toast.png"
+dest_files=[ "res://.import/toast.png-2c01f940ec5eade027bd1e7e0f67ef85.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/chest_minecart.png-1c6262041e062d119c282aa8ecd370a2.stex"
+path="res://.import/chest_minecart.png-afec0866bed98db42d08cf4d39f72e81.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/chest_minecart.png"
-dest_files=[ "res://.import/chest_minecart.png-1c6262041e062d119c282aa8ecd370a2.stex" ]
+source_file="res://Minecraft textures/item/chest_minecart.png"
+dest_files=[ "res://.import/chest_minecart.png-afec0866bed98db42d08cf4d39f72e81.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/grass_path_top.png-f91540d0f6c6ceee68470688e86b32b6.stex"
+path="res://.import/grass_path_top.png-2cc99ffcdcccb3c9b6eed80124fd0c84.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/grass_path_top.png"
-dest_files=[ "res://.import/grass_path_top.png-f91540d0f6c6ceee68470688e86b32b6.stex" ]
+source_file="res://Minecraft textures/block/grass_path_top.png"
+dest_files=[ "res://.import/grass_path_top.png-2cc99ffcdcccb3c9b6eed80124fd0c84.stex" ]
 
 [params]
 

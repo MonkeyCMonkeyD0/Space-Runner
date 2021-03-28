@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/zombie_villager.png-d45bd849dcc3ae3cf61f6a7fad3a8743.stex"
+path="res://.import/zombie_villager.png-94b5539906d720b6b505d4515207f411.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/zombie_villager/zombie_villager.png"
-dest_files=[ "res://.import/zombie_villager.png-d45bd849dcc3ae3cf61f6a7fad3a8743.stex" ]
+source_file="res://Minecraft textures/entity/zombie_villager/zombie_villager.png"
+dest_files=[ "res://.import/zombie_villager.png-94b5539906d720b6b505d4515207f411.stex" ]
 
 [params]
 

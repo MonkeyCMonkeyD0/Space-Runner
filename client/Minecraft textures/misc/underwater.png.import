@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/underwater.png-2d6b37d368432600b94f4f93fc0ce21f.stex"
+path="res://.import/underwater.png-4cde06c4fe4e77f9b99c55c1df54f6e0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/misc/underwater.png"
-dest_files=[ "res://.import/underwater.png-2d6b37d368432600b94f4f93fc0ce21f.stex" ]
+source_file="res://Minecraft textures/misc/underwater.png"
+dest_files=[ "res://.import/underwater.png-4cde06c4fe4e77f9b99c55c1df54f6e0.stex" ]
 
 [params]
 

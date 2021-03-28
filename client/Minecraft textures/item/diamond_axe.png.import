@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/diamond_axe.png-ee22fd5669188090de2b8ee13be9b855.stex"
+path="res://.import/diamond_axe.png-3fa337d4a1b5619ef6cacdd26492fcd1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/diamond_axe.png"
-dest_files=[ "res://.import/diamond_axe.png-ee22fd5669188090de2b8ee13be9b855.stex" ]
+source_file="res://Minecraft textures/item/diamond_axe.png"
+dest_files=[ "res://.import/diamond_axe.png-3fa337d4a1b5619ef6cacdd26492fcd1.stex" ]
 
 [params]
 

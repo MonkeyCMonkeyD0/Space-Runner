@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/dark_oak_trapdoor.png-d82afdc02a7497b014200c4561eca458.stex"
+path="res://.import/dark_oak_trapdoor.png-c090be1883abe1fa4377aae3b38e115a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/dark_oak_trapdoor.png"
-dest_files=[ "res://.import/dark_oak_trapdoor.png-d82afdc02a7497b014200c4561eca458.stex" ]
+source_file="res://Minecraft textures/block/dark_oak_trapdoor.png"
+dest_files=[ "res://.import/dark_oak_trapdoor.png-c090be1883abe1fa4377aae3b38e115a.stex" ]
 
 [params]
 

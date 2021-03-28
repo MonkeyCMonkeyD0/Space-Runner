@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/flower_pot.png-2cb399e6dae70b05febbb0584a09a1fb.stex"
+path="res://.import/flower_pot.png-8942943946567dd87937e4497d438e52.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/flower_pot.png"
-dest_files=[ "res://.import/flower_pot.png-2cb399e6dae70b05febbb0584a09a1fb.stex" ]
+source_file="res://Minecraft textures/item/flower_pot.png"
+dest_files=[ "res://.import/flower_pot.png-8942943946567dd87937e4497d438e52.stex" ]
 
 [params]
 

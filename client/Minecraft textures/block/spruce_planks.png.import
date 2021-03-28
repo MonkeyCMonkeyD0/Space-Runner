@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/spruce_planks.png-1b5b2b07d6cec083d568b1b3b5860b81.stex"
+path="res://.import/spruce_planks.png-c73cf403ad245c83f8f67fd280b6299c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/spruce_planks.png"
-dest_files=[ "res://.import/spruce_planks.png-1b5b2b07d6cec083d568b1b3b5860b81.stex" ]
+source_file="res://Minecraft textures/block/spruce_planks.png"
+dest_files=[ "res://.import/spruce_planks.png-c73cf403ad245c83f8f67fd280b6299c.stex" ]
 
 [params]
 

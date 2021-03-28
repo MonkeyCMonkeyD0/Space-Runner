@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/base.png-17e65bb109196b87e4702d710d40e449.stex"
+path="res://.import/base.png-0f31dfdc2b56c6309716ff18cc8fa882.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/shield/base.png"
-dest_files=[ "res://.import/base.png-17e65bb109196b87e4702d710d40e449.stex" ]
+source_file="res://Minecraft textures/entity/shield/base.png"
+dest_files=[ "res://.import/base.png-0f31dfdc2b56c6309716ff18cc8fa882.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/diamond_leggings.png-9dadb8c29b05537ce45a8664541f2bb5.stex"
+path="res://.import/diamond_leggings.png-7326361e47a1d6b782fa3f4082e3773e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/diamond_leggings.png"
-dest_files=[ "res://.import/diamond_leggings.png-9dadb8c29b05537ce45a8664541f2bb5.stex" ]
+source_file="res://Minecraft textures/item/diamond_leggings.png"
+dest_files=[ "res://.import/diamond_leggings.png-7326361e47a1d6b782fa3f4082e3773e.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bucket.png-7be224cb8aa9072fa15a7d7e08b3375d.stex"
+path="res://.import/bucket.png-52b9eb7d7bee59ad5eb2b05fce00b42d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/bucket.png"
-dest_files=[ "res://.import/bucket.png-7be224cb8aa9072fa15a7d7e08b3375d.stex" ]
+source_file="res://Minecraft textures/item/bucket.png"
+dest_files=[ "res://.import/bucket.png-52b9eb7d7bee59ad5eb2b05fce00b42d.stex" ]
 
 [params]
 

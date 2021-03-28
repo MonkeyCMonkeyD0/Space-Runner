@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cracked_stone_bricks.png-d44e9a77ac4c0a72bdb646ac1b5ea76b.stex"
+path="res://.import/cracked_stone_bricks.png-770491d1e9136442bdeb78da68512744.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/cracked_stone_bricks.png"
-dest_files=[ "res://.import/cracked_stone_bricks.png-d44e9a77ac4c0a72bdb646ac1b5ea76b.stex" ]
+source_file="res://Minecraft textures/block/cracked_stone_bricks.png"
+dest_files=[ "res://.import/cracked_stone_bricks.png-770491d1e9136442bdeb78da68512744.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/zombie_priest.png-e2999070875cf678044107b52a6cb39c.stex"
+path="res://.import/zombie_priest.png-7ce6001ee7a3c9f2e5e79b011af15a4b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/zombie_villager/zombie_priest.png"
-dest_files=[ "res://.import/zombie_priest.png-e2999070875cf678044107b52a6cb39c.stex" ]
+source_file="res://Minecraft textures/entity/zombie_villager/zombie_priest.png"
+dest_files=[ "res://.import/zombie_priest.png-7ce6001ee7a3c9f2e5e79b011af15a4b.stex" ]
 
 [params]
 

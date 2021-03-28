@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/hopper.png-ff193bed32d36c0a8caa830c6617363b.stex"
+path="res://.import/hopper.png-80c0fb33f4ab856ab4480f7116dcf686.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/hopper.png"
-dest_files=[ "res://.import/hopper.png-ff193bed32d36c0a8caa830c6617363b.stex" ]
+source_file="res://Minecraft textures/item/hopper.png"
+dest_files=[ "res://.import/hopper.png-80c0fb33f4ab856ab4480f7116dcf686.stex" ]
 
 [params]
 

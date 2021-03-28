@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/guardian_elder.png-cde3bd4842b7f4f34251916a3cac0bad.stex"
+path="res://.import/guardian_elder.png-5f0c055cd9529e72ccc2e045cb701721.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/guardian_elder.png"
-dest_files=[ "res://.import/guardian_elder.png-cde3bd4842b7f4f34251916a3cac0bad.stex" ]
+source_file="res://Minecraft textures/entity/guardian_elder.png"
+dest_files=[ "res://.import/guardian_elder.png-5f0c055cd9529e72ccc2e045cb701721.stex" ]
 
 [params]
 

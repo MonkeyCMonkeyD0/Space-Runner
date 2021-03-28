@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/mossy_stone_bricks.png-9a8da765c7286e929e67b7540410d344.stex"
+path="res://.import/mossy_stone_bricks.png-036ba31e8e515d01ea854c5c6bd8d85a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/mossy_stone_bricks.png"
-dest_files=[ "res://.import/mossy_stone_bricks.png-9a8da765c7286e929e67b7540410d344.stex" ]
+source_file="res://Minecraft textures/block/mossy_stone_bricks.png"
+dest_files=[ "res://.import/mossy_stone_bricks.png-036ba31e8e515d01ea854c5c6bd8d85a.stex" ]
 
 [params]
 

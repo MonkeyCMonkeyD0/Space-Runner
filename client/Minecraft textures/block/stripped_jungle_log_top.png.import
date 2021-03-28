@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/stripped_jungle_log_top.png-1038e94c2986781dc421a2b01bc37662.stex"
+path="res://.import/stripped_jungle_log_top.png-c0423ccaba93bd1222445203d90cd512.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/stripped_jungle_log_top.png"
-dest_files=[ "res://.import/stripped_jungle_log_top.png-1038e94c2986781dc421a2b01bc37662.stex" ]
+source_file="res://Minecraft textures/block/stripped_jungle_log_top.png"
+dest_files=[ "res://.import/stripped_jungle_log_top.png-c0423ccaba93bd1222445203d90cd512.stex" ]
 
 [params]
 

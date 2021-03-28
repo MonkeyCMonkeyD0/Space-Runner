@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/iron_door_top.png-a32ec4ce0a13e6afd427f6fc6b5bb41a.stex"
+path="res://.import/iron_door_top.png-4c2b08d147f9e6297d827b7182bc2754.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/iron_door_top.png"
-dest_files=[ "res://.import/iron_door_top.png-a32ec4ce0a13e6afd427f6fc6b5bb41a.stex" ]
+source_file="res://Minecraft textures/block/iron_door_top.png"
+dest_files=[ "res://.import/iron_door_top.png-4c2b08d147f9e6297d827b7182bc2754.stex" ]
 
 [params]
 

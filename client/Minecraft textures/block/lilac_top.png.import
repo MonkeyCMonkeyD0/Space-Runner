@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/lilac_top.png-6c71707f4bd4f9c7e3d082491522beb8.stex"
+path="res://.import/lilac_top.png-341e8de6ee1dd6438b888d3959d32df5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/lilac_top.png"
-dest_files=[ "res://.import/lilac_top.png-6c71707f4bd4f9c7e3d082491522beb8.stex" ]
+source_file="res://Minecraft textures/block/lilac_top.png"
+dest_files=[ "res://.import/lilac_top.png-341e8de6ee1dd6438b888d3959d32df5.stex" ]
 
 [params]
 

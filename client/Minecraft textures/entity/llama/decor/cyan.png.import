@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cyan.png-86442fe65f4003c0cf6ed9063257029b.stex"
+path="res://.import/cyan.png-9b60599f983779bbf64fd134d9b36ae4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/llama/decor/cyan.png"
-dest_files=[ "res://.import/cyan.png-86442fe65f4003c0cf6ed9063257029b.stex" ]
+source_file="res://Minecraft textures/entity/llama/decor/cyan.png"
+dest_files=[ "res://.import/cyan.png-9b60599f983779bbf64fd134d9b36ae4.stex" ]
 
 [params]
 

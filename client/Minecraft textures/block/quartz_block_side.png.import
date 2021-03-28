@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/quartz_block_side.png-68c09392865c27cf830f66b47dd2dc01.stex"
+path="res://.import/quartz_block_side.png-eb948355406d9386eb214edaa6f01e82.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/quartz_block_side.png"
-dest_files=[ "res://.import/quartz_block_side.png-68c09392865c27cf830f66b47dd2dc01.stex" ]
+source_file="res://Minecraft textures/block/quartz_block_side.png"
+dest_files=[ "res://.import/quartz_block_side.png-eb948355406d9386eb214edaa6f01e82.stex" ]
 
 [params]
 

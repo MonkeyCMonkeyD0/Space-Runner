@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/firework_rocket.png-ed3444b63f00c229984b3581a3a7632f.stex"
+path="res://.import/firework_rocket.png-ff7f36be7a3d13f35faa4f8912c9db2d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/firework_rocket.png"
-dest_files=[ "res://.import/firework_rocket.png-ed3444b63f00c229984b3581a3a7632f.stex" ]
+source_file="res://Minecraft textures/item/firework_rocket.png"
+dest_files=[ "res://.import/firework_rocket.png-ff7f36be7a3d13f35faa4f8912c9db2d.stex" ]
 
 [params]
 

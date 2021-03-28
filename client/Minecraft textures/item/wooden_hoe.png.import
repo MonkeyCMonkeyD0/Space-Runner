@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/wooden_hoe.png-f82ff7e08c3d096f2accc0ae868555ad.stex"
+path="res://.import/wooden_hoe.png-23214d305cf6967e74f57c209beb2a8c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/wooden_hoe.png"
-dest_files=[ "res://.import/wooden_hoe.png-f82ff7e08c3d096f2accc0ae868555ad.stex" ]
+source_file="res://Minecraft textures/item/wooden_hoe.png"
+dest_files=[ "res://.import/wooden_hoe.png-23214d305cf6967e74f57c209beb2a8c.stex" ]
 
 [params]
 

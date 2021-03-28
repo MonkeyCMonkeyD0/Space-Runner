@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/fern.png-56d98bc86eeb79f99aa9d7e04daabf59.stex"
+path="res://.import/fern.png-4e3f2c951d96a41724ddd27b51f564b7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/fern.png"
-dest_files=[ "res://.import/fern.png-56d98bc86eeb79f99aa9d7e04daabf59.stex" ]
+source_file="res://Minecraft textures/block/fern.png"
+dest_files=[ "res://.import/fern.png-4e3f2c951d96a41724ddd27b51f564b7.stex" ]
 
 [params]
 

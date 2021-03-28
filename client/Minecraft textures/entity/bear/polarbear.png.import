@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/polarbear.png-2924f90c49e40af26cfea0fecfdd3698.stex"
+path="res://.import/polarbear.png-625bafed4480107167404cfd2d152c0f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/bear/polarbear.png"
-dest_files=[ "res://.import/polarbear.png-2924f90c49e40af26cfea0fecfdd3698.stex" ]
+source_file="res://Minecraft textures/entity/bear/polarbear.png"
+dest_files=[ "res://.import/polarbear.png-625bafed4480107167404cfd2d152c0f.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cut_red_sandstone.png-0fc95696131d9fd6c8ac32b9e14a9040.stex"
+path="res://.import/cut_red_sandstone.png-39646a06a79ff7c227bca720229f20b1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/cut_red_sandstone.png"
-dest_files=[ "res://.import/cut_red_sandstone.png-0fc95696131d9fd6c8ac32b9e14a9040.stex" ]
+source_file="res://Minecraft textures/block/cut_red_sandstone.png"
+dest_files=[ "res://.import/cut_red_sandstone.png-39646a06a79ff7c227bca720229f20b1.stex" ]
 
 [params]
 

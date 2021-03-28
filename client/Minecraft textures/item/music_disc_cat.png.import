@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/music_disc_cat.png-c7b12984d3ae28d0ff538e945c1795db.stex"
+path="res://.import/music_disc_cat.png-7c61d4b4c3f5e363ae9e872872a65b70.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/music_disc_cat.png"
-dest_files=[ "res://.import/music_disc_cat.png-c7b12984d3ae28d0ff538e945c1795db.stex" ]
+source_file="res://Minecraft textures/item/music_disc_cat.png"
+dest_files=[ "res://.import/music_disc_cat.png-7c61d4b4c3f5e363ae9e872872a65b70.stex" ]
 
 [params]
 

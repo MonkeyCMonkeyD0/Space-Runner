@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/lingering_potion.png-959c116b3975a9c15bf6206129d57d2c.stex"
+path="res://.import/lingering_potion.png-e0d406705ad83ec99dcf22ee2ecc71dc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/lingering_potion.png"
-dest_files=[ "res://.import/lingering_potion.png-959c116b3975a9c15bf6206129d57d2c.stex" ]
+source_file="res://Minecraft textures/item/lingering_potion.png"
+dest_files=[ "res://.import/lingering_potion.png-e0d406705ad83ec99dcf22ee2ecc71dc.stex" ]
 
 [params]
 

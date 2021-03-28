@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/birch_boat.png-0cf8e8eb311ab91cd8171941d300785d.stex"
+path="res://.import/birch_boat.png-8cbc36d63caf84fd426fe49b3c3ccafb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/birch_boat.png"
-dest_files=[ "res://.import/birch_boat.png-0cf8e8eb311ab91cd8171941d300785d.stex" ]
+source_file="res://Minecraft textures/item/birch_boat.png"
+dest_files=[ "res://.import/birch_boat.png-8cbc36d63caf84fd426fe49b3c3ccafb.stex" ]
 
 [params]
 

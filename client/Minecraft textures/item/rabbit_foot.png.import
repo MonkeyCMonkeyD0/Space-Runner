@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/rabbit_foot.png-6d097aa0b871d9acc47a9f932f068bdf.stex"
+path="res://.import/rabbit_foot.png-b16bf0aea32bd88d9caa0ad6f3da844f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/rabbit_foot.png"
-dest_files=[ "res://.import/rabbit_foot.png-6d097aa0b871d9acc47a9f932f068bdf.stex" ]
+source_file="res://Minecraft textures/item/rabbit_foot.png"
+dest_files=[ "res://.import/rabbit_foot.png-b16bf0aea32bd88d9caa0ad6f3da844f.stex" ]
 
 [params]
 

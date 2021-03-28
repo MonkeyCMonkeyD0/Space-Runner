@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/clay.png-f3b8a9d9f480155f08a9035b57f29624.stex"
+path="res://.import/clay.png-b51328fee147c560162f7bda88c54d1b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/clay.png"
-dest_files=[ "res://.import/clay.png-f3b8a9d9f480155f08a9035b57f29624.stex" ]
+source_file="res://Minecraft textures/block/clay.png"
+dest_files=[ "res://.import/clay.png-b51328fee147c560162f7bda88c54d1b.stex" ]
 
 [params]
 

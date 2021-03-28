@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/polished_diorite.png-8453e8b163d08cc071bc7014925c9ff4.stex"
+path="res://.import/polished_diorite.png-e7d9353d25b9b0d520073e1ce1679258.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/polished_diorite.png"
-dest_files=[ "res://.import/polished_diorite.png-8453e8b163d08cc071bc7014925c9ff4.stex" ]
+source_file="res://Minecraft textures/block/polished_diorite.png"
+dest_files=[ "res://.import/polished_diorite.png-e7d9353d25b9b0d520073e1ce1679258.stex" ]
 
 [params]
 

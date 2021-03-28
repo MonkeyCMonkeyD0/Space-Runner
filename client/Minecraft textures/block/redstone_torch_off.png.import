@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/redstone_torch_off.png-caa479a218dd3ccc130a1831bd2cfd26.stex"
+path="res://.import/redstone_torch_off.png-483a0c3ac729fc2f56b065b17af2fee1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/redstone_torch_off.png"
-dest_files=[ "res://.import/redstone_torch_off.png-caa479a218dd3ccc130a1831bd2cfd26.stex" ]
+source_file="res://Minecraft textures/block/redstone_torch_off.png"
+dest_files=[ "res://.import/redstone_torch_off.png-483a0c3ac729fc2f56b065b17af2fee1.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/fire_coral.png-24265cb141b09fbe9fdcf4e091ba7781.stex"
+path="res://.import/fire_coral.png-199a66894ab01a45aea95fc485774e89.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/fire_coral.png"
-dest_files=[ "res://.import/fire_coral.png-24265cb141b09fbe9fdcf4e091ba7781.stex" ]
+source_file="res://Minecraft textures/block/fire_coral.png"
+dest_files=[ "res://.import/fire_coral.png-199a66894ab01a45aea95fc485774e89.stex" ]
 
 [params]
 

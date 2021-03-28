@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/yellow.png-214215de6e2ba85c120e820ef83220ea.stex"
+path="res://.import/yellow.png-a8a1b828310253a0ffaa62134374a33c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/bed/yellow.png"
-dest_files=[ "res://.import/yellow.png-214215de6e2ba85c120e820ef83220ea.stex" ]
+source_file="res://Minecraft textures/entity/bed/yellow.png"
+dest_files=[ "res://.import/yellow.png-a8a1b828310253a0ffaa62134374a33c.stex" ]
 
 [params]
 

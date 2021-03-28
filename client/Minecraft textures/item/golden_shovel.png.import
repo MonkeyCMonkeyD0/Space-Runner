@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/golden_shovel.png-1192e622aec316797d9271379de12e65.stex"
+path="res://.import/golden_shovel.png-968a8731da76501d9459373dc462621e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/golden_shovel.png"
-dest_files=[ "res://.import/golden_shovel.png-1192e622aec316797d9271379de12e65.stex" ]
+source_file="res://Minecraft textures/item/golden_shovel.png"
+dest_files=[ "res://.import/golden_shovel.png-968a8731da76501d9459373dc462621e.stex" ]
 
 [params]
 

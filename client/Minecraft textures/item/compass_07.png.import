@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/compass_07.png-0f9b8d43183f8cd8b00fc0fbf6620f33.stex"
+path="res://.import/compass_07.png-fe8707a6f9a25776e8091aeb920efca7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/compass_07.png"
-dest_files=[ "res://.import/compass_07.png-0f9b8d43183f8cd8b00fc0fbf6620f33.stex" ]
+source_file="res://Minecraft textures/item/compass_07.png"
+dest_files=[ "res://.import/compass_07.png-fe8707a6f9a25776e8091aeb920efca7.stex" ]
 
 [params]
 

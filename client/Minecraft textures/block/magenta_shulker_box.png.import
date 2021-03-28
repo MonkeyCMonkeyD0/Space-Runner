@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/magenta_shulker_box.png-439aee961214196f64a0ed822952a3d1.stex"
+path="res://.import/magenta_shulker_box.png-69b32235f5bf2d05c6d16b33c7dfc796.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/magenta_shulker_box.png"
-dest_files=[ "res://.import/magenta_shulker_box.png-439aee961214196f64a0ed822952a3d1.stex" ]
+source_file="res://Minecraft textures/block/magenta_shulker_box.png"
+dest_files=[ "res://.import/magenta_shulker_box.png-69b32235f5bf2d05c6d16b33c7dfc796.stex" ]
 
 [params]
 

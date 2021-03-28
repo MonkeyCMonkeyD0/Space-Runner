@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/scute.png-cd192dc34652e01c56fe5459d9b1fe2c.stex"
+path="res://.import/scute.png-b7c259e46fc5137d59582fe147d4f0e7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/scute.png"
-dest_files=[ "res://.import/scute.png-cd192dc34652e01c56fe5459d9b1fe2c.stex" ]
+source_file="res://Minecraft textures/item/scute.png"
+dest_files=[ "res://.import/scute.png-b7c259e46fc5137d59582fe147d4f0e7.stex" ]
 
 [params]
 

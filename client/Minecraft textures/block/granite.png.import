@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/granite.png-61583ed80c2e432ffdb32d168d343dee.stex"
+path="res://.import/granite.png-b7626e19a21d84eedbea73e06c832a47.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/granite.png"
-dest_files=[ "res://.import/granite.png-61583ed80c2e432ffdb32d168d343dee.stex" ]
+source_file="res://Minecraft textures/block/granite.png"
+dest_files=[ "res://.import/granite.png-b7626e19a21d84eedbea73e06c832a47.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/recipe_book.png-b184cb9de1bb2f4895990aa47470b110.stex"
+path="res://.import/recipe_book.png-158c2e43ed2541d891f8d0b4e6153630.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/gui/recipe_book.png"
-dest_files=[ "res://.import/recipe_book.png-b184cb9de1bb2f4895990aa47470b110.stex" ]
+source_file="res://Minecraft textures/gui/recipe_book.png"
+dest_files=[ "res://.import/recipe_book.png-158c2e43ed2541d891f8d0b4e6153630.stex" ]
 
 [params]
 

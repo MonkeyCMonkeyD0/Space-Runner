@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cyan_shulker_box.png-7660e76c577e92adb30a3bdff9c45fda.stex"
+path="res://.import/cyan_shulker_box.png-0caaea89580b4215c0a6f829e99b95ac.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/cyan_shulker_box.png"
-dest_files=[ "res://.import/cyan_shulker_box.png-7660e76c577e92adb30a3bdff9c45fda.stex" ]
+source_file="res://Minecraft textures/block/cyan_shulker_box.png"
+dest_files=[ "res://.import/cyan_shulker_box.png-0caaea89580b4215c0a6f829e99b95ac.stex" ]
 
 [params]
 

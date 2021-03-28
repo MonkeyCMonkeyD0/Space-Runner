@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/lapis_ore.png-d439d673e3b4459dc58ab2c30a9454cd.stex"
+path="res://.import/lapis_ore.png-2f317569956237d7fc00e44c85da5011.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/lapis_ore.png"
-dest_files=[ "res://.import/lapis_ore.png-d439d673e3b4459dc58ab2c30a9454cd.stex" ]
+source_file="res://Minecraft textures/block/lapis_ore.png"
+dest_files=[ "res://.import/lapis_ore.png-2f317569956237d7fc00e44c85da5011.stex" ]
 
 [params]
 

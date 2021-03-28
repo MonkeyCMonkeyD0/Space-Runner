@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/white_wool.png-8d60f3a0640033c6a1cd6b5254cea7a0.stex"
+path="res://.import/white_wool.png-e1983e3912a9694bcc9ec581041044e3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/white_wool.png"
-dest_files=[ "res://.import/white_wool.png-8d60f3a0640033c6a1cd6b5254cea7a0.stex" ]
+source_file="res://Minecraft textures/block/white_wool.png"
+dest_files=[ "res://.import/white_wool.png-e1983e3912a9694bcc9ec581041044e3.stex" ]
 
 [params]
 

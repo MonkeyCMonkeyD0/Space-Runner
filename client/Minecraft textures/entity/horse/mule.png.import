@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/mule.png-6561dfdb25c66fff630847e4a19b6b55.stex"
+path="res://.import/mule.png-ef511eb64ba11e8b2536812666dd98df.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/horse/mule.png"
-dest_files=[ "res://.import/mule.png-6561dfdb25c66fff630847e4a19b6b55.stex" ]
+source_file="res://Minecraft textures/entity/horse/mule.png"
+dest_files=[ "res://.import/mule.png-ef511eb64ba11e8b2536812666dd98df.stex" ]
 
 [params]
 

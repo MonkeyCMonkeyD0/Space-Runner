@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/rain.png-f30d568872ce7b19341bda9051ddb9ee.stex"
+path="res://.import/rain.png-fc3ff01a8689a65e6b5c209b7b6dac2f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/environment/rain.png"
-dest_files=[ "res://.import/rain.png-f30d568872ce7b19341bda9051ddb9ee.stex" ]
+source_file="res://Minecraft textures/environment/rain.png"
+dest_files=[ "res://.import/rain.png-fc3ff01a8689a65e6b5c209b7b6dac2f.stex" ]
 
 [params]
 

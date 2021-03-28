@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/wooden_shovel.png-5a97fa128b8ff9c83b2fb99a7dc36491.stex"
+path="res://.import/wooden_shovel.png-cc1a8157a91236578ee9069216264633.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/wooden_shovel.png"
-dest_files=[ "res://.import/wooden_shovel.png-5a97fa128b8ff9c83b2fb99a7dc36491.stex" ]
+source_file="res://Minecraft textures/item/wooden_shovel.png"
+dest_files=[ "res://.import/wooden_shovel.png-cc1a8157a91236578ee9069216264633.stex" ]
 
 [params]
 

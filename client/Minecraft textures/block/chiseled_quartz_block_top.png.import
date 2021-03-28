@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/chiseled_quartz_block_top.png-7faf8467cbbdc9db178b91a3bf20a68b.stex"
+path="res://.import/chiseled_quartz_block_top.png-6cf573e43526eb5986832cd0fb3c54af.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/chiseled_quartz_block_top.png"
-dest_files=[ "res://.import/chiseled_quartz_block_top.png-7faf8467cbbdc9db178b91a3bf20a68b.stex" ]
+source_file="res://Minecraft textures/block/chiseled_quartz_block_top.png"
+dest_files=[ "res://.import/chiseled_quartz_block_top.png-6cf573e43526eb5986832cd0fb3c54af.stex" ]
 
 [params]
 

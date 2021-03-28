@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/red_wool.png-7e15b5183376fef641a7725edd9e7598.stex"
+path="res://.import/red_wool.png-029a818f1c39ca096e4c09db604f9987.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/red_wool.png"
-dest_files=[ "res://.import/red_wool.png-7e15b5183376fef641a7725edd9e7598.stex" ]
+source_file="res://Minecraft textures/block/red_wool.png"
+dest_files=[ "res://.import/red_wool.png-029a818f1c39ca096e4c09db604f9987.stex" ]
 
 [params]
 

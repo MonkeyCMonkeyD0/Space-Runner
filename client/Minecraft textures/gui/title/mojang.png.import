@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/mojang.png-f6fe02c6b92f8c3dcc095aa84fcc1e81.stex"
+path="res://.import/mojang.png-09f533b829baf86f1853224a7cef30c3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/gui/title/mojang.png"
-dest_files=[ "res://.import/mojang.png-f6fe02c6b92f8c3dcc095aa84fcc1e81.stex" ]
+source_file="res://Minecraft textures/gui/title/mojang.png"
+dest_files=[ "res://.import/mojang.png-09f533b829baf86f1853224a7cef30c3.stex" ]
 
 [params]
 

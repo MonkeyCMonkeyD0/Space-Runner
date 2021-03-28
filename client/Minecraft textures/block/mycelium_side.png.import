@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/mycelium_side.png-1744c656ef8ec4e6f9fe4fc3f38072ce.stex"
+path="res://.import/mycelium_side.png-194e0dbf75222e9135ffad21da91782f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/mycelium_side.png"
-dest_files=[ "res://.import/mycelium_side.png-1744c656ef8ec4e6f9fe4fc3f38072ce.stex" ]
+source_file="res://Minecraft textures/block/mycelium_side.png"
+dest_files=[ "res://.import/mycelium_side.png-194e0dbf75222e9135ffad21da91782f.stex" ]
 
 [params]
 

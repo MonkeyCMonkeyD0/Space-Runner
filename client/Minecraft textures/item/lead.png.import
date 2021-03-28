@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/lead.png-eec9695ae7468c3932f282b3cabdd873.stex"
+path="res://.import/lead.png-e7194b6b89172be4cc6c33e83cafce06.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/lead.png"
-dest_files=[ "res://.import/lead.png-eec9695ae7468c3932f282b3cabdd873.stex" ]
+source_file="res://Minecraft textures/item/lead.png"
+dest_files=[ "res://.import/lead.png-e7194b6b89172be4cc6c33e83cafce06.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/green_wool.png-75ddaf682156124af8cfa62daf941726.stex"
+path="res://.import/green_wool.png-d9a2a1a120dcfc4e929cfa35103281e2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/green_wool.png"
-dest_files=[ "res://.import/green_wool.png-75ddaf682156124af8cfa62daf941726.stex" ]
+source_file="res://Minecraft textures/block/green_wool.png"
+dest_files=[ "res://.import/green_wool.png-d9a2a1a120dcfc4e929cfa35103281e2.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/green_terracotta.png-65c1afde9b47ccc1142fd86e3181c4e3.stex"
+path="res://.import/green_terracotta.png-e008550af692626583f0d4d2bc0f8d00.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/green_terracotta.png"
-dest_files=[ "res://.import/green_terracotta.png-65c1afde9b47ccc1142fd86e3181c4e3.stex" ]
+source_file="res://Minecraft textures/block/green_terracotta.png"
+dest_files=[ "res://.import/green_terracotta.png-e008550af692626583f0d4d2bc0f8d00.stex" ]
 
 [params]
 

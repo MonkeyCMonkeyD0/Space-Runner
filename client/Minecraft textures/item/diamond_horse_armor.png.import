@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/diamond_horse_armor.png-804daf4474f57392b0830c0688e1e9b5.stex"
+path="res://.import/diamond_horse_armor.png-76b86dae2db0097b261d95bdf195a5dc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/diamond_horse_armor.png"
-dest_files=[ "res://.import/diamond_horse_armor.png-804daf4474f57392b0830c0688e1e9b5.stex" ]
+source_file="res://Minecraft textures/item/diamond_horse_armor.png"
+dest_files=[ "res://.import/diamond_horse_armor.png-76b86dae2db0097b261d95bdf195a5dc.stex" ]
 
 [params]
 

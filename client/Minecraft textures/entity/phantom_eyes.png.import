@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/phantom_eyes.png-00030316b66800777cde4a02dc7c79c5.stex"
+path="res://.import/phantom_eyes.png-95974ff225d351ec4fca5f3df190f81d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/phantom_eyes.png"
-dest_files=[ "res://.import/phantom_eyes.png-00030316b66800777cde4a02dc7c79c5.stex" ]
+source_file="res://Minecraft textures/entity/phantom_eyes.png"
+dest_files=[ "res://.import/phantom_eyes.png-95974ff225d351ec4fca5f3df190f81d.stex" ]
 
 [params]
 

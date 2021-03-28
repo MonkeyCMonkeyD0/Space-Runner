@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/wolf.png-5c804e7d2d46ffe3580b595ba9edc352.stex"
+path="res://.import/wolf.png-ffc0b9edafea4fcac73445ab469f91da.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/wolf/wolf.png"
-dest_files=[ "res://.import/wolf.png-5c804e7d2d46ffe3580b595ba9edc352.stex" ]
+source_file="res://Minecraft textures/entity/wolf/wolf.png"
+dest_files=[ "res://.import/wolf.png-ffc0b9edafea4fcac73445ab469f91da.stex" ]
 
 [params]
 

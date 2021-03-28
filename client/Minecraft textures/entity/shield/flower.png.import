@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/flower.png-ce37f427ea1a32ccf715258ddd834a2f.stex"
+path="res://.import/flower.png-d31f666946ea879b421891df8eaca10c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/shield/flower.png"
-dest_files=[ "res://.import/flower.png-ce37f427ea1a32ccf715258ddd834a2f.stex" ]
+source_file="res://Minecraft textures/entity/shield/flower.png"
+dest_files=[ "res://.import/flower.png-d31f666946ea879b421891df8eaca10c.stex" ]
 
 [params]
 

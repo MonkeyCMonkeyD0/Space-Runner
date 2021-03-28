@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/wither_armor.png-49d728c614c3498018b697524931515e.stex"
+path="res://.import/wither_armor.png-5a16e471960980ed0fb8b34793b30347.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/wither/wither_armor.png"
-dest_files=[ "res://.import/wither_armor.png-49d728c614c3498018b697524931515e.stex" ]
+source_file="res://Minecraft textures/entity/wither/wither_armor.png"
+dest_files=[ "res://.import/wither_armor.png-5a16e471960980ed0fb8b34793b30347.stex" ]
 
 [params]
 

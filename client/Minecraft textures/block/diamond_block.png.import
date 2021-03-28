@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/diamond_block.png-9818dfc4eeca397e0c46654fc28d38d5.stex"
+path="res://.import/diamond_block.png-1744080e5b6d87ec4c0c9c824939518c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/diamond_block.png"
-dest_files=[ "res://.import/diamond_block.png-9818dfc4eeca397e0c46654fc28d38d5.stex" ]
+source_file="res://Minecraft textures/block/diamond_block.png"
+dest_files=[ "res://.import/diamond_block.png-1744080e5b6d87ec4c0c9c824939518c.stex" ]
 
 [params]
 

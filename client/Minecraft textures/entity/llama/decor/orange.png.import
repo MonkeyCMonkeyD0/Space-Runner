@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/orange.png-fe753881bd49ac5136ae7bb97498370c.stex"
+path="res://.import/orange.png-4a1d714d7c2a36dc4d5e3f75097ab139.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/llama/decor/orange.png"
-dest_files=[ "res://.import/orange.png-fe753881bd49ac5136ae7bb97498370c.stex" ]
+source_file="res://Minecraft textures/entity/llama/decor/orange.png"
+dest_files=[ "res://.import/orange.png-4a1d714d7c2a36dc4d5e3f75097ab139.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/arrow.png-156dc30ae3eee47a5cfe07130e134715.stex"
+path="res://.import/arrow.png-ab6cbf8d347715eb05676d44de0c4785.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/arrow.png"
-dest_files=[ "res://.import/arrow.png-156dc30ae3eee47a5cfe07130e134715.stex" ]
+source_file="res://Minecraft textures/entity/arrow.png"
+dest_files=[ "res://.import/arrow.png-ab6cbf8d347715eb05676d44de0c4785.stex" ]
 
 [params]
 

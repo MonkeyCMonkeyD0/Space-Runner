@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/jungle_planks.png-2f48de6801f2a4467e69dc9bf701d52e.stex"
+path="res://.import/jungle_planks.png-78a51e1a48b5efd1302ab95134c8e2ab.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/jungle_planks.png"
-dest_files=[ "res://.import/jungle_planks.png-2f48de6801f2a4467e69dc9bf701d52e.stex" ]
+source_file="res://Minecraft textures/block/jungle_planks.png"
+dest_files=[ "res://.import/jungle_planks.png-78a51e1a48b5efd1302ab95134c8e2ab.stex" ]
 
 [params]
 

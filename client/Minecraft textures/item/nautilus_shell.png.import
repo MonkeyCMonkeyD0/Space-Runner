@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/nautilus_shell.png-77abdf80872b7a520db8628344a37e1b.stex"
+path="res://.import/nautilus_shell.png-fab121416e151c50a5fed73a3ed6120b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/nautilus_shell.png"
-dest_files=[ "res://.import/nautilus_shell.png-77abdf80872b7a520db8628344a37e1b.stex" ]
+source_file="res://Minecraft textures/item/nautilus_shell.png"
+dest_files=[ "res://.import/nautilus_shell.png-fab121416e151c50a5fed73a3ed6120b.stex" ]
 
 [params]
 

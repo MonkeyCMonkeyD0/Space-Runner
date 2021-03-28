@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/anvil_top.png-2879b05dbd88e489ad9f56558a62cd0a.stex"
+path="res://.import/anvil_top.png-333003d2d8ec14a2429c43a5ca798401.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/anvil_top.png"
-dest_files=[ "res://.import/anvil_top.png-2879b05dbd88e489ad9f56558a62cd0a.stex" ]
+source_file="res://Minecraft textures/block/anvil_top.png"
+dest_files=[ "res://.import/anvil_top.png-333003d2d8ec14a2429c43a5ca798401.stex" ]
 
 [params]
 

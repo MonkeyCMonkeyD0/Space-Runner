@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/poppy.png-498e7a5672e75447494f931407087d89.stex"
+path="res://.import/poppy.png-b3b3fa5aa5055714211982c4fcccb1c9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/poppy.png"
-dest_files=[ "res://.import/poppy.png-498e7a5672e75447494f931407087d89.stex" ]
+source_file="res://Minecraft textures/block/poppy.png"
+dest_files=[ "res://.import/poppy.png-b3b3fa5aa5055714211982c4fcccb1c9.stex" ]
 
 [params]
 

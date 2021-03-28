@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/dither.png-78dc31b85303b15f9938b6536f104cc5.stex"
+path="res://.import/dither.png-d241362e24f61c53487995a0fbeab8f4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/effect/dither.png"
-dest_files=[ "res://.import/dither.png-78dc31b85303b15f9938b6536f104cc5.stex" ]
+source_file="res://Minecraft textures/effect/dither.png"
+dest_files=[ "res://.import/dither.png-d241362e24f61c53487995a0fbeab8f4.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/light_blue_concrete_powder.png-7635016e640e07aa574c63afc444fa18.stex"
+path="res://.import/light_blue_concrete_powder.png-a651b6ba9c8936efb39070f87ddc5acd.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/light_blue_concrete_powder.png"
-dest_files=[ "res://.import/light_blue_concrete_powder.png-7635016e640e07aa574c63afc444fa18.stex" ]
+source_file="res://Minecraft textures/block/light_blue_concrete_powder.png"
+dest_files=[ "res://.import/light_blue_concrete_powder.png-a651b6ba9c8936efb39070f87ddc5acd.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/egg.png-c316a0c3717a279047241a8a788d293d.stex"
+path="res://.import/egg.png-0e2c3690cd18329015199341ef22ce81.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/egg.png"
-dest_files=[ "res://.import/egg.png-c316a0c3717a279047241a8a788d293d.stex" ]
+source_file="res://Minecraft textures/item/egg.png"
+dest_files=[ "res://.import/egg.png-0e2c3690cd18329015199341ef22ce81.stex" ]
 
 [params]
 

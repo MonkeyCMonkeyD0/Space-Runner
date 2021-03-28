@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/experience_bottle.png-b5ab6cfca705ea5c43b90ecb3b966a1b.stex"
+path="res://.import/experience_bottle.png-30afc3fe9c7d5ae01173b62f7706da00.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/experience_bottle.png"
-dest_files=[ "res://.import/experience_bottle.png-b5ab6cfca705ea5c43b90ecb3b966a1b.stex" ]
+source_file="res://Minecraft textures/item/experience_bottle.png"
+dest_files=[ "res://.import/experience_bottle.png-30afc3fe9c7d5ae01173b62f7706da00.stex" ]
 
 [params]
 

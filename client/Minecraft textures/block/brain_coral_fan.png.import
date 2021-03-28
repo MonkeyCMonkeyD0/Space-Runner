@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/brain_coral_fan.png-4e59f94c854b74b8f35d59c15d772b4e.stex"
+path="res://.import/brain_coral_fan.png-ba33315af804e7a3db45f65d4ee929d5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/brain_coral_fan.png"
-dest_files=[ "res://.import/brain_coral_fan.png-4e59f94c854b74b8f35d59c15d772b4e.stex" ]
+source_file="res://Minecraft textures/block/brain_coral_fan.png"
+dest_files=[ "res://.import/brain_coral_fan.png-ba33315af804e7a3db45f65d4ee929d5.stex" ]
 
 [params]
 

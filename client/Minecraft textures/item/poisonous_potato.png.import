@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/poisonous_potato.png-acfb879babdee011ac3c7e6453d0e814.stex"
+path="res://.import/poisonous_potato.png-bb3cf9f50f952139bb39197ad4ac905d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/poisonous_potato.png"
-dest_files=[ "res://.import/poisonous_potato.png-acfb879babdee011ac3c7e6453d0e814.stex" ]
+source_file="res://Minecraft textures/item/poisonous_potato.png"
+dest_files=[ "res://.import/poisonous_potato.png-bb3cf9f50f952139bb39197ad4ac905d.stex" ]
 
 [params]
 

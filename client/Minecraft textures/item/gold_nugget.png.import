@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/gold_nugget.png-f5e63e986df8f39b82b7f25944957384.stex"
+path="res://.import/gold_nugget.png-2a4e16735256a609904fbff10f036a23.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/gold_nugget.png"
-dest_files=[ "res://.import/gold_nugget.png-f5e63e986df8f39b82b7f25944957384.stex" ]
+source_file="res://Minecraft textures/item/gold_nugget.png"
+dest_files=[ "res://.import/gold_nugget.png-2a4e16735256a609904fbff10f036a23.stex" ]
 
 [params]
 

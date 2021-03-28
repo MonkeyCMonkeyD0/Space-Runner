@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/horse_zombie.png-ce298214e93981f887f7bb7c3351c8e1.stex"
+path="res://.import/horse_zombie.png-a43bfc4db0a7eeebc31bbe01dd772fbf.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/horse/horse_zombie.png"
-dest_files=[ "res://.import/horse_zombie.png-ce298214e93981f887f7bb7c3351c8e1.stex" ]
+source_file="res://Minecraft textures/entity/horse/horse_zombie.png"
+dest_files=[ "res://.import/horse_zombie.png-a43bfc4db0a7eeebc31bbe01dd772fbf.stex" ]
 
 [params]
 

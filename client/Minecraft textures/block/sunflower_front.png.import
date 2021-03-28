@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sunflower_front.png-86b2b0493902f46516f068788f4f5d09.stex"
+path="res://.import/sunflower_front.png-c0955d1e6011150f35d88d9d1e52a528.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/sunflower_front.png"
-dest_files=[ "res://.import/sunflower_front.png-86b2b0493902f46516f068788f4f5d09.stex" ]
+source_file="res://Minecraft textures/block/sunflower_front.png"
+dest_files=[ "res://.import/sunflower_front.png-c0955d1e6011150f35d88d9d1e52a528.stex" ]
 
 [params]
 

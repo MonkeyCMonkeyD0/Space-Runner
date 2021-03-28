@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/moon_phases.png-c5147f5cc4a902cefe5195b308b6a8ee.stex"
+path="res://.import/moon_phases.png-1478b0125990029b7afe159b5fb5ac25.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/environment/moon_phases.png"
-dest_files=[ "res://.import/moon_phases.png-c5147f5cc4a902cefe5195b308b6a8ee.stex" ]
+source_file="res://Minecraft textures/environment/moon_phases.png"
+dest_files=[ "res://.import/moon_phases.png-1478b0125990029b7afe159b5fb5ac25.stex" ]
 
 [params]
 

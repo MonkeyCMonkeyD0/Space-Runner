@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/potion_overlay.png-40275b9bb53fb8c2dc44987bfb336c8d.stex"
+path="res://.import/potion_overlay.png-0eaa88ee5fecbbf0c8f02748300cadbc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/potion_overlay.png"
-dest_files=[ "res://.import/potion_overlay.png-40275b9bb53fb8c2dc44987bfb336c8d.stex" ]
+source_file="res://Minecraft textures/item/potion_overlay.png"
+dest_files=[ "res://.import/potion_overlay.png-0eaa88ee5fecbbf0c8f02748300cadbc.stex" ]
 
 [params]
 

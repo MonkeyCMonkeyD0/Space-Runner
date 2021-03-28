@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/circle.png-f4f753f10c1632897736fe6410396719.stex"
+path="res://.import/circle.png-d719434fa53af2fc4239cfcd4276b838.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/shield/circle.png"
-dest_files=[ "res://.import/circle.png-f4f753f10c1632897736fe6410396719.stex" ]
+source_file="res://Minecraft textures/entity/shield/circle.png"
+dest_files=[ "res://.import/circle.png-d719434fa53af2fc4239cfcd4276b838.stex" ]
 
 [params]
 

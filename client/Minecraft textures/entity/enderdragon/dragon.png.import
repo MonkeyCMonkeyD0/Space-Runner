@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/dragon.png-3266b9aa276d6f4416feab925d421201.stex"
+path="res://.import/dragon.png-1aeba683050f6e86223a221d58a87a01.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/enderdragon/dragon.png"
-dest_files=[ "res://.import/dragon.png-3266b9aa276d6f4416feab925d421201.stex" ]
+source_file="res://Minecraft textures/entity/enderdragon/dragon.png"
+dest_files=[ "res://.import/dragon.png-1aeba683050f6e86223a221d58a87a01.stex" ]
 
 [params]
 

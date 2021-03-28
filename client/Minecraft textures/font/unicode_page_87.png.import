@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/unicode_page_87.png-a9b2f7938f26d97f60d5082d6f435fc9.stex"
+path="res://.import/unicode_page_87.png-c0e590ee078935356249e8689d5c6ac0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/font/unicode_page_87.png"
-dest_files=[ "res://.import/unicode_page_87.png-a9b2f7938f26d97f60d5082d6f435fc9.stex" ]
+source_file="res://Minecraft textures/font/unicode_page_87.png"
+dest_files=[ "res://.import/unicode_page_87.png-c0e590ee078935356249e8689d5c6ac0.stex" ]
 
 [params]
 

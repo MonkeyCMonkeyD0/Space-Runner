@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/world_selection.png-04017e78fc85cd9e8da6a3e9c0f38f5a.stex"
+path="res://.import/world_selection.png-3798ec1dabe4df785e67027ae75e539d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/gui/world_selection.png"
-dest_files=[ "res://.import/world_selection.png-04017e78fc85cd9e8da6a3e9c0f38f5a.stex" ]
+source_file="res://Minecraft textures/gui/world_selection.png"
+dest_files=[ "res://.import/world_selection.png-3798ec1dabe4df785e67027ae75e539d.stex" ]
 
 [params]
 

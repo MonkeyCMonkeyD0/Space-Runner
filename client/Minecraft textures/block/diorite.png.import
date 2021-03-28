@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/diorite.png-4fc9f29e6f710ce26e91ee52ea2e0f28.stex"
+path="res://.import/diorite.png-fff80b5f88472d62eb5bdbe99f49712a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/diorite.png"
-dest_files=[ "res://.import/diorite.png-4fc9f29e6f710ce26e91ee52ea2e0f28.stex" ]
+source_file="res://Minecraft textures/block/diorite.png"
+dest_files=[ "res://.import/diorite.png-fff80b5f88472d62eb5bdbe99f49712a.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/turtle_egg.png-b2f89f4177a77674d6fbf89414c036b3.stex"
+path="res://.import/turtle_egg.png-48215b78f0eeb759aaceced7b7d8108a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/turtle_egg.png"
-dest_files=[ "res://.import/turtle_egg.png-b2f89f4177a77674d6fbf89414c036b3.stex" ]
+source_file="res://Minecraft textures/block/turtle_egg.png"
+dest_files=[ "res://.import/turtle_egg.png-48215b78f0eeb759aaceced7b7d8108a.stex" ]
 
 [params]
 

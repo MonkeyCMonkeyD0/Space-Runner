@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tall_seagrass_bottom.png-e6808f01027154ca694ee22b13699171.stex"
+path="res://.import/tall_seagrass_bottom.png-02e647613b4d159258daa11bd2365c76.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/tall_seagrass_bottom.png"
-dest_files=[ "res://.import/tall_seagrass_bottom.png-e6808f01027154ca694ee22b13699171.stex" ]
+source_file="res://Minecraft textures/block/tall_seagrass_bottom.png"
+dest_files=[ "res://.import/tall_seagrass_bottom.png-02e647613b4d159258daa11bd2365c76.stex" ]
 
 [params]
 

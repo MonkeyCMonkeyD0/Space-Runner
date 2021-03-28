@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/spruce_door.png-cb20306214444c6007c908e3d98e0265.stex"
+path="res://.import/spruce_door.png-f0495600d4b29d3f8d85ad3d024c98b1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/spruce_door.png"
-dest_files=[ "res://.import/spruce_door.png-cb20306214444c6007c908e3d98e0265.stex" ]
+source_file="res://Minecraft textures/item/spruce_door.png"
+dest_files=[ "res://.import/spruce_door.png-f0495600d4b29d3f8d85ad3d024c98b1.stex" ]
 
 [params]
 

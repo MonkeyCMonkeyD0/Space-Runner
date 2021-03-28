@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/chorus_fruit.png-7799c53521bb03d0b248b880a0881d1c.stex"
+path="res://.import/chorus_fruit.png-b5480e992a07052b80ce32f206bdc7a5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/chorus_fruit.png"
-dest_files=[ "res://.import/chorus_fruit.png-7799c53521bb03d0b248b880a0881d1c.stex" ]
+source_file="res://Minecraft textures/item/chorus_fruit.png"
+dest_files=[ "res://.import/chorus_fruit.png-b5480e992a07052b80ce32f206bdc7a5.stex" ]
 
 [params]
 

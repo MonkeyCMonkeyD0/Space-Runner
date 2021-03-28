@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/polished_granite.png-7832dd2eaa098fa30cedbaa15faf54c0.stex"
+path="res://.import/polished_granite.png-6da13e4b00eb1962b988803c22c19ddb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/polished_granite.png"
-dest_files=[ "res://.import/polished_granite.png-7832dd2eaa098fa30cedbaa15faf54c0.stex" ]
+source_file="res://Minecraft textures/block/polished_granite.png"
+dest_files=[ "res://.import/polished_granite.png-6da13e4b00eb1962b988803c22c19ddb.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/golden_helmet.png-9c4ccf54235baaf273aa1787264b663a.stex"
+path="res://.import/golden_helmet.png-6921f15510d17dc2c51aef67d8980a0d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/golden_helmet.png"
-dest_files=[ "res://.import/golden_helmet.png-9c4ccf54235baaf273aa1787264b663a.stex" ]
+source_file="res://Minecraft textures/item/golden_helmet.png"
+dest_files=[ "res://.import/golden_helmet.png-6921f15510d17dc2c51aef67d8980a0d.stex" ]
 
 [params]
 

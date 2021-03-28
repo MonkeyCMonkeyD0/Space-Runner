@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/diamond_layer_1.png-713d094ca3f95d902433fee8f4367f87.stex"
+path="res://.import/diamond_layer_1.png-96a35c7f6d97e9060463f1bd1c189369.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/models/armor/diamond_layer_1.png"
-dest_files=[ "res://.import/diamond_layer_1.png-713d094ca3f95d902433fee8f4367f87.stex" ]
+source_file="res://Minecraft textures/models/armor/diamond_layer_1.png"
+dest_files=[ "res://.import/diamond_layer_1.png-96a35c7f6d97e9060463f1bd1c189369.stex" ]
 
 [params]
 

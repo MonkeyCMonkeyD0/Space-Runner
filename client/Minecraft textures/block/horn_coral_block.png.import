@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/horn_coral_block.png-6cd0924be4405a050449c70ccaeab63e.stex"
+path="res://.import/horn_coral_block.png-e6ccffb8100aeae125371216b73757eb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/horn_coral_block.png"
-dest_files=[ "res://.import/horn_coral_block.png-6cd0924be4405a050449c70ccaeab63e.stex" ]
+source_file="res://Minecraft textures/block/horn_coral_block.png"
+dest_files=[ "res://.import/horn_coral_block.png-e6ccffb8100aeae125371216b73757eb.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/square_bottom_left.png-01e581570da24fdcde498aa8c3bbcadb.stex"
+path="res://.import/square_bottom_left.png-4edf6ec0cababf80389eca87b7f813fa.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/shield/square_bottom_left.png"
-dest_files=[ "res://.import/square_bottom_left.png-01e581570da24fdcde498aa8c3bbcadb.stex" ]
+source_file="res://Minecraft textures/entity/shield/square_bottom_left.png"
+dest_files=[ "res://.import/square_bottom_left.png-4edf6ec0cababf80389eca87b7f813fa.stex" ]
 
 [params]
 

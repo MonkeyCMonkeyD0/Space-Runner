@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/brown.png-4f80ee4a5948f68bcba5cf0c5409546a.stex"
+path="res://.import/brown.png-46de162ec452ef11308782f11f84103e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/llama/brown.png"
-dest_files=[ "res://.import/brown.png-4f80ee4a5948f68bcba5cf0c5409546a.stex" ]
+source_file="res://Minecraft textures/entity/llama/brown.png"
+dest_files=[ "res://.import/brown.png-46de162ec452ef11308782f11f84103e.stex" ]
 
 [params]
 

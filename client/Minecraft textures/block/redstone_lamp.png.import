@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/redstone_lamp.png-398a638022daf67b791a913f7405c0d0.stex"
+path="res://.import/redstone_lamp.png-ea8c1de734000153efc43da0071fecb4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/redstone_lamp.png"
-dest_files=[ "res://.import/redstone_lamp.png-398a638022daf67b791a913f7405c0d0.stex" ]
+source_file="res://Minecraft textures/block/redstone_lamp.png"
+dest_files=[ "res://.import/redstone_lamp.png-ea8c1de734000153efc43da0071fecb4.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/iron_hoe.png-c81c7918a5ed4f412f107becb1b95786.stex"
+path="res://.import/iron_hoe.png-0ca28f797079f182f2e6ce4d242b50c0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/iron_hoe.png"
-dest_files=[ "res://.import/iron_hoe.png-c81c7918a5ed4f412f107becb1b95786.stex" ]
+source_file="res://Minecraft textures/item/iron_hoe.png"
+dest_files=[ "res://.import/iron_hoe.png-0ca28f797079f182f2e6ce4d242b50c0.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/feather.png-a12019bf2ec3e7d13ac306bc52f9e506.stex"
+path="res://.import/feather.png-e78653c90c8a616f8c7736c7eff130dc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/feather.png"
-dest_files=[ "res://.import/feather.png-a12019bf2ec3e7d13ac306bc52f9e506.stex" ]
+source_file="res://Minecraft textures/item/feather.png"
+dest_files=[ "res://.import/feather.png-e78653c90c8a616f8c7736c7eff130dc.stex" ]
 
 [params]
 

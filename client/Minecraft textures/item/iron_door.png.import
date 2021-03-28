@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/iron_door.png-67da73e2595760cfc7c1710700e036ef.stex"
+path="res://.import/iron_door.png-c34ca234d519f3d7bf2c50b26100c580.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/iron_door.png"
-dest_files=[ "res://.import/iron_door.png-67da73e2595760cfc7c1710700e036ef.stex" ]
+source_file="res://Minecraft textures/item/iron_door.png"
+dest_files=[ "res://.import/iron_door.png-c34ca234d519f3d7bf2c50b26100c580.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/enderman_eyes.png-be7102c6956c7f31b4c694a669a8458f.stex"
+path="res://.import/enderman_eyes.png-8b23b6481e7f81ea19c98ebbdaee9bbf.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/enderman/enderman_eyes.png"
-dest_files=[ "res://.import/enderman_eyes.png-be7102c6956c7f31b4c694a669a8458f.stex" ]
+source_file="res://Minecraft textures/entity/enderman/enderman_eyes.png"
+dest_files=[ "res://.import/enderman_eyes.png-8b23b6481e7f81ea19c98ebbdaee9bbf.stex" ]
 
 [params]
 

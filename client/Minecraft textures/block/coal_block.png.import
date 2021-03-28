@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/coal_block.png-863dd4da1a5cf59355a74bb177457fa1.stex"
+path="res://.import/coal_block.png-48b9cc0cc3fd6f5913f69e860f982505.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/coal_block.png"
-dest_files=[ "res://.import/coal_block.png-863dd4da1a5cf59355a74bb177457fa1.stex" ]
+source_file="res://Minecraft textures/block/coal_block.png"
+dest_files=[ "res://.import/coal_block.png-48b9cc0cc3fd6f5913f69e860f982505.stex" ]
 
 [params]
 

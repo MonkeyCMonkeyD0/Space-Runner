@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/diamond_sword.png-992be4cb029e43c7cab83c39205e298a.stex"
+path="res://.import/diamond_sword.png-8b16abf9f6ba8bdef1cc5506e0aa1342.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/diamond_sword.png"
-dest_files=[ "res://.import/diamond_sword.png-992be4cb029e43c7cab83c39205e298a.stex" ]
+source_file="res://Minecraft textures/item/diamond_sword.png"
+dest_files=[ "res://.import/diamond_sword.png-8b16abf9f6ba8bdef1cc5506e0aa1342.stex" ]
 
 [params]
 

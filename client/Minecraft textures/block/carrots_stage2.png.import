@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/carrots_stage2.png-f12b0363f9fce488eb56c5f4e5ea3ffa.stex"
+path="res://.import/carrots_stage2.png-8162c88f2127672bf1bf7b375dc99a28.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/carrots_stage2.png"
-dest_files=[ "res://.import/carrots_stage2.png-f12b0363f9fce488eb56c5f4e5ea3ffa.stex" ]
+source_file="res://Minecraft textures/block/carrots_stage2.png"
+dest_files=[ "res://.import/carrots_stage2.png-8162c88f2127672bf1bf7b375dc99a28.stex" ]
 
 [params]
 

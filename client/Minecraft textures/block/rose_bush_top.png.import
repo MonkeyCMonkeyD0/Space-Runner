@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/rose_bush_top.png-991f36195a7b5c7f45ee849463caf246.stex"
+path="res://.import/rose_bush_top.png-a9876db483cc2a779ff79403bda199fc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/rose_bush_top.png"
-dest_files=[ "res://.import/rose_bush_top.png-991f36195a7b5c7f45ee849463caf246.stex" ]
+source_file="res://Minecraft textures/block/rose_bush_top.png"
+dest_files=[ "res://.import/rose_bush_top.png-a9876db483cc2a779ff79403bda199fc.stex" ]
 
 [params]
 

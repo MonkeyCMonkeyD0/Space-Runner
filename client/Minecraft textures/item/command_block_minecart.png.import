@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/command_block_minecart.png-28f0650308e2b7d25203671a2aeb9652.stex"
+path="res://.import/command_block_minecart.png-79579f439e2d9ef0acc56a0011a63d44.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/command_block_minecart.png"
-dest_files=[ "res://.import/command_block_minecart.png-28f0650308e2b7d25203671a2aeb9652.stex" ]
+source_file="res://Minecraft textures/item/command_block_minecart.png"
+dest_files=[ "res://.import/command_block_minecart.png-79579f439e2d9ef0acc56a0011a63d44.stex" ]
 
 [params]
 

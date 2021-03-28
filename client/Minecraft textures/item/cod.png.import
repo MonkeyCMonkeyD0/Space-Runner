@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cod.png-6d61c68e25c98d657c438f042bb8f802.stex"
+path="res://.import/cod.png-b8e4f8f758e6138e0c4ace43ad8d55c9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/cod.png"
-dest_files=[ "res://.import/cod.png-6d61c68e25c98d657c438f042bb8f802.stex" ]
+source_file="res://Minecraft textures/item/cod.png"
+dest_files=[ "res://.import/cod.png-b8e4f8f758e6138e0c4ace43ad8d55c9.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/iron_chestplate.png-181c998029ecac2e5f5c6f28479010d6.stex"
+path="res://.import/iron_chestplate.png-e7d369dd699cab525ee631dcdfec955d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/iron_chestplate.png"
-dest_files=[ "res://.import/iron_chestplate.png-181c998029ecac2e5f5c6f28479010d6.stex" ]
+source_file="res://Minecraft textures/item/iron_chestplate.png"
+dest_files=[ "res://.import/iron_chestplate.png-e7d369dd699cab525ee631dcdfec955d.stex" ]
 
 [params]
 

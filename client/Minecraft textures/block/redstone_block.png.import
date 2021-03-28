@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/redstone_block.png-6d7602a832bf607b0c2c10e019105cd7.stex"
+path="res://.import/redstone_block.png-14514df41f223a878a1fbd89665ad2b2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/redstone_block.png"
-dest_files=[ "res://.import/redstone_block.png-6d7602a832bf607b0c2c10e019105cd7.stex" ]
+source_file="res://Minecraft textures/block/redstone_block.png"
+dest_files=[ "res://.import/redstone_block.png-14514df41f223a878a1fbd89665ad2b2.stex" ]
 
 [params]
 

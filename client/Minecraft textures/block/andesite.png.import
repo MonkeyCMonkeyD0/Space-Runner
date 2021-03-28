@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/andesite.png-08775019cc9469e3224bd6b625af2def.stex"
+path="res://.import/andesite.png-05cac6b2a052f4b02acf78a542c3c7f1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/andesite.png"
-dest_files=[ "res://.import/andesite.png-08775019cc9469e3224bd6b625af2def.stex" ]
+source_file="res://Minecraft textures/block/andesite.png"
+dest_files=[ "res://.import/andesite.png-05cac6b2a052f4b02acf78a542c3c7f1.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/carrot_on_a_stick.png-38fa351e4c3fffec9d394914f0495b6c.stex"
+path="res://.import/carrot_on_a_stick.png-ad81031de41b9512113fbba65c4cd53f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/carrot_on_a_stick.png"
-dest_files=[ "res://.import/carrot_on_a_stick.png-38fa351e4c3fffec9d394914f0495b6c.stex" ]
+source_file="res://Minecraft textures/item/carrot_on_a_stick.png"
+dest_files=[ "res://.import/carrot_on_a_stick.png-ad81031de41b9512113fbba65c4cd53f.stex" ]
 
 [params]
 

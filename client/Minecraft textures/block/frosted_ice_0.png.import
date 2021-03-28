@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/frosted_ice_0.png-faf010ef075663c17cb02b57e39c0316.stex"
+path="res://.import/frosted_ice_0.png-94f336682090be608e941dd356c26c2f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/frosted_ice_0.png"
-dest_files=[ "res://.import/frosted_ice_0.png-faf010ef075663c17cb02b57e39c0316.stex" ]
+source_file="res://Minecraft textures/block/frosted_ice_0.png"
+dest_files=[ "res://.import/frosted_ice_0.png-94f336682090be608e941dd356c26c2f.stex" ]
 
 [params]
 

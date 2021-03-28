@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/trapped_double.png-ac97958f3fe813b6d77d34f2e6868e04.stex"
+path="res://.import/trapped_double.png-e02ed987be426387e27e389279db2ffe.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/chest/trapped_double.png"
-dest_files=[ "res://.import/trapped_double.png-ac97958f3fe813b6d77d34f2e6868e04.stex" ]
+source_file="res://Minecraft textures/entity/chest/trapped_double.png"
+dest_files=[ "res://.import/trapped_double.png-e02ed987be426387e27e389279db2ffe.stex" ]
 
 [params]
 

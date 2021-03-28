@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cave_spider.png-b3ee4296573de46960fdfbab7023420f.stex"
+path="res://.import/cave_spider.png-cb5bc33139b3ff0330f65dc8291703c3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/spider/cave_spider.png"
-dest_files=[ "res://.import/cave_spider.png-b3ee4296573de46960fdfbab7023420f.stex" ]
+source_file="res://Minecraft textures/entity/spider/cave_spider.png"
+dest_files=[ "res://.import/cave_spider.png-cb5bc33139b3ff0330f65dc8291703c3.stex" ]
 
 [params]
 

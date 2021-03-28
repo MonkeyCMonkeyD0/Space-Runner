@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/lime_wool.png-2ca9094302ec9ce3d7a1c9ee13e5d62f.stex"
+path="res://.import/lime_wool.png-1c770c32fba837c4be1e2bbf260cd7b1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/lime_wool.png"
-dest_files=[ "res://.import/lime_wool.png-2ca9094302ec9ce3d7a1c9ee13e5d62f.stex" ]
+source_file="res://Minecraft textures/block/lime_wool.png"
+dest_files=[ "res://.import/lime_wool.png-1c770c32fba837c4be1e2bbf260cd7b1.stex" ]
 
 [params]
 

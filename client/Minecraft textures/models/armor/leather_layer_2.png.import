@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/leather_layer_2.png-452a88d3520a6673b30a1ff8695c196e.stex"
+path="res://.import/leather_layer_2.png-852aa60e704f106feeae8b3502cfbdc4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/models/armor/leather_layer_2.png"
-dest_files=[ "res://.import/leather_layer_2.png-452a88d3520a6673b30a1ff8695c196e.stex" ]
+source_file="res://Minecraft textures/models/armor/leather_layer_2.png"
+dest_files=[ "res://.import/leather_layer_2.png-852aa60e704f106feeae8b3502cfbdc4.stex" ]
 
 [params]
 

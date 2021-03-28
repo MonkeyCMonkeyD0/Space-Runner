@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/accented.png-bb7aea079e4ac4fd97fd42b258390b53.stex"
+path="res://.import/accented.png-54b7fe8f1ec4360532bb728e470099d8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/font/accented.png"
-dest_files=[ "res://.import/accented.png-bb7aea079e4ac4fd97fd42b258390b53.stex" ]
+source_file="res://Minecraft textures/font/accented.png"
+dest_files=[ "res://.import/accented.png-54b7fe8f1ec4360532bb728e470099d8.stex" ]
 
 [params]
 

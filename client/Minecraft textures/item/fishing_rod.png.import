@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/fishing_rod.png-3a31ca7833b35766dd324961a9ea9365.stex"
+path="res://.import/fishing_rod.png-0c99b7b9abfe4b3cc3410b4c1fcbf992.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/fishing_rod.png"
-dest_files=[ "res://.import/fishing_rod.png-3a31ca7833b35766dd324961a9ea9365.stex" ]
+source_file="res://Minecraft textures/item/fishing_rod.png"
+dest_files=[ "res://.import/fishing_rod.png-0c99b7b9abfe4b3cc3410b4c1fcbf992.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/grass_block_snow.png-65b9e19beb53e36ea7bbd508baae784e.stex"
+path="res://.import/grass_block_snow.png-d393d2784631fc7005f627e99739057e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/grass_block_snow.png"
-dest_files=[ "res://.import/grass_block_snow.png-65b9e19beb53e36ea7bbd508baae784e.stex" ]
+source_file="res://Minecraft textures/block/grass_block_snow.png"
+dest_files=[ "res://.import/grass_block_snow.png-d393d2784631fc7005f627e99739057e.stex" ]
 
 [params]
 

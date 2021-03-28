@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/mutton.png-3e3d8a15fced1720fcef7878d4cf3765.stex"
+path="res://.import/mutton.png-1dc1abcc61382d43462706c1bd184822.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/mutton.png"
-dest_files=[ "res://.import/mutton.png-3e3d8a15fced1720fcef7878d4cf3765.stex" ]
+source_file="res://Minecraft textures/item/mutton.png"
+dest_files=[ "res://.import/mutton.png-1dc1abcc61382d43462706c1bd184822.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/stone_slab_side.png-5e68ae9e7ceca2eef373dabfc188d4c2.stex"
+path="res://.import/stone_slab_side.png-b25feb713e4a02125cbf4b7e0908cb02.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/stone_slab_side.png"
-dest_files=[ "res://.import/stone_slab_side.png-5e68ae9e7ceca2eef373dabfc188d4c2.stex" ]
+source_file="res://Minecraft textures/block/stone_slab_side.png"
+dest_files=[ "res://.import/stone_slab_side.png-b25feb713e4a02125cbf4b7e0908cb02.stex" ]
 
 [params]
 

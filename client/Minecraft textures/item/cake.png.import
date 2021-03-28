@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cake.png-7cb4fe658b39c0f7ac0c1088ca088f70.stex"
+path="res://.import/cake.png-2035b6b36ce47ca3b090824fd42f7097.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/cake.png"
-dest_files=[ "res://.import/cake.png-7cb4fe658b39c0f7ac0c1088ca088f70.stex" ]
+source_file="res://Minecraft textures/item/cake.png"
+dest_files=[ "res://.import/cake.png-2035b6b36ce47ca3b090824fd42f7097.stex" ]
 
 [params]
 

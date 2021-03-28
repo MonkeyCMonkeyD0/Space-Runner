@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bookshelf.png-4b076fc8484c3208c759487622ed8708.stex"
+path="res://.import/bookshelf.png-0cdbc5bb3e168d0c8218c12ba6f0309f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/bookshelf.png"
-dest_files=[ "res://.import/bookshelf.png-4b076fc8484c3208c759487622ed8708.stex" ]
+source_file="res://Minecraft textures/block/bookshelf.png"
+dest_files=[ "res://.import/bookshelf.png-0cdbc5bb3e168d0c8218c12ba6f0309f.stex" ]
 
 [params]
 

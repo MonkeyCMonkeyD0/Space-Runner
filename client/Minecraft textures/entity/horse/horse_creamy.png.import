@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/horse_creamy.png-20cdbf2d78fa484f7cc97f00ca2740d1.stex"
+path="res://.import/horse_creamy.png-379168cff290e22bfd0e99ab5946ae24.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/horse/horse_creamy.png"
-dest_files=[ "res://.import/horse_creamy.png-20cdbf2d78fa484f7cc97f00ca2740d1.stex" ]
+source_file="res://Minecraft textures/entity/horse/horse_creamy.png"
+dest_files=[ "res://.import/horse_creamy.png-379168cff290e22bfd0e99ab5946ae24.stex" ]
 
 [params]
 

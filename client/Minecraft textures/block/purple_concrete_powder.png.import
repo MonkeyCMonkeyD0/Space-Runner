@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/purple_concrete_powder.png-0d540d5b5ad243278dc182ba79c296b8.stex"
+path="res://.import/purple_concrete_powder.png-a4dc305486e5cf5827455dc9f4f16d6b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/purple_concrete_powder.png"
-dest_files=[ "res://.import/purple_concrete_powder.png-0d540d5b5ad243278dc182ba79c296b8.stex" ]
+source_file="res://Minecraft textures/block/purple_concrete_powder.png"
+dest_files=[ "res://.import/purple_concrete_powder.png-a4dc305486e5cf5827455dc9f4f16d6b.stex" ]
 
 [params]
 

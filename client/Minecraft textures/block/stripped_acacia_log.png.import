@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/stripped_acacia_log.png-045c4b3fa20fa51492daae4d3bf36f01.stex"
+path="res://.import/stripped_acacia_log.png-63c667b72551233812b4424f60159c80.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/stripped_acacia_log.png"
-dest_files=[ "res://.import/stripped_acacia_log.png-045c4b3fa20fa51492daae4d3bf36f01.stex" ]
+source_file="res://Minecraft textures/block/stripped_acacia_log.png"
+dest_files=[ "res://.import/stripped_acacia_log.png-63c667b72551233812b4424f60159c80.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/totem_of_undying.png-2c7b8a95e3f8d330775a02b77a54e456.stex"
+path="res://.import/totem_of_undying.png-c18af7f5eaf7c5f7a1e5ddc681e635df.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/totem_of_undying.png"
-dest_files=[ "res://.import/totem_of_undying.png-2c7b8a95e3f8d330775a02b77a54e456.stex" ]
+source_file="res://Minecraft textures/item/totem_of_undying.png"
+dest_files=[ "res://.import/totem_of_undying.png-c18af7f5eaf7c5f7a1e5ddc681e635df.stex" ]
 
 [params]
 

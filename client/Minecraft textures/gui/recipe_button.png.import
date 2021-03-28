@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/recipe_button.png-0e3ab378dce9d0f42e09bfa4e3f044f5.stex"
+path="res://.import/recipe_button.png-a482c9530f8842379a15327485f45227.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/gui/recipe_button.png"
-dest_files=[ "res://.import/recipe_button.png-0e3ab378dce9d0f42e09bfa4e3f044f5.stex" ]
+source_file="res://Minecraft textures/gui/recipe_button.png"
+dest_files=[ "res://.import/recipe_button.png-a482c9530f8842379a15327485f45227.stex" ]
 
 [params]
 

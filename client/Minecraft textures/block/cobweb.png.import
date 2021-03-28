@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cobweb.png-2686c00f97142b7f0dd8c253994e00e5.stex"
+path="res://.import/cobweb.png-0e002ddad39a46cdd76d2b82907ec0df.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/cobweb.png"
-dest_files=[ "res://.import/cobweb.png-2686c00f97142b7f0dd8c253994e00e5.stex" ]
+source_file="res://Minecraft textures/block/cobweb.png"
+dest_files=[ "res://.import/cobweb.png-0e002ddad39a46cdd76d2b82907ec0df.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/drowned_outer_layer.png-56bcc3a891860ccab32e4f2ea1046eda.stex"
+path="res://.import/drowned_outer_layer.png-898bdde5e81af6d8cb7c14f5b0244885.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/zombie/drowned_outer_layer.png"
-dest_files=[ "res://.import/drowned_outer_layer.png-56bcc3a891860ccab32e4f2ea1046eda.stex" ]
+source_file="res://Minecraft textures/entity/zombie/drowned_outer_layer.png"
+dest_files=[ "res://.import/drowned_outer_layer.png-898bdde5e81af6d8cb7c14f5b0244885.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/light_gray_dye.png-1bf3db8eeb982635acc38d70044c61c4.stex"
+path="res://.import/light_gray_dye.png-36e31ae24af8d9e93e3114fffb4b3845.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/light_gray_dye.png"
-dest_files=[ "res://.import/light_gray_dye.png-1bf3db8eeb982635acc38d70044c61c4.stex" ]
+source_file="res://Minecraft textures/item/light_gray_dye.png"
+dest_files=[ "res://.import/light_gray_dye.png-36e31ae24af8d9e93e3114fffb4b3845.stex" ]
 
 [params]
 

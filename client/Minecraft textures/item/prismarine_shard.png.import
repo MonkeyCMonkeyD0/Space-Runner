@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/prismarine_shard.png-e1da415c62a8529670ae8f73449fc959.stex"
+path="res://.import/prismarine_shard.png-cb1fa8e503df994ce5b2085b46b77601.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/prismarine_shard.png"
-dest_files=[ "res://.import/prismarine_shard.png-e1da415c62a8529670ae8f73449fc959.stex" ]
+source_file="res://Minecraft textures/item/prismarine_shard.png"
+dest_files=[ "res://.import/prismarine_shard.png-cb1fa8e503df994ce5b2085b46b77601.stex" ]
 
 [params]
 

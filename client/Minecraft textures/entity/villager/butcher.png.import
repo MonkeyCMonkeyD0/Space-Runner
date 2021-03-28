@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/butcher.png-0613ad7627d738109a2066d6bde14cfe.stex"
+path="res://.import/butcher.png-d97464c5d7ddd6569e4ce47b8f0f9c4d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/villager/butcher.png"
-dest_files=[ "res://.import/butcher.png-0613ad7627d738109a2066d6bde14cfe.stex" ]
+source_file="res://Minecraft textures/entity/villager/butcher.png"
+dest_files=[ "res://.import/butcher.png-d97464c5d7ddd6569e4ce47b8f0f9c4d.stex" ]
 
 [params]
 

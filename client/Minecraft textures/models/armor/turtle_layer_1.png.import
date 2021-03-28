@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/turtle_layer_1.png-afc4bd0e82f29dc8430b9d393ed013ec.stex"
+path="res://.import/turtle_layer_1.png-65e3d35646edb8ce60d519ac032eaeac.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/models/armor/turtle_layer_1.png"
-dest_files=[ "res://.import/turtle_layer_1.png-afc4bd0e82f29dc8430b9d393ed013ec.stex" ]
+source_file="res://Minecraft textures/models/armor/turtle_layer_1.png"
+dest_files=[ "res://.import/turtle_layer_1.png-65e3d35646edb8ce60d519ac032eaeac.stex" ]
 
 [params]
 

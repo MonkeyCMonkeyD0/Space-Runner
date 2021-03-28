@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/piston_side.png-576b5ecab4f5dafd130d6e3e5a147f8f.stex"
+path="res://.import/piston_side.png-f67ba51294c910c1eb41cdd7d09ad7e8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/piston_side.png"
-dest_files=[ "res://.import/piston_side.png-576b5ecab4f5dafd130d6e3e5a147f8f.stex" ]
+source_file="res://Minecraft textures/block/piston_side.png"
+dest_files=[ "res://.import/piston_side.png-f67ba51294c910c1eb41cdd7d09ad7e8.stex" ]
 
 [params]
 

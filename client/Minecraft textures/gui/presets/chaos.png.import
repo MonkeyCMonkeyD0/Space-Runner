@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/chaos.png-cc30f9d4a5bc68fb0a24a0964406ae2f.stex"
+path="res://.import/chaos.png-a1720cb57e150610326bbc13f9d0737f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/gui/presets/chaos.png"
-dest_files=[ "res://.import/chaos.png-cc30f9d4a5bc68fb0a24a0964406ae2f.stex" ]
+source_file="res://Minecraft textures/gui/presets/chaos.png"
+dest_files=[ "res://.import/chaos.png-a1720cb57e150610326bbc13f9d0737f.stex" ]
 
 [params]
 

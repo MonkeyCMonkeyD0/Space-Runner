@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/jukebox_top.png-69fba617cf59c0b41ce8028291167ef6.stex"
+path="res://.import/jukebox_top.png-6d5c05d52d5e0e544c415e3fd61e3720.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/jukebox_top.png"
-dest_files=[ "res://.import/jukebox_top.png-69fba617cf59c0b41ce8028291167ef6.stex" ]
+source_file="res://Minecraft textures/block/jukebox_top.png"
+dest_files=[ "res://.import/jukebox_top.png-6d5c05d52d5e0e544c415e3fd61e3720.stex" ]
 
 [params]
 

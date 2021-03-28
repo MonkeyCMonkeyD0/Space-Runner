@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/spawner.png-16d115652153886018850ee414a8935a.stex"
+path="res://.import/spawner.png-77e310bc4d591cdeb2d60b3d78fce1ea.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/spawner.png"
-dest_files=[ "res://.import/spawner.png-16d115652153886018850ee414a8935a.stex" ]
+source_file="res://Minecraft textures/block/spawner.png"
+dest_files=[ "res://.import/spawner.png-77e310bc4d591cdeb2d60b3d78fce1ea.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/golden_chestplate.png-aea2123d56d1d9116224ae6b6bc20cfe.stex"
+path="res://.import/golden_chestplate.png-7a3000f7d0c2d70fe8252660115f11df.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/golden_chestplate.png"
-dest_files=[ "res://.import/golden_chestplate.png-aea2123d56d1d9116224ae6b6bc20cfe.stex" ]
+source_file="res://Minecraft textures/item/golden_chestplate.png"
+dest_files=[ "res://.import/golden_chestplate.png-7a3000f7d0c2d70fe8252660115f11df.stex" ]
 
 [params]
 

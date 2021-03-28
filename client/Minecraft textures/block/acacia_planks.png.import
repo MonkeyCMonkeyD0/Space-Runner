@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/acacia_planks.png-cf85b28abddbf0b2873652064fcc56e8.stex"
+path="res://.import/acacia_planks.png-d5b5167e4e803dcdce60f44e02fa9858.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/acacia_planks.png"
-dest_files=[ "res://.import/acacia_planks.png-cf85b28abddbf0b2873652064fcc56e8.stex" ]
+source_file="res://Minecraft textures/block/acacia_planks.png"
+dest_files=[ "res://.import/acacia_planks.png-d5b5167e4e803dcdce60f44e02fa9858.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/mushroom_stem.png-0525399754994593beba6d3eafd3cb36.stex"
+path="res://.import/mushroom_stem.png-242ea21a931eaea7f1ddc15f12645a2b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/mushroom_stem.png"
-dest_files=[ "res://.import/mushroom_stem.png-0525399754994593beba6d3eafd3cb36.stex" ]
+source_file="res://Minecraft textures/block/mushroom_stem.png"
+dest_files=[ "res://.import/mushroom_stem.png-242ea21a931eaea7f1ddc15f12645a2b.stex" ]
 
 [params]
 

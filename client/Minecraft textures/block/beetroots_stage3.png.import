@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/beetroots_stage3.png-a10262f4171c7fbe535294c01cc32181.stex"
+path="res://.import/beetroots_stage3.png-05aa5d1f2f24cc0a1e179c0b996fd660.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/beetroots_stage3.png"
-dest_files=[ "res://.import/beetroots_stage3.png-a10262f4171c7fbe535294c01cc32181.stex" ]
+source_file="res://Minecraft textures/block/beetroots_stage3.png"
+dest_files=[ "res://.import/beetroots_stage3.png-05aa5d1f2f24cc0a1e179c0b996fd660.stex" ]
 
 [params]
 

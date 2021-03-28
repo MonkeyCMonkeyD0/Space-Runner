@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/purple_stained_glass.png-f8178ac812c93fec2a79a4e19f35381e.stex"
+path="res://.import/purple_stained_glass.png-f8f098e2c9e2be356b8f217f1a5fdb5d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/purple_stained_glass.png"
-dest_files=[ "res://.import/purple_stained_glass.png-f8178ac812c93fec2a79a4e19f35381e.stex" ]
+source_file="res://Minecraft textures/block/purple_stained_glass.png"
+dest_files=[ "res://.import/purple_stained_glass.png-f8f098e2c9e2be356b8f217f1a5fdb5d.stex" ]
 
 [params]
 

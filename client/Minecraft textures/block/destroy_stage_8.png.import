@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/destroy_stage_8.png-1891a5cbeed8fb12a3f7794c09f98da3.stex"
+path="res://.import/destroy_stage_8.png-7848aa4ec277afc1240a51c9ffa522d1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/destroy_stage_8.png"
-dest_files=[ "res://.import/destroy_stage_8.png-1891a5cbeed8fb12a3f7794c09f98da3.stex" ]
+source_file="res://Minecraft textures/block/destroy_stage_8.png"
+dest_files=[ "res://.import/destroy_stage_8.png-7848aa4ec277afc1240a51c9ffa522d1.stex" ]
 
 [params]
 

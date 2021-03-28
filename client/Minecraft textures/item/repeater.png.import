@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/repeater.png-f97ccd36608f76f23cb1a978aaea57fc.stex"
+path="res://.import/repeater.png-d615be3ec4ab50a049720f3e7eacce6c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/repeater.png"
-dest_files=[ "res://.import/repeater.png-f97ccd36608f76f23cb1a978aaea57fc.stex" ]
+source_file="res://Minecraft textures/item/repeater.png"
+dest_files=[ "res://.import/repeater.png-d615be3ec4ab50a049720f3e7eacce6c.stex" ]
 
 [params]
 

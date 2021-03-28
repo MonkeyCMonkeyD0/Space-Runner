@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/wheat_seeds.png-0c84fc9129a6458463a999bc47dd510c.stex"
+path="res://.import/wheat_seeds.png-d695adce574cde1f54ff580a04fd1dad.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/wheat_seeds.png"
-dest_files=[ "res://.import/wheat_seeds.png-0c84fc9129a6458463a999bc47dd510c.stex" ]
+source_file="res://Minecraft textures/item/wheat_seeds.png"
+dest_files=[ "res://.import/wheat_seeds.png-d695adce574cde1f54ff580a04fd1dad.stex" ]
 
 [params]
 

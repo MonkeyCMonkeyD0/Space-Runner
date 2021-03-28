@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/diamond_helmet.png-e8a9427d354286329e3b58e296c72d10.stex"
+path="res://.import/diamond_helmet.png-36467e9241890e2add233528695c6c59.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/diamond_helmet.png"
-dest_files=[ "res://.import/diamond_helmet.png-e8a9427d354286329e3b58e296c72d10.stex" ]
+source_file="res://Minecraft textures/item/diamond_helmet.png"
+dest_files=[ "res://.import/diamond_helmet.png-36467e9241890e2add233528695c6c59.stex" ]
 
 [params]
 

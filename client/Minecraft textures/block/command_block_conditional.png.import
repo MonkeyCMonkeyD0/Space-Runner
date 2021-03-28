@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/command_block_conditional.png-280182125d82ea7d033292194d53c0cf.stex"
+path="res://.import/command_block_conditional.png-0c2c11f00ce2ed9d5d3a3e9e454693cf.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/command_block_conditional.png"
-dest_files=[ "res://.import/command_block_conditional.png-280182125d82ea7d033292194d53c0cf.stex" ]
+source_file="res://Minecraft textures/block/command_block_conditional.png"
+dest_files=[ "res://.import/command_block_conditional.png-0c2c11f00ce2ed9d5d3a3e9e454693cf.stex" ]
 
 [params]
 

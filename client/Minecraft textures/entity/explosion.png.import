@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/explosion.png-cc687afc1bd88d213eb618c716c526c2.stex"
+path="res://.import/explosion.png-27df3a468870c0733df3ddffa9939c98.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/explosion.png"
-dest_files=[ "res://.import/explosion.png-cc687afc1bd88d213eb618c716c526c2.stex" ]
+source_file="res://Minecraft textures/entity/explosion.png"
+dest_files=[ "res://.import/explosion.png-27df3a468870c0733df3ddffa9939c98.stex" ]
 
 [params]
 

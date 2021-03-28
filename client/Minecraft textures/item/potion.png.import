@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/potion.png-7395d59a884af246fa1db9aff4f427ae.stex"
+path="res://.import/potion.png-149566e1eb430439b22570355247071e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/potion.png"
-dest_files=[ "res://.import/potion.png-7395d59a884af246fa1db9aff4f427ae.stex" ]
+source_file="res://Minecraft textures/item/potion.png"
+dest_files=[ "res://.import/potion.png-149566e1eb430439b22570355247071e.stex" ]
 
 [params]
 

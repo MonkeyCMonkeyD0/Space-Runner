@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/small_stripes.png-e55aa51730051a9f0b285754db94103a.stex"
+path="res://.import/small_stripes.png-f29968fe5452fc8d96ec96b1b84927f6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/banner/small_stripes.png"
-dest_files=[ "res://.import/small_stripes.png-e55aa51730051a9f0b285754db94103a.stex" ]
+source_file="res://Minecraft textures/entity/banner/small_stripes.png"
+dest_files=[ "res://.import/small_stripes.png-f29968fe5452fc8d96ec96b1b84927f6.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tropical_fish_bucket.png-3afaa863daad66ffa4e9a84946bca84a.stex"
+path="res://.import/tropical_fish_bucket.png-bebef0e85019073f826844d6ebe8228f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/tropical_fish_bucket.png"
-dest_files=[ "res://.import/tropical_fish_bucket.png-3afaa863daad66ffa4e9a84946bca84a.stex" ]
+source_file="res://Minecraft textures/item/tropical_fish_bucket.png"
+dest_files=[ "res://.import/tropical_fish_bucket.png-bebef0e85019073f826844d6ebe8228f.stex" ]
 
 [params]
 

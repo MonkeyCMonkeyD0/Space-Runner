@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/music_disc_mellohi.png-dbd873ca0de1d4827d95e9a9e4f1e0cc.stex"
+path="res://.import/music_disc_mellohi.png-8e141f7688a5ef91ffdf05d99bfce1a8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/music_disc_mellohi.png"
-dest_files=[ "res://.import/music_disc_mellohi.png-dbd873ca0de1d4827d95e9a9e4f1e0cc.stex" ]
+source_file="res://Minecraft textures/item/music_disc_mellohi.png"
+dest_files=[ "res://.import/music_disc_mellohi.png-8e141f7688a5ef91ffdf05d99bfce1a8.stex" ]
 
 [params]
 

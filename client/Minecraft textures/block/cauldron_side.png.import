@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cauldron_side.png-f0937e035b39947050ccb2b5ac158598.stex"
+path="res://.import/cauldron_side.png-1f0bcf865aa3c2b5d1ea61199002fb7b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/cauldron_side.png"
-dest_files=[ "res://.import/cauldron_side.png-f0937e035b39947050ccb2b5ac158598.stex" ]
+source_file="res://Minecraft textures/block/cauldron_side.png"
+dest_files=[ "res://.import/cauldron_side.png-1f0bcf865aa3c2b5d1ea61199002fb7b.stex" ]
 
 [params]
 
