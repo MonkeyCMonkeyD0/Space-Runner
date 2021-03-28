@@ -11,22 +11,41 @@ Knapsack::Knapsack(std::vector<unsigned int> weights, std::vector<unsigned int> 
 	maxIteration(max_iteration),
 	geneSize(weights.size())
 {
-	if (weights.size() != profits.size()) {
+	if (this->weights.size() != this->profits.size()) {
 		std::cerr << "Error please use same size array for weights & profits." << std::endl;
 		exit(EXIT_FAILURE);
 	}
 
-	add_pop();
+	if (this->population) {
+		std::cerr << "Error please use same size array for weights & profits." << std::endl;
+		exit(EXIT_FAILURE);
+	}
+
+	this->add_pop();
 }
 
 
-void Knapsack::add_pop()
+void Knapsack::add_pop(bool use_crossover = false)
 {
 	std::mt19937 gen(std::random_device());
-	std::uniform_int_distribution<unsigned long long int> distrib(0, (unsigned long long int) (1 << this->geneSize) - 1);
+	std::uniform_int_distribution<unsigned long long int> distrib_gs(0, (unsigned long long int) (1 << this->geneSize) - 1);
 
-	while (this->pop.size() < this->population)
-		this->pop[distrib(gen)] = 0;
+	if (use_crossover) {
+		std::uniform_int_distribution<unsigned long long int> distrib_pop(0, (unsigned long long int) this->pop.size() - 1);
+
+		for (unsigned int i = this->pop.size(); i < this->population; ++i) {
+			unsigned long long int gene = crossover(distrib_pop(gen),distrib_pop(gen),distrib_gs(gen));
+
+			this->pop[crossover(distrib_pop(gen),distrib_pop(gen),distrib_gs(gen))] = 0;
+
+		}
+
+	} else {
+		
+
+		while (this->pop.size() < this->population)
+			this->pop[distrib_gs(gen)] = 0;
+	}
 }
 
 int Knapsack::fitness(unsigned long long int gene)
@@ -63,6 +82,8 @@ void Knapsack::evaluation()
 	}
 
 	sort(sorted_map.begin(), sorted_map.end(), cmp);
+	std::cout << "best idividual = " << std::bitset<this->geneSize>(sorted_map[0].first) << std::endl;
+
 	this->pop.clear();
 	for (unsigned int i = 0; i < (unsigned int) (this->survivalRate * this->population); ++i) {
 		this->pop[sorted_map[i].first] = 0;
@@ -87,10 +108,24 @@ unsigned long long int Knapsack::crossover(unsigned long long int g1, unsigned l
 
 void Knapsack::run()
 {
+	std::mt19937 gen(std::random_device());
+	std::uniform_int_distribution<unsigned long long int> distrib_gs(0, (unsigned long long int) (1 << this->geneSize) - 1);
+
 	for (unsigned int iteration = 0; iteration < this->maxIteration; ++iteration) {
+
+		std::cout << "On iteration " << iteration << " : ";
 		this->evaluation();
-		for (unsigned int i = this->pop.size(); i < this->population; ++i) {
-			
+
+		std::uniform_int_distribution<unsigned long long int> distrib_pop(0, (unsigned long long int) this->pop.size() - 1);
+
+		std::vector<unsigned long long int, int> keys;
+		for (auto &it : this->pop) {
+			keys.push_back(it.first);
+
+		while (this->pop.size() < this->population) {
+			unsigned long long int gene = crossover(keys(distrib_pop(gen)), keys(distrib_pop(gen)), distrib_gs(gen));
+			gene = mutation(gene, distrib_gs(gen));
+			this->pop[gene] = 0;
 		}
 	}
 }

@@ -17,7 +17,7 @@ public:
 		unsigned int max_iteration = 15000
 	);
 
-	void add_pop();
+	void add_pop(bool use_crossover = false);
 	int fitness(unsigned long long int);
 	void evaluation();
 
