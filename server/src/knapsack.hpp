@@ -17,7 +17,7 @@ public:
 		unsigned int max_iteration = 15000
 	);
 
-	void add_pop(bool use_crossover = false);
+	void add_pop();
 	int fitness(unsigned long long int);
 	void evaluation();
 
@@ -30,18 +30,10 @@ private:
 	std::vector<unsigned int> profits;
 	unsigned int maxWeight;
 	unsigned int population;
-	double survivalRate;
-	unsigned int geneSize;
 	unsigned int maxIteration;
+	unsigned int geneSize;
+	double survivalRate;
 
-	std::map<unsigned long long int,unsigned int> pop;
+	std::map<unsigned long long int, int> pop;
 
-	// std::vector<int> opt;
-	// std::vector<int> parents;
-	// std::vector<int> newparents;
-	// std::vector<int> bests;
-	// std::vector<int> best_p;
-	// int iterated;
-
-	
 };

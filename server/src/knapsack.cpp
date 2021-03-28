@@ -1,4 +1,6 @@
 #include "knapsack.hpp"
+#include <iostream>
+#include <random>
 
 
 
@@ -24,28 +26,13 @@ Knapsack::Knapsack(std::vector<unsigned int> weights, std::vector<unsigned int> 
 	this->add_pop();
 }
 
-
-void Knapsack::add_pop(bool use_crossover = false)
+void Knapsack::add_pop()
 {
 	std::mt19937 gen(std::random_device());
-	std::uniform_int_distribution<unsigned long long int> distrib_gs(0, (unsigned long long int) (1 << this->geneSize) - 1);
+	std::uniform_int_distribution<unsigned long long int> distrib(0, (unsigned long long int)(1 << this->geneSize) - 1);
 
-	if (use_crossover) {
-		std::uniform_int_distribution<unsigned long long int> distrib_pop(0, (unsigned long long int) this->pop.size() - 1);
-
-		for (unsigned int i = this->pop.size(); i < this->population; ++i) {
-			unsigned long long int gene = crossover(distrib_pop(gen),distrib_pop(gen),distrib_gs(gen));
-
-			this->pop[crossover(distrib_pop(gen),distrib_pop(gen),distrib_gs(gen))] = 0;
-
-		}
-
-	} else {
-		
-
-		while (this->pop.size() < this->population)
-			this->pop[distrib_gs(gen)] = 0;
-	}
+	while (this->pop.size() < this->population)
+		this->pop[distrib_gs(gen)] = 0;
 }
 
 int Knapsack::fitness(unsigned long long int gene)
@@ -85,9 +72,8 @@ void Knapsack::evaluation()
 	std::cout << "best idividual = " << std::bitset<this->geneSize>(sorted_map[0].first) << std::endl;
 
 	this->pop.clear();
-	for (unsigned int i = 0; i < (unsigned int) (this->survivalRate * this->population); ++i) {
+	for (int i = 0; i < (int) this->survivalRate * this->population; ++i)
 		this->pop[sorted_map[i].first] = 0;
-	}
 }
 
 unsigned long long int Knapsack::mutation(unsigned long long int gene, int n)
@@ -119,7 +105,7 @@ void Knapsack::run()
 		std::uniform_int_distribution<unsigned long long int> distrib_pop(0, (unsigned long long int) this->pop.size() - 1);
 
 		std::vector<unsigned long long int, int> keys;
-		for (auto &it : this->pop) {
+		for (auto &it : this->pop)
 			keys.push_back(it.first);
 
 		while (this->pop.size() < this->population) {
