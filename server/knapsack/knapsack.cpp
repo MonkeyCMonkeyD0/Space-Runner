@@ -14,8 +14,8 @@ unsigned int population, double survival_rate, unsigned int max_iteration) :
 		maxWeight(max_weight),
 		population(population),
 		survivalRate(survival_rate),
-		maxIteration(max_iteration),
-		geneSize(weights.size())
+		geneSize(weights.size()),
+		maxIteration(max_iteration)
 
 {
 	if (weights.size() != profits.size()) {
