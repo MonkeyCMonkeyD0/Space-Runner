@@ -26,12 +26,15 @@ public:
 	void run();
 
 private:
+	std::vector<unsigned int> weights;
+	std::vector<unsigned int> profits;
 	unsigned int maxWeight;
 	unsigned int population;
-	unsigned int geneSize;
 	double survivalRate;
-	std::vector<int> weights;
-	std::vector<int> profits;
+	unsigned int maxIteration;
+	unsigned int geneSize;
+
+
 	std::map<unsigned long long int, int> pop;
 
 	// std::vector<int> opt;
