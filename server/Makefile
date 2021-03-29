@@ -44,21 +44,26 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
 # 	gcc -o $@ -c $<
 
 
-# testcase: 
-# 	cd $(TST_DIR); make
+testcase: 
+	cd $(TST_DIR); make
 
+clean:
+	rm -f $(OBJ) $(EXEC)
+# $(LIB_OBJ)
+veryclean: clean
+	rm -f $(SAVES)
+# $(LIB:%=$(LIB_DIR)/lib%.a)
+cleantest:
+	cd $(TST_DIR) ; make clean
+distclean : veryclean cleantest
+
+.PHONY: testcase clean veryclean distclean
 
 .depend:
 	$(CC) $(CCFLAGS) -MM $(SRC) > .depends
 -include .depends
 
-clean:
-	rm -f $(OBJ) $(EXEC) # $(LIB_OBJ)
-veryclean: clean
-	rm -f $(SAVES) # $(LIB:%=$(LIB_DIR)/lib%.a)
-# cleantest:
-# 	cd $(TST_DIR) ; @make clean
-distclean : veryclean #cleantest
+
 
 
 debug:
