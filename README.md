@@ -2,7 +2,7 @@
 Projet IAR MAIN 4
 
 Authors :
-	- Tristan Michel
-	- Aissam Rabhi
-	- Nawel Sennoun
-	- Maxime Trevisan-Lafont
+* Tristan Michel
+* Aissam Rabhi
+* Nael Sennoun
+* Maxime Lafont-Trevisan
