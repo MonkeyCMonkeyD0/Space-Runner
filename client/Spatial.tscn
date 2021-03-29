@@ -1,9 +1,10 @@
 [gd_scene load_steps=2 format=2]
 
-[sub_resource type="CylinderMesh" id=1]
+[ext_resource path="res://data/obj/ship2.obj" type="ArrayMesh" id=1]
 
 [node name="Spatial" type="Spatial"]
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
-mesh = SubResource( 1 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.51749, 1.30222, 0.133325 )
+mesh = ExtResource( 1 )
 material/0 = null
