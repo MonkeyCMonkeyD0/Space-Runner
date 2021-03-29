@@ -2,9 +2,15 @@
 
 [ext_resource path="res://data/obj/ship2.obj" type="ArrayMesh" id=1]
 
-[node name="Spatial" type="Spatial"]
+[node name="Control" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="MeshInstance" type="MeshInstance" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.51749, 1.30222, 0.133325 )
+[node name="Spatial" type="Spatial" parent="."]
+
+[node name="MeshInstance" type="MeshInstance" parent="Spatial"]
 mesh = ExtResource( 1 )
 material/0 = null
