@@ -48,13 +48,13 @@ testcase:
 	cd $(TST_DIR); make
 
 clean:
-	rm -f $(OBJ) $(EXEC)
+	rm -Rf $(OBJ_DIR) $(EXEC)
 # $(LIB_OBJ)
 veryclean: clean
 	rm -f $(SAVES)
 # $(LIB:%=$(LIB_DIR)/lib%.a)
 cleantest:
-	cd $(TST_DIR) ; make clean
+	cd $(TST_DIR) ; make veryclean
 distclean : veryclean cleantest
 
 .PHONY: testcase clean veryclean distclean

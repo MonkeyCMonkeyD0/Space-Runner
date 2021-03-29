@@ -44,7 +44,7 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
 -include .depends
 
 clean:
-	rm -f $(OBJ_TST) $(EXEC_TEST)
+	rm -Rf $(OBJ_DIR) $(EXEC_TEST)
 veryclean: clean
 	rm -f $(SAVES)
 
