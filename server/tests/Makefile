@@ -1,6 +1,6 @@
 EXEC_TEST = test
 EXEC = enetServer
-# LIB = enet
+# LIB = enet omp
 CC = g++
 CCFLAGS = -Wall -Werror -std=c++11 -g
 CFLAGS = -I../include/
@@ -44,7 +44,7 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
 -include .depends
 
 clean:
-	rm -f $(OBJ_TST) $(EXEC)
+	rm -f $(OBJ_TST) $(EXEC_TEST)
 veryclean: clean
 	rm -f $(SAVES)
 
