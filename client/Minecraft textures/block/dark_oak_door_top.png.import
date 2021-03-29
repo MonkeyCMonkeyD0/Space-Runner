@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/dark_oak_door_top.png-4f3c87d814f1b026997667745da294b5.stex"
+path="res://.import/dark_oak_door_top.png-6a52a7b74565416ac10bb85288784b10.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/dark_oak_door_top.png"
-dest_files=[ "res://.import/dark_oak_door_top.png-4f3c87d814f1b026997667745da294b5.stex" ]
+source_file="res://Minecraft textures/block/dark_oak_door_top.png"
+dest_files=[ "res://.import/dark_oak_door_top.png-6a52a7b74565416ac10bb85288784b10.stex" ]
 
 [params]
 

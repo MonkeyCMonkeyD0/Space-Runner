@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/light_blue.png-8377572654b547f7e694ac55a23c2e52.stex"
+path="res://.import/light_blue.png-f76bcc5cfda6c5c4087e4a638239d49b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/llama/decor/light_blue.png"
-dest_files=[ "res://.import/light_blue.png-8377572654b547f7e694ac55a23c2e52.stex" ]
+source_file="res://Minecraft textures/entity/llama/decor/light_blue.png"
+dest_files=[ "res://.import/light_blue.png-f76bcc5cfda6c5c4087e4a638239d49b.stex" ]
 
 [params]
 

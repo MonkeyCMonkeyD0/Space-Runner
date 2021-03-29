@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/baked_potato.png-1507a11fa1d13102c89db2f154a4c829.stex"
+path="res://.import/baked_potato.png-2d938ce5721d41a60267f50cfbba30f8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/baked_potato.png"
-dest_files=[ "res://.import/baked_potato.png-1507a11fa1d13102c89db2f154a4c829.stex" ]
+source_file="res://Minecraft textures/item/baked_potato.png"
+dest_files=[ "res://.import/baked_potato.png-2d938ce5721d41a60267f50cfbba30f8.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/drowned.png-c0227a1e78b4e943b661ff3c7d660017.stex"
+path="res://.import/drowned.png-235475bff914cc6a96b55d5e4d9efecb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/zombie/drowned.png"
-dest_files=[ "res://.import/drowned.png-c0227a1e78b4e943b661ff3c7d660017.stex" ]
+source_file="res://Minecraft textures/entity/zombie/drowned.png"
+dest_files=[ "res://.import/drowned.png-235475bff914cc6a96b55d5e4d9efecb.stex" ]
 
 [params]
 

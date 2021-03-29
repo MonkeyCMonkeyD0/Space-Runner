@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/large_fern_bottom.png-bcfffb2e00cf89a5fb2b3ef98d96a288.stex"
+path="res://.import/large_fern_bottom.png-13213c68cc288d7fcffa450b9ec747ba.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/large_fern_bottom.png"
-dest_files=[ "res://.import/large_fern_bottom.png-bcfffb2e00cf89a5fb2b3ef98d96a288.stex" ]
+source_file="res://Minecraft textures/block/large_fern_bottom.png"
+dest_files=[ "res://.import/large_fern_bottom.png-13213c68cc288d7fcffa450b9ec747ba.stex" ]
 
 [params]
 

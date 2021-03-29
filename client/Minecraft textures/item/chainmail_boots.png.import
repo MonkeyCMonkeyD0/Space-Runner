@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/chainmail_boots.png-22cdb19dc7c29e54a90752d33a7e38c7.stex"
+path="res://.import/chainmail_boots.png-c8153eceeccdab9aa8176b380eba6bf7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/chainmail_boots.png"
-dest_files=[ "res://.import/chainmail_boots.png-22cdb19dc7c29e54a90752d33a7e38c7.stex" ]
+source_file="res://Minecraft textures/item/chainmail_boots.png"
+dest_files=[ "res://.import/chainmail_boots.png-c8153eceeccdab9aa8176b380eba6bf7.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/iron_layer_2.png-211d5a835ac042feacd44f44d1f26bb0.stex"
+path="res://.import/iron_layer_2.png-2d2125ece3f2454462296a984e6ade67.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/models/armor/iron_layer_2.png"
-dest_files=[ "res://.import/iron_layer_2.png-211d5a835ac042feacd44f44d1f26bb0.stex" ]
+source_file="res://Minecraft textures/models/armor/iron_layer_2.png"
+dest_files=[ "res://.import/iron_layer_2.png-2d2125ece3f2454462296a984e6ade67.stex" ]
 
 [params]
 

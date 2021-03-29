@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/elytra.png-5f4a25494da28da62effac08e26771ca.stex"
+path="res://.import/elytra.png-ea1e3e7c4c0d5fe9e24de37d5f1bb0f4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/elytra.png"
-dest_files=[ "res://.import/elytra.png-5f4a25494da28da62effac08e26771ca.stex" ]
+source_file="res://Minecraft textures/item/elytra.png"
+dest_files=[ "res://.import/elytra.png-ea1e3e7c4c0d5fe9e24de37d5f1bb0f4.stex" ]
 
 [params]
 

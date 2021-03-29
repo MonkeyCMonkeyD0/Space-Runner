@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/mossy_cobblestone.png-21088b1b52d659fa1b3a7721621dda5b.stex"
+path="res://.import/mossy_cobblestone.png-610192943dc545284e54a1f738c60046.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/mossy_cobblestone.png"
-dest_files=[ "res://.import/mossy_cobblestone.png-21088b1b52d659fa1b3a7721621dda5b.stex" ]
+source_file="res://Minecraft textures/block/mossy_cobblestone.png"
+dest_files=[ "res://.import/mossy_cobblestone.png-610192943dc545284e54a1f738c60046.stex" ]
 
 [params]
 

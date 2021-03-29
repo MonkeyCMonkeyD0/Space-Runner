@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/wolf_collar.png-d9e6e26a39d73777f43479cd814aee49.stex"
+path="res://.import/wolf_collar.png-f96308d2e88959dde31b5cfeb9f47867.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/wolf/wolf_collar.png"
-dest_files=[ "res://.import/wolf_collar.png-d9e6e26a39d73777f43479cd814aee49.stex" ]
+source_file="res://Minecraft textures/entity/wolf/wolf_collar.png"
+dest_files=[ "res://.import/wolf_collar.png-f96308d2e88959dde31b5cfeb9f47867.stex" ]
 
 [params]
 

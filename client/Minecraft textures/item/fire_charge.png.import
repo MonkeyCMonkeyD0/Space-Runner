@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/fire_charge.png-b2cc396a8b9f08e7b90031d2ad423b16.stex"
+path="res://.import/fire_charge.png-7c98d5f16a38bddf64cca7adbd7e4682.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/fire_charge.png"
-dest_files=[ "res://.import/fire_charge.png-b2cc396a8b9f08e7b90031d2ad423b16.stex" ]
+source_file="res://Minecraft textures/item/fire_charge.png"
+dest_files=[ "res://.import/fire_charge.png-7c98d5f16a38bddf64cca7adbd7e4682.stex" ]
 
 [params]
 

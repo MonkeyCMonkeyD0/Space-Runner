@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sandstone_bottom.png-24776f36e00f669212eb668fb5eb33b9.stex"
+path="res://.import/sandstone_bottom.png-12eb09be0c651e7412bfe8bfa93935eb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/sandstone_bottom.png"
-dest_files=[ "res://.import/sandstone_bottom.png-24776f36e00f669212eb668fb5eb33b9.stex" ]
+source_file="res://Minecraft textures/block/sandstone_bottom.png"
+dest_files=[ "res://.import/sandstone_bottom.png-12eb09be0c651e7412bfe8bfa93935eb.stex" ]
 
 [params]
 

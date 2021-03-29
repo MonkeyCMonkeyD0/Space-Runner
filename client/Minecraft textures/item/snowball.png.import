@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/snowball.png-6ee3ddef927006b7c3fe9995314f13fd.stex"
+path="res://.import/snowball.png-c90f6f830ea49ca6eff68b1cb3097c3f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/snowball.png"
-dest_files=[ "res://.import/snowball.png-6ee3ddef927006b7c3fe9995314f13fd.stex" ]
+source_file="res://Minecraft textures/item/snowball.png"
+dest_files=[ "res://.import/snowball.png-c90f6f830ea49ca6eff68b1cb3097c3f.stex" ]
 
 [params]
 

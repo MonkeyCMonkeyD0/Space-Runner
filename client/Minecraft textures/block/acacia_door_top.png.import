@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/acacia_door_top.png-da49617f01cf1b1d4607695fa38e24f0.stex"
+path="res://.import/acacia_door_top.png-5d923442db71efd5d323d298d0a0e658.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/acacia_door_top.png"
-dest_files=[ "res://.import/acacia_door_top.png-da49617f01cf1b1d4607695fa38e24f0.stex" ]
+source_file="res://Minecraft textures/block/acacia_door_top.png"
+dest_files=[ "res://.import/acacia_door_top.png-5d923442db71efd5d323d298d0a0e658.stex" ]
 
 [params]
 

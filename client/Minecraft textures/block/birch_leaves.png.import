@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/birch_leaves.png-83cbb0fce0322b8343042533cbdeac13.stex"
+path="res://.import/birch_leaves.png-a74b8a5b1726ea077694545831e8a40c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/birch_leaves.png"
-dest_files=[ "res://.import/birch_leaves.png-83cbb0fce0322b8343042533cbdeac13.stex" ]
+source_file="res://Minecraft textures/block/birch_leaves.png"
+dest_files=[ "res://.import/birch_leaves.png-a74b8a5b1726ea077694545831e8a40c.stex" ]
 
 [params]
 

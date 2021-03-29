@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/chainmail_layer_2.png-b121c31f2cbaf696270fbf7c63a092c9.stex"
+path="res://.import/chainmail_layer_2.png-373db6e6abe3a64978fc0b6dfaa76039.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/models/armor/chainmail_layer_2.png"
-dest_files=[ "res://.import/chainmail_layer_2.png-b121c31f2cbaf696270fbf7c63a092c9.stex" ]
+source_file="res://Minecraft textures/models/armor/chainmail_layer_2.png"
+dest_files=[ "res://.import/chainmail_layer_2.png-373db6e6abe3a64978fc0b6dfaa76039.stex" ]
 
 [params]
 

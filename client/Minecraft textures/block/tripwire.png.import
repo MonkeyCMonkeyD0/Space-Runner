@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tripwire.png-bc5e135f35729d243b58f80ee9848a6b.stex"
+path="res://.import/tripwire.png-5887b644bc9841a978a7a76a62bc7e91.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/tripwire.png"
-dest_files=[ "res://.import/tripwire.png-bc5e135f35729d243b58f80ee9848a6b.stex" ]
+source_file="res://Minecraft textures/block/tripwire.png"
+dest_files=[ "res://.import/tripwire.png-5887b644bc9841a978a7a76a62bc7e91.stex" ]
 
 [params]
 

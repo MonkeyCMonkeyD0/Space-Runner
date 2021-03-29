@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/iron_ingot.png-9b959e4bb81e2c3342c14d3194addec9.stex"
+path="res://.import/iron_ingot.png-73a7dc2831647fc85065170d558e9ae4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/iron_ingot.png"
-dest_files=[ "res://.import/iron_ingot.png-9b959e4bb81e2c3342c14d3194addec9.stex" ]
+source_file="res://Minecraft textures/item/iron_ingot.png"
+dest_files=[ "res://.import/iron_ingot.png-73a7dc2831647fc85065170d558e9ae4.stex" ]
 
 [params]
 

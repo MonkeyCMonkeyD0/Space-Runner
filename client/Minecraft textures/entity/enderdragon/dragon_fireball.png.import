@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/dragon_fireball.png-024f6974fd12d3efd735db4597488158.stex"
+path="res://.import/dragon_fireball.png-76b5a8859552dbb385fb45bf2205e754.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/enderdragon/dragon_fireball.png"
-dest_files=[ "res://.import/dragon_fireball.png-024f6974fd12d3efd735db4597488158.stex" ]
+source_file="res://Minecraft textures/entity/enderdragon/dragon_fireball.png"
+dest_files=[ "res://.import/dragon_fireball.png-76b5a8859552dbb385fb45bf2205e754.stex" ]
 
 [params]
 

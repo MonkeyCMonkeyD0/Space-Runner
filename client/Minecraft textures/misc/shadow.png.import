@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/shadow.png-a8a97b590585732a58ad9b39c2884ba1.stex"
+path="res://.import/shadow.png-8e40d183471eec0ea99f7c16db28c407.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/misc/shadow.png"
-dest_files=[ "res://.import/shadow.png-a8a97b590585732a58ad9b39c2884ba1.stex" ]
+source_file="res://Minecraft textures/misc/shadow.png"
+dest_files=[ "res://.import/shadow.png-8e40d183471eec0ea99f7c16db28c407.stex" ]
 
 [params]
 

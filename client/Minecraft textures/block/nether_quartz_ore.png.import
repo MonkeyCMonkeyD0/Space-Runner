@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/nether_quartz_ore.png-595ae498d371c8b119934ee28fd28e1c.stex"
+path="res://.import/nether_quartz_ore.png-7de46308254c239bdbbafde5da877399.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/nether_quartz_ore.png"
-dest_files=[ "res://.import/nether_quartz_ore.png-595ae498d371c8b119934ee28fd28e1c.stex" ]
+source_file="res://Minecraft textures/block/nether_quartz_ore.png"
+dest_files=[ "res://.import/nether_quartz_ore.png-7de46308254c239bdbbafde5da877399.stex" ]
 
 [params]
 

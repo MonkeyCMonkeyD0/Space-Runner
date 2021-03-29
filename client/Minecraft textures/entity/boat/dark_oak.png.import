@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/dark_oak.png-a64e93cd8abcc214b934ccdda59790ef.stex"
+path="res://.import/dark_oak.png-0946f57038d400b7605e8c4d456d48c2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/boat/dark_oak.png"
-dest_files=[ "res://.import/dark_oak.png-a64e93cd8abcc214b934ccdda59790ef.stex" ]
+source_file="res://Minecraft textures/entity/boat/dark_oak.png"
+dest_files=[ "res://.import/dark_oak.png-0946f57038d400b7605e8c4d456d48c2.stex" ]
 
 [params]
 

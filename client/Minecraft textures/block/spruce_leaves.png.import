@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/spruce_leaves.png-940b39910379a7985a61b34d0f1a7c6d.stex"
+path="res://.import/spruce_leaves.png-98f9f156d44989dea166ccc056e518cd.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/spruce_leaves.png"
-dest_files=[ "res://.import/spruce_leaves.png-940b39910379a7985a61b34d0f1a7c6d.stex" ]
+source_file="res://Minecraft textures/block/spruce_leaves.png"
+dest_files=[ "res://.import/spruce_leaves.png-98f9f156d44989dea166ccc056e518cd.stex" ]
 
 [params]
 

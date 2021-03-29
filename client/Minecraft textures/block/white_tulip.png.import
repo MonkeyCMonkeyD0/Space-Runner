@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/white_tulip.png-edf64398faf36312f8ea6e92901386e6.stex"
+path="res://.import/white_tulip.png-9b671dcf24d69a8c4b2f54bcbe81d9e2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/white_tulip.png"
-dest_files=[ "res://.import/white_tulip.png-edf64398faf36312f8ea6e92901386e6.stex" ]
+source_file="res://Minecraft textures/block/white_tulip.png"
+dest_files=[ "res://.import/white_tulip.png-9b671dcf24d69a8c4b2f54bcbe81d9e2.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/stripe_bottom.png-976386844b17e2b8357481fee52d9a5c.stex"
+path="res://.import/stripe_bottom.png-f1349dab579fcf5a9149d648935b8fc1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/shield/stripe_bottom.png"
-dest_files=[ "res://.import/stripe_bottom.png-976386844b17e2b8357481fee52d9a5c.stex" ]
+source_file="res://Minecraft textures/entity/shield/stripe_bottom.png"
+dest_files=[ "res://.import/stripe_bottom.png-f1349dab579fcf5a9149d648935b8fc1.stex" ]
 
 [params]
 

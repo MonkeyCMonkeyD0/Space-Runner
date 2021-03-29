@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/jungle_trapdoor.png-0ca1c8aeda7c53151bbe6a33bcdbcc60.stex"
+path="res://.import/jungle_trapdoor.png-5eab59ed36bef88ec27ce1ee59f8f5d7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/jungle_trapdoor.png"
-dest_files=[ "res://.import/jungle_trapdoor.png-0ca1c8aeda7c53151bbe6a33bcdbcc60.stex" ]
+source_file="res://Minecraft textures/block/jungle_trapdoor.png"
+dest_files=[ "res://.import/jungle_trapdoor.png-5eab59ed36bef88ec27ce1ee59f8f5d7.stex" ]
 
 [params]
 

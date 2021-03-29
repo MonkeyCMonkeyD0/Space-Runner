@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/magenta_wool.png-99d74b1cd6eed19630f4a503bc9dc66c.stex"
+path="res://.import/magenta_wool.png-db95676e89645021f83a3f41b2a968fe.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/magenta_wool.png"
-dest_files=[ "res://.import/magenta_wool.png-99d74b1cd6eed19630f4a503bc9dc66c.stex" ]
+source_file="res://Minecraft textures/block/magenta_wool.png"
+dest_files=[ "res://.import/magenta_wool.png-db95676e89645021f83a3f41b2a968fe.stex" ]
 
 [params]
 

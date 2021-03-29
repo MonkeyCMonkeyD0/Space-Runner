@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/detector_rail_on.png-70c6aea7f386b57a9012e81fa9d2249f.stex"
+path="res://.import/detector_rail_on.png-a7b1874fb0dc5932d567974423217444.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/detector_rail_on.png"
-dest_files=[ "res://.import/detector_rail_on.png-70c6aea7f386b57a9012e81fa9d2249f.stex" ]
+source_file="res://Minecraft textures/block/detector_rail_on.png"
+dest_files=[ "res://.import/detector_rail_on.png-a7b1874fb0dc5932d567974423217444.stex" ]
 
 [params]
 

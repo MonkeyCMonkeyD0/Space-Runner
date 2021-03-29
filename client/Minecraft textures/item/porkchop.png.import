@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/porkchop.png-18c7b9d8ba94db5668fad14ba3989b6b.stex"
+path="res://.import/porkchop.png-13f0735f9da2955af417a0bd32a42404.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/porkchop.png"
-dest_files=[ "res://.import/porkchop.png-18c7b9d8ba94db5668fad14ba3989b6b.stex" ]
+source_file="res://Minecraft textures/item/porkchop.png"
+dest_files=[ "res://.import/porkchop.png-13f0735f9da2955af417a0bd32a42404.stex" ]
 
 [params]
 

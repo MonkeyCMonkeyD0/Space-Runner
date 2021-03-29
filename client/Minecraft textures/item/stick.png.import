@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/stick.png-e3ea2bdfe4f2dac0d20e8e9ea2bcf621.stex"
+path="res://.import/stick.png-4c7b4fe513b109eef5fead4db9f637cb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/stick.png"
-dest_files=[ "res://.import/stick.png-e3ea2bdfe4f2dac0d20e8e9ea2bcf621.stex" ]
+source_file="res://Minecraft textures/item/stick.png"
+dest_files=[ "res://.import/stick.png-4c7b4fe513b109eef5fead4db9f637cb.stex" ]
 
 [params]
 

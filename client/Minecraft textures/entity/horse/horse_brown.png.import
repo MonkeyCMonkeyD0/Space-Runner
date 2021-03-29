@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/horse_brown.png-319c97dabec290398cdbb1a1559d95fa.stex"
+path="res://.import/horse_brown.png-f2004ee361d88265a4260721171d4ac9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/horse/horse_brown.png"
-dest_files=[ "res://.import/horse_brown.png-319c97dabec290398cdbb1a1559d95fa.stex" ]
+source_file="res://Minecraft textures/entity/horse/horse_brown.png"
+dest_files=[ "res://.import/horse_brown.png-f2004ee361d88265a4260721171d4ac9.stex" ]
 
 [params]
 

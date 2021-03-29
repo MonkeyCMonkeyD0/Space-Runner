@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/zombie_pigman.png-d35da0ebf35cac021edf8577f4b4ff0d.stex"
+path="res://.import/zombie_pigman.png-5f157f2dbe2920afa35c9c828204b74e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/zombie_pigman.png"
-dest_files=[ "res://.import/zombie_pigman.png-d35da0ebf35cac021edf8577f4b4ff0d.stex" ]
+source_file="res://Minecraft textures/entity/zombie_pigman.png"
+dest_files=[ "res://.import/zombie_pigman.png-5f157f2dbe2920afa35c9c828204b74e.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/orange_dye.png-346430b64ed317960a0eff10814a51eb.stex"
+path="res://.import/orange_dye.png-48dafb53e89225282451aaafe9bc80e6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/orange_dye.png"
-dest_files=[ "res://.import/orange_dye.png-346430b64ed317960a0eff10814a51eb.stex" ]
+source_file="res://Minecraft textures/item/orange_dye.png"
+dest_files=[ "res://.import/orange_dye.png-48dafb53e89225282451aaafe9bc80e6.stex" ]
 
 [params]
 

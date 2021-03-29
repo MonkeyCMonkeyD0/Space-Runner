@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/redstone_dust_overlay.png-e765a5a267dde0db2183f4b18958fdc3.stex"
+path="res://.import/redstone_dust_overlay.png-06000ce8c3ee6f868217e8664ac62c0c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/redstone_dust_overlay.png"
-dest_files=[ "res://.import/redstone_dust_overlay.png-e765a5a267dde0db2183f4b18958fdc3.stex" ]
+source_file="res://Minecraft textures/block/redstone_dust_overlay.png"
+dest_files=[ "res://.import/redstone_dust_overlay.png-06000ce8c3ee6f868217e8664ac62c0c.stex" ]
 
 [params]
 

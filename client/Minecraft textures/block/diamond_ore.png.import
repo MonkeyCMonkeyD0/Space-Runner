@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/diamond_ore.png-058c4512f94633ad8c0283eb764bfe5c.stex"
+path="res://.import/diamond_ore.png-8d937ece71396fc11c8b658e4c8468de.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/diamond_ore.png"
-dest_files=[ "res://.import/diamond_ore.png-058c4512f94633ad8c0283eb764bfe5c.stex" ]
+source_file="res://Minecraft textures/block/diamond_ore.png"
+dest_files=[ "res://.import/diamond_ore.png-8d937ece71396fc11c8b658e4c8468de.stex" ]
 
 [params]
 

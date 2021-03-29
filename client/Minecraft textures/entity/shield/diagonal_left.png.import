@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/diagonal_left.png-c882dba4c18f84f0bf8c0142ae94d20f.stex"
+path="res://.import/diagonal_left.png-7c03a38ed7b547a623239759b09d834c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/shield/diagonal_left.png"
-dest_files=[ "res://.import/diagonal_left.png-c882dba4c18f84f0bf8c0142ae94d20f.stex" ]
+source_file="res://Minecraft textures/entity/shield/diagonal_left.png"
+dest_files=[ "res://.import/diagonal_left.png-7c03a38ed7b547a623239759b09d834c.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/break_particle.png-10ec7564172ec811c34e5cacffd631c7.stex"
+path="res://.import/break_particle.png-0d3026e4cebc9fd2e4cbd04c0996e054.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/conduit/break_particle.png"
-dest_files=[ "res://.import/break_particle.png-10ec7564172ec811c34e5cacffd631c7.stex" ]
+source_file="res://Minecraft textures/entity/conduit/break_particle.png"
+dest_files=[ "res://.import/break_particle.png-0d3026e4cebc9fd2e4cbd04c0996e054.stex" ]
 
 [params]
 

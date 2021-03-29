@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/structure_void.png-befee188d1b920f274d0429b537ce24d.stex"
+path="res://.import/structure_void.png-d59a1e06fa9b1a616dca4fe4600cda51.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/structure_void.png"
-dest_files=[ "res://.import/structure_void.png-befee188d1b920f274d0429b537ce24d.stex" ]
+source_file="res://Minecraft textures/item/structure_void.png"
+dest_files=[ "res://.import/structure_void.png-d59a1e06fa9b1a616dca4fe4600cda51.stex" ]
 
 [params]
 

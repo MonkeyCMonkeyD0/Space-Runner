@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/pink_dye.png-b00706f5e0304d3219422a5f416bc405.stex"
+path="res://.import/pink_dye.png-c012303b5ba70bffc0a800d23da45155.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/pink_dye.png"
-dest_files=[ "res://.import/pink_dye.png-b00706f5e0304d3219422a5f416bc405.stex" ]
+source_file="res://Minecraft textures/item/pink_dye.png"
+dest_files=[ "res://.import/pink_dye.png-c012303b5ba70bffc0a800d23da45155.stex" ]
 
 [params]
 

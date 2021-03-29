@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/piston_inner.png-3474bdfbcc8172a9b6449edb2c35ee40.stex"
+path="res://.import/piston_inner.png-e8b82b021c78d9ed1e2b08c4999db085.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/piston_inner.png"
-dest_files=[ "res://.import/piston_inner.png-3474bdfbcc8172a9b6449edb2c35ee40.stex" ]
+source_file="res://Minecraft textures/block/piston_inner.png"
+dest_files=[ "res://.import/piston_inner.png-e8b82b021c78d9ed1e2b08c4999db085.stex" ]
 
 [params]
 

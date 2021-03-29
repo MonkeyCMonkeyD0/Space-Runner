@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/comparator.png-4d63eaa5da164ec037fd1f8f4c9176f8.stex"
+path="res://.import/comparator.png-6c7ae0e499308951aef63ff1e68a7ca7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/comparator.png"
-dest_files=[ "res://.import/comparator.png-4d63eaa5da164ec037fd1f8f4c9176f8.stex" ]
+source_file="res://Minecraft textures/block/comparator.png"
+dest_files=[ "res://.import/comparator.png-6c7ae0e499308951aef63ff1e68a7ca7.stex" ]
 
 [params]
 

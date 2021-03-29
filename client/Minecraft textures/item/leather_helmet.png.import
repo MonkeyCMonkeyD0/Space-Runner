@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/leather_helmet.png-c4d0f31ba23f45a17d405eb0675021f1.stex"
+path="res://.import/leather_helmet.png-c1de83c71cc27b332d0ffbc425f107f3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/leather_helmet.png"
-dest_files=[ "res://.import/leather_helmet.png-c4d0f31ba23f45a17d405eb0675021f1.stex" ]
+source_file="res://Minecraft textures/item/leather_helmet.png"
+dest_files=[ "res://.import/leather_helmet.png-c1de83c71cc27b332d0ffbc425f107f3.stex" ]
 
 [params]
 

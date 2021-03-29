@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/pink_tulip.png-f788086b453a6eebfaf1de9f102db6cf.stex"
+path="res://.import/pink_tulip.png-decc038d772cb68a51ed0bf628c60753.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/pink_tulip.png"
-dest_files=[ "res://.import/pink_tulip.png-f788086b453a6eebfaf1de9f102db6cf.stex" ]
+source_file="res://Minecraft textures/block/pink_tulip.png"
+dest_files=[ "res://.import/pink_tulip.png-decc038d772cb68a51ed0bf628c60753.stex" ]
 
 [params]
 

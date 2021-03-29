@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/purpur_pillar_top.png-4959d545ca1c074554199451cff0e273.stex"
+path="res://.import/purpur_pillar_top.png-499371861f963454f4b40d343e0380b3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/purpur_pillar_top.png"
-dest_files=[ "res://.import/purpur_pillar_top.png-4959d545ca1c074554199451cff0e273.stex" ]
+source_file="res://Minecraft textures/block/purpur_pillar_top.png"
+dest_files=[ "res://.import/purpur_pillar_top.png-499371861f963454f4b40d343e0380b3.stex" ]
 
 [params]
 

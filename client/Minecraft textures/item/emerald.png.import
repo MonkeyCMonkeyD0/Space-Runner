@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/emerald.png-643eaa0f8c058485ebe7f036e3be23ec.stex"
+path="res://.import/emerald.png-6c2e3efb50c51a663093f28d1ba9370c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/emerald.png"
-dest_files=[ "res://.import/emerald.png-643eaa0f8c058485ebe7f036e3be23ec.stex" ]
+source_file="res://Minecraft textures/item/emerald.png"
+dest_files=[ "res://.import/emerald.png-6c2e3efb50c51a663093f28d1ba9370c.stex" ]
 
 [params]
 

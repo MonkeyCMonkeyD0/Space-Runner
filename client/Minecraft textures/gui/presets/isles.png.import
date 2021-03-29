@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/isles.png-70c6a4b310bac656e9fe8ff4068bfe2c.stex"
+path="res://.import/isles.png-405ad78f4533a02497fd2bda6da3c4ea.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/gui/presets/isles.png"
-dest_files=[ "res://.import/isles.png-70c6a4b310bac656e9fe8ff4068bfe2c.stex" ]
+source_file="res://Minecraft textures/gui/presets/isles.png"
+dest_files=[ "res://.import/isles.png-405ad78f4533a02497fd2bda6da3c4ea.stex" ]
 
 [params]
 

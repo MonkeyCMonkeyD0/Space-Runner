@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/allium.png-bbb7fc977ae3ea61260cfd5736c37232.stex"
+path="res://.import/allium.png-f143961d914cfcd68a66d49d1d3a22e1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/allium.png"
-dest_files=[ "res://.import/allium.png-bbb7fc977ae3ea61260cfd5736c37232.stex" ]
+source_file="res://Minecraft textures/block/allium.png"
+dest_files=[ "res://.import/allium.png-f143961d914cfcd68a66d49d1d3a22e1.stex" ]
 
 [params]
 

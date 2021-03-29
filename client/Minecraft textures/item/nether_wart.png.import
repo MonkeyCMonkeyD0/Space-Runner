@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/nether_wart.png-931c3c5dd0eba7b5567fa6d18b1c071e.stex"
+path="res://.import/nether_wart.png-cf556463503b523ddc9ef559cd2ef94d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/nether_wart.png"
-dest_files=[ "res://.import/nether_wart.png-931c3c5dd0eba7b5567fa6d18b1c071e.stex" ]
+source_file="res://Minecraft textures/item/nether_wart.png"
+dest_files=[ "res://.import/nether_wart.png-cf556463503b523ddc9ef559cd2ef94d.stex" ]
 
 [params]
 

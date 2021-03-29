@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/dead_fire_coral_fan.png-4814c1934303aae4f373e5a5d2e0aea5.stex"
+path="res://.import/dead_fire_coral_fan.png-9ae8a71b1d1eb6b7b8ecc3ace997bdb7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/dead_fire_coral_fan.png"
-dest_files=[ "res://.import/dead_fire_coral_fan.png-4814c1934303aae4f373e5a5d2e0aea5.stex" ]
+source_file="res://Minecraft textures/block/dead_fire_coral_fan.png"
+dest_files=[ "res://.import/dead_fire_coral_fan.png-9ae8a71b1d1eb6b7b8ecc3ace997bdb7.stex" ]
 
 [params]
 

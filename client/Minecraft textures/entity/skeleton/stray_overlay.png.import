@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/stray_overlay.png-2d90cba3443886b8ebf4a976ae16f7f2.stex"
+path="res://.import/stray_overlay.png-03496e4944f548d2f6c7d28e6d4cd692.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/skeleton/stray_overlay.png"
-dest_files=[ "res://.import/stray_overlay.png-2d90cba3443886b8ebf4a976ae16f7f2.stex" ]
+source_file="res://Minecraft textures/entity/skeleton/stray_overlay.png"
+dest_files=[ "res://.import/stray_overlay.png-03496e4944f548d2f6c7d28e6d4cd692.stex" ]
 
 [params]
 

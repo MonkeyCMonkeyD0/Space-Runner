@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/drought.png-f3bf5c8daa88f804a9c02a1042242218.stex"
+path="res://.import/drought.png-20e35c011f29a9355a303f941f3634f7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/gui/presets/drought.png"
-dest_files=[ "res://.import/drought.png-f3bf5c8daa88f804a9c02a1042242218.stex" ]
+source_file="res://Minecraft textures/gui/presets/drought.png"
+dest_files=[ "res://.import/drought.png-20e35c011f29a9355a303f941f3634f7.stex" ]
 
 [params]
 

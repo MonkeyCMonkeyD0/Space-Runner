@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/glass_bottle.png-4c3165b63dde887a26957d16e4566848.stex"
+path="res://.import/glass_bottle.png-25e4888d6d2f0dc9d92a36825ac61436.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/glass_bottle.png"
-dest_files=[ "res://.import/glass_bottle.png-4c3165b63dde887a26957d16e4566848.stex" ]
+source_file="res://Minecraft textures/item/glass_bottle.png"
+dest_files=[ "res://.import/glass_bottle.png-25e4888d6d2f0dc9d92a36825ac61436.stex" ]
 
 [params]
 

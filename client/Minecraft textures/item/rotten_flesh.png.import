@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/rotten_flesh.png-811cef6d94bcce6c104cb700af624f02.stex"
+path="res://.import/rotten_flesh.png-98a4c077c82549bbef16852d72a71ee0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/rotten_flesh.png"
-dest_files=[ "res://.import/rotten_flesh.png-811cef6d94bcce6c104cb700af624f02.stex" ]
+source_file="res://Minecraft textures/item/rotten_flesh.png"
+dest_files=[ "res://.import/rotten_flesh.png-98a4c077c82549bbef16852d72a71ee0.stex" ]
 
 [params]
 

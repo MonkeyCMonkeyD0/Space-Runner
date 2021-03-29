@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/pumpkinblur.png-a0ce5cee9541b899b7241c03bc0b70aa.stex"
+path="res://.import/pumpkinblur.png-99d1803ed1f527a67ed85fe3566efef0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/misc/pumpkinblur.png"
-dest_files=[ "res://.import/pumpkinblur.png-a0ce5cee9541b899b7241c03bc0b70aa.stex" ]
+source_file="res://Minecraft textures/misc/pumpkinblur.png"
+dest_files=[ "res://.import/pumpkinblur.png-99d1803ed1f527a67ed85fe3566efef0.stex" ]
 
 [params]
 

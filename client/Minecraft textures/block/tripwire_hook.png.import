@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tripwire_hook.png-b06e0f33f34b7815ff63b422694c817e.stex"
+path="res://.import/tripwire_hook.png-9e7fc36974c79c71d008bc59556b41e1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/tripwire_hook.png"
-dest_files=[ "res://.import/tripwire_hook.png-b06e0f33f34b7815ff63b422694c817e.stex" ]
+source_file="res://Minecraft textures/block/tripwire_hook.png"
+dest_files=[ "res://.import/tripwire_hook.png-9e7fc36974c79c71d008bc59556b41e1.stex" ]
 
 [params]
 

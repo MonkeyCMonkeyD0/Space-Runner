@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bow_pulling_1.png-f8ed81c8b7927f24f720bc56849a295d.stex"
+path="res://.import/bow_pulling_1.png-40e03b7fb52e8831ee4174c70693acce.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/bow_pulling_1.png"
-dest_files=[ "res://.import/bow_pulling_1.png-f8ed81c8b7927f24f720bc56849a295d.stex" ]
+source_file="res://Minecraft textures/item/bow_pulling_1.png"
+dest_files=[ "res://.import/bow_pulling_1.png-40e03b7fb52e8831ee4174c70693acce.stex" ]
 
 [params]
 

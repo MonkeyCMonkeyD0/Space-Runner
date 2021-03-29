@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/paintings_kristoffer_zetterstrand.png-46e75a09ce1ef50ada846a3f30d9dd83.stex"
+path="res://.import/paintings_kristoffer_zetterstrand.png-aa5c6a97d6e356377ea50779177c8d3d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/painting/paintings_kristoffer_zetterstrand.png"
-dest_files=[ "res://.import/paintings_kristoffer_zetterstrand.png-46e75a09ce1ef50ada846a3f30d9dd83.stex" ]
+source_file="res://Minecraft textures/painting/paintings_kristoffer_zetterstrand.png"
+dest_files=[ "res://.import/paintings_kristoffer_zetterstrand.png-aa5c6a97d6e356377ea50779177c8d3d.stex" ]
 
 [params]
 

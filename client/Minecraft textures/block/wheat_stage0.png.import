@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/wheat_stage0.png-edbb4bc02eea845f08f1f9cc34e5bb48.stex"
+path="res://.import/wheat_stage0.png-64aabb967ee6e0113e82c646f946b4e5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/wheat_stage0.png"
-dest_files=[ "res://.import/wheat_stage0.png-edbb4bc02eea845f08f1f9cc34e5bb48.stex" ]
+source_file="res://Minecraft textures/block/wheat_stage0.png"
+dest_files=[ "res://.import/wheat_stage0.png-64aabb967ee6e0113e82c646f946b4e5.stex" ]
 
 [params]
 

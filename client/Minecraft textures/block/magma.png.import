@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/magma.png-f341e071201ff4f38ad1afa9106c23eb.stex"
+path="res://.import/magma.png-119d7d0e67dbde23d269a08440b93927.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/magma.png"
-dest_files=[ "res://.import/magma.png-f341e071201ff4f38ad1afa9106c23eb.stex" ]
+source_file="res://Minecraft textures/block/magma.png"
+dest_files=[ "res://.import/magma.png-119d7d0e67dbde23d269a08440b93927.stex" ]
 
 [params]
 

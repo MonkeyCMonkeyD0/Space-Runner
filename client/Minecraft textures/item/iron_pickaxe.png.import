@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/iron_pickaxe.png-bc85d94f1180db7a2a82360b13d2daa3.stex"
+path="res://.import/iron_pickaxe.png-9bcf9265297caa99e1732c41cf0b2901.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/iron_pickaxe.png"
-dest_files=[ "res://.import/iron_pickaxe.png-bc85d94f1180db7a2a82360b13d2daa3.stex" ]
+source_file="res://Minecraft textures/item/iron_pickaxe.png"
+dest_files=[ "res://.import/iron_pickaxe.png-9bcf9265297caa99e1732c41cf0b2901.stex" ]
 
 [params]
 

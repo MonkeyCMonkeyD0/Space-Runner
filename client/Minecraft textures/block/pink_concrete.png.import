@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/pink_concrete.png-1b17f634c6ced2cd5409b19d40eb7993.stex"
+path="res://.import/pink_concrete.png-11d68bcf85f32b9177c218fdef0e2980.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/pink_concrete.png"
-dest_files=[ "res://.import/pink_concrete.png-1b17f634c6ced2cd5409b19d40eb7993.stex" ]
+source_file="res://Minecraft textures/block/pink_concrete.png"
+dest_files=[ "res://.import/pink_concrete.png-11d68bcf85f32b9177c218fdef0e2980.stex" ]
 
 [params]
 

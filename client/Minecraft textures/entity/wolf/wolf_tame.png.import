@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/wolf_tame.png-635b777bc455f4d9b85350f9ad9d7fea.stex"
+path="res://.import/wolf_tame.png-65933fe4c47197295cf0ae2289c37eea.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/wolf/wolf_tame.png"
-dest_files=[ "res://.import/wolf_tame.png-635b777bc455f4d9b85350f9ad9d7fea.stex" ]
+source_file="res://Minecraft textures/entity/wolf/wolf_tame.png"
+dest_files=[ "res://.import/wolf_tame.png-65933fe4c47197295cf0ae2289c37eea.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/flint.png-2005cd287e970ae004fc501e8cd174f9.stex"
+path="res://.import/flint.png-1dc58b0c1d59886b01d6c245b840dce8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/flint.png"
-dest_files=[ "res://.import/flint.png-2005cd287e970ae004fc501e8cd174f9.stex" ]
+source_file="res://Minecraft textures/item/flint.png"
+dest_files=[ "res://.import/flint.png-1dc58b0c1d59886b01d6c245b840dce8.stex" ]
 
 [params]
 

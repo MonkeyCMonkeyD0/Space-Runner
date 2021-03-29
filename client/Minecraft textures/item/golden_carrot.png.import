@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/golden_carrot.png-01c912161c3d131b00375c85c744c488.stex"
+path="res://.import/golden_carrot.png-7e737465671473547827cd38cc04a77a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/golden_carrot.png"
-dest_files=[ "res://.import/golden_carrot.png-01c912161c3d131b00375c85c744c488.stex" ]
+source_file="res://Minecraft textures/item/golden_carrot.png"
+dest_files=[ "res://.import/golden_carrot.png-7e737465671473547827cd38cc04a77a.stex" ]
 
 [params]
 

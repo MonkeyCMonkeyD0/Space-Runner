@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cactus_green.png-ea8a5b63e12c2b52b8f2ad7b166d1133.stex"
+path="res://.import/cactus_green.png-6788dc27595bb98ea848506f7345ee86.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/cactus_green.png"
-dest_files=[ "res://.import/cactus_green.png-ea8a5b63e12c2b52b8f2ad7b166d1133.stex" ]
+source_file="res://Minecraft textures/item/cactus_green.png"
+dest_files=[ "res://.import/cactus_green.png-6788dc27595bb98ea848506f7345ee86.stex" ]
 
 [params]
 

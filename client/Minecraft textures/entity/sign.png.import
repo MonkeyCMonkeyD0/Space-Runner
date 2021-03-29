@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sign.png-297b09d8cfa35ffdc694f3196ba9de3e.stex"
+path="res://.import/sign.png-3a942952a112f8582ab012c054c29dda.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/sign.png"
-dest_files=[ "res://.import/sign.png-297b09d8cfa35ffdc694f3196ba9de3e.stex" ]
+source_file="res://Minecraft textures/entity/sign.png"
+dest_files=[ "res://.import/sign.png-3a942952a112f8582ab012c054c29dda.stex" ]
 
 [params]
 

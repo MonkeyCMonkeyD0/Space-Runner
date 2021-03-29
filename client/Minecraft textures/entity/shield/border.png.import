@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/border.png-1e39ce1d12e6564f964c51f80bb8e31f.stex"
+path="res://.import/border.png-7c29bc956100cb149f72367d2233166c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/shield/border.png"
-dest_files=[ "res://.import/border.png-1e39ce1d12e6564f964c51f80bb8e31f.stex" ]
+source_file="res://Minecraft textures/entity/shield/border.png"
+dest_files=[ "res://.import/border.png-7c29bc956100cb149f72367d2233166c.stex" ]
 
 [params]
 

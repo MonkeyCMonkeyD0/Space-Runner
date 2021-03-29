@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/birch_trapdoor.png-8f28e07ef6c0efb985211722a1481779.stex"
+path="res://.import/birch_trapdoor.png-b9532432927c4d9df596252d7bab6d2a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/birch_trapdoor.png"
-dest_files=[ "res://.import/birch_trapdoor.png-8f28e07ef6c0efb985211722a1481779.stex" ]
+source_file="res://Minecraft textures/block/birch_trapdoor.png"
+dest_files=[ "res://.import/birch_trapdoor.png-b9532432927c4d9df596252d7bab6d2a.stex" ]
 
 [params]
 

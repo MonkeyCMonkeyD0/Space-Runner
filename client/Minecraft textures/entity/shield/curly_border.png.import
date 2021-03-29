@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/curly_border.png-b814b365ad388b2a5988de653ec0128d.stex"
+path="res://.import/curly_border.png-9eb6c47c313df537dd511c6f9878c3e3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/shield/curly_border.png"
-dest_files=[ "res://.import/curly_border.png-b814b365ad388b2a5988de653ec0128d.stex" ]
+source_file="res://Minecraft textures/entity/shield/curly_border.png"
+dest_files=[ "res://.import/curly_border.png-9eb6c47c313df537dd511c6f9878c3e3.stex" ]
 
 [params]
 

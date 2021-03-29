@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/jack_o_lantern.png-fbd0451fcf276d5191e33085c583c861.stex"
+path="res://.import/jack_o_lantern.png-d8c89b300a488b959172b8c15fab7a46.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/jack_o_lantern.png"
-dest_files=[ "res://.import/jack_o_lantern.png-fbd0451fcf276d5191e33085c583c861.stex" ]
+source_file="res://Minecraft textures/block/jack_o_lantern.png"
+dest_files=[ "res://.import/jack_o_lantern.png-d8c89b300a488b959172b8c15fab7a46.stex" ]
 
 [params]
 

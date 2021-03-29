@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/fire_0.png-b179b6137ecd16a6b0c4e751ec65c4c0.stex"
+path="res://.import/fire_0.png-59988acd44df3772225d090e4ad04f1c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/fire_0.png"
-dest_files=[ "res://.import/fire_0.png-b179b6137ecd16a6b0c4e751ec65c4c0.stex" ]
+source_file="res://Minecraft textures/block/fire_0.png"
+dest_files=[ "res://.import/fire_0.png-59988acd44df3772225d090e4ad04f1c.stex" ]
 
 [params]
 

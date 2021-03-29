@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tnt_top.png-882c8e97f26ad9e13e877cf91c80e939.stex"
+path="res://.import/tnt_top.png-6217097f34c4e973219228ada0e52ba1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/tnt_top.png"
-dest_files=[ "res://.import/tnt_top.png-882c8e97f26ad9e13e877cf91c80e939.stex" ]
+source_file="res://Minecraft textures/block/tnt_top.png"
+dest_files=[ "res://.import/tnt_top.png-6217097f34c4e973219228ada0e52ba1.stex" ]
 
 [params]
 

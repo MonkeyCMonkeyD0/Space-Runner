@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/lime_concrete_powder.png-82cc6c722ea9bb03ba3f49040634735f.stex"
+path="res://.import/lime_concrete_powder.png-919caef252aed838defd813818ce8ecf.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/lime_concrete_powder.png"
-dest_files=[ "res://.import/lime_concrete_powder.png-82cc6c722ea9bb03ba3f49040634735f.stex" ]
+source_file="res://Minecraft textures/block/lime_concrete_powder.png"
+dest_files=[ "res://.import/lime_concrete_powder.png-919caef252aed838defd813818ce8ecf.stex" ]
 
 [params]
 

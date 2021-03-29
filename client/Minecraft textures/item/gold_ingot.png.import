@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/gold_ingot.png-4892c1e4635d984a94a05271209ea844.stex"
+path="res://.import/gold_ingot.png-2928f3fc5a0d1254cc8850709363805a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/gold_ingot.png"
-dest_files=[ "res://.import/gold_ingot.png-4892c1e4635d984a94a05271209ea844.stex" ]
+source_file="res://Minecraft textures/item/gold_ingot.png"
+dest_files=[ "res://.import/gold_ingot.png-2928f3fc5a0d1254cc8850709363805a.stex" ]
 
 [params]
 

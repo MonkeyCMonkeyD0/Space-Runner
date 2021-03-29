@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cocoa_stage0.png-368681c3f54e5125128b718a5cda7bb8.stex"
+path="res://.import/cocoa_stage0.png-f920c3eccbca48a388acf7007bfffc04.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/cocoa_stage0.png"
-dest_files=[ "res://.import/cocoa_stage0.png-368681c3f54e5125128b718a5cda7bb8.stex" ]
+source_file="res://Minecraft textures/block/cocoa_stage0.png"
+dest_files=[ "res://.import/cocoa_stage0.png-f920c3eccbca48a388acf7007bfffc04.stex" ]
 
 [params]
 

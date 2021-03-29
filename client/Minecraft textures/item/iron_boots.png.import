@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/iron_boots.png-88de3db0646539b283e543fcbdb477fd.stex"
+path="res://.import/iron_boots.png-c0bbe6dbd656c66b15a567d0da749bc0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/iron_boots.png"
-dest_files=[ "res://.import/iron_boots.png-88de3db0646539b283e543fcbdb477fd.stex" ]
+source_file="res://Minecraft textures/item/iron_boots.png"
+dest_files=[ "res://.import/iron_boots.png-c0bbe6dbd656c66b15a567d0da749bc0.stex" ]
 
 [params]
 

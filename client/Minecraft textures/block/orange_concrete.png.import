@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/orange_concrete.png-1555d271f1498d9b04a952a4f4c8bab9.stex"
+path="res://.import/orange_concrete.png-f0a01740d1d9540612be68d7381c4e6d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/orange_concrete.png"
-dest_files=[ "res://.import/orange_concrete.png-1555d271f1498d9b04a952a4f4c8bab9.stex" ]
+source_file="res://Minecraft textures/block/orange_concrete.png"
+dest_files=[ "res://.import/orange_concrete.png-f0a01740d1d9540612be68d7381c4e6d.stex" ]
 
 [params]
 

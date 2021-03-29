@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/alex.png-ba06a2fd5665f0abd6a5fbc3e083335a.stex"
+path="res://.import/alex.png-61940cfef177651cd362dc4829536454.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/alex.png"
-dest_files=[ "res://.import/alex.png-ba06a2fd5665f0abd6a5fbc3e083335a.stex" ]
+source_file="res://Minecraft textures/entity/alex.png"
+dest_files=[ "res://.import/alex.png-61940cfef177651cd362dc4829536454.stex" ]
 
 [params]
 

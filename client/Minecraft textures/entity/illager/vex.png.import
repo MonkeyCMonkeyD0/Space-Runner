@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/vex.png-24f10ce2851fcf800328ebb8951249c6.stex"
+path="res://.import/vex.png-57d5d437c5ed9c8c9bcab7c217e5df8f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/illager/vex.png"
-dest_files=[ "res://.import/vex.png-24f10ce2851fcf800328ebb8951249c6.stex" ]
+source_file="res://Minecraft textures/entity/illager/vex.png"
+dest_files=[ "res://.import/vex.png-57d5d437c5ed9c8c9bcab7c217e5df8f.stex" ]
 
 [params]
 

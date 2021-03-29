@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/name_tag.png-bc815066eacd9be41b12598ff5ece9e6.stex"
+path="res://.import/name_tag.png-6721c3be74795182ced7a0808f88b256.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/name_tag.png"
-dest_files=[ "res://.import/name_tag.png-bc815066eacd9be41b12598ff5ece9e6.stex" ]
+source_file="res://Minecraft textures/item/name_tag.png"
+dest_files=[ "res://.import/name_tag.png-6721c3be74795182ced7a0808f88b256.stex" ]
 
 [params]
 

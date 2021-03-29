@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/illusioner.png-f51b2ac8e55dac08e038d3d3e8ba6cc4.stex"
+path="res://.import/illusioner.png-a7b42cd6d2f9c61bebea39f5900a0134.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/illager/illusioner.png"
-dest_files=[ "res://.import/illusioner.png-f51b2ac8e55dac08e038d3d3e8ba6cc4.stex" ]
+source_file="res://Minecraft textures/entity/illager/illusioner.png"
+dest_files=[ "res://.import/illusioner.png-a7b42cd6d2f9c61bebea39f5900a0134.stex" ]
 
 [params]
 

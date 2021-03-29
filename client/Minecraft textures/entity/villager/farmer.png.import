@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/farmer.png-181e3d5e3cc05f1debbeae862a118a75.stex"
+path="res://.import/farmer.png-a15ffc1e15ea3454f799efc1cc10759b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/villager/farmer.png"
-dest_files=[ "res://.import/farmer.png-181e3d5e3cc05f1debbeae862a118a75.stex" ]
+source_file="res://Minecraft textures/entity/villager/farmer.png"
+dest_files=[ "res://.import/farmer.png-a15ffc1e15ea3454f799efc1cc10759b.stex" ]
 
 [params]
 

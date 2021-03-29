@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/delight.png-f7815f4f47f789e784b010de5c5670ca.stex"
+path="res://.import/delight.png-b75310956391bc0b1e4c6f80fa9e433a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/gui/presets/delight.png"
-dest_files=[ "res://.import/delight.png-f7815f4f47f789e784b010de5c5670ca.stex" ]
+source_file="res://Minecraft textures/gui/presets/delight.png"
+dest_files=[ "res://.import/delight.png-b75310956391bc0b1e4c6f80fa9e433a.stex" ]
 
 [params]
 

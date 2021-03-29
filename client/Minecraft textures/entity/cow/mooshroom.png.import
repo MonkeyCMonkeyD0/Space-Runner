@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/mooshroom.png-b3c96563f238db44399f18de858f9520.stex"
+path="res://.import/mooshroom.png-8a11c9bc43d9b3a601a67b57c02bf313.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/cow/mooshroom.png"
-dest_files=[ "res://.import/mooshroom.png-b3c96563f238db44399f18de858f9520.stex" ]
+source_file="res://Minecraft textures/entity/cow/mooshroom.png"
+dest_files=[ "res://.import/mooshroom.png-8a11c9bc43d9b3a601a67b57c02bf313.stex" ]
 
 [params]
 

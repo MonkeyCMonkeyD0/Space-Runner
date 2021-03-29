@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/dried_kelp_top.png-3e6e7e9642258e01c36a9cfe503f3b21.stex"
+path="res://.import/dried_kelp_top.png-bba5ab74e0e8fa6adea3fc2188f1ed5f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/dried_kelp_top.png"
-dest_files=[ "res://.import/dried_kelp_top.png-3e6e7e9642258e01c36a9cfe503f3b21.stex" ]
+source_file="res://Minecraft textures/block/dried_kelp_top.png"
+dest_files=[ "res://.import/dried_kelp_top.png-bba5ab74e0e8fa6adea3fc2188f1ed5f.stex" ]
 
 [params]
 

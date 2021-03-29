@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/light_gray.png-9962fff349009d14007d1192cad2d4c0.stex"
+path="res://.import/light_gray.png-eaf3329d024352824431b6de8f2e38b3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/llama/decor/light_gray.png"
-dest_files=[ "res://.import/light_gray.png-9962fff349009d14007d1192cad2d4c0.stex" ]
+source_file="res://Minecraft textures/entity/llama/decor/light_gray.png"
+dest_files=[ "res://.import/light_gray.png-eaf3329d024352824431b6de8f2e38b3.stex" ]
 
 [params]
 

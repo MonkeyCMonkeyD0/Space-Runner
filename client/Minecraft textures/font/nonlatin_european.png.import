@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/nonlatin_european.png-e3ed243fdb244f606da4c83411849308.stex"
+path="res://.import/nonlatin_european.png-bd9e2e1395e787771c7b4e4f30a7b1de.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/font/nonlatin_european.png"
-dest_files=[ "res://.import/nonlatin_european.png-e3ed243fdb244f606da4c83411849308.stex" ]
+source_file="res://Minecraft textures/font/nonlatin_european.png"
+dest_files=[ "res://.import/nonlatin_european.png-bd9e2e1395e787771c7b4e4f30a7b1de.stex" ]
 
 [params]
 

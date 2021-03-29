@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/blue_orchid.png-329f3c6cea353440ffaa40092ce00486.stex"
+path="res://.import/blue_orchid.png-f6d97a8fa4c7d9c7c0f6d7395c115b90.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/blue_orchid.png"
-dest_files=[ "res://.import/blue_orchid.png-329f3c6cea353440ffaa40092ce00486.stex" ]
+source_file="res://Minecraft textures/block/blue_orchid.png"
+dest_files=[ "res://.import/blue_orchid.png-f6d97a8fa4c7d9c7c0f6d7395c115b90.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/horse_chestnut.png-2e95103d03bc19bdffbe964913c9f834.stex"
+path="res://.import/horse_chestnut.png-02ce5f2e52f83f40527cb41f510ca79c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/horse/horse_chestnut.png"
-dest_files=[ "res://.import/horse_chestnut.png-2e95103d03bc19bdffbe964913c9f834.stex" ]
+source_file="res://Minecraft textures/entity/horse/horse_chestnut.png"
+dest_files=[ "res://.import/horse_chestnut.png-02ce5f2e52f83f40527cb41f510ca79c.stex" ]
 
 [params]
 

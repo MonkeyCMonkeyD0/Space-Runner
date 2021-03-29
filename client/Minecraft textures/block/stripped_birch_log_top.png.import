@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/stripped_birch_log_top.png-3efb34d3efa96a62d4cca3bb55166083.stex"
+path="res://.import/stripped_birch_log_top.png-370b2f9845bf1c85a58f707d0184e3ce.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/stripped_birch_log_top.png"
-dest_files=[ "res://.import/stripped_birch_log_top.png-3efb34d3efa96a62d4cca3bb55166083.stex" ]
+source_file="res://Minecraft textures/block/stripped_birch_log_top.png"
+dest_files=[ "res://.import/stripped_birch_log_top.png-370b2f9845bf1c85a58f707d0184e3ce.stex" ]
 
 [params]
 

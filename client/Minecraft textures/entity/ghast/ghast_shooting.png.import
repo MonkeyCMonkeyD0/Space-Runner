@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ghast_shooting.png-0b93841ede57fca74fcb24bb88382e3c.stex"
+path="res://.import/ghast_shooting.png-5bfe9f921c28380f8372e2dff8332431.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/ghast/ghast_shooting.png"
-dest_files=[ "res://.import/ghast_shooting.png-0b93841ede57fca74fcb24bb88382e3c.stex" ]
+source_file="res://Minecraft textures/entity/ghast/ghast_shooting.png"
+dest_files=[ "res://.import/ghast_shooting.png-5bfe9f921c28380f8372e2dff8332431.stex" ]
 
 [params]
 

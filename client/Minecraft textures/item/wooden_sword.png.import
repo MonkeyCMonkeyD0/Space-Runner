@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/wooden_sword.png-05fdfcb1710db65a3a69a87f684d5865.stex"
+path="res://.import/wooden_sword.png-0c8023379a55c91c8961bfbc888402f9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/wooden_sword.png"
-dest_files=[ "res://.import/wooden_sword.png-05fdfcb1710db65a3a69a87f684d5865.stex" ]
+source_file="res://Minecraft textures/item/wooden_sword.png"
+dest_files=[ "res://.import/wooden_sword.png-0c8023379a55c91c8961bfbc888402f9.stex" ]
 
 [params]
 

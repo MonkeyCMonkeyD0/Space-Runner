@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/golden_pickaxe.png-9614ca17afb304666ed14b4fe5942360.stex"
+path="res://.import/golden_pickaxe.png-3d80f8a5c4b6ad62ccf35fdcb99725c9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/golden_pickaxe.png"
-dest_files=[ "res://.import/golden_pickaxe.png-9614ca17afb304666ed14b4fe5942360.stex" ]
+source_file="res://Minecraft textures/item/golden_pickaxe.png"
+dest_files=[ "res://.import/golden_pickaxe.png-3d80f8a5c4b6ad62ccf35fdcb99725c9.stex" ]
 
 [params]
 

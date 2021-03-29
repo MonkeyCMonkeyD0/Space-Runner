@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/clock_10.png-f8f31efe32c1c7525ef85d660491ce80.stex"
+path="res://.import/clock_10.png-fcd9afe2f17fae55286bd90931624623.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/clock_10.png"
-dest_files=[ "res://.import/clock_10.png-f8f31efe32c1c7525ef85d660491ce80.stex" ]
+source_file="res://Minecraft textures/item/clock_10.png"
+dest_files=[ "res://.import/clock_10.png-fcd9afe2f17fae55286bd90931624623.stex" ]
 
 [params]
 

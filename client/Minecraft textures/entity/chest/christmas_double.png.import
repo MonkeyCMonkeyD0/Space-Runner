@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/christmas_double.png-b79e69b4d51c1cf1834bad21a1596030.stex"
+path="res://.import/christmas_double.png-a2fc08dd31dc3d15e1b30d7fc965f0d0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/chest/christmas_double.png"
-dest_files=[ "res://.import/christmas_double.png-b79e69b4d51c1cf1834bad21a1596030.stex" ]
+source_file="res://Minecraft textures/entity/chest/christmas_double.png"
+dest_files=[ "res://.import/christmas_double.png-a2fc08dd31dc3d15e1b30d7fc965f0d0.stex" ]
 
 [params]
 

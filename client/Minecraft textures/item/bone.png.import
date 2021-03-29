@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bone.png-279fea07de74f9aa3dd785bba74c6a06.stex"
+path="res://.import/bone.png-8269a7c67f684f196450fb95d994c1d6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/bone.png"
-dest_files=[ "res://.import/bone.png-279fea07de74f9aa3dd785bba74c6a06.stex" ]
+source_file="res://Minecraft textures/item/bone.png"
+dest_files=[ "res://.import/bone.png-8269a7c67f684f196450fb95d994c1d6.stex" ]
 
 [params]
 

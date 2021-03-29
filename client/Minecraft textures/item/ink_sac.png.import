@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ink_sac.png-02bd228f626bc97aa2a4fa230cf0e0b5.stex"
+path="res://.import/ink_sac.png-9e2bece5a2f1833cf739af75b3cdbb5d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/ink_sac.png"
-dest_files=[ "res://.import/ink_sac.png-02bd228f626bc97aa2a4fa230cf0e0b5.stex" ]
+source_file="res://Minecraft textures/item/ink_sac.png"
+dest_files=[ "res://.import/ink_sac.png-9e2bece5a2f1833cf739af75b3cdbb5d.stex" ]
 
 [params]
 

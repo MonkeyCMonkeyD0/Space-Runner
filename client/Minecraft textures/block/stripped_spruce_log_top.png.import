@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/stripped_spruce_log_top.png-69436c2ee735987f630a7f6f7fd710b5.stex"
+path="res://.import/stripped_spruce_log_top.png-259b2d07e3591c2a03daf29cc0df8918.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/stripped_spruce_log_top.png"
-dest_files=[ "res://.import/stripped_spruce_log_top.png-69436c2ee735987f630a7f6f7fd710b5.stex" ]
+source_file="res://Minecraft textures/block/stripped_spruce_log_top.png"
+dest_files=[ "res://.import/stripped_spruce_log_top.png-259b2d07e3591c2a03daf29cc0df8918.stex" ]
 
 [params]
 

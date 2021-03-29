@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/golden_hoe.png-7df0b53ac8362160c305fd041af5242b.stex"
+path="res://.import/golden_hoe.png-1292d9d70ef8714afc14054adffd9699.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/golden_hoe.png"
-dest_files=[ "res://.import/golden_hoe.png-7df0b53ac8362160c305fd041af5242b.stex" ]
+source_file="res://Minecraft textures/item/golden_hoe.png"
+dest_files=[ "res://.import/golden_hoe.png-1292d9d70ef8714afc14054adffd9699.stex" ]
 
 [params]
 

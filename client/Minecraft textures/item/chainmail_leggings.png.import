@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/chainmail_leggings.png-862a43fd9f547e40b64be770598684e4.stex"
+path="res://.import/chainmail_leggings.png-e7db5efd83f47be52a7af05e27a4f908.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/chainmail_leggings.png"
-dest_files=[ "res://.import/chainmail_leggings.png-862a43fd9f547e40b64be770598684e4.stex" ]
+source_file="res://Minecraft textures/item/chainmail_leggings.png"
+dest_files=[ "res://.import/chainmail_leggings.png-e7db5efd83f47be52a7af05e27a4f908.stex" ]
 
 [params]
 

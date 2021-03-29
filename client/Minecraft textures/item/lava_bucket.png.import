@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/lava_bucket.png-d312548c639b1852e57664a5b3da58ec.stex"
+path="res://.import/lava_bucket.png-3cf876e55e09cfc933053b3234612fea.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/lava_bucket.png"
-dest_files=[ "res://.import/lava_bucket.png-d312548c639b1852e57664a5b3da58ec.stex" ]
+source_file="res://Minecraft textures/item/lava_bucket.png"
+dest_files=[ "res://.import/lava_bucket.png-3cf876e55e09cfc933053b3234612fea.stex" ]
 
 [params]
 

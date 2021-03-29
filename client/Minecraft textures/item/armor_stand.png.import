@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/armor_stand.png-ccc58e933bd51a14ea55ee76a9ab4aaf.stex"
+path="res://.import/armor_stand.png-030e1ac0e47eeb6a1af163858151c7b6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/armor_stand.png"
-dest_files=[ "res://.import/armor_stand.png-ccc58e933bd51a14ea55ee76a9ab4aaf.stex" ]
+source_file="res://Minecraft textures/item/armor_stand.png"
+dest_files=[ "res://.import/armor_stand.png-030e1ac0e47eeb6a1af163858151c7b6.stex" ]
 
 [params]
 

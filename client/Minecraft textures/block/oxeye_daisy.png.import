@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/oxeye_daisy.png-38b96dcdeac60427fb592cd3eaaacdae.stex"
+path="res://.import/oxeye_daisy.png-87d7d477bff15bc5078be180de290cca.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/oxeye_daisy.png"
-dest_files=[ "res://.import/oxeye_daisy.png-38b96dcdeac60427fb592cd3eaaacdae.stex" ]
+source_file="res://Minecraft textures/block/oxeye_daisy.png"
+dest_files=[ "res://.import/oxeye_daisy.png-87d7d477bff15bc5078be180de290cca.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/inventory.png-a29aaad0ec3f435ff5df942475d3da80.stex"
+path="res://.import/inventory.png-40d527333bca75bae26a48eb1af08dea.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/gui/container/inventory.png"
-dest_files=[ "res://.import/inventory.png-a29aaad0ec3f435ff5df942475d3da80.stex" ]
+source_file="res://Minecraft textures/gui/container/inventory.png"
+dest_files=[ "res://.import/inventory.png-40d527333bca75bae26a48eb1af08dea.stex" ]
 
 [params]
 

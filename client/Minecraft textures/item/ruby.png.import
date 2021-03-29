@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ruby.png-73f864d074a20dbd1df57f554586c69d.stex"
+path="res://.import/ruby.png-6af7d35a0123f92ccbf580fd8a5c01d7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/ruby.png"
-dest_files=[ "res://.import/ruby.png-73f864d074a20dbd1df57f554586c69d.stex" ]
+source_file="res://Minecraft textures/item/ruby.png"
+dest_files=[ "res://.import/ruby.png-6af7d35a0123f92ccbf580fd8a5c01d7.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/enchanted_item_glint.png-4ea904347f36f4954300a1ff2a37d497.stex"
+path="res://.import/enchanted_item_glint.png-b0be0bddaffb42fc80253a79bff2e21a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/misc/enchanted_item_glint.png"
-dest_files=[ "res://.import/enchanted_item_glint.png-4ea904347f36f4954300a1ff2a37d497.stex" ]
+source_file="res://Minecraft textures/misc/enchanted_item_glint.png"
+dest_files=[ "res://.import/enchanted_item_glint.png-b0be0bddaffb42fc80253a79bff2e21a.stex" ]
 
 [params]
 

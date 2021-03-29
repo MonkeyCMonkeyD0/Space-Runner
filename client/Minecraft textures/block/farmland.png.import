@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/farmland.png-0ede76ee50763e0e5d3d9f21022c7cf6.stex"
+path="res://.import/farmland.png-f3576fc639b25ab668ae356429a1ea0b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/farmland.png"
-dest_files=[ "res://.import/farmland.png-0ede76ee50763e0e5d3d9f21022c7cf6.stex" ]
+source_file="res://Minecraft textures/block/farmland.png"
+dest_files=[ "res://.import/farmland.png-f3576fc639b25ab668ae356429a1ea0b.stex" ]
 
 [params]
 

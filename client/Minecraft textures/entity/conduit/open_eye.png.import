@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/open_eye.png-a73f98a7887913d744330795984136ce.stex"
+path="res://.import/open_eye.png-7871958f2071102381d965a7ce0c3d72.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/conduit/open_eye.png"
-dest_files=[ "res://.import/open_eye.png-a73f98a7887913d744330795984136ce.stex" ]
+source_file="res://Minecraft textures/entity/conduit/open_eye.png"
+dest_files=[ "res://.import/open_eye.png-7871958f2071102381d965a7ce0c3d72.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/brewing_stand.png-e6b57678a912a6b62d7c9fae40a0f418.stex"
+path="res://.import/brewing_stand.png-cf52eea521e721b8cc075802b4e7be4b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/brewing_stand.png"
-dest_files=[ "res://.import/brewing_stand.png-e6b57678a912a6b62d7c9fae40a0f418.stex" ]
+source_file="res://Minecraft textures/item/brewing_stand.png"
+dest_files=[ "res://.import/brewing_stand.png-cf52eea521e721b8cc075802b4e7be4b.stex" ]
 
 [params]
 

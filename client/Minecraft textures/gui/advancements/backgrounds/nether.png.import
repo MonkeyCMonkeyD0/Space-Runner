@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/nether.png-a164c97ff079177b995f8b6fc4d6579f.stex"
+path="res://.import/nether.png-4ed4d8bf875a39494d4f6aa2a3da328d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/gui/advancements/backgrounds/nether.png"
-dest_files=[ "res://.import/nether.png-a164c97ff079177b995f8b6fc4d6579f.stex" ]
+source_file="res://Minecraft textures/gui/advancements/backgrounds/nether.png"
+dest_files=[ "res://.import/nether.png-4ed4d8bf875a39494d4f6aa2a3da328d.stex" ]
 
 [params]
 

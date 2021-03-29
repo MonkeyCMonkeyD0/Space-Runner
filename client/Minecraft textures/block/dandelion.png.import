@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/dandelion.png-c6dcb7bd7a0968e22fd23e248891b6a0.stex"
+path="res://.import/dandelion.png-7a05177a3b48d16825f3d01a6ecb4535.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/dandelion.png"
-dest_files=[ "res://.import/dandelion.png-c6dcb7bd7a0968e22fd23e248891b6a0.stex" ]
+source_file="res://Minecraft textures/block/dandelion.png"
+dest_files=[ "res://.import/dandelion.png-7a05177a3b48d16825f3d01a6ecb4535.stex" ]
 
 [params]
 

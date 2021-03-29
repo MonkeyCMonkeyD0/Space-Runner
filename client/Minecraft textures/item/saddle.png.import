@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/saddle.png-74e8a8065e982f2a5a4d3539f24a626a.stex"
+path="res://.import/saddle.png-ac2aa2e3f2f337a283b8fddf0a5e1b79.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/saddle.png"
-dest_files=[ "res://.import/saddle.png-74e8a8065e982f2a5a4d3539f24a626a.stex" ]
+source_file="res://Minecraft textures/item/saddle.png"
+dest_files=[ "res://.import/saddle.png-ac2aa2e3f2f337a283b8fddf0a5e1b79.stex" ]
 
 [params]
 

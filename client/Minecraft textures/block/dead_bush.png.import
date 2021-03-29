@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/dead_bush.png-dfa29c4c1ae0dce039c2d3ee61dd8470.stex"
+path="res://.import/dead_bush.png-214a074831371834940d83ea5bb8071f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/dead_bush.png"
-dest_files=[ "res://.import/dead_bush.png-dfa29c4c1ae0dce039c2d3ee61dd8470.stex" ]
+source_file="res://Minecraft textures/block/dead_bush.png"
+dest_files=[ "res://.import/dead_bush.png-214a074831371834940d83ea5bb8071f.stex" ]
 
 [params]
 

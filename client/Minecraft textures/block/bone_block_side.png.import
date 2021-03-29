@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bone_block_side.png-5cb2a0a5e871ff3fac2417542f07d84f.stex"
+path="res://.import/bone_block_side.png-e6df4874f3acd335758dedda900ec475.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/bone_block_side.png"
-dest_files=[ "res://.import/bone_block_side.png-5cb2a0a5e871ff3fac2417542f07d84f.stex" ]
+source_file="res://Minecraft textures/block/bone_block_side.png"
+dest_files=[ "res://.import/bone_block_side.png-e6df4874f3acd335758dedda900ec475.stex" ]
 
 [params]
 

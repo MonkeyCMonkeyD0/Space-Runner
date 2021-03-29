@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/orange_tulip.png-2aa5811f5fccceaa0bc00bfce9f3c215.stex"
+path="res://.import/orange_tulip.png-a4d7b9dbf36772814474a8be7c505610.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/orange_tulip.png"
-dest_files=[ "res://.import/orange_tulip.png-2aa5811f5fccceaa0bc00bfce9f3c215.stex" ]
+source_file="res://Minecraft textures/block/orange_tulip.png"
+dest_files=[ "res://.import/orange_tulip.png-a4d7b9dbf36772814474a8be7c505610.stex" ]
 
 [params]
 

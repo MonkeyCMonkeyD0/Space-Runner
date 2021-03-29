@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/lava_still.png-5dbbe8748f6577460b271dddf564dbe7.stex"
+path="res://.import/lava_still.png-1a61c82e5665a484cb6cd1a323e53206.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/lava_still.png"
-dest_files=[ "res://.import/lava_still.png-5dbbe8748f6577460b271dddf564dbe7.stex" ]
+source_file="res://Minecraft textures/block/lava_still.png"
+dest_files=[ "res://.import/lava_still.png-1a61c82e5665a484cb6cd1a323e53206.stex" ]
 
 [params]
 

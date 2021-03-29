@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/pumpkin_seeds.png-6e5a0c3135c5580cc92deb36736149a0.stex"
+path="res://.import/pumpkin_seeds.png-65a091270d6b3092bae68d2c03e08a72.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/pumpkin_seeds.png"
-dest_files=[ "res://.import/pumpkin_seeds.png-6e5a0c3135c5580cc92deb36736149a0.stex" ]
+source_file="res://Minecraft textures/item/pumpkin_seeds.png"
+dest_files=[ "res://.import/pumpkin_seeds.png-65a091270d6b3092bae68d2c03e08a72.stex" ]
 
 [params]
 

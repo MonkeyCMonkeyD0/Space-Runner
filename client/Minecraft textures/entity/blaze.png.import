@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/blaze.png-94e22573eaf50c3fb6ac72004e7db151.stex"
+path="res://.import/blaze.png-342b71e1f194081300b1e490a4d0f40d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/blaze.png"
-dest_files=[ "res://.import/blaze.png-94e22573eaf50c3fb6ac72004e7db151.stex" ]
+source_file="res://Minecraft textures/entity/blaze.png"
+dest_files=[ "res://.import/blaze.png-342b71e1f194081300b1e490a4d0f40d.stex" ]
 
 [params]
 

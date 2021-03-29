@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/golden_axe.png-c4e515e80e431bc1d870fac0e72af488.stex"
+path="res://.import/golden_axe.png-bdb97f5925251fa45ca03923705b85e2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/golden_axe.png"
-dest_files=[ "res://.import/golden_axe.png-c4e515e80e431bc1d870fac0e72af488.stex" ]
+source_file="res://Minecraft textures/item/golden_axe.png"
+dest_files=[ "res://.import/golden_axe.png-bdb97f5925251fa45ca03923705b85e2.stex" ]
 
 [params]
 

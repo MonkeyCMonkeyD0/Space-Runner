@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/diamond_boots.png-3412029f4a9617efc7b4f4df1f1a87d7.stex"
+path="res://.import/diamond_boots.png-f8dc0f47c077dab5ad511e2602090694.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/diamond_boots.png"
-dest_files=[ "res://.import/diamond_boots.png-3412029f4a9617efc7b4f4df1f1a87d7.stex" ]
+source_file="res://Minecraft textures/item/diamond_boots.png"
+dest_files=[ "res://.import/diamond_boots.png-f8dc0f47c077dab5ad511e2602090694.stex" ]
 
 [params]
 

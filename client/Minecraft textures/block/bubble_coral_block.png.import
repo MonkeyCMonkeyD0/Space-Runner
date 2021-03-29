@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/bubble_coral_block.png-bd5d3af6bb78da4e45c205f37a65b7dd.stex"
+path="res://.import/bubble_coral_block.png-81668fe9fad6e71c4d335cc3782f9ee3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/bubble_coral_block.png"
-dest_files=[ "res://.import/bubble_coral_block.png-bd5d3af6bb78da4e45c205f37a65b7dd.stex" ]
+source_file="res://Minecraft textures/block/bubble_coral_block.png"
+dest_files=[ "res://.import/bubble_coral_block.png-81668fe9fad6e71c4d335cc3782f9ee3.stex" ]
 
 [params]
 

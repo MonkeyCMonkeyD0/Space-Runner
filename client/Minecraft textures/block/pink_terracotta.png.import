@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/pink_terracotta.png-e6045a31788e378a20406e7104bb19fc.stex"
+path="res://.import/pink_terracotta.png-8d3aa1d5ef8c88a123e53e35bb697ed7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/pink_terracotta.png"
-dest_files=[ "res://.import/pink_terracotta.png-e6045a31788e378a20406e7104bb19fc.stex" ]
+source_file="res://Minecraft textures/block/pink_terracotta.png"
+dest_files=[ "res://.import/pink_terracotta.png-8d3aa1d5ef8c88a123e53e35bb697ed7.stex" ]
 
 [params]
 

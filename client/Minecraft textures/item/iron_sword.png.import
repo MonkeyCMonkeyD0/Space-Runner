@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/iron_sword.png-a4080de4c72fdaa356161b83f273a21a.stex"
+path="res://.import/iron_sword.png-0a31d99466ea8980ce6bd7d717097f59.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/iron_sword.png"
-dest_files=[ "res://.import/iron_sword.png-a4080de4c72fdaa356161b83f273a21a.stex" ]
+source_file="res://Minecraft textures/item/iron_sword.png"
+dest_files=[ "res://.import/iron_sword.png-0a31d99466ea8980ce6bd7d717097f59.stex" ]
 
 [params]
 

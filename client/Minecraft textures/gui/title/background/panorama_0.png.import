@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/panorama_0.png-acfbe61e44146949d4b57e51c392fd49.stex"
+path="res://.import/panorama_0.png-6d2cfea5aee6d19537f5422c9af6472a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/gui/title/background/panorama_0.png"
-dest_files=[ "res://.import/panorama_0.png-acfbe61e44146949d4b57e51c392fd49.stex" ]
+source_file="res://Minecraft textures/gui/title/background/panorama_0.png"
+dest_files=[ "res://.import/panorama_0.png-6d2cfea5aee6d19537f5422c9af6472a.stex" ]
 
 [params]
 

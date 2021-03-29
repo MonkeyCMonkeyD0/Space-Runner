@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/magenta.png-f4cf9681b26cef644b6b180d25ea7734.stex"
+path="res://.import/magenta.png-b011aa787369b4ccf37d13c463fbe6f4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/llama/decor/magenta.png"
-dest_files=[ "res://.import/magenta.png-f4cf9681b26cef644b6b180d25ea7734.stex" ]
+source_file="res://Minecraft textures/entity/llama/decor/magenta.png"
+dest_files=[ "res://.import/magenta.png-b011aa787369b4ccf37d13c463fbe6f4.stex" ]
 
 [params]
 

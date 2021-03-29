@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/white.png-cc4c528ef0967ebed2b07bed63a37360.stex"
+path="res://.import/white.png-2e53a92508fb5af935a942492e2ebb07.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/bed/white.png"
-dest_files=[ "res://.import/white.png-cc4c528ef0967ebed2b07bed63a37360.stex" ]
+source_file="res://Minecraft textures/entity/bed/white.png"
+dest_files=[ "res://.import/white.png-2e53a92508fb5af935a942492e2ebb07.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/trident.png-1e69b18334fbbe4092be56e5e0aebaad.stex"
+path="res://.import/trident.png-0ae3e321429002ec1e7d49865e8e82de.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/trident.png"
-dest_files=[ "res://.import/trident.png-1e69b18334fbbe4092be56e5e0aebaad.stex" ]
+source_file="res://Minecraft textures/entity/trident.png"
+dest_files=[ "res://.import/trident.png-0ae3e321429002ec1e7d49865e8e82de.stex" ]
 
 [params]
 

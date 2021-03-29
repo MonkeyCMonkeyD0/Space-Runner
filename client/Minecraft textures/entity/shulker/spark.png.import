@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/spark.png-4ba4c1a8c1d6e89c645e0ef3d8527b18.stex"
+path="res://.import/spark.png-bb1568c5763b727a1a687f0673f047c9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/shulker/spark.png"
-dest_files=[ "res://.import/spark.png-4ba4c1a8c1d6e89c645e0ef3d8527b18.stex" ]
+source_file="res://Minecraft textures/entity/shulker/spark.png"
+dest_files=[ "res://.import/spark.png-bb1568c5763b727a1a687f0673f047c9.stex" ]
 
 [params]
 

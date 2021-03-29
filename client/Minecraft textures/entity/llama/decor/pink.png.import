@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/pink.png-ee71ac6ccc6282b9507ab8546636e7e2.stex"
+path="res://.import/pink.png-8b4a53d24b8e5ca7e05051dcb6075c5b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/llama/decor/pink.png"
-dest_files=[ "res://.import/pink.png-ee71ac6ccc6282b9507ab8546636e7e2.stex" ]
+source_file="res://Minecraft textures/entity/llama/decor/pink.png"
+dest_files=[ "res://.import/pink.png-8b4a53d24b8e5ca7e05051dcb6075c5b.stex" ]
 
 [params]
 

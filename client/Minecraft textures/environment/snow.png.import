@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/snow.png-878fc94737c022a8ec0c22c032d81048.stex"
+path="res://.import/snow.png-8079396dabe9d83a7f67dee75e8aac51.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/environment/snow.png"
-dest_files=[ "res://.import/snow.png-878fc94737c022a8ec0c22c032d81048.stex" ]
+source_file="res://Minecraft textures/environment/snow.png"
+dest_files=[ "res://.import/snow.png-8079396dabe9d83a7f67dee75e8aac51.stex" ]
 
 [params]
 

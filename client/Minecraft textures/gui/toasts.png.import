@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/toasts.png-80b76de9d0d97e1c0a2244f82402a1d5.stex"
+path="res://.import/toasts.png-1b96f7af37c56cf60658b001365a6cea.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/gui/toasts.png"
-dest_files=[ "res://.import/toasts.png-80b76de9d0d97e1c0a2244f82402a1d5.stex" ]
+source_file="res://Minecraft textures/gui/toasts.png"
+dest_files=[ "res://.import/toasts.png-1b96f7af37c56cf60658b001365a6cea.stex" ]
 
 [params]
 

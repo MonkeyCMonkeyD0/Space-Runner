@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/steve.png-d7531dca1fc9e27e6bda9d370b6dc0fe.stex"
+path="res://.import/steve.png-b81a6c0cb8cf26b80ffdfe5fc4981f84.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/steve.png"
-dest_files=[ "res://.import/steve.png-d7531dca1fc9e27e6bda9d370b6dc0fe.stex" ]
+source_file="res://Minecraft textures/entity/steve.png"
+dest_files=[ "res://.import/steve.png-b81a6c0cb8cf26b80ffdfe5fc4981f84.stex" ]
 
 [params]
 

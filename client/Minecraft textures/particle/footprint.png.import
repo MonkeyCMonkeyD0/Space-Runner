@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/footprint.png-c45c61076c55ef250ddc58a306391dbb.stex"
+path="res://.import/footprint.png-7772644b2574addb26d284b28e4dc688.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/particle/footprint.png"
-dest_files=[ "res://.import/footprint.png-c45c61076c55ef250ddc58a306391dbb.stex" ]
+source_file="res://Minecraft textures/particle/footprint.png"
+dest_files=[ "res://.import/footprint.png-7772644b2574addb26d284b28e4dc688.stex" ]
 
 [params]
 

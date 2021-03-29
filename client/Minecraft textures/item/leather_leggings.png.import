@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/leather_leggings.png-8dd82356b7b08dfb06b53c3e89029144.stex"
+path="res://.import/leather_leggings.png-b832b86b084f866098b1e8e300584eec.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/leather_leggings.png"
-dest_files=[ "res://.import/leather_leggings.png-8dd82356b7b08dfb06b53c3e89029144.stex" ]
+source_file="res://Minecraft textures/item/leather_leggings.png"
+dest_files=[ "res://.import/leather_leggings.png-b832b86b084f866098b1e8e300584eec.stex" ]
 
 [params]
 

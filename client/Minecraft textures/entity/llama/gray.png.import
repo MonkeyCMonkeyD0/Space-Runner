@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/gray.png-3751c333648529d741ce71a4204261b5.stex"
+path="res://.import/gray.png-f6f2efad4ea0d69554549703bd7b2842.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/llama/gray.png"
-dest_files=[ "res://.import/gray.png-3751c333648529d741ce71a4204261b5.stex" ]
+source_file="res://Minecraft textures/entity/llama/gray.png"
+dest_files=[ "res://.import/gray.png-f6f2efad4ea0d69554549703bd7b2842.stex" ]
 
 [params]
 

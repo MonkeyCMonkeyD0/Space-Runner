@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/salmon.png-daa09154fcfd22616c0cfe1b77c171b8.stex"
+path="res://.import/salmon.png-e91dc0cd75ae9cad5d44a6cc6cc2412a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/fish/salmon.png"
-dest_files=[ "res://.import/salmon.png-daa09154fcfd22616c0cfe1b77c171b8.stex" ]
+source_file="res://Minecraft textures/entity/fish/salmon.png"
+dest_files=[ "res://.import/salmon.png-e91dc0cd75ae9cad5d44a6cc6cc2412a.stex" ]
 
 [params]
 

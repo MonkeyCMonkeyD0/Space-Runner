@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/seagrass.png-7e3d55129df5f84dc775337db915b923.stex"
+path="res://.import/seagrass.png-004a352392cddd7a5586108ddc605a4d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/seagrass.png"
-dest_files=[ "res://.import/seagrass.png-7e3d55129df5f84dc775337db915b923.stex" ]
+source_file="res://Minecraft textures/item/seagrass.png"
+dest_files=[ "res://.import/seagrass.png-004a352392cddd7a5586108ddc605a4d.stex" ]
 
 [params]
 

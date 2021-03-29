@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/demo_background.png-5cbcee50a30ff295b81585207df0358c.stex"
+path="res://.import/demo_background.png-75a69685630ab45bf8f529333364be1e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/gui/demo_background.png"
-dest_files=[ "res://.import/demo_background.png-5cbcee50a30ff295b81585207df0358c.stex" ]
+source_file="res://Minecraft textures/gui/demo_background.png"
+dest_files=[ "res://.import/demo_background.png-75a69685630ab45bf8f529333364be1e.stex" ]
 
 [params]
 

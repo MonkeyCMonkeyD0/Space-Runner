@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/dragon_egg.png-c012fe53f986364080dfd63a2d3cc21c.stex"
+path="res://.import/dragon_egg.png-36af49a55683f703032ceb8f8495b74f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/dragon_egg.png"
-dest_files=[ "res://.import/dragon_egg.png-c012fe53f986364080dfd63a2d3cc21c.stex" ]
+source_file="res://Minecraft textures/block/dragon_egg.png"
+dest_files=[ "res://.import/dragon_egg.png-36af49a55683f703032ceb8f8495b74f.stex" ]
 
 [params]
 

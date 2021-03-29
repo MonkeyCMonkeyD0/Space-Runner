@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/parrot_blue.png-2869e8329d9d3e49179c20af737d1e6f.stex"
+path="res://.import/parrot_blue.png-9cbf67ee1494e1e1a5a9df19d3e9a47e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/parrot/parrot_blue.png"
-dest_files=[ "res://.import/parrot_blue.png-2869e8329d9d3e49179c20af737d1e6f.stex" ]
+source_file="res://Minecraft textures/entity/parrot/parrot_blue.png"
+dest_files=[ "res://.import/parrot_blue.png-9cbf67ee1494e1e1a5a9df19d3e9a47e.stex" ]
 
 [params]
 

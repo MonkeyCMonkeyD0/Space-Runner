@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ghast.png-7f6558c0300142206cceb5a7b70b36f2.stex"
+path="res://.import/ghast.png-4d4a448f543567d9e1c2beb7b28cc559.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/ghast/ghast.png"
-dest_files=[ "res://.import/ghast.png-7f6558c0300142206cceb5a7b70b36f2.stex" ]
+source_file="res://Minecraft textures/entity/ghast/ghast.png"
+dest_files=[ "res://.import/ghast.png-4d4a448f543567d9e1c2beb7b28cc559.stex" ]
 
 [params]
 

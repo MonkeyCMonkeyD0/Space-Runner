@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/book.png-77d0ab3f4509522935d9eba8c64f880e.stex"
+path="res://.import/book.png-420deab7c0f375737fe1243aeb98b9e6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/book.png"
-dest_files=[ "res://.import/book.png-77d0ab3f4509522935d9eba8c64f880e.stex" ]
+source_file="res://Minecraft textures/item/book.png"
+dest_files=[ "res://.import/book.png-420deab7c0f375737fe1243aeb98b9e6.stex" ]
 
 [params]
 

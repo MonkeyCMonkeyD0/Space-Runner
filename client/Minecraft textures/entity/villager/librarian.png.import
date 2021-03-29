@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/librarian.png-1332e3e539ae99a5bdcea03681e053dd.stex"
+path="res://.import/librarian.png-f1dd3173e57a5247df572bb40615fcd3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/villager/librarian.png"
-dest_files=[ "res://.import/librarian.png-1332e3e539ae99a5bdcea03681e053dd.stex" ]
+source_file="res://Minecraft textures/entity/villager/librarian.png"
+dest_files=[ "res://.import/librarian.png-f1dd3173e57a5247df572bb40615fcd3.stex" ]
 
 [params]
 

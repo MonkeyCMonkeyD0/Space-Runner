@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cyan_concrete.png-363bc3762f58d00bdf991459948f6b5e.stex"
+path="res://.import/cyan_concrete.png-068405a9d5db9ad690f83e54207bb233.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/cyan_concrete.png"
-dest_files=[ "res://.import/cyan_concrete.png-363bc3762f58d00bdf991459948f6b5e.stex" ]
+source_file="res://Minecraft textures/block/cyan_concrete.png"
+dest_files=[ "res://.import/cyan_concrete.png-068405a9d5db9ad690f83e54207bb233.stex" ]
 
 [params]
 

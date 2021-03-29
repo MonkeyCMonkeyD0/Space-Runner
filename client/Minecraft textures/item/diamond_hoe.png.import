@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/diamond_hoe.png-dd7fbf53440f281bc75aaee746173f86.stex"
+path="res://.import/diamond_hoe.png-033fc4313bbe5f87a812b1cba05696e4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/diamond_hoe.png"
-dest_files=[ "res://.import/diamond_hoe.png-dd7fbf53440f281bc75aaee746173f86.stex" ]
+source_file="res://Minecraft textures/item/diamond_hoe.png"
+dest_files=[ "res://.import/diamond_hoe.png-033fc4313bbe5f87a812b1cba05696e4.stex" ]
 
 [params]
 

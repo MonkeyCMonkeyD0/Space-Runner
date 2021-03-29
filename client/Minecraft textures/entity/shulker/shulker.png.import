@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/shulker.png-533dca0029b92a2248ac6c485cdbc68c.stex"
+path="res://.import/shulker.png-24838607dbf7cf3c1fce655ee92f3ce8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/shulker/shulker.png"
-dest_files=[ "res://.import/shulker.png-533dca0029b92a2248ac6c485cdbc68c.stex" ]
+source_file="res://Minecraft textures/entity/shulker/shulker.png"
+dest_files=[ "res://.import/shulker.png-24838607dbf7cf3c1fce655ee92f3ce8.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/blue_stained_glass_pane_top.png-aecc36d30e3b5cdf5df21a1a819d222d.stex"
+path="res://.import/blue_stained_glass_pane_top.png-3d84f9f6c8a0a35b4cbbf5984b3ce459.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/blue_stained_glass_pane_top.png"
-dest_files=[ "res://.import/blue_stained_glass_pane_top.png-aecc36d30e3b5cdf5df21a1a819d222d.stex" ]
+source_file="res://Minecraft textures/block/blue_stained_glass_pane_top.png"
+dest_files=[ "res://.import/blue_stained_glass_pane_top.png-3d84f9f6c8a0a35b4cbbf5984b3ce459.stex" ]
 
 [params]
 

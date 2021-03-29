@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/pumpkin_side.png-7695c111b4e510da899cacc7bfd981f5.stex"
+path="res://.import/pumpkin_side.png-a35b795bb504a535976505b3b9913279.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/pumpkin_side.png"
-dest_files=[ "res://.import/pumpkin_side.png-7695c111b4e510da899cacc7bfd981f5.stex" ]
+source_file="res://Minecraft textures/block/pumpkin_side.png"
+dest_files=[ "res://.import/pumpkin_side.png-a35b795bb504a535976505b3b9913279.stex" ]
 
 [params]
 

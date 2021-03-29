@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/phantom.png-451366b76a5f43f205b94a6fa8562ed6.stex"
+path="res://.import/phantom.png-7a1c29d1c325fe2b1744309bdd35933e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/entity/phantom.png"
-dest_files=[ "res://.import/phantom.png-451366b76a5f43f205b94a6fa8562ed6.stex" ]
+source_file="res://Minecraft textures/entity/phantom.png"
+dest_files=[ "res://.import/phantom.png-7a1c29d1c325fe2b1744309bdd35933e.stex" ]
 
 [params]
 

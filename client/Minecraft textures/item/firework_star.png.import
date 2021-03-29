@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/firework_star.png-d545fe5c9693df111b9c69773a3fe7b8.stex"
+path="res://.import/firework_star.png-9d1c3fc49d61bfa634d4bce1000eda46.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/firework_star.png"
-dest_files=[ "res://.import/firework_star.png-d545fe5c9693df111b9c69773a3fe7b8.stex" ]
+source_file="res://Minecraft textures/item/firework_star.png"
+dest_files=[ "res://.import/firework_star.png-9d1c3fc49d61bfa634d4bce1000eda46.stex" ]
 
 [params]
 

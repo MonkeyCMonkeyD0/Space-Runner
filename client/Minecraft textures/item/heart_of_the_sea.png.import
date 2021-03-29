@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/heart_of_the_sea.png-fdfd7c0bff3ce83ddacefe651a451b44.stex"
+path="res://.import/heart_of_the_sea.png-9f1aace883ee1ef423d320d9d570d4eb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/heart_of_the_sea.png"
-dest_files=[ "res://.import/heart_of_the_sea.png-fdfd7c0bff3ce83ddacefe651a451b44.stex" ]
+source_file="res://Minecraft textures/item/heart_of_the_sea.png"
+dest_files=[ "res://.import/heart_of_the_sea.png-9f1aace883ee1ef423d320d9d570d4eb.stex" ]
 
 [params]
 

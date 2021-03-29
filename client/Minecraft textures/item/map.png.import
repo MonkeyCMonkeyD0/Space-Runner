@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/map.png-fee6a5904b40a28cede86a5c610e8223.stex"
+path="res://.import/map.png-d1c384fc123c186610c0d0a7c295653d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/map.png"
-dest_files=[ "res://.import/map.png-fee6a5904b40a28cede86a5c610e8223.stex" ]
+source_file="res://Minecraft textures/item/map.png"
+dest_files=[ "res://.import/map.png-d1c384fc123c186610c0d0a7c295653d.stex" ]
 
 [params]
 

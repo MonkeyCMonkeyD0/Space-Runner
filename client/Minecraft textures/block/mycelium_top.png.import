@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/mycelium_top.png-9cc76ddb781fcfb4ebd0ddd7f40ed8f5.stex"
+path="res://.import/mycelium_top.png-71626c67ed6e6a9ea5e070267126e927.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/mycelium_top.png"
-dest_files=[ "res://.import/mycelium_top.png-9cc76ddb781fcfb4ebd0ddd7f40ed8f5.stex" ]
+source_file="res://Minecraft textures/block/mycelium_top.png"
+dest_files=[ "res://.import/mycelium_top.png-71626c67ed6e6a9ea5e070267126e927.stex" ]
 
 [params]
 

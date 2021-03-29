@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/lime_stained_glass.png-de48686a2a9fe2daddb9777c2539ca5b.stex"
+path="res://.import/lime_stained_glass.png-ffa0a7403b206b5b3df467e880acf8f6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/block/lime_stained_glass.png"
-dest_files=[ "res://.import/lime_stained_glass.png-de48686a2a9fe2daddb9777c2539ca5b.stex" ]
+source_file="res://Minecraft textures/block/lime_stained_glass.png"
+dest_files=[ "res://.import/lime_stained_glass.png-ffa0a7403b206b5b3df467e880acf8f6.stex" ]
 
 [params]
 

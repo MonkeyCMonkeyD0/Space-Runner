@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tabs.png-6d7f375a344d0c86f14d54b0c6829c7e.stex"
+path="res://.import/tabs.png-acbcc29d764871490fa40457e65dadf3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/gui/advancements/tabs.png"
-dest_files=[ "res://.import/tabs.png-6d7f375a344d0c86f14d54b0c6829c7e.stex" ]
+source_file="res://Minecraft textures/gui/advancements/tabs.png"
+dest_files=[ "res://.import/tabs.png-acbcc29d764871490fa40457e65dadf3.stex" ]
 
 [params]
 

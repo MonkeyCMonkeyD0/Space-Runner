@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/golden_boots.png-b371ad7e651c7ffab1fa546b6076d98b.stex"
+path="res://.import/golden_boots.png-010d535149c47a679672f55e1d9a4c2d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/golden_boots.png"
-dest_files=[ "res://.import/golden_boots.png-b371ad7e651c7ffab1fa546b6076d98b.stex" ]
+source_file="res://Minecraft textures/item/golden_boots.png"
+dest_files=[ "res://.import/golden_boots.png-010d535149c47a679672f55e1d9a4c2d.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cod_bucket.png-29e56ff4cf565f5194164999e467e112.stex"
+path="res://.import/cod_bucket.png-a6dc96e117822e011a0ab4a48c34b412.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://data/Minecraft textures/item/cod_bucket.png"
-dest_files=[ "res://.import/cod_bucket.png-29e56ff4cf565f5194164999e467e112.stex" ]
+source_file="res://Minecraft textures/item/cod_bucket.png"
+dest_files=[ "res://.import/cod_bucket.png-a6dc96e117822e011a0ab4a48c34b412.stex" ]
 
 [params]
 
