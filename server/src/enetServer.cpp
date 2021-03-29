@@ -7,7 +7,7 @@
 #include <random>
 #include <algorithm>
 
-#include "jeu.hpp"
+#include "Jeu.hpp"
 
 #define TOMAX	0
 

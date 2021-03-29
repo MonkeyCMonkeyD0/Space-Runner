@@ -1,6 +1,10 @@
+#ifndef KNAPSACK_HPP
+#define KNAPSACK_HPP
+
+#include <iostream>
 #include <vector>
 #include <map>
-#include <list>
+#include <string>
 #include <algorithm>
 #include <random>
 
@@ -12,18 +16,21 @@ public:
 		std::vector<unsigned int> weights,
 		std::vector<unsigned int> profits,
 		unsigned int max_weight,
-		unsigned int population = 500,
-		double survival_rate = 0.5,
-		unsigned int max_iteration = 15000
+		unsigned int population = 25,
+		double survival_rate = 0.3,
+		unsigned int max_iteration = 100
 	);
 
-	void add_pop();
-	int fitness(unsigned long long int);
-	void evaluation();
+	std::ostream & print_bin(std::ostream &, unsigned long long);
+	unsigned long long get();
 
-	unsigned long long int mutation(unsigned long long int, int);
-	std::vector<unsigned long long int> crossover(unsigned long long int, unsigned long long int, unsigned int);
-	void run();
+protected:
+	void add_pop();
+	int fitness (unsigned long long);
+	void evaluation();
+	unsigned long long mutation (unsigned long long, unsigned int);
+	unsigned long long crossover (unsigned long long, unsigned long long, unsigned int);
+	void run(bool debug = false);
 
 private:
 	std::vector<unsigned int> weights;
@@ -34,6 +41,9 @@ private:
 	unsigned int geneSize;
 	double survivalRate;
 
-	std::map<unsigned long long int, int> pop;
+	std::map<unsigned long long, int> pop;
+	std::pair<unsigned long long, int> best_ind;
 
 };
+
+#endif

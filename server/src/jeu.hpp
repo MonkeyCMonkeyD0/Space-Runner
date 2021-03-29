@@ -2,11 +2,7 @@
 #define JEU_HPP
 
 
-
 class Jeu {
-
-private : 
-
 
 public:
 
@@ -15,6 +11,9 @@ public:
 	Jeu();
 
 	void initGame();
+
+private : 
+
 };
 
 #endif
