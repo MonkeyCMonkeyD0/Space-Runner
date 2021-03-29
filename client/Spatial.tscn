@@ -1,9 +1,16 @@
 [gd_scene load_steps=2 format=2]
 
-[sub_resource type="CylinderMesh" id=1]
+[ext_resource path="res://data/obj/ship2.obj" type="ArrayMesh" id=1]
 
-[node name="Spatial" type="Spatial"]
+[node name="Control" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="MeshInstance" type="MeshInstance" parent="."]
-mesh = SubResource( 1 )
+[node name="Spatial" type="Spatial" parent="."]
+
+[node name="MeshInstance" type="MeshInstance" parent="Spatial"]
+mesh = ExtResource( 1 )
 material/0 = null
