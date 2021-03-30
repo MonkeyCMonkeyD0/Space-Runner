@@ -1,7 +1,52 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://data/obj/ship2.obj" type="ArrayMesh" id=1]
-[ext_resource path="res://MeshInstance.gd" type="Script" id=2]
+[ext_resource path="res://Spaceship.gd" type="Script" id=2]
+[ext_resource path="res://p4.gd" type="Script" id=3]
+[ext_resource path="res://data/img/grass.png" type="Texture" id=4]
+[ext_resource path="res://data/img/beacon.png" type="Texture" id=5]
+[ext_resource path="res://data/img/cobblestone.png" type="Texture" id=6]
+[ext_resource path="res://p1.gd" type="Script" id=7]
+[ext_resource path="res://p2.gd" type="Script" id=8]
+[ext_resource path="res://p3.gd" type="Script" id=9]
+
+[sub_resource type="Skin" id=1]
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_color = Color( 0.898039, 0.827451, 0.854902, 1 )
+albedo_texture = ExtResource( 4 )
+metallic = 1.0
+
+[sub_resource type="SphereMesh" id=3]
+
+[sub_resource type="SpatialMaterial" id=4]
+albedo_color = Color( 0.929412, 0.643137, 0.513726, 1 )
+albedo_texture = ExtResource( 5 )
+
+[sub_resource type="SphereMesh" id=5]
+
+[sub_resource type="SpatialMaterial" id=6]
+albedo_color = Color( 0.929412, 0.0941176, 0.290196, 1 )
+albedo_texture = ExtResource( 6 )
+metallic = 1.0
+
+[sub_resource type="SphereMesh" id=7]
+
+[sub_resource type="SpatialMaterial" id=8]
+albedo_color = Color( 0.972549, 1, 0.101961, 1 )
+albedo_texture = ExtResource( 5 )
+metallic_texture = ExtResource( 5 )
+metallic_texture_channel = 1
+
+[sub_resource type="SphereMesh" id=9]
+
+[sub_resource type="Skin" id=10]
+
+[sub_resource type="SpatialMaterial" id=11]
+albedo_color = Color( 0.85098, 0.584314, 0.988235, 1 )
+albedo_texture = ExtResource( 4 )
+metallic = 0.26
+metallic_specular = 0.93
 
 [node name="Control" type="Control"]
 margin_right = 40.0
@@ -10,14 +55,67 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Spatial" type="Spatial" parent="."]
+[node name="Objets" type="Spatial" parent="."]
 
-[node name="MeshInstance" type="MeshInstance" parent="Spatial"]
-transform = Transform( 0.110945, -0.220915, -0.037255, 0.211324, 0.116997, -0.0644493, 0.0743861, -0.00289018, 0.23866, -3.57228, 5.19892, -0.348938 )
+[node name="Spaceship" type="MeshInstance" parent="Objets"]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -0.142329, 0, 3.99503 )
 mesh = ExtResource( 1 )
-material/0 = null
+skin = SubResource( 1 )
+skeleton = NodePath("")
+material/0 = SubResource( 2 )
 script = ExtResource( 2 )
 
-[node name="Camera" type="Camera" parent="Spatial"]
-transform = Transform( -0.870157, -0.106608, 0.481105, 0.461447, 0.166272, 0.871447, -0.172898, 0.9803, -0.0954891, 6.59098, 13.4391, 1.2865 )
-fov = 133.078
+[node name="RemoteTransform" type="RemoteTransform" parent="Objets/Spaceship"]
+transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 1.42329, 0, -39.9503 )
+remote_path = NodePath("../../../CameraRef")
+update_rotation = false
+update_scale = false
+
+[node name="Planetes" type="Spatial" parent="."]
+
+[node name="p1" type="MeshInstance" parent="Planetes"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0 )
+mesh = SubResource( 3 )
+material/0 = SubResource( 4 )
+script = ExtResource( 7 )
+
+[node name="p2" type="MeshInstance" parent="Planetes"]
+mesh = SubResource( 5 )
+material/0 = SubResource( 6 )
+script = ExtResource( 8 )
+
+[node name="p3" type="MeshInstance" parent="Planetes"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6, 0 )
+mesh = SubResource( 7 )
+material/0 = SubResource( 8 )
+script = ExtResource( 9 )
+
+[node name="p4" type="MeshInstance" parent="Planetes"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9, 0 )
+mesh = SubResource( 9 )
+skin = SubResource( 10 )
+material/0 = SubResource( 11 )
+script = ExtResource( 3 )
+
+[node name="CameraRef" type="Spatial" parent="."]
+
+[node name="Camera" type="Camera" parent="CameraRef"]
+transform = Transform( 1, 0, 0, 0, 0.987491, -0.157676, 0, 0.157676, 0.987491, 0, 0, 13 )
+fov = 30.9375
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+margin_left = -127.356
+margin_top = -483.953
+margin_right = -87.3561
+margin_bottom = -469.953
+text = "Max_Weight : 0
+Weights : 0
+Profits : 0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+shadow_enabled = true
