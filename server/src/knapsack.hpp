@@ -23,13 +23,6 @@ public:
 
 	std::ostream & print_bin(std::ostream &, unsigned long long);
 	unsigned long long get();
-
-protected:
-	void add_pop();
-	int fitness (unsigned long long);
-	void evaluation();
-	unsigned long long mutation (unsigned long long, unsigned int);
-	unsigned long long crossover (unsigned long long, unsigned long long, unsigned int);
 	void run(bool debug = false);
 
 private:
@@ -43,6 +36,12 @@ private:
 
 	std::map<unsigned long long, int> pop;
 	std::pair<unsigned long long, int> best_ind;
+
+	void add_pop();
+	int fitness (unsigned long long);
+	void evaluation();
+	unsigned long long mutation (unsigned long long, unsigned int);
+	unsigned long long crossover (unsigned long long, unsigned long long, unsigned int);
 
 };
 

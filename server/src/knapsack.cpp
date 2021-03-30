@@ -19,9 +19,6 @@ Knapsack::Knapsack(std::vector<unsigned int> weights, std::vector<unsigned int> 
 		std::cerr << "Error population to big, cannot generate different gene for each." << std::endl;
 		exit(EXIT_FAILURE);
 	}
-
-	this->add_pop();
-	this->run(false);
 }
 
 void Knapsack::add_pop()
@@ -104,6 +101,8 @@ unsigned long long Knapsack::crossover(unsigned long long g1, unsigned long long
 
 void Knapsack::run(bool debug)
 {
+	this->add_pop();
+
 	std::random_device rd;
 	std::uniform_int_distribution<unsigned int> distrib_gs(0, this->geneSize - 1);
 

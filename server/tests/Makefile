@@ -2,10 +2,10 @@ EXEC_TEST = test
 EXEC = enetServer
 # LIB = enet omp
 CC = g++
-CCFLAGS = -Wall -Werror -std=c++11 -g
+CCFLAGS = -Wall -Werror -std=c++11 -g -O3
 CFLAGS = -I../include/
 LDFLAGS = -L../lib/
-LDFLAGS = 
+LDFLAGS = -pthread
 # LDFLAGS += $(LIB:%=-l%)
 # FMFLAGS = -framework Cocoa -framework OpenGL -framework IOKit
 
@@ -32,11 +32,11 @@ $(EXEC_TEST): $(OBJ_TST)
 
 ../$(OBJ_DIR)/%.o: ../$(SRC_DIR)/%.cpp
 	@mkdir -p ../$(OBJ_DIR)
-	$(CC) $(CCFLAGS) $(CFLAGS) -o $@ -c $<
+	$(CC) $(CCFLAGS) $(CFLAGS) -pthread -o $@ -c $<
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
 	@mkdir -p $(OBJ_DIR)
-	$(CC) $(CCFLAGS) $(CFLAGS) -o $@ -c $<
+	$(CC) $(CCFLAGS) $(CFLAGS) -pthread -o $@ -c $<
 
 
 .depend:

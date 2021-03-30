@@ -1,10 +1,10 @@
 EXEC = enetServer
 # LIB = enet
 CC = g++
-CCFLAGS = -Wall -Werror -std=c++11 -g
+CCFLAGS = -Wall -Werror -std=c++11 -g -O3
 CFLAGS = -Iinclude/
 LDFLAGS = -Llib/
-LDFLAGS = 
+LDFLAGS = -pthread
 # LDFLAGS += $(LIB:%=-l%)
 # FMFLAGS = -framework Cocoa -framework OpenGL -framework IOKit
 
