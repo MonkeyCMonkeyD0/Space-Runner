@@ -2,8 +2,8 @@
 
 importer="texture"
 type="StreamTexture"
-path.s3tc="res://.import/cobblestone.png-f5d49b67e2a9077d51f992d8c227d54b.s3tc.stex"
-path.etc2="res://.import/cobblestone.png-f5d49b67e2a9077d51f992d8c227d54b.etc2.stex"
+path.s3tc="res://.import/grass.png-e37ca149720adde711404c368c52f325.s3tc.stex"
+path.etc2="res://.import/grass.png-e37ca149720adde711404c368c52f325.etc2.stex"
 metadata={
 "imported_formats": [ "s3tc", "etc2" ],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://data/img/cobblestone.png"
-dest_files=[ "res://.import/cobblestone.png-f5d49b67e2a9077d51f992d8c227d54b.s3tc.stex", "res://.import/cobblestone.png-f5d49b67e2a9077d51f992d8c227d54b.etc2.stex" ]
+source_file="res://data/img/grass.png"
+dest_files=[ "res://.import/grass.png-e37ca149720adde711404c368c52f325.s3tc.stex", "res://.import/grass.png-e37ca149720adde711404c368c52f325.etc2.stex" ]
 
 [params]
 
