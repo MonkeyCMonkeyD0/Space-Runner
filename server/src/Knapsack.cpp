@@ -15,7 +15,7 @@ Knapsack::Knapsack(std::vector<unsigned int> weights, std::vector<unsigned int> 
 		exit(EXIT_FAILURE);
 	}
 
-	if (this->population >= (1 << this->geneSize) - 1) {
+	if (this->population >= (1U << this->geneSize) - 1) {
 		std::cerr << "Error population to big, cannot generate different gene for each." << std::endl;
 		exit(EXIT_FAILURE);
 	}
