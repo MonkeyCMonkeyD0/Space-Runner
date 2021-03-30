@@ -1,10 +1,10 @@
-EXEC = enetServer
+EXEC = bin/enetServer
 # LIB = enet
 CC = g++
 CCFLAGS = -Wall -Werror -std=c++11 -g -O3
 CFLAGS = -Iinclude/
 LDFLAGS = -Llib/
-LDFLAGS = -pthread
+LDFLAGS = -pthread  -lenet -lrt
 # LDFLAGS += $(LIB:%=-l%)
 # FMFLAGS = -framework Cocoa -framework OpenGL -framework IOKit
 
@@ -26,7 +26,7 @@ all: exe
 exe: $(EXEC)
 
 $(EXEC): $(OBJ)
-	$(CC) $(CCFLAGS) $(CFLAGS) $(LDFLAGS) $(FMFLAGS) $^ -o $@
+	$(CC) $(CCFLAGS) $(CFLAGS) $^ -o $@ $(LDFLAGS) 
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
 	@mkdir -p $(OBJ_DIR)
