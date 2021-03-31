@@ -10,6 +10,7 @@
 #include <thread>
 #include <pthread.h>
 #include <mutex>
+#include <functional>
 
 #include "Knapsack.hpp"
 

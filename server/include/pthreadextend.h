@@ -3,7 +3,10 @@
 #define PTHREAD_EXTEND_H
 #pragma once
 
+#ifndef _GNU_SOURCE
 #define _GNU_SOURCE
+#endif
+
 #include <pthread.h>
 #include <thread>
 #include <stdio.h>
