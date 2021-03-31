@@ -1,45 +1,72 @@
-#include <iostream>
-// #include <cstdlib>
-// #include <pthread.h>
-// #include <pthreadextend.h>
-#include <algorithm>
-#include <chrono>
-#include <mutex>
-#include <thread>
+#include <ostream>
 #include <vector>
 
-// #include "../../src/Knapsack.hpp"
+#include "../../src/Knapsack.hpp"
+#include "../../src/KnapThread.hpp"
 
 
 
-int main()
+int main(int argc, char const *argv[])
 {
-	unsigned num_cpus = std::thread::hardware_concurrency();
-	std::cout << "Launching " << num_cpus << " threads\n";
+	std::vector<unsigned int> 	w = {70, 73, 77, 80, 82, 87, 90, 94, 98, 106, 110, 113, 115, 118, 120},
+								p = {135, 139, 149, 150, 156, 163, 173, 184, 192, 201, 210, 214, 221, 229, 240};
+	KnapThread kt(w, p, 750, 10, 0.3, 30);
+	kt.run(true);
 
-	// A mutex ensures orderly access to std::cout from multiple threads.
-	std::mutex iomutex;
-	std::vector<std::thread> threads(num_cpus);
-	for (unsigned i = 0; i < num_cpus; ++i) {
-		threads[i] = std::thread([&iomutex, i] {
-			{
-				// Use a lexical scope and lock_guard to safely lock the mutex only for
-				// the duration of std::cout usage.
-				std::lock_guard<std::mutex> iolock(iomutex);
-				std::cout << "Thread #" << i << " is running\n";
-			}
+	std::cout << "Optimal solution found = ";
+	kt.print() << std::endl;
 
-			// Simulate important work done by the tread by sleeping for a bit...
-			std::this_thread::sleep_for(std::chrono::milliseconds(5000));
-
-		});
-	}
-
-	for (auto& t : threads) {
-		t.join();
-	}
 	return 0;
 }
+
+
+// void test_func(std::mutex * iomutex, int thread_num, std::string msg)
+// {
+// 	{
+// 		std::lock_guard<std::mutex> iolock(*iomutex);
+// 		std::cout << "Thread #" << thread_num << " from cpu #" << msg << std::endl;
+// 	}
+
+// 	std::random_device rd;
+// 	std::uniform_int_distribution<int> distrib(0, 10);
+// 	std::this_thread::sleep_for(std::chrono::milliseconds(3000));
+
+// 	{
+// 		std::lock_guard<std::mutex> iolock(*iomutex);
+// 		std::cout << "Thread #" << thread_num << " got number : " << distrib(rd) << std::endl;
+// 	}
+// }
+
+// int main()
+// {
+// 	unsigned num_cpus = std::thread::hardware_concurrency();
+// 	std::cout << "Launching " << num_cpus << " threads\n";
+
+// 	cpu_set_t cpus;
+// 	std::vector<std::thread> threads(num_cpus);
+// 	// A mutex ensures orderly access to std::cout from multiple threads.
+// 	std::mutex * iomutex = new std::mutex;
+	
+// 	for (unsigned i = 0; i < num_cpus; ++i) {
+// 		threads[i] = std::thread(test_func, iomutex, i, "Hello from thread!");
+
+// 		CPU_ZERO(&cpus);
+// 		CPU_SET(i, &cpus);
+
+// 		int rc = pthread_setaffinity_np(threads[i].native_handle(), sizeof(cpu_set_t), &cpus);
+// 		if (rc) {
+// 			std::cout << "Error: unable to bind thread," << rc << std::endl;
+// 			exit(EXIT_FAILURE);
+// 		}
+// 	}
+
+// 	for (auto& t : threads) {
+// 		t.join();
+// 	}
+
+// 	delete iomutex;
+// 	return 0;
+// }
 
 
 // void * DoWork(void * args) {
@@ -106,7 +133,7 @@ int main()
 // 	knap1.run();
 
 // 	std::cout << "Optimal solution found = ";
-// 	knap1.print_bin(std::cout, knap1.get()) << std::endl;
+// 	knap1.print() << std::endl;
 
 // 	return 0;
 // }

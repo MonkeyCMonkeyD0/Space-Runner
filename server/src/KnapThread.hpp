@@ -7,7 +7,9 @@
 #include <string>
 #include <algorithm>
 #include <random>
+#include <thread>
 #include <pthread.h>
+#include <mutex>
 
 #include "Knapsack.hpp"
 
@@ -25,14 +27,18 @@ public:
 		unsigned int max_iteration = 100
 	);
 
-	std::vector<unsigned long long> get();
-	void run(bool debug = false);
+	unsigned long long get() const;
+	void run(const bool & debug = false);
 
 private:
+	unsigned int num_cpus;
+	std::mutex iomutex;
+	std::pair<unsigned long long, int> best_ind;
 
-	// std::vector<pthread>
+	std::vector<std::thread> threads;
+	std::vector<std::pair<unsigned long long, int>> bests;
 
-	void * run_inst(void *);
+	void run_inst(std::mutex *, const int &, const bool & debug = false);
 
 };
 

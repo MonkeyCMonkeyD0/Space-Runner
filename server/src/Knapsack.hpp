@@ -21,9 +21,22 @@ public:
 		unsigned int max_iteration = 100
 	);
 
-	std::ostream & print_bin(std::ostream &, unsigned long long);
-	unsigned long long get();
-	void run(bool debug = false);
+	virtual std::ostream & print() const;
+	virtual unsigned long long get() const;
+	void run(const bool & debug = false);
+
+protected:
+	Knapsack(const Knapsack * k) : Knapsack(
+		k->weights,
+		k->profits,
+		k->maxWeight,
+		k->population,
+		k->survivalRate,
+		k->maxIteration
+	) {}
+
+	int fitness (unsigned long long) const;
+	static bool cmp(const std::pair<unsigned long long, int> &, const std::pair<unsigned long long, int> &);
 
 private:
 	std::vector<unsigned int> weights;
@@ -37,11 +50,11 @@ private:
 	std::map<unsigned long long, int> pop;
 	std::pair<unsigned long long, int> best_ind;
 
+	std::ostream & print_bin(std::ostream &, unsigned long long) const;
 	void add_pop();
-	int fitness (unsigned long long);
 	void evaluation();
-	unsigned long long mutation (unsigned long long, unsigned int);
-	unsigned long long crossover (unsigned long long, unsigned long long, unsigned int);
+	unsigned long long mutation (unsigned long long, const unsigned int &) const;
+	unsigned long long crossover (const unsigned long long &, const unsigned long long &, const unsigned int &) const;
 
 };
 

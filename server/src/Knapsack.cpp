@@ -30,7 +30,7 @@ void Knapsack::add_pop()
 		this->pop[distrib(rd)] = 0;
 }
 
-int Knapsack::fitness(unsigned long long gene)
+int Knapsack::fitness(unsigned long long gene) const
 {
 	unsigned int sum_w = 0, sum_p = 0;
 	for (unsigned int i = this->geneSize; gene > 0 && i > 0; --i) {
@@ -47,12 +47,12 @@ int Knapsack::fitness(unsigned long long gene)
 }
 
 
-bool cmp(std::pair<unsigned long long, int> & a, std::pair<unsigned long long, int> & b)
+bool Knapsack::cmp(const std::pair<unsigned long long, int> & a, const std::pair<unsigned long long, int> & b)
 {
 	return a.second > b.second;
 }
 
-std::ostream & Knapsack::print_bin(std::ostream & out, unsigned long long gene)
+std::ostream & Knapsack::print_bin(std::ostream & out, unsigned long long gene) const
 {
 	std::string s = "";
 	for (unsigned int i = this->geneSize; i > 0; --i) {
@@ -62,6 +62,11 @@ std::ostream & Knapsack::print_bin(std::ostream & out, unsigned long long gene)
 
 	std::reverse(s.begin(), s.end());
 	return out << s;
+}
+
+std::ostream & Knapsack::print() const
+{
+	return this->print_bin(std::cout, this->get());
 }
 
 void Knapsack::evaluation()
@@ -83,7 +88,7 @@ void Knapsack::evaluation()
 		this->pop[sorted_map[i].first] = 0;
 }
 
-unsigned long long Knapsack::mutation(unsigned long long gene, unsigned int n)
+unsigned long long Knapsack::mutation(unsigned long long gene, const unsigned int & n) const
 {
 	std::random_device rd;
 	std::uniform_int_distribution<unsigned int> distrib(0, this->geneSize - 1);
@@ -94,12 +99,12 @@ unsigned long long Knapsack::mutation(unsigned long long gene, unsigned int n)
 	return gene;
 }
 
-unsigned long long Knapsack::crossover(unsigned long long g1, unsigned long long g2, unsigned int break_point)
+unsigned long long Knapsack::crossover(const unsigned long long & g1, const unsigned long long & g2, const unsigned int & break_point) const
 {
 	return ((g1 >> break_point) << break_point) | (g2 & ((1 << break_point) - 1));
 }
 
-void Knapsack::run(bool debug)
+void Knapsack::run(const bool & debug)
 {
 	this->add_pop();
 
@@ -134,7 +139,7 @@ void Knapsack::run(bool debug)
 	}
 }
 
-unsigned long long Knapsack::get()
+unsigned long long Knapsack::get() const
 {
 	return this->best_ind.first;
 }

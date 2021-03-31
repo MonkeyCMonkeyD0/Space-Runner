@@ -1,5 +1,11 @@
+/* from https://github.com/biocore/unifrac/blob/master/sucpp/affinity.hpp */
+#ifndef PTHREAD_EXTEND_H
+#define PTHREAD_EXTEND_H
+#pragma once
+
 #define _GNU_SOURCE
 #include <pthread.h>
+#include <thread>
 #include <stdio.h>
 #include <sys/syscall.h>
 #include <sys/types.h>
@@ -25,7 +31,7 @@
 #define SYSCTL_CORE_COUNT   "machdep.cpu.core_count"
 
 typedef struct cpu_set {
-	uint32_t    count;
+	uint32_t count;
 } cpu_set_t;
 
 static inline void
@@ -38,26 +44,26 @@ static inline int
 CPU_ISSET(int num, cpu_set_t * cs) { return (cs->count & (1 << num)); }
 
 static inline int
-CPU_COUNT(cpu_set_t *cs) { return __builtin_popcount(cs->count); }
+CPU_COUNT(cpu_set_t * cs) { return __builtin_popcount(cs->count); }
 
 #define CPU_SETSIZE 32
 
-static int sched_getaffinity (pid_t pid, size_t cpu_size, cpu_set_t * cpu_set)
-{
-	int32_t core_count = 0;
-	size_t  len = sizeof(core_count);
-	int ret = sysctlbyname(SYSCTL_CORE_COUNT, &core_count, &len, 0, 0);
-	if (ret)
-		exit(EXIT_FAILURE);
+// static int sched_getaffinity (pid_t pid, size_t cpu_size, cpu_set_t * cpu_set)
+// {
+// 	int32_t core_count = 0;
+// 	size_t  len = sizeof(core_count);
+// 	int ret = sysctlbyname(SYSCTL_CORE_COUNT, &core_count, &len, 0, 0);
+// 	if (ret)
+// 		exit(EXIT_FAILURE);
 
-	cpu_set->count = 0;
-	for (int i = 0; i < core_count; i++)
-		cpu_set->count |= (1 << i);
+// 	cpu_set->count = 0;
+// 	for (int i = 0; i < core_count; i++)
+// 		cpu_set->count |= (1 << i);
 
-	return 0;
-}
+// 	return 0;
+// }
 
-static int pthread_setaffinity_np (pthread_t thread, size_t cpu_size, cpu_set_t *cpu_set)
+static int pthread_setaffinity_np (pthread_t thread, size_t cpu_size, cpu_set_t * cpu_set)
 {
 	thread_port_t mach_thread;
 	int core;
@@ -121,3 +127,5 @@ static int pthread_setaffinity_np (pthread_t thread, size_t cpu_size, cpu_set_t 
 // 	int serr = pthread_setaffinity_np(thread, sizeof(new_set), &new_set);
 // 	return serr;
 // }
+
+#endif
