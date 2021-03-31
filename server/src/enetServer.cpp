@@ -3,9 +3,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <enet/enet.h>
+#include <cstring>
 
 #include "enetServer.h"
-#include "knapsack.h"
+#include "Knapsack.hpp"
+
+#define TOMAX 0
 
 ENetAddress address;
 ENetHost *server;
@@ -31,10 +35,11 @@ pthread_cond_t  started_cond = PTHREAD_COND_INITIALIZER;
 volatile int start;
 
 unsigned int capacity = 750;
-std::vector<int> 	weights = {70,73,77,80,82,87,90,94,98,106,110,113,115,118,120},
+std::vector<unsigned int> 	weights = {70,73,77,80,82,87,90,94,98,106,110,113,115,118,120},
 					profits = { 135,139,149,150,156,163,173,184,192,201,210,214,221,229,240};
 size_t popsize = 100;
 unsigned int maxit = 1000;
+unsigned int survival_rate = 0.4;
 
 
 void sendBroadcast(char *mess)
@@ -96,18 +101,21 @@ void * DoWork(void * args) {
 		if (pthread_mutex_unlock(&lock_mutex)!=0)
 			printf("there is an error in pthread_mutek_unlock in DoWork()\n");
 
-			printf("start ID: %lu, CPU: %d\n", pthread_self(), sched_getcpu());
+		
+		printf("start ID: %lu, CPU: %d\n", pthread_self(), sched_getcpu());
 
 		/* Init solver */
-		Knapsack k(capacity, weights, profits, popsize, maxit);
+		Knapsack k(weights, profits,capacity ,popsize,survival_rate ,maxit);
 		/* Launch genetic algorithm */
 		k.run();
 		/* Print best solution found */
-		k.print_bestsol();
+		std::cout << "Optimal solution found = ";
+		k.print_bin(std::cout, k.get()) << std::endl;
 
 		printf("end   ID: %lu, CPU: %d\n", pthread_self(), sched_getcpu());
 	}
 }
+
 
 int main (int argc, char ** argv) 
 {
@@ -184,6 +192,7 @@ int main (int argc, char ** argv)
 				case ENET_EVENT_TYPE_DISCONNECT:
 					printf ("%s disconnected FPX.\n", (char*)event.peer -> data);
 					event.peer -> data = NULL;
+				default:break;
 			}
 		}
 	}
