@@ -13,11 +13,11 @@ SRC = $(wildcard $(SRC_DIR)/*.cpp)
 OBJ = $(SRC:$(SRC_DIR)/%.cpp=$(OBJ_DIR)/%.o)
 SAVES = $(wildcard *.txt)
 
+
 EXEC = enetServer
 
 
 all: $(EXEC)
-
 
 $(EXEC): $(OBJ)
 	$(CC) $(CCFLAGS) $(CFLAGS) $(LDFLAGS) $^ -o $@ 
@@ -39,24 +39,26 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
 
 
 testcase: 
-	cd $(TST_DIR); make
+	@cd $(TST_DIR); make
 
-clean:
-	rm -Rf $(OBJ_DIR) $(EXEC)
+clean: cleantest
+	@rm -Rf $(OBJ_DIR) $(EXEC)
+	@echo "Removed obj and exe from server"
 # $(LIB_OBJ)
+
 veryclean: clean
-	rm -f $(SAVES)
+	@rm -f $(SAVES)
+	@echo "Removed save files from server"
 # $(LIB:%=$(LIB_DIR)/lib%.a)
+
 cleantest:
-	cd $(TST_DIR) ; make veryclean
+	@cd $(TST_DIR) ; make veryclean
+
 distclean : veryclean cleantest
 
-.PHONY: testcase clean veryclean distclean
+
+.PHONY: testcase clean veryclean cleantest distclean
 
 .depend:
 	$(CC) $(CCFLAGS) -MM $(SRC) > .depends
 -include .depends
-
-
-debug:
-	@echo 

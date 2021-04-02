@@ -1,4 +1,5 @@
 /* from https://github.com/biocore/unifrac/blob/master/sucpp/affinity.hpp */
+
 #ifndef PTHREAD_EXTEND_H
 #define PTHREAD_EXTEND_H
 #pragma once
