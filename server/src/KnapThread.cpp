@@ -1,6 +1,12 @@
-#include "KnapThread.hpp"
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <mutex>
+#include <functional>
 
-#include <pthreadextend.h>
+#include <threadextend.h>
+
+#include "KnapThread.hpp"
 
 
 KnapThread::KnapThread(std::vector<unsigned int> weights, std::vector<unsigned int> profits, unsigned int max_weight, unsigned int population, double survival_rate, unsigned int max_iteration) :
@@ -11,49 +17,6 @@ KnapThread::KnapThread(std::vector<unsigned int> weights, std::vector<unsigned i
 
 	this->threads = std::vector<std::thread>(this->num_cpus);
 	this->bests = std::vector<std::pair<unsigned long long, int>>(this->num_cpus);
-
-	// pthread_attr_t attr;
-	// cpu_set_t cpus;
-	// unsigned long i;
-	// int rc;
-
-	// pthread_attr_init(&attr);
-	// pthread_attr_setdetachstate(&attr, PTHREAD_CREATE_JOINABLE);
-	
-	// sched_getaffinity(0, sizeof(cpus), &cpus);
-	// unsigned int numberOfProcessors = CPU_COUNT(&cpus);
-	// printf("Number of processors: %u\n", numberOfProcessors);
-
-	// pthread_t threads[numberOfProcessors];
-
-	// for (i = 0; i < (unsigned long) numberOfProcessors; i++)
-	// {
-	// 	CPU_ZERO(&cpus);
-	// 	CPU_SET(i, &cpus);
-
-	// 	rc = pthread_create(&threads[i], &attr, this->run_inst, (void *) i);
-	// 	if (rc) {
-	// 		std::cerr << "Error: unable to create thread," << rc << std::endl;
-	// 		exit(EXIT_FAILURE);
-	// 	}
-
-	// 	rc = pthread_setaffinity_np(threads[i], sizeof(cpu_set_t), &cpus);
-	// 	if (rc) {
-	// 		std::cerr << "Error: unable to bind thread," << rc << std::endl;
-	// 		exit(EXIT_FAILURE);
-	// 	}
-	// }
-
-	// for (i = 0; i < (unsigned long) numberOfProcessors; i++)
-	// {
-	// 	rc = pthread_join(threads[i], NULL);
-	// 	if (rc) {
-	// 		std::cerr << "Error: unable to join thread," << rc << std::endl;
-	// 		exit(EXIT_FAILURE);
-	// 	}
-	// }
-
-	// pthread_exit(NULL);
 }
 
 unsigned long long KnapThread::get() const
@@ -103,7 +66,7 @@ void KnapThread::run_inst(std::mutex * iomutex, const int & thread_num, const bo
 		std::cout << "Starting Thread #" << thread_num << " for Knapsack" << std::endl;
 	}
 
-	Knapsack k(*this);
+	Knapsack k(this);
 	k.run();
 	this->bests[thread_num] = std::make_pair(k.get(), this->fitness(k.get()));
 

@@ -1,17 +1,15 @@
 #ifndef KNAPSACK_HPP
 #define KNAPSACK_HPP
 
-#include <iostream>
+#include <ostream>
 #include <vector>
 #include <map>
-#include <string>
-#include <algorithm>
-#include <random>
 
 
 class Knapsack {
 
 public:
+
 	Knapsack(
 		std::vector<unsigned int> weights,
 		std::vector<unsigned int> profits,
@@ -20,12 +18,6 @@ public:
 		double survival_rate = 0.3,
 		unsigned int max_iteration = 100
 	);
-
-	virtual std::ostream & print() const;
-	virtual unsigned long long get() const;
-	void run(const bool & debug = false);
-
-protected:
 	Knapsack(const Knapsack * k) : Knapsack(
 		k->weights,
 		k->profits,
@@ -35,10 +27,17 @@ protected:
 		k->maxIteration
 	) {}
 
+	virtual std::ostream & print() const;
+	virtual unsigned long long get() const;
+	void run(const bool & debug = false);
+
+protected:
+
 	int fitness (unsigned long long) const;
 	static bool cmp(const std::pair<unsigned long long, int> &, const std::pair<unsigned long long, int> &);
 
 private:
+
 	std::vector<unsigned int> weights;
 	std::vector<unsigned int> profits;
 	unsigned int maxWeight;

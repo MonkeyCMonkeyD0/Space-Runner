@@ -1,3 +1,9 @@
+#include <iostream>
+#include <vector>
+#include <map>
+#include <algorithm>
+#include <random>
+
 #include "Knapsack.hpp"
 
 

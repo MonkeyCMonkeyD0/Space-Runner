@@ -1,12 +1,8 @@
-EXEC = bin/enetServer
-# LIB = enet
 CC = g++
 CCFLAGS = -Wall -Werror -std=c++11 -g -O3
 CFLAGS = -Iinclude/
 LDFLAGS = -Llib/
-LDFLAGS = -pthread  -lenet -lrt
-# LDFLAGS += $(LIB:%=-l%)
-# FMFLAGS = -framework Cocoa -framework OpenGL -framework IOKit
+LDFLAGS = -pthread -lenet
 
 SRC_DIR = src
 OBJ_DIR = bin
@@ -16,17 +12,15 @@ TST_DIR = tests
 SRC = $(wildcard $(SRC_DIR)/*.cpp)
 OBJ = $(SRC:$(SRC_DIR)/%.cpp=$(OBJ_DIR)/%.o)
 SAVES = $(wildcard *.txt)
-# LIB_SRC = $(wildcard $(LIB_DIR)/*/*.c)
-# LIB_OBJ = $(LIB_SRC:%.c=%.o)
+
+EXEC = enetServer
 
 
-all: exe
+all: $(EXEC)
 
-
-exe: $(EXEC)
 
 $(EXEC): $(OBJ)
-	$(CC) $(CCFLAGS) $(CFLAGS) $^ -o $@ $(LDFLAGS) 
+	$(CC) $(CCFLAGS) $(CFLAGS) $(LDFLAGS) $^ -o $@ 
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
 	@mkdir -p $(OBJ_DIR)

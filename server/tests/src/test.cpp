@@ -1,9 +1,8 @@
-#include <ostream>
+#include <iostream>
 #include <vector>
 
-#include "../../src/Knapsack.hpp"
+// #include "../../src/Knapsack.hpp"
 #include "../../src/KnapThread.hpp"
-
 
 
 int main(int argc, char const *argv[])

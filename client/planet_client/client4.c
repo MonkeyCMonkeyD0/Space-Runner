@@ -1,12 +1,12 @@
 #include <stdio.h>
-#include <string.h>
+#include <string>
 #include <enet/enet.h>
 
 #define HOST "192.168.1.173"
 #define PORT (4242)
 #define BUFFERSIZE (1000)
 
-#include <pthread.h>
+#include <pthreadextend.h>
 
 #include <unistd.h>
 

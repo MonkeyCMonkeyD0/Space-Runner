@@ -1,24 +1,17 @@
 #ifndef KNAP_THREAD_HPP
 #define KNAP_THREAD_HPP
 
-#include <iostream>
 #include <vector>
-#include <map>
-#include <string>
-#include <algorithm>
-#include <random>
 #include <thread>
-#include <pthread.h>
 #include <mutex>
-#include <functional>
 
 #include "Knapsack.hpp"
-
 
 
 class KnapThread : public Knapsack {
 
 public:
+
 	KnapThread(
 		std::vector<unsigned int> weights,
 		std::vector<unsigned int> profits,
@@ -32,6 +25,7 @@ public:
 	void run(const bool & debug = false);
 
 private:
+
 	unsigned int num_cpus;
 	std::mutex iomutex;
 	std::pair<unsigned long long, int> best_ind;
