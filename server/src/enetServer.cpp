@@ -138,7 +138,7 @@ int main (int argc, char ** argv)
 	address.port = 4242;
 
 	printf(" - enet_host_create()\n");
-	server = enet_host_create(& address, 32, 2, 0, 0);
+	server = enet_host_create(&address, 32, 2, 0, 0);
 	if (server == NULL)
 	{
 		std::cerr << "Error: An error occurred while trying to create an ENet server host." << std::endl;
@@ -155,17 +155,20 @@ int main (int argc, char ** argv)
 			switch (event.type)
 			{
 				case ENET_EVENT_TYPE_CONNECT:
-					printf ("A new client connected from %x : %u\n", 
-						(unsigned int) event.peer->address.host, 
+					printf ("A new client connected from %u.%u.%u.%u : %u\n", 
+						(char) event.peer->address.host & (255),
+						(char) event.peer->address.host & (255 << 8),
+						(char) event.peer->address.host & (255 << 16),
+						(char) event.peer->address.host & (255 << 24),
 						(unsigned int) event.peer->address.port
 					);
 					break;
 
 				case ENET_EVENT_TYPE_RECEIVE:
-					printf ("A packet of length %d containing %s was received from %s on channel %d.\n", 
+					printf ("A packet of length %d containing %s was received from %u on channel %d.\n", 
 						(int) event.packet -> dataLength, 
 						(char *) event.packet -> data, 
-						(char *) event.peer -> data,
+						(unsigned) event.peer -> connectID, //(char *) data,
 						(int) event.channelID
 					);
 					peer = event.peer;

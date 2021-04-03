@@ -1,7 +1,7 @@
 #include <iostream>
 #include <stdio.h>
 #include <unistd.h>
-#include <string>
+#include <cstring>
 #include <enet/enet.h>
 
 #define HOST "127.0.0.1"
@@ -23,9 +23,7 @@ ENetPeer * peer;
 ENetPacket * packet;
 int idx = 0;
 
-pthread_t thread_loop;
-
-static void * fn_loop(void * p_data)
+static void fn_loop()
 {
 	while (true) 
 	{
@@ -55,9 +53,9 @@ static void * fn_loop(void * p_data)
 	}
 }
 
-void envoyerCommande(char * buf)
+void envoyerCommande(const std::string & buf)
 {
-	sprintf(sendBuffer, "xxxxyyyy%c%s", 0x04, buf);
+	sprintf(sendBuffer, "xxxxyyyy%c%s", 0x04, buf.c_str());
 	packet = enet_packet_create(
 		sendBuffer, 
 		strlen(sendBuffer) + 1, 
@@ -68,7 +66,7 @@ void envoyerCommande(char * buf)
 
 void envoyerCommandes()
 {
-	envoyerCommande("Helloooo"); // Connexion
+	envoyerCommande("Hellooo"); // Connexion
 /*
 	envoyerCommande("C1"); // Connexion
 	envoyerCommande("C2"); // Connexion
@@ -89,19 +87,20 @@ void envoyerCommandes()
 	envoyerCommande("d21051"); //
 	envoyerCommande("d30051"); //
 */
-
 }
 
 int  main(int argc, char ** argv) 
 {
-	// int connected = 0;
-	char buffer[BUFFERSIZE];
+	bool connected = false;
+	std::string buffer;
+	std::string username;
 	int index;
 	char ch;
 
-	if (argc != 1) 
-	{
-		std::cerr << "Usage: ./client4" << std::endl;
+	if (argc == 2)
+		username = argv[1];
+	else {
+		std::cerr << "Usage: ./client4 [username]" << std::endl;
 		exit(EXIT_FAILURE);
 	}
 
@@ -132,12 +131,9 @@ int  main(int argc, char ** argv)
 
 	if (enet_host_service(client, &event, 1000) > 0 && event.type == ENET_EVENT_TYPE_CONNECT) 
 	{
-		printf("Connection to %s succeeded.\n", HOST);
-
-		// strncpy(buffer, argv[1], BUFFERSIZE);
-		// sprintf(buffer,"xxxxyyyy%c%s",0x04,argv[1]);
-		// packet = enet_packet_create(buffer, strlen(buffer)+1, ENET_PACKET_FLAG_RELIABLE);
-		// enet_peer_send(peer, 0, packet);
+		connected = true;
+		printf("Connected to %s as %s.\n", HOST, username.c_str());
+		envoyerCommande("user_" + username);
 	} 
 	else 
 	{
@@ -146,7 +142,7 @@ int  main(int argc, char ** argv)
 		exit(EXIT_FAILURE);
 	}
 
-	pthread_create(&thread_loop, NULL, fn_loop, NULL);
+	std::thread com_thread(fn_loop);
 
 	envoyerCommandes();
 
