@@ -1,26 +1,26 @@
 #include <iostream>
 #include "sha256.h"
- 
-using std::string;
-using std::cout;
-using std::endl;
- 
+
+#define PREFIXE_LEN 5
+
+
 int main(int argc, char *argv[])
 {
-    long nonce=0; 
-    //long nonce=72608; 
-    string input1;
-    string output1;
+	unsigned long nonce = 0;
+	std::string input;
+	std::string output;
 
-    do
-    {
-	input1="1"+std::to_string(nonce)+"MAIN4";
-	output1=sha256(input1);
-	nonce++;
-	if (nonce%1000000==0)
-		std::cout << nonce << std::endl;
-    } while ((output1[0]!='0') || (output1[1]!='0') || (output1[2]!='0') || (output1[3]!='0')); 
-    cout << "sha256('"<< input1 << "'):" << output1 << endl;
- 
-    return 0;
+	do 
+	{
+		input = "1" + std::to_string(nonce) + "MAIN4";
+		output = sha256(input1);
+		++nonce;
+		if (nonce % 1000000 == 0)
+			std::cout << nonce << std::endl;
+	} while (output.substr(0, PREFIXE_LEN) == std::string(PREFIXE_LEN, '0')); 
+	// } while ((output1[0] != '0') || (output1[1] != '0') || (output1[2]!='0') || (output1[3]!='0'));
+
+	std::cout << "sha256('"<< input1 << "'):" << output1 << std::endl;
+
+	return 0;
 }

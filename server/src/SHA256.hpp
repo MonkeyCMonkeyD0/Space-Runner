@@ -2,6 +2,7 @@
 #define SHA256_HPP
 
 #include <string>
+
  
 class SHA256 {
 
