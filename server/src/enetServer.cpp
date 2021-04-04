@@ -5,7 +5,16 @@
 #include "KnapThread.hpp"
 
 #define TOMAX 0
+#define PORT 4242
 #define NB_PLAYER 4
+
+
+struct client
+{
+	bool connected;
+	unsigned int id;
+};
+typedef struct client client;
 
 
 ENetAddress address;
@@ -16,7 +25,7 @@ ENetEvent event;
 char recMess[200];
 char mess[200];
 
-// bool estConnecte[NB_PLAYER];
+client clients[NB_PLAYER];
 
 int fsm;
 
@@ -33,7 +42,7 @@ double survival_rate = 0.3;
 unsigned int maxit = 1000;
 
 
-void sendBroadcast(char * mess)
+void sendBroadcast(const char * mess)
 {
 	char buffer[500];
 
@@ -49,7 +58,7 @@ void sendBroadcast(char * mess)
 		buffer[9 + cpt] = mess[cpt];
 	buffer[9 + cpt] = 0;
 
-	printf(" - len = %d from %s.\n", len, mess);
+	printf(" - len = %d for %s.\n", len, mess);
 
 	ENetPacket * packet = enet_packet_create (buffer, 10 + len, ENET_PACKET_FLAG_RELIABLE);
 	enet_host_broadcast (server, 1, packet);
@@ -79,54 +88,8 @@ void handleIncomingMessage()
 	printf("On exit, fsm = %d\n", fsm);
 }
 
-// void * DoWork(void * args) {
-
-// 	while (true)
-// 	{
-// 		if (pthread_mutex_lock(&lock_mutex) != 0)
-// 			printf("there is an error in pthread_mutex_lock in DoWork()\n");
-
-// 		if (pthread_cond_wait(&started_cond, &lock_mutex) != 0)
-// 			printf("there is an error in pthread_cond_wait\n");
-
-// 		if (pthread_mutex_unlock(&lock_mutex) != 0)
-// 			printf("there is an error in pthread_mutek_unlock in DoWork()\n");
-
-// 		printf("start ID: %lu, CPU: %d\n", pthread_self(), sched_getcpu());
-
-// 		/* Init solver */
-// 		KnapThread kt(weights, profits, capacity, popsize, survival_rate, maxit);
-// 		/* Launch genetic algorithm */
-// 		kt.run();
-// 		/* Print best solution found */
-// 		std::cout << "Optimal solution found = ";
-// 		kt.print() << std::endl;
-
-// 		printf("end   ID: %lu, CPU: %d\n", pthread_self(), sched_getcpu());
-// 	}
-// }
-
-
 int main (int argc, char ** argv) 
 {
-	// pthread_attr_t attr;
-	// cpu_set_t cpus;
-	// pthread_attr_init(&attr);
-	// int i;
-
-	// int numberOfProcessors = sysconf(_SC_NPROCESSORS_ONLN);
-	// printf("Number of processors: %d\n", numberOfProcessors);
-
-	// pthread_t threads[numberOfProcessors];
-
-	// for (i = 0; i < numberOfProcessors; i++) 
-	// {
-	// 	CPU_ZERO(&cpus);
-	// 	CPU_SET(i, &cpus);
-	// 	pthread_attr_setaffinity_np(&attr, sizeof(cpu_set_t), &cpus);
-	// 	pthread_create(&threads[i], &attr, DoWork, NULL);
-	// }
-
 	printf(" - enet_initialize()\n");
 	if (enet_initialize() != 0)
 	{
@@ -135,7 +98,7 @@ int main (int argc, char ** argv)
 	}
 
 	address.host = ENET_HOST_ANY;
-	address.port = 4242;
+	address.port = PORT;
 
 	printf(" - enet_host_create()\n");
 	server = enet_host_create(&address, 32, 2, 0, 0);
@@ -162,13 +125,14 @@ int main (int argc, char ** argv)
 						(char) event.peer->address.host & (255 << 24),
 						(unsigned int) event.peer->address.port
 					);
+					sendBroadcast("test");
 					break;
 
 				case ENET_EVENT_TYPE_RECEIVE:
-					printf ("A packet of length %d containing %s was received from %u on channel %d.\n", 
+					printf ("A packet of length %d containing %s was received from %x on channel %d.\n", 
 						(int) event.packet -> dataLength, 
 						(char *) event.packet -> data, 
-						(unsigned) event.peer -> connectID, //(char *) data,
+						(int) event.peer -> connectID, //(char *) data,
 						(int) event.channelID
 					);
 					peer = event.peer;
