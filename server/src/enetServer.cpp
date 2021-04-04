@@ -1,6 +1,7 @@
 #include <iostream>
 #include <threadextend.h>
 #include <enet/enet.h>
+#include <cstring>
 
 #include "KnapThread.hpp"
 
