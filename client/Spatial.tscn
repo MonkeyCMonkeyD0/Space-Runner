@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://data/obj/ship2.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://Spaceship.gd" type="Script" id=2]
@@ -12,37 +12,32 @@
 
 [sub_resource type="Skin" id=1]
 
-[sub_resource type="SpatialMaterial" id=2]
-albedo_color = Color( 0.898039, 0.827451, 0.854902, 1 )
-albedo_texture = ExtResource( 4 )
-metallic = 1.0
+[sub_resource type="SphereMesh" id=2]
 
-[sub_resource type="SphereMesh" id=3]
-
-[sub_resource type="SpatialMaterial" id=4]
+[sub_resource type="SpatialMaterial" id=3]
 albedo_color = Color( 0.929412, 0.643137, 0.513726, 1 )
 albedo_texture = ExtResource( 5 )
 
-[sub_resource type="SphereMesh" id=5]
+[sub_resource type="SphereMesh" id=4]
 
-[sub_resource type="SpatialMaterial" id=6]
+[sub_resource type="SpatialMaterial" id=5]
 albedo_color = Color( 0.929412, 0.0941176, 0.290196, 1 )
 albedo_texture = ExtResource( 6 )
 metallic = 1.0
 
-[sub_resource type="SphereMesh" id=7]
+[sub_resource type="SphereMesh" id=6]
 
-[sub_resource type="SpatialMaterial" id=8]
+[sub_resource type="SpatialMaterial" id=7]
 albedo_color = Color( 0.972549, 1, 0.101961, 1 )
 albedo_texture = ExtResource( 5 )
 metallic_texture = ExtResource( 5 )
 metallic_texture_channel = 1
 
-[sub_resource type="SphereMesh" id=9]
+[sub_resource type="SphereMesh" id=8]
 
-[sub_resource type="Skin" id=10]
+[sub_resource type="Skin" id=9]
 
-[sub_resource type="SpatialMaterial" id=11]
+[sub_resource type="SpatialMaterial" id=10]
 albedo_color = Color( 0.85098, 0.584314, 0.988235, 1 )
 albedo_texture = ExtResource( 4 )
 metallic = 0.26
@@ -62,7 +57,7 @@ transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -0.142329, 0, 3.99503 )
 mesh = ExtResource( 1 )
 skin = SubResource( 1 )
 skeleton = NodePath("")
-material/0 = SubResource( 2 )
+material/0 = null
 script = ExtResource( 2 )
 
 [node name="RemoteTransform" type="RemoteTransform" parent="Objets/Spaceship"]
@@ -75,26 +70,26 @@ update_scale = false
 
 [node name="p1" type="MeshInstance" parent="Planetes"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0 )
-mesh = SubResource( 3 )
-material/0 = SubResource( 4 )
+mesh = SubResource( 2 )
+material/0 = SubResource( 3 )
 script = ExtResource( 7 )
 
 [node name="p2" type="MeshInstance" parent="Planetes"]
-mesh = SubResource( 5 )
-material/0 = SubResource( 6 )
+mesh = SubResource( 4 )
+material/0 = SubResource( 5 )
 script = ExtResource( 8 )
 
 [node name="p3" type="MeshInstance" parent="Planetes"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6, 0 )
-mesh = SubResource( 7 )
-material/0 = SubResource( 8 )
+mesh = SubResource( 6 )
+material/0 = SubResource( 7 )
 script = ExtResource( 9 )
 
 [node name="p4" type="MeshInstance" parent="Planetes"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9, 0 )
-mesh = SubResource( 9 )
-skin = SubResource( 10 )
-material/0 = SubResource( 11 )
+mesh = SubResource( 8 )
+skin = SubResource( 9 )
+material/0 = SubResource( 10 )
 script = ExtResource( 3 )
 
 [node name="CameraRef" type="Spatial" parent="."]
