@@ -1,7 +1,7 @@
 CC = g++
 CCFLAGS = -Wall -Werror -std=c++11 -g -O3
-CFLAGS = -Iinclude/
-LDFLAGS = -Llib/ -pthread -lenet
+CFLAGS = -Iinclude/ -Llib/
+LDFLAGS = -pthread -lenet
 
 SRC_DIR = src
 OBJ_DIR = bin
