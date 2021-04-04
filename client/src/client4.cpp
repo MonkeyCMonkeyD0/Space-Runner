@@ -147,7 +147,7 @@ int  main(int argc, char ** argv)
 	envoyerCommandes();
 
 	index = 0;
-	while (true)
+	while (connected)
 	{
 		/*
 			printf("Input: ");

@@ -19,7 +19,7 @@ EXEC = client4
 all: $(EXEC)
 
 $(EXEC): $(OBJ)
-	$(CC) $(CCFLAGS) $(CFLAGS) $(LDFLAGS) $^ -o $@ 
+	$(CC) $(CCFLAGS) $(CFLAGS) $^ -o $@ $(LDFLAGS) 
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
 	@mkdir -p $(OBJ_DIR)
