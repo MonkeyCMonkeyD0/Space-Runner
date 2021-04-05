@@ -8,6 +8,7 @@
 #define PORT (4242)
 #define BUFFERSIZE (1000)
 
+
 #include <threadextend.h>
 
 
@@ -56,7 +57,7 @@ static void fn_loop()
 
 void envoyerCommande(const std::string & buf)
 {
-	sprintf(sendBuffer, "xxxxyyyy%c%s", 0x04, buf.c_str());
+	sprintf(sendBuffer, "%c%s", 0x04, buf.c_str());
 	packet = enet_packet_create(
 		sendBuffer, 
 		strlen(sendBuffer) + 1, 

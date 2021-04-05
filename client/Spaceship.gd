@@ -1,10 +1,17 @@
 extends MeshInstance
 
-var SPEED = 1.5
+var SPEED = 0.5
 var theta
 var run = false
 
 func _process(delta):
+	if Input.is_key_pressed(KEY_UP):
+		translation.x += SPEED
+	if Input.is_key_pressed(KEY_RIGHT):
+		rotation.y += 0.005
+	if Input.is_key_pressed(KEY_LEFT):
+		rotation.y -= 0.005
+	
 	if Input.is_key_pressed(KEY_ENTER) && run == false:
 		run = true
 		theta = 0

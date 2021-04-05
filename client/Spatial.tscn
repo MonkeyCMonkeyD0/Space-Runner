@@ -53,18 +53,16 @@ __meta__ = {
 [node name="Objets" type="Spatial" parent="."]
 
 [node name="Spaceship" type="MeshInstance" parent="Objets"]
-transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, -0.142329, 0, 3.99503 )
+transform = Transform( 0.05, 0, 0, 0, 0.05, 0, 0, 0, 0.05, -40, 0, 0 )
 mesh = ExtResource( 1 )
 skin = SubResource( 1 )
 skeleton = NodePath("")
 material/0 = null
 script = ExtResource( 2 )
 
-[node name="RemoteTransform" type="RemoteTransform" parent="Objets/Spaceship"]
-transform = Transform( 10, 0, 0, 0, 10, 0, 0, 0, 10, 1.42329, 0, -39.9503 )
-remote_path = NodePath("../../../CameraRef")
-update_rotation = false
-update_scale = false
+[node name="Camera" type="Camera" parent="Objets/Spaceship"]
+transform = Transform( -3.25841e-06, 3.47296, -19.6962, 0, 19.6962, 3.47296, 20, 5.65818e-07, -3.20891e-06, -35, 10, 0 )
+fov = 38.1637
 
 [node name="Planetes" type="Spatial" parent="."]
 
@@ -75,6 +73,7 @@ material/0 = SubResource( 3 )
 script = ExtResource( 7 )
 
 [node name="p2" type="MeshInstance" parent="Planetes"]
+transform = Transform( 4, 0, 0, 0, 4, 0, 0, 0, 4, 8, -1, -0.247 )
 mesh = SubResource( 4 )
 material/0 = SubResource( 5 )
 script = ExtResource( 8 )
@@ -93,10 +92,6 @@ material/0 = SubResource( 10 )
 script = ExtResource( 3 )
 
 [node name="CameraRef" type="Spatial" parent="."]
-
-[node name="Camera" type="Camera" parent="CameraRef"]
-transform = Transform( 1, 0, 0, 0, 0.987491, -0.157676, 0, 0.157676, 0.987491, 0, 0, 13 )
-fov = 30.9375
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
