@@ -1,7 +1,7 @@
 CC = g++
 CCFLAGS = -Wall -Werror -std=c++11 -g -O3
 CFLAGS = -I../include/
-LDFLAGS = -L../lib/
+# LFLAGS = -L../lib/
 LDFLAGS = -pthread -lenet
 
 SRC_DIR = src
@@ -22,15 +22,15 @@ EXEC_TEST = test
 all: $(EXEC_TEST)
 
 $(EXEC_TEST): $(OBJ_TST)
-	$(CC) $(CCFLAGS) $(CFLAGS) $(LDFLAGS) $^ -o $@
+	$(CC) $(CCFLAGS) $(CFLAGS) $(LFLAGS) $^ -o $@ $(LDFLAGS)
 
 ../$(OBJ_DIR)/%.o: ../$(SRC_DIR)/%.cpp
 	@mkdir -p ../$(OBJ_DIR)
-	$(CC) $(CCFLAGS) $(CFLAGS) -pthread -o $@ -c $<
+	$(CC) $(CCFLAGS) $(CFLAGS) -o $@ -c $<
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
 	@mkdir -p $(OBJ_DIR)
-	$(CC) $(CCFLAGS) $(CFLAGS) -pthread -o $@ -c $<
+	$(CC) $(CCFLAGS) $(CFLAGS) -o $@ -c $<
 
 
 clean:

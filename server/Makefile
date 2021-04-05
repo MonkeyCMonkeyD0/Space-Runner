@@ -1,6 +1,7 @@
 CC = g++
 CCFLAGS = -Wall -Werror -std=c++11 -g -O3
-CFLAGS = -Iinclude/ -Llib/
+CFLAGS = -Iinclude/
+# LFLAGS = -Llib/
 LDFLAGS = -pthread -lenet
 
 SRC_DIR = src
@@ -19,7 +20,7 @@ EXEC = enetServer
 all: $(EXEC)
 
 $(EXEC): $(OBJ)
-	$(CC) $(CCFLAGS) $(CFLAGS) $^ -o $@ $(LDFLAGS)
+	$(CC) $(CCFLAGS) $(CFLAGS) $(LFLAGS) $^ -o $@ $(LDFLAGS)
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
 	@mkdir -p $(OBJ_DIR)

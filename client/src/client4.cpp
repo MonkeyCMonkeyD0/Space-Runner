@@ -27,7 +27,7 @@ bool connected = false;
 
 static void fn_loop()
 {
-	while (true) 
+	while (connected) 
 	{
 		while (enet_host_service(client, &event, 0) > 0) 
 		{
@@ -143,6 +143,8 @@ int  main(int argc, char ** argv)
 		exit(EXIT_FAILURE);
 	}
 
+	index = 0;
+
 	std::thread com_thread(fn_loop);
 
 	envoyerCommandes();
@@ -179,7 +181,7 @@ int  main(int argc, char ** argv)
 				envoyerCommande(buffer);
 			}
 		}
-
+		connected = false;
 	}
 	enet_deinitialize();
 }

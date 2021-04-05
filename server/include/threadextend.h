@@ -72,7 +72,7 @@ static inline int pthread_setaffinity_np (pthread_t thread, size_t cpu_size, cpu
 {
 	thread_port_t mach_thread;
 	int core;
-	
+
 	for (core = 0; core < 8 * cpu_size; core++)
 		if (CPU_ISSET(core, cpu_set))
 			break;
