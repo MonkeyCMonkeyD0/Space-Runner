@@ -57,16 +57,15 @@ material/4 = SubResource( 5 )
 material/5 = SubResource( 6 )
 script = ExtResource( 1 )
 
-[node name="Camera" type="Camera" parent="Objets/Spacecraft"]
-transform = Transform( -1.37814, 22.9354, -198.676, -0.217512, 198.68, 22.9374, 199.995, 0.374127, -1.3441, -763.659, 245.809, 0.000762939 )
-fov = 59.0625
-
-[node name="Logo_Space-Runner" type="MeshInstance" parent="Objets"]
-transform = Transform( 0.0139509, -0.237632, 0.971255, 0.00052326, 0.971351, 0.237648, -0.999903, -0.00280719, 0.0136756, 96.3733, -4.72013, 113.106 )
-mesh = ExtResource( 3 )
-material/0 = null
+[node name="RemoteTransform" type="RemoteTransform" parent="Objets/Spacecraft"]
+transform = Transform( 200, 0, 0, 0, 200, 0, 0, 0, 200, 8300.98, 0, 0 )
+remote_path = NodePath("../../../CameraRef")
 
 [node name="CameraRef" type="Spatial" parent="."]
+
+[node name="Camera" type="Camera" parent="CameraRef"]
+transform = Transform( 7.82649e-06, 0.0777, -0.996977, 1.93657e-06, 0.996977, 0.0777, 1, -2.53883e-06, 7.65236e-06, -44.6073, 0.59939, 0 )
+fov = 59.0625
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -84,3 +83,8 @@ __meta__ = {
 
 [node name="DirectionalLight" type="DirectionalLight" parent="."]
 shadow_enabled = true
+
+[node name="Logo_Space-Runner" type="MeshInstance" parent="."]
+transform = Transform( 0.0139509, -0.237632, 0.971255, 0.00052326, 0.971351, 0.237648, -0.999903, -0.00280719, 0.0136756, 96.3733, -4.72013, 113.106 )
+mesh = ExtResource( 3 )
+material/0 = null

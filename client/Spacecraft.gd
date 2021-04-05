@@ -7,16 +7,15 @@ var theta_bis = 0 # Va servir a bloquer l'angle
 var phi = 0
 var run = false
 
-#func _ready():
 	
 
 func _process(delta):
 	rotation.x = delta*theta_bis
 	rotation.z = delta*phi
 	if Input.is_key_pressed(KEY_SPACE):	
-		translation.x += SPEED*cos(delta*theta)*cos(delta*phi)
-		translation.y += SPEED*sin(delta*phi)
-		translation.z += SPEED*sin(delta*theta)*cos(delta*phi)
+		translation.x += 3*SPEED*delta*cos(delta*theta)*cos(delta*phi)
+		translation.y += 3*SPEED*delta*sin(delta*phi)
+		translation.z += 3*SPEED*delta*sin(delta*theta)*cos(delta*phi)
 	if Input.is_key_pressed(KEY_RIGHT):
 		theta_bis += SPEED_ROT
 		theta += SPEED_ROT
@@ -33,12 +32,12 @@ func _process(delta):
 			theta += delta*SPEED_ROT
 	if Input.is_key_pressed(KEY_UP):
 		phi += SPEED_ROT
-		if phi>20:
-			phi = 20
+		if phi>25:
+			phi = 25
 	if Input.is_key_pressed(KEY_DOWN):
 		phi -= SPEED_ROT
-		if phi<-20:
-			phi = -20
+		if phi<-25:
+			phi = -25
 
 	#if Input.is_key_pressed(KEY_ENTER) && run == false:
 	#	run = true
