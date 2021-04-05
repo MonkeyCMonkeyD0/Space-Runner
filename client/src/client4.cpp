@@ -133,7 +133,7 @@ int  main(int argc, char ** argv)
 	{
 		connected = true;
 		printf("Connected to %s as %s.\n", HOST, username.c_str());
-		envoyerCommande("user_" + username);
+		envoyerCommande("U_" + username);
 	} 
 	else 
 	{
