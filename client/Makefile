@@ -1,7 +1,7 @@
 CC = g++
 CCFLAGS = -Wall -Werror -std=c++11 -g -O3
 CFLAGS = -I../server/include/
-LDFLAGS = -L../server/lib/
+# LFLAGS = -L../server/lib/
 LDFLAGS = -pthread -lenet
 
 SRC_DIR = src
@@ -19,11 +19,11 @@ EXEC = client4
 all: $(EXEC)
 
 $(EXEC): $(OBJ)
-	$(CC) $(CCFLAGS) $(CFLAGS) $(LDFLAGS) $^ -o $@ 
+	$(CC) $(CCFLAGS) $(CFLAGS) $(LFLAGS) $^ -o $@ $(LDFLAGS)
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
 	@mkdir -p $(OBJ_DIR)
-	$(CC) $(CCFLAGS) $(CFLAGS) -o $@ -c $<
+	$(CC) $(CCFLAGS) $(CFLAGS) $(LFLAGS) -o $@ -c $<
 
 
 clean:

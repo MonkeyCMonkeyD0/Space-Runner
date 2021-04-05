@@ -10,7 +10,7 @@
 
 
 KnapThread::KnapThread(std::vector<unsigned int> weights, std::vector<unsigned int> profits, unsigned int max_weight, unsigned int population, double survival_rate, unsigned int max_iteration) :
-	Knapsack(weights, profits, max_weight, population, survival_rate, max_iteration)
+	Knapsack(weights, profits, max_weight, population, survival_rate, (unsigned int) max_iteration / std::thread::hardware_concurrency())
 {
 	this->num_cpus = std::thread::hardware_concurrency();
 	std::cout << "Launching " << this->num_cpus << " threads\n";
@@ -31,7 +31,7 @@ void KnapThread::run(const bool & debug)
 	std::mutex * iomutex = new std::mutex;
 
 	for (unsigned int i = 0; i < this->num_cpus; ++i) {
-		threads[i] = std::thread(
+		this->threads[i] = std::thread(
 			std::bind(&KnapThread::run_inst, this, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3),
 			iomutex, i, debug
 		);
@@ -39,7 +39,7 @@ void KnapThread::run(const bool & debug)
 		CPU_ZERO(&cpus);
 		CPU_SET(i, &cpus);
 
-		int rc = pthread_setaffinity_np(threads[i].native_handle(), sizeof(cpu_set_t), &cpus);
+		int rc = pthread_setaffinity_np(this->threads[i].native_handle(), sizeof(cpu_set_t), &cpus);
 		if (rc) {
 			std::cerr << "Error: unable to bind thread to cpu, " << rc << std::endl;
 			exit(EXIT_FAILURE);

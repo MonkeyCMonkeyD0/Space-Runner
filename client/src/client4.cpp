@@ -22,10 +22,11 @@ ENetEvent event;
 ENetPeer * peer;
 ENetPacket * packet;
 int idx = 0;
+bool quit;
 
 static void fn_loop()
 {
-	while (true) 
+	while (!quit) 
 	{
 		while (enet_host_service(client, &event, 0) > 0) 
 		{
@@ -142,12 +143,14 @@ int  main(int argc, char ** argv)
 		exit(EXIT_FAILURE);
 	}
 
+	quit = false;
+	index = 0;
+
 	std::thread com_thread(fn_loop);
 
 	envoyerCommandes();
 
-	index = 0;
-	while (true)
+	while (!quit)
 	{
 		/*
 			printf("Input: ");
@@ -178,7 +181,7 @@ int  main(int argc, char ** argv)
 				envoyerCommande(buffer);
 			}
 		}
-
+		quit = true;
 	}
 	enet_deinitialize();
 }
