@@ -1,0 +1,60 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://data/obj/ship.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://src/gd/Game.gd" type="Script" id=2]
+[ext_resource path="res://src/gd/Ship.gd" type="Script" id=3]
+[ext_resource path="res://src/gd/Planet_manager.gd" type="Script" id=4]
+
+[sub_resource type="SpatialMaterial" id=1]
+
+[node name="Game" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Spatial" type="Spatial" parent="."]
+
+[node name="Ship" type="MeshInstance" parent="Spatial"]
+transform = Transform( 0.005, 0, 0, 0, 0.005, 0, 0, 0, 0.015, 0, 0, 0 )
+mesh = ExtResource( 1 )
+material/0 = SubResource( 1 )
+script = ExtResource( 3 )
+
+[node name="RemoteTransform" type="RemoteTransform" parent="Spatial/Ship"]
+transform = Transform( 20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0 )
+remote_path = NodePath("../../../CameraRef")
+
+[node name="Planet_manager" type="Spatial" parent="."]
+script = ExtResource( 4 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Quit" type="Button" parent="HBoxContainer"]
+margin_right = 40.0
+margin_bottom = 40.0
+text = "Quit"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Menu" type="Button" parent="HBoxContainer"]
+margin_left = 44.0
+margin_right = 92.0
+margin_bottom = 40.0
+text = "Menu"
+
+[node name="CameraRef" type="Spatial" parent="."]
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.3, 0, 0, 0 )
+
+[node name="Camera" type="Camera" parent="CameraRef"]
+transform = Transform( -5.12515e-07, 3.30696, -9.43738, 1.79591e-07, 9.43738, 3.30696, 3.33333, 5.92119e-15, -1.81023e-07, -0.909253, 0.541042, 0 )
+[connection signal="pressed" from="HBoxContainer/Quit" to="." method="_on_Quit_pressed"]
+[connection signal="pressed" from="HBoxContainer/Menu" to="." method="_on_Menu_pressed"]

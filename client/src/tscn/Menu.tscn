@@ -1,0 +1,134 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://src/gd/Menu.gd" type="Script" id=1]
+[ext_resource path="res://data/img/background-menu.jpg" type="Texture" id=2]
+
+[node name="Menu" type="Control"]
+anchor_left = 0.00146317
+anchor_right = 1.00146
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Background" type="TextureRect" parent="."]
+margin_right = 3840.0
+margin_bottom = 2400.0
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Username" type="VBoxContainer" parent="Background"]
+margin_left = 300.0
+margin_top = 160.0
+margin_right = 725.0
+margin_bottom = 202.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Enter_name" type="Label" parent="Background/Username"]
+margin_right = 425.0
+margin_bottom = 14.0
+text = "Enter Your Username :"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Enter" type="LineEdit" parent="Background/Username"]
+margin_top = 18.0
+margin_right = 425.0
+margin_bottom = 42.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Buttons" type="VBoxContainer" parent="Background"]
+margin_left = 200.0
+margin_top = 300.0
+margin_right = 825.0
+margin_bottom = 370.0
+rect_scale = Vector2( 1, 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Host" type="Button" parent="Background/Buttons"]
+margin_right = 625.0
+margin_bottom = 20.0
+text = "Host"
+
+[node name="Join" type="Button" parent="Background/Buttons"]
+margin_top = 24.0
+margin_right = 625.0
+margin_bottom = 44.0
+text = "Join"
+
+[node name="Quit" type="Button" parent="Background/Buttons"]
+margin_top = 48.0
+margin_right = 625.0
+margin_bottom = 68.0
+text = "Quit"
+
+[node name="Popup1" type="Popup" parent="Background"]
+visible = true
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 730.0
+margin_top = 185.0
+margin_right = 990.0
+margin_bottom = 195.0
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="Label" type="Label" parent="Background/Popup1"]
+text = "Tu veux pas faire plus long sale chien ?"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Popup2" type="Popup" parent="Background"]
+visible = true
+modulate = Color( 0.101961, 1, 0, 1 )
+margin_left = 730.0
+margin_top = 185.0
+margin_right = 990.0
+margin_bottom = 195.0
+
+[node name="Label" type="Label" parent="Background/Popup2"]
+margin_right = 40.0
+margin_bottom = 14.0
+text = "Stylé ton pseudo bg."
+
+[node name="Popup3" type="Popup" parent="Background"]
+visible = true
+modulate = Color( 1, 0, 0, 1 )
+margin_left = 730.0
+margin_top = 185.0
+margin_right = 990.0
+margin_bottom = 195.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Background/Popup3"]
+margin_right = 40.0
+margin_bottom = 14.0
+text = "Tu crois que tu vas te connecter sans pseudo?"
+
+[node name="Author" type="Label" parent="Background"]
+margin_top = 580.0
+margin_right = 1022.0
+margin_bottom = 600.0
+text = "Made by : Aissam RHABI, Maxime LAFONT, Naël SENNOUN, Tristan MICHEL"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="text_entered" from="Background/Username/Enter" to="." method="_on_Username_text_entered"]
+[connection signal="pressed" from="Background/Buttons/Host" to="." method="_on_Host_pressed"]
+[connection signal="pressed" from="Background/Buttons/Join" to="." method="_on_Join_pressed"]
+[connection signal="pressed" from="Background/Buttons/Quit" to="." method="_on_Quit_pressed"]
