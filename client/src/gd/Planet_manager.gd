@@ -5,7 +5,6 @@ var pos_x
 var pos_y
 var pos_z
 var rng = RandomNumberGenerator.new()
-#var material = 
 
 const MY_SCRIPT = preload("res://src/gd/Planet.gd")
 const NUMBER_PLANET = 20
@@ -20,6 +19,12 @@ func _ready() -> void:
 		pos_z = rng.randi_range(-50,50)
 		# Creation d'une MeshInstance
 		var planet : MeshInstance = MeshInstance.new()
+		var newMaterial : SpatialMaterial = SpatialMaterial.new()
+		
+		#Random Planet Material
+		newMaterial.albedo_color = Color(rng.randf_range(0,5), rng.randf_range(0,5), rng.randf_range(0,5), rng.randf_range(0,5))
+		newMaterial.metallic = rng.randf_range(0,1)
+		planet.material_override = newMaterial
 		# Mesh de type Sphere
 		planet.mesh = SphereMesh.new()
 		# Nom du MeshInstance
