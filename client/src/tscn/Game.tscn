@@ -1,11 +1,15 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://data/obj/ship.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://src/gd/Game.gd" type="Script" id=2]
 [ext_resource path="res://src/gd/Ship.gd" type="Script" id=3]
 [ext_resource path="res://src/gd/Planet_manager.gd" type="Script" id=4]
+[ext_resource path="res://src/gd/Logo_Space-Runner.gd" type="Script" id=5]
+[ext_resource path="res://data/obj/Logo_Space-Runner.obj" type="ArrayMesh" id=6]
 
 [sub_resource type="SpatialMaterial" id=1]
+
+[sub_resource type="SpatialMaterial" id=2]
 
 [node name="Game" type="Control"]
 anchor_right = 1.0
@@ -26,6 +30,12 @@ script = ExtResource( 3 )
 [node name="RemoteTransform" type="RemoteTransform" parent="Spatial/Ship"]
 transform = Transform( 20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0 )
 remote_path = NodePath("../../../CameraRef")
+
+[node name="Logo Space-Runner" type="MeshInstance" parent="Spatial"]
+transform = Transform( 5.96244e-09, -0.5, 8.14603e-08, 0, -8.14603e-08, -0.5, 0.5, 5.96244e-09, -9.71405e-16, 100, 0, -70 )
+mesh = ExtResource( 6 )
+material/0 = SubResource( 2 )
+script = ExtResource( 5 )
 
 [node name="Planet_manager" type="Spatial" parent="."]
 script = ExtResource( 4 )

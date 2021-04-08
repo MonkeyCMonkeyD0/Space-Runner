@@ -5,6 +5,7 @@ var pos_x
 var pos_y
 var pos_z
 var rng = RandomNumberGenerator.new()
+#var material = 
 
 const MY_SCRIPT = preload("res://src/gd/Planet.gd")
 const NUMBER_PLANET = 20
