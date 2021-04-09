@@ -4,7 +4,7 @@ CFLAGS = -I../server/include/
 # LFLAGS = -L../server/lib/
 LDFLAGS = -pthread -lenet
 
-SRC_DIR = src
+SRC_DIR = src/cpp
 OBJ_DIR = bin
 TST_DIR = tests
 
