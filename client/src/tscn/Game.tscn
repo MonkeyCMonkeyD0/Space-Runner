@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://data/obj/ship.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://src/gd/Game.gd" type="Script" id=2]
@@ -7,21 +7,53 @@
 [ext_resource path="res://src/gd/Logo_Space-Runner.gd" type="Script" id=5]
 [ext_resource path="res://data/obj/Logo_Space-Runner.obj" type="ArrayMesh" id=6]
 [ext_resource path="res://data/img/despaceito.jpg" type="Texture" id=7]
+[ext_resource path="res://data/obj/test import/Intergalactic_Spaceship-(Wavefront).obj" type="ArrayMesh" id=8]
+[ext_resource path="res://data/obj/test import/textures/Intergalactic Spaceship_color_4.jpg" type="Texture" id=9]
+[ext_resource path="res://data/obj/test import/textures/Intergalactic Spaceship_rough.jpg" type="Texture" id=10]
+[ext_resource path="res://data/obj/test import/textures/Intergalactic Spaceship_emi.jpg" type="Texture" id=11]
+[ext_resource path="res://data/obj/test import/textures/Intergalactic Spaceship_nmap_2_Tris.jpg" type="Texture" id=12]
+[ext_resource path="res://data/obj/test import/textures/Intergalactic Spaceship_metalness.jpg" type="Texture" id=13]
+[ext_resource path="res://data/obj/test import/textures/Intergalactic Spaceship Ao_Blender.jpg" type="Texture" id=14]
 
-[sub_resource type="Skin" id=3]
-
-[sub_resource type="SpatialMaterial" id=4]
-albedo_color = Color( 0.85098, 0.45098, 0.815686, 1 )
+[sub_resource type="Skin" id=1]
 
 [sub_resource type="SpatialMaterial" id=2]
+albedo_color = Color( 0.85098, 0.45098, 0.815686, 1 )
 
-[sub_resource type="PanoramaSky" id=9]
+[sub_resource type="SpatialMaterial" id=6]
+resource_name = "Material"
+albedo_texture = ExtResource( 9 )
+metallic = 0.8
+metallic_specular = 1.0
+metallic_texture = ExtResource( 13 )
+metallic_texture_channel = 3
+roughness = 0.5
+roughness_texture = ExtResource( 10 )
+roughness_texture_channel = 3
+emission_enabled = true
+emission = Color( 0, 0, 0, 1 )
+emission_energy = 1.0
+emission_operator = 0
+emission_on_uv2 = false
+emission_texture = ExtResource( 11 )
+normal_enabled = true
+normal_scale = 1.0
+normal_texture = ExtResource( 12 )
+ao_enabled = true
+ao_light_affect = 1.0
+ao_texture = ExtResource( 14 )
+ao_on_uv2 = false
+ao_texture_channel = 3
+
+[sub_resource type="SpatialMaterial" id=3]
+
+[sub_resource type="PanoramaSky" id=4]
 radiance_size = 0
 panorama = ExtResource( 7 )
 
-[sub_resource type="Environment" id=10]
+[sub_resource type="Environment" id=5]
 background_mode = 2
-background_sky = SubResource( 9 )
+background_sky = SubResource( 4 )
 
 [node name="Game" type="Control"]
 anchor_right = 1.0
@@ -34,24 +66,31 @@ __meta__ = {
 [node name="Spatial" type="Spatial" parent="."]
 
 [node name="Ship" type="MeshInstance" parent="Spatial"]
-transform = Transform( 0.005, 0, 0, 0, 0.005, 0, 0, 0, 0.015, 0, 0, 0 )
+transform = Transform( 0.005, 0, 0, 0, 0.005, 0, 0, 0, 0.005, 0, 0, 0 )
 mesh = ExtResource( 1 )
-skin = SubResource( 3 )
-material/0 = SubResource( 4 )
+skin = SubResource( 1 )
+material/0 = SubResource( 2 )
 script = ExtResource( 3 )
+
+[node name="Intergalactic_Spaceship-(Wavefront)" type="MeshInstance" parent="Spatial/Ship"]
+transform = Transform( -6.51683e-07, 0, 4, 0, 4, 0, -4, 0, -6.51683e-07, 6, 0, 0 )
+material_override = SubResource( 6 )
+mesh = ExtResource( 8 )
+material/0 = null
 
 [node name="RemoteTransform" type="RemoteTransform" parent="Spatial/Ship"]
 transform = Transform( 20, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0 )
 remote_path = NodePath("../../../CameraRef")
+update_rotation = false
 
 [node name="Logo Space-Runner" type="MeshInstance" parent="Spatial"]
 transform = Transform( 5.96244e-09, -0.5, 8.14603e-08, 0, -8.14603e-08, -0.5, 0.5, 5.96244e-09, -9.71405e-16, 100, 0, -70 )
 mesh = ExtResource( 6 )
-material/0 = SubResource( 2 )
+material/0 = SubResource( 3 )
 script = ExtResource( 5 )
 
 [node name="Background" type="WorldEnvironment" parent="Spatial"]
-environment = SubResource( 10 )
+environment = SubResource( 5 )
 
 [node name="Planet_manager" type="Spatial" parent="."]
 script = ExtResource( 4 )
@@ -78,9 +117,12 @@ margin_bottom = 40.0
 text = "Menu"
 
 [node name="CameraRef" type="Spatial" parent="."]
-transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.3, 0, 0, 0 )
+transform = Transform( 0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0 )
 
 [node name="Camera" type="Camera" parent="CameraRef"]
 transform = Transform( -5.12515e-07, 3.30696, -9.43738, 1.79591e-07, 9.43738, 3.30696, 3.33333, 5.92119e-15, -1.81023e-07, -0.909253, 0.541042, 0 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.745162, 0.666884, 0, -0.666884, 0.745162, 0, 0.532127, 0.574722 )
 [connection signal="pressed" from="HBoxContainer/Quit" to="." method="_on_Quit_pressed"]
 [connection signal="pressed" from="HBoxContainer/Menu" to="." method="_on_Menu_pressed"]
