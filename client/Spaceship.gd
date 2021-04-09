@@ -8,9 +8,9 @@ func _process(delta):
 	if Input.is_key_pressed(KEY_UP):
 		translation.x += SPEED
 	if Input.is_key_pressed(KEY_RIGHT):
-		rotation.y += 0.005
+		rotation.y -= 0.02
 	if Input.is_key_pressed(KEY_LEFT):
-		rotation.y -= 0.005
+		rotation.y += 0.02
 	
 	if Input.is_key_pressed(KEY_ENTER) && run == false:
 		run = true

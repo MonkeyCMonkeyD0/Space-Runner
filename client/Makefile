@@ -13,7 +13,7 @@ OBJ = $(SRC:$(SRC_DIR)/%.cpp=$(OBJ_DIR)/%.o)
 SAVES = $(wildcard *.txt)
 
 
-EXEC = client4
+EXEC = client
 
 
 all: $(EXEC)

@@ -1,95 +1,64 @@
 #include <iostream>
+
 #include <threadextend.h>
-#include <enet/enet.h>
-#include <cstring>
+#include <enetcom.h>
 
 #include "KnapThread.hpp"
 
-#define TOMAX 0
-#define PORT 4242
-#define NB_PLAYER 4
+#include "enetServer.hpp"
 
 
-struct client
-{
-	bool connected;
-	unsigned int id;
-};
-typedef struct client client;
-
-
-ENetAddress address;
-ENetHost * server;
-ENetPeer * peer;
-ENetEvent event;
-
-char recMess[200];
-char mess[200];
-
-client clients[NB_PLAYER];
-
-int fsm;
-
-pthread_mutex_t lock_mutex = PTHREAD_MUTEX_INITIALIZER;
-pthread_cond_t started_cond = PTHREAD_COND_INITIALIZER;
+char recMess[BUFFERSIZE];
+char mess[BUFFERSIZE];
 
 // volatile int start;
 
-std::vector<unsigned int> 	weights = {70,73,77,80,82,87,90,94,98,106,110,113,115,118,120},
-							profits = {135,139,149,150,156,163,173,184,192,201,210,214,221,229,240};
-unsigned int capacity = 750;
-unsigned int popsize = 100;
-double survival_rate = 0.3;
-unsigned int maxit = 1000;
 
-
-void sendBroadcast(const char * mess)
+void sendBroadcast(const commu & c)
 {
-	char buffer[500];
-
-	// for (int i = 0; i < 12; ++i)
-	for (int i = 0; i < 8; ++i)
-		buffer[i] = 0;
-	// buffer[8] = 1;
-	buffer[8] = 4;
-
-	int len = strlen(mess);
-	int cpt = 0;
-	for (cpt = 0; cpt < len; ++cpt)
-		buffer[9 + cpt] = mess[cpt];
-	buffer[9 + cpt] = 0;
-
-	printf(" - len = %d for %s.\n", len, mess);
-
-	ENetPacket * packet = enet_packet_create (buffer, 10 + len, ENET_PACKET_FLAG_RELIABLE);
+	char * buffer = c.to_buf();
+	ENetPacket * packet = enet_packet_create (buffer, strlen(buffer) + 1, ENET_PACKET_FLAG_RELIABLE);
 	enet_host_broadcast (server, 1, packet);
 }
 
-void handleIncomingMessage()
+void handleIncomingMessage(const unsigned int & id, const std::string & data)
 {
-	printf("On begin, fsm = %d\n", fsm);
-	switch (fsm)
+	if (pthread_mutex_lock(&lock_mutex) != 0)
+		std::cerr << "Error: error in pthread_mutex_lock in producer()" << std::endl;
+
+	if (pthread_cond_broadcast(&started_cond) != 0)
+		std::cerr << "Error: error in pthread_cond_broadcast in producer()" << std::endl;
+
+	if (pthread_mutex_unlock(&lock_mutex) != 0)
+		std::cerr << "Error: error in pthread_mutek_unlock in producer()" << std::endl;
+
+	commu cin(data);
+
+	printf("Entering handle, id = %d, communication type = %d, packet = %s\n", id, cin.type, (char *) data.c_str());
+	switch (cin.type)
 	{
-		case 0:
-			// start = 1;
-			if (pthread_mutex_lock(&lock_mutex) != 0)
-				std::cerr << "Error: error in pthread_mutex_lock in producer()" << std::endl;
+		case com_type::USERNAME_DECLARATION:
+			printf(" - username is : %s\n", cin.msg.c_str());
 
-			if (pthread_cond_broadcast(&started_cond) != 0)
-				std::cerr << "Error: error in pthread_cond_broadcast in producer()" << std::endl;
+			{
+				clients[id] = cin.msg;
 
-			if (pthread_mutex_unlock(&lock_mutex) != 0)
-				std::cerr << "Error: error in pthread_mutek_unlock in producer()" << std::endl;
+				std::string users_name;
+				for (const auto & it : clients)
+					users_name += it.second + '_';
+				users_name[users_name.size() - 1] = '\0';
+				commu cout(com_type::USERNAME_DECLARATION, users_name);
+				sendBroadcast(cout);
+			}
 
 			break;
 
 		default:
 			break;
 	}
-	printf("On exit, fsm = %d\n", fsm);
 }
 
-int main (int argc, char ** argv) 
+int main (int argc, const char * argv[]) 
 {
 	printf(" - enet_initialize()\n");
 	if (enet_initialize() != 0)
@@ -109,45 +78,56 @@ int main (int argc, char ** argv)
 		exit(EXIT_FAILURE);
 	}
 
-	fsm = 0;
-
 	printf("Starting main loop.\n");
-	while (true)
-	{
-		while (enet_host_service(server, &event, TOMAX) > 0)
-		{
+	while (true) {
+		while (enet_host_service(server, &event, TOMAX) > 0) {
 			switch (event.type)
 			{
 				case ENET_EVENT_TYPE_CONNECT:
 					printf ("A new client connected from %u.%u.%u.%u : %u\n", 
-						(char) event.peer->address.host & (255),
-						(char) event.peer->address.host & (255 << 8),
-						(char) event.peer->address.host & (255 << 16),
-						(char) event.peer->address.host & (255 << 24),
+						(char) event.peer->address.host & (0xFF),
+						(char) event.peer->address.host & (0xFF << 8),
+						(char) event.peer->address.host & (0xFF << 16),
+						(char) event.peer->address.host & (0xFF << 24),
 						(unsigned int) event.peer->address.port
 					);
-					sendBroadcast("test");
+
+					{
+						if (clients.find(event.peer->connectID) != clients.end())
+							printf("Client %u just reconnected.\n", (unsigned int) event.peer->connectID);
+						else if (clients.size() <= MAXPLAYER)
+							clients[event.peer->connectID] = "";
+						else {
+							std::cerr << "Error: too many client already connected." << std::endl;
+							enet_peer_disconnect(event.peer, 0);
+						}
+					}
+
 					break;
 
 				case ENET_EVENT_TYPE_RECEIVE:
-					printf ("A packet of length %d containing %s was received from %x on channel %d.\n", 
-						(int) event.packet -> dataLength, 
-						(char *) event.packet -> data, 
-						(int) event.peer -> connectID, //(char *) data,
+					printf ("A packet of length %d containing '%s' was received from %u on channel %d.\n", 
+						(int) event.packet->dataLength, 
+						(char *) event.packet->data, 
+						(int) event.peer->connectID,
 						(int) event.channelID
 					);
-					peer = event.peer;
-					strncpy(recMess, (char *) (event.packet->data) + 9, (int) event.packet->dataLength - 9);
-					recMess[(int) event.packet->dataLength - 10] = '\0';
 
-					printf(" - recMess = |%s|\n", recMess);
+					{
+						std::thread th(handleIncomingMessage, (unsigned int) event.peer->connectID, std::string((char *) event.packet->data));
+						th.detach();
+					}
+
 					enet_packet_destroy(event.packet);
-					handleIncomingMessage();
 					break;
 
 				case ENET_EVENT_TYPE_DISCONNECT:
-					printf ("%s disconnected.\n", (char*) event.peer -> data);
-					event.peer -> data = NULL;
+					printf ("%d disconnected.\n", (unsigned int) event.peer->connectID);
+					
+					{
+						event.peer->data = NULL;
+					}
+
 					break;
 
 				default:
@@ -155,5 +135,5 @@ int main (int argc, char ** argv)
 			}
 		}
 	}
-	atexit (enet_deinitialize);
+	atexit(enet_deinitialize);
 }
