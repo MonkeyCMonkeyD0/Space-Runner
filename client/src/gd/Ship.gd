@@ -34,12 +34,12 @@ func rotate_right(delta) -> void:
 		theta -= delta*SPEED_ROT
 
 func rotate_left(delta) -> void:
-		theta_bis -= SPEED_ROT
-		theta -= SPEED_ROT
-		if theta_bis<=-44:
-			theta_bis = -44
-			rotation.y += delta*SPEED_ROT
-			theta += delta*SPEED_ROT
+	theta_bis -= SPEED_ROT
+	theta -= SPEED_ROT
+	if theta_bis<=-44:
+		theta_bis = -44
+		rotation.y += delta*SPEED_ROT
+		theta += delta*SPEED_ROT
 
 func rotate_up(delta) -> void:
 	if theta_bis > SPEED_ROT:
