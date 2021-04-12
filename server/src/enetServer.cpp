@@ -54,6 +54,7 @@ void handleIncomingMessage(const unsigned int & id, const std::string & data)
 			break;
 
 		default:
+			printf("Cannot understand message |%s| received from %u.\n", cin.msg.c_str(), id);
 			break;
 	}
 }

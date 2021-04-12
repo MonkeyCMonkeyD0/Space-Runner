@@ -6,7 +6,7 @@
 #include <enetcom.h>
 #include <threadextend.h>
 
-#define HOST "127.0.0.1"
+// #define HOST "127.0.0.1"
 
 
 ENetHost * client;
@@ -101,7 +101,7 @@ int  main(int argc, char const *argv[])
 	if (enet_host_service(client, &event, 1000) > 0 && event.type == ENET_EVENT_TYPE_CONNECT) 
 	{
 		connected = true;
-		printf("Connected to %s as %s.\n", HOST, username.c_str());
+		printf("Connected to %s as %s.\n", argv[1], username.c_str());
 
 		commu c(com_type::USERNAME_DECLARATION, username);
 		envoyerCommande(c);
@@ -109,7 +109,7 @@ int  main(int argc, char const *argv[])
 	else 
 	{
 		enet_peer_reset(peer);
-		std::cerr << "Could not connect to " << HOST << std::endl;
+		std::cerr << "Could not connect to " << argv[1] << std::endl;
 		exit(EXIT_FAILURE);
 	}
 
