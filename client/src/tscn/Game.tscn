@@ -1,12 +1,10 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=17 format=2]
 
-[ext_resource path="res://data/obj/ship.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://src/gd/Game.gd" type="Script" id=2]
-[ext_resource path="res://src/gd/Ship.gd" type="Script" id=3]
 [ext_resource path="res://src/gd/Planet_manager.gd" type="Script" id=4]
 [ext_resource path="res://src/gd/Logo_Space-Runner.gd" type="Script" id=5]
 [ext_resource path="res://data/obj/Logo_Space-Runner.obj" type="ArrayMesh" id=6]
-[ext_resource path="res://data/img/despaceito.jpg" type="Texture" id=7]
+[ext_resource path="res://data/img/backgrounds/background-game.jpg" type="Texture" id=7]
 [ext_resource path="res://data/img/textures/spaceship1/Spaceship_metalness.jpg" type="Texture" id=8]
 [ext_resource path="res://data/img/textures/spaceship1/Spaceship_normal_map.jpg" type="Texture" id=9]
 [ext_resource path="res://data/obj/Ships/Spaceship1.obj" type="ArrayMesh" id=10]
@@ -41,11 +39,6 @@ ao_texture = ExtResource( 14 )
 ao_on_uv2 = false
 ao_texture_channel = 3
 
-[sub_resource type="Skin" id=2]
-
-[sub_resource type="SpatialMaterial" id=3]
-albedo_color = Color( 0.85098, 0.45098, 0.815686, 1 )
-
 [sub_resource type="PanoramaSky" id=5]
 radiance_size = 0
 panorama = ExtResource( 7 )
@@ -78,14 +71,6 @@ script = ExtResource( 15 )
 [node name="RemoteTransform" type="RemoteTransform" parent="Spatial/Spaceship"]
 transform = Transform( -8.14603e-07, 0, -5, 0, 5, 0, 5, 0, -8.14603e-07, 9.31323e-08, 0, -8.14189e-15 )
 remote_path = NodePath("../../../CameraRef")
-
-[node name="Ship" type="MeshInstance" parent="Spatial"]
-transform = Transform( 0.005, 0, 0, 0, 0.005, 0, 0, 0, 0.005, 0, 0, 0 )
-visible = false
-mesh = ExtResource( 1 )
-skin = SubResource( 2 )
-material/0 = SubResource( 3 )
-script = ExtResource( 3 )
 
 [node name="Logo Space-Runner" type="MeshInstance" parent="Spatial"]
 transform = Transform( -0.5, 0, -1.62921e-07, 0, 0.5, 0, 1.62921e-07, 0, -0.5, 60, 0, 50 )

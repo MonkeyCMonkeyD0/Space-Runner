@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://src/gd/Menu.gd" type="Script" id=1]
-[ext_resource path="res://data/img/background-menu.jpg" type="Texture" id=2]
+[ext_resource path="res://data/img/backgrounds/background-menu.jpg" type="Texture" id=2]
 
 [node name="Menu" type="Control"]
 anchor_left = 0.00146317

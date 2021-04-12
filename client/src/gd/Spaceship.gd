@@ -1,6 +1,6 @@
 extends MeshInstance
 
-var SPEED = 5
+var SPEED = 500
 var SPEED_ROT = 2
 
 func _process(delta):
@@ -25,7 +25,7 @@ func rotate_left(delta) -> void:
 	rotate_object_local(Vector3(-1, 0, 0), SPEED_ROT * delta)
 
 func rotate_up(delta) -> void:
-	rotate_object_local(Vector3(0, 0, -1), SPEED_ROT * delta)
+	rotate_object_local(Vector3(0, 0, 1), SPEED_ROT * delta)
 
 func rotate_down(delta) -> void:
-	rotate_object_local(Vector3(0, 0, 1), SPEED_ROT * delta)
+	rotate_object_local(Vector3(0, 0, -1), SPEED_ROT * delta)
