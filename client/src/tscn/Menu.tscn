@@ -13,10 +13,12 @@ __meta__ = {
 }
 
 [node name="Background" type="TextureRect" parent="."]
-anchor_left = -0.00195313
-anchor_right = -0.00195313
-margin_right = 3840.0
-margin_bottom = 2400.0
+anchor_left = -0.00246859
+anchor_right = -0.00246859
+margin_left = -0.527954
+margin_top = 0.495911
+margin_right = 3839.47
+margin_bottom = 2400.5
 texture = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -78,10 +80,10 @@ text = "Quit"
 [node name="Popup1" type="Popup" parent="Background"]
 visible = true
 modulate = Color( 1, 0, 0, 1 )
-margin_left = 730.0
-margin_top = 185.0
-margin_right = 990.0
-margin_bottom = 195.0
+margin_left = 400.0
+margin_top = 215.0
+margin_right = 660.0
+margin_bottom = 225.0
 __meta__ = {
 "_edit_use_anchors_": false,
 "_editor_description_": ""
@@ -96,23 +98,24 @@ __meta__ = {
 [node name="Popup2" type="Popup" parent="Background"]
 visible = true
 modulate = Color( 0.101961, 1, 0, 1 )
-margin_left = 730.0
-margin_top = 185.0
-margin_right = 990.0
-margin_bottom = 195.0
+margin_left = 450.0
+margin_top = 215.0
+margin_right = 579.0
+margin_bottom = 225.0
 
 [node name="Label" type="Label" parent="Background/Popup2"]
-margin_right = 40.0
-margin_bottom = 14.0
+margin_top = 0.495941
+margin_right = 130.0
+margin_bottom = 14.4959
 text = "Stylé ton pseudo bg."
 
 [node name="Popup3" type="Popup" parent="Background"]
 visible = true
 modulate = Color( 1, 0, 0, 1 )
-margin_left = 730.0
-margin_top = 185.0
-margin_right = 990.0
-margin_bottom = 195.0
+margin_left = 370.0
+margin_top = 215.0
+margin_right = 630.0
+margin_bottom = 225.0
 __meta__ = {
 "_edit_use_anchors_": false
 }

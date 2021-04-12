@@ -17,7 +17,7 @@ char mess[BUFFERSIZE];
 void sendBroadcast(const commu & c)
 {
 	char * buffer = c.to_buf();
-	ENetPacket * packet = enet_packet_create (buffer, strlen(buffer) + 1, ENET_PACKET_FLAG_RELIABLE);
+	ENetPacket * packet = enet_packet_create(buffer, strlen(buffer) + 1, ENET_PACKET_FLAG_RELIABLE);
 	enet_host_broadcast (server, 1, packet);
 }
 
@@ -34,7 +34,7 @@ void handleIncomingMessage(const unsigned int & id, const std::string & data)
 
 	commu cin(data);
 
-	printf("Entering handle, id = %d, communication type = %d, packet = %s\n", id, cin.type, (char *) data.c_str());
+	printf("Entering handle, id = %u, communication type = %d, packet = %s\n", id, cin.type, (char *) data.c_str());
 	switch (cin.type)
 	{
 		case com_type::USERNAME_DECLARATION:
@@ -106,7 +106,7 @@ int main (int argc, const char * argv[])
 					break;
 
 				case ENET_EVENT_TYPE_RECEIVE:
-					printf ("A packet of length %d containing '%s' was received from %u on channel %d.\n", 
+					printf("A packet of length %d containing '%s' was received from %u on channel %d.\n", 
 						(int) event.packet->dataLength, 
 						(char *) event.packet->data, 
 						(int) event.peer->connectID,
