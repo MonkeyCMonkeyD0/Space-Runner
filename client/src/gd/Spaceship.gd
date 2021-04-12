@@ -22,31 +22,13 @@ func move_forward(delta) -> void:
 	translation.z += SPEED*delta*sin(rotation.y)*cos(rotation.x)
 
 func rotate_right(delta) -> void:
-	# rotation.x -= 0.02
-	rotate_object_local(Vector3(1, 0, 0), -0.02)
-	# print("rot z : ", rotation.z)
-	# rotation.z += SPEED_ROT*delta
+	rotate_object_local(Vector3(1, 0, 0), SPEED_ROT*delta)
 
 func rotate_left(delta) -> void:
-	# rotation.x += 0.02
-	rotate_object_local(Vector3(1, 0, 0), 0.02)
-	# print("rot z : ", rotation.z)
-	# rotation.z -= SPEED_ROT*delta
+	rotate_object_local(Vector3(-1, 0, 0), SPEED_ROT*delta)
 
 func rotate_up(delta) -> void:
-	# rotation.z -= 0.01
-	rotate_object_local(Vector3(0, 0, 1), -0.02)
-	# print("rot y : ", rotation.y)
-	# rotation.x += SPEED_ROT*delta
-	# print("rot x : ", rotation.x, "\t-\trot y : ", rotation.y)
-	# rotation.x -= SPEED_ROT*delta*cos(rotation.z)
-	# rotation.y -= SPEED_ROT*delta*sin(rotation.z)
+	rotate_object_local(Vector3(0, 0, -1), SPEED_ROT*delta)
 
 func rotate_down(delta) -> void:
-	# rotation.z += 0.01
-	rotate_object_local(Vector3(0, 0, 1), 0.02)
-	# print("rot y : ", rotation.y)
-	# rotation.x -= SPEED_ROT*delta
-	# print("rot x : ", rotation.x, "\t-\trot y : ", rotation.y)
-	# rotation.x += SPEED_ROT*delta*cos(rotation.z)
-	# rotation.y += SPEED_ROT*delta*sin(rotation.z)
+	rotate_object_local(Vector3(0, 0, 1), SPEED_ROT*delta)

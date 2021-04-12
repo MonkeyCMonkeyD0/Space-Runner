@@ -70,14 +70,14 @@ __meta__ = {
 [node name="Spatial" type="Spatial" parent="."]
 
 [node name="Spaceship" type="MeshInstance" parent="Spatial"]
-transform = Transform( -0.02, 0, 6.51682e-09, 0, 0.02, 0, -6.51682e-09, 0, -0.02, 0, 0, 0 )
+transform = Transform( 0.02, 0, 0, 0, 0.02, 0, 0, 0, 0.02, 0, 0, 0 )
 material_override = SubResource( 1 )
 mesh = ExtResource( 8 )
 material/0 = null
 script = ExtResource( 15 )
 
 [node name="RemoteTransform" type="RemoteTransform" parent="Spatial/Spaceship"]
-transform = Transform( -5, 0, -1.62921e-06, 0, 5, 0, 1.62921e-06, 0, -5, 9.31323e-08, 0, -8.14189e-15 )
+transform = Transform( -8.14603e-07, 0, -5, 0, 5, 0, 5, 0, -8.14603e-07, 9.31323e-08, 0, -8.14189e-15 )
 remote_path = NodePath("../../../CameraRef")
 
 [node name="Ship" type="MeshInstance" parent="Spatial"]
@@ -89,7 +89,7 @@ material/0 = SubResource( 3 )
 script = ExtResource( 3 )
 
 [node name="Logo Space-Runner" type="MeshInstance" parent="Spatial"]
-transform = Transform( 0.5, 0, 0, 0, -8.14603e-08, -0.5, 0, 0.5, -8.14603e-08, -70, 0, -70 )
+transform = Transform( -0.5, 0, -1.62921e-07, 0, 0.5, 0, 1.62921e-07, 0, -0.5, 60, 0, 50 )
 mesh = ExtResource( 6 )
 material/0 = SubResource( 4 )
 script = ExtResource( 5 )
@@ -122,10 +122,10 @@ margin_bottom = 40.0
 text = "Menu"
 
 [node name="CameraRef" type="Spatial" parent="."]
-transform = Transform( 0.1, 0, 9.9476e-14, 0, 0.1, 0, -9.9476e-14, 0, 0.1, -1.86265e-09, 0, -4.44089e-16 )
+transform = Transform( -1.62921e-08, 0, -0.1, 0, 0.1, 0, 0.1, 0, -1.62921e-08, 1.86265e-09, 0, -1.62838e-16 )
 
 [node name="Camera" type="Camera" parent="CameraRef"]
-transform = Transform( 10, 1.35525e-20, -2.71051e-20, 0, 9.39693, 3.4202, 2.71051e-20, -3.4202, 9.39693, 0, 1, 2 )
+transform = Transform( 10, -1.13687e-13, 2.27374e-13, 0, 9.39693, 3.4202, -4.54747e-13, -3.4202, 9.39693, 1.06581e-14, 1, 2 )
 
 [node name="DirectionalLight" type="DirectionalLight" parent="."]
 transform = Transform( 1, 0, 0, 0, 0.745162, 0.666884, 0, -0.666884, 0.745162, 0, 0.532127, 0.574722 )
