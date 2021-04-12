@@ -2,7 +2,6 @@ extends MeshInstance
 
 var SPEED = 5
 var SPEED_ROT = 2
-var theta = 0
 
 func _process(delta):
 	if Input.is_key_pressed(KEY_SPACE):	
@@ -17,18 +16,16 @@ func _process(delta):
 		rotate_down(delta)
 
 func move_forward(delta) -> void:
-	translation.x += SPEED*delta*cos(rotation.y)*cos(rotation.x)
-	translation.y += SPEED*delta*sin(rotation.z)
-	translation.z += SPEED*delta*sin(rotation.y)*cos(rotation.x)
+	translation += transform.basis.x * SPEED * delta
 
 func rotate_right(delta) -> void:
-	rotate_object_local(Vector3(1, 0, 0), SPEED_ROT*delta)
+	rotate_object_local(Vector3(1, 0, 0), SPEED_ROT * delta)
 
 func rotate_left(delta) -> void:
-	rotate_object_local(Vector3(-1, 0, 0), SPEED_ROT*delta)
+	rotate_object_local(Vector3(-1, 0, 0), SPEED_ROT * delta)
 
 func rotate_up(delta) -> void:
-	rotate_object_local(Vector3(0, 0, -1), SPEED_ROT*delta)
+	rotate_object_local(Vector3(0, 0, -1), SPEED_ROT * delta)
 
 func rotate_down(delta) -> void:
-	rotate_object_local(Vector3(0, 0, 1), SPEED_ROT*delta)
+	rotate_object_local(Vector3(0, 0, 1), SPEED_ROT * delta)

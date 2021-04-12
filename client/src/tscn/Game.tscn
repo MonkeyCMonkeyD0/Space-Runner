@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://data/obj/ship.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://src/gd/Game.gd" type="Script" id=2]
@@ -7,34 +7,34 @@
 [ext_resource path="res://src/gd/Logo_Space-Runner.gd" type="Script" id=5]
 [ext_resource path="res://data/obj/Logo_Space-Runner.obj" type="ArrayMesh" id=6]
 [ext_resource path="res://data/img/despaceito.jpg" type="Texture" id=7]
-[ext_resource path="res://data/obj/test import/Intergalactic_Spaceship-(Wavefront).obj" type="ArrayMesh" id=8]
-[ext_resource path="res://data/obj/test import/textures/Intergalactic Spaceship_color_4.jpg" type="Texture" id=9]
-[ext_resource path="res://data/obj/test import/textures/Intergalactic Spaceship_rough.jpg" type="Texture" id=10]
-[ext_resource path="res://data/obj/test import/textures/Intergalactic Spaceship_emi.jpg" type="Texture" id=11]
-[ext_resource path="res://data/obj/test import/textures/Intergalactic Spaceship_nmap_2_Tris.jpg" type="Texture" id=12]
-[ext_resource path="res://data/obj/test import/textures/Intergalactic Spaceship_metalness.jpg" type="Texture" id=13]
-[ext_resource path="res://data/obj/test import/textures/Intergalactic Spaceship Ao_Blender.jpg" type="Texture" id=14]
+[ext_resource path="res://data/img/textures/spaceship1/Spaceship_metalness.jpg" type="Texture" id=8]
+[ext_resource path="res://data/img/textures/spaceship1/Spaceship_normal_map.jpg" type="Texture" id=9]
+[ext_resource path="res://data/obj/Ships/Spaceship1.obj" type="ArrayMesh" id=10]
+[ext_resource path="res://data/img/textures/spaceship1/Spaceship_color.jpg" type="Texture" id=11]
+[ext_resource path="res://data/img/textures/spaceship1/Spaceship_rough.jpg" type="Texture" id=12]
+[ext_resource path="res://data/img/textures/spaceship1/Spaceship_emition.jpg" type="Texture" id=13]
+[ext_resource path="res://data/img/textures/spaceship1/Spaceship Ambiant_Oclusion.jpg" type="Texture" id=14]
 [ext_resource path="res://src/gd/Spaceship.gd" type="Script" id=15]
 
 [sub_resource type="SpatialMaterial" id=1]
 resource_name = "Material"
-albedo_texture = ExtResource( 9 )
+albedo_texture = ExtResource( 11 )
 metallic = 0.8
 metallic_specular = 1.0
-metallic_texture = ExtResource( 13 )
+metallic_texture = ExtResource( 8 )
 metallic_texture_channel = 3
 roughness = 0.5
-roughness_texture = ExtResource( 10 )
+roughness_texture = ExtResource( 12 )
 roughness_texture_channel = 3
 emission_enabled = true
 emission = Color( 0, 0, 0, 1 )
 emission_energy = 1.0
 emission_operator = 0
 emission_on_uv2 = false
-emission_texture = ExtResource( 11 )
+emission_texture = ExtResource( 13 )
 normal_enabled = true
 normal_scale = 1.0
-normal_texture = ExtResource( 12 )
+normal_texture = ExtResource( 9 )
 ao_enabled = true
 ao_light_affect = 1.0
 ao_texture = ExtResource( 14 )
@@ -45,8 +45,6 @@ ao_texture_channel = 3
 
 [sub_resource type="SpatialMaterial" id=3]
 albedo_color = Color( 0.85098, 0.45098, 0.815686, 1 )
-
-[sub_resource type="SpatialMaterial" id=4]
 
 [sub_resource type="PanoramaSky" id=5]
 radiance_size = 0
@@ -72,8 +70,9 @@ __meta__ = {
 [node name="Spaceship" type="MeshInstance" parent="Spatial"]
 transform = Transform( 0.02, 0, 0, 0, 0.02, 0, 0, 0, 0.02, 0, 0, 0 )
 material_override = SubResource( 1 )
-mesh = ExtResource( 8 )
+mesh = ExtResource( 10 )
 material/0 = null
+material/1 = null
 script = ExtResource( 15 )
 
 [node name="RemoteTransform" type="RemoteTransform" parent="Spatial/Spaceship"]
@@ -91,7 +90,7 @@ script = ExtResource( 3 )
 [node name="Logo Space-Runner" type="MeshInstance" parent="Spatial"]
 transform = Transform( -0.5, 0, -1.62921e-07, 0, 0.5, 0, 1.62921e-07, 0, -0.5, 60, 0, 50 )
 mesh = ExtResource( 6 )
-material/0 = SubResource( 4 )
+material/0 = null
 script = ExtResource( 5 )
 
 [node name="Background" type="WorldEnvironment" parent="Spatial"]
