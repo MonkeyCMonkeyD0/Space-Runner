@@ -5,10 +5,13 @@ var lObject=[]
 var Total_weight
 var Total_profits
 var finished
+var Msg
 
 var network
 var mplayer
-var serverIP = "127.0.0.1"
+var serverIP = "10.64.8.21"
+var port = 4242
+var player_id 
 
 var username = ""
 var username_valid = false
@@ -16,40 +19,67 @@ onready var popup1 = get_node("Background/Popup1")
 onready var popup2 = get_node("Background/Popup2")
 onready var popup3 = get_node("Background/Popup3")
 
+
 # Declare member variables here. Examples:
 # Player info, associate ID to data
 var player_info = {}
 # Info we send to other players
 var my_info = { name = "Ton Daron" }
 
+func _ready():
+	installNetworkCallback(serverIP)
+	_connect_to_server()
+
 func installNetworkCallback(serverAddress):
-	network = NetworkedMultiplayerENet.new()
-	network.create_client(serverAddress, 4242)
+	network=NetworkedMultiplayerENet.new()
+	get_tree().connect("network_peer_connected",\
+		self,"_player_connected")
+	get_tree().connect("network_peer_disconnected",\
+		self,"_player_disconnected")
+	get_tree().connect("connection_failed",self,\
+		"_connected_fail")
+	get_tree().connect("server_disconnected",self,\
+		"_server_disconnected")
+
+func _connect_to_server():
+	get_tree().connect("connected_to_server",\
+		self,"_connected_ok")
+	network.create_client(serverIP,port)
 	get_tree().set_network_peer(network)
-	mplayer = get_tree().multiplayer
-	mplayer.connect("network_peer_packet", self, "_on_packet_received")
+	#player_id = get_tree().get_rpc_sender_id()
+	mplayer=get_tree().multiplayer
+	network.connect("peer_connected",self,"_Peer_Connected")
+	network.connect("peer_disconnected",self,"_Peer_Disconnected")
+	mplayer.connect("network_peer_packet",self,"_on_packet_received")
 	print("Connected to server")
-	
+
+
+
+
+#func _Peer_Connected(player_id):
+#	print("User " + str(player_id) + " Connected")
+
 func sendToServer(mess):
 	mplayer.send_bytes(mess.to_ascii())
 
 func _on_Host_pressed() -> void:
-	if len(username) == 0:
+	if len(username)==0:
 		popup1.hide()
 		popup2.hide()
 		popup3.show()
 	if username_valid:
-		installNetworkCallback(serverIP)
-		sendToServer("Hello")
+		Msg = "Hi I am "+ username + " and I am connected"
+		sendToServer(Msg)
 		if get_tree().change_scene("res://src/tscn/Game.tscn") != OK:
-			print("Unexpected error while changing scene")
+			print("Unexpected error with the scene changement")
 
 func _on_Join_pressed() -> void:
-	if len(username) == 0:
+	if len(username)==0:
 		popup1.hide()
 		popup2.hide()
 		popup3.show()
 	if username_valid:
+		
 		if get_tree().change_scene("res://src/tscn/Game.tscn") != OK:
 			print("Unexpected error with the scene changement")
 
@@ -71,6 +101,6 @@ func _on_Username_text_entered(new_text) -> void:
 		popup2.hide()
 		popup3.hide()
 		popup1.show()
-
+		
 func _on_Quit_pressed():
 	get_tree().quit()
