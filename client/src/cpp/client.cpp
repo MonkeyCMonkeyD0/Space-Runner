@@ -2,8 +2,9 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <string>
+#include <enet/enet.h>
 
-#include <enetcom.h>
+#include <commu.h>
 #include <threadextend.h>
 
 // #define HOST "127.0.0.1"
@@ -94,7 +95,7 @@ int  main(int argc, char const *argv[])
 
 	if (peer == NULL)
 	{
-		std::cerr << "Could not connect to server" << std::endl;
+		std::cerr << "Could not reach server" << argv[1] << std::endl;
 		exit(EXIT_FAILURE);
 	}
 
@@ -103,13 +104,13 @@ int  main(int argc, char const *argv[])
 		connected = true;
 		printf("Connected to %s as %s.\n", argv[1], username.c_str());
 
-		commu c(com_type::USERNAME_DECLARATION, username);
+		commu c(USERNAME_DECLARATION, username);
 		envoyerCommande(c);
-	} 
+	}
 	else 
 	{
 		enet_peer_reset(peer);
-		std::cerr << "Could not connect to " << argv[1] << std::endl;
+		std::cerr << "Server " << argv[1] << " did not respond." << std::endl;
 		exit(EXIT_FAILURE);
 	}
 

@@ -1,15 +1,15 @@
 #include <iostream>
+#include <enet/enet.h>
 
 #include <threadextend.h>
-#include <enetcom.h>
+#include <commu.h>
 
 #include "KnapThread.hpp"
-
 #include "enetServer.hpp"
 
 
-char recMess[BUFFERSIZE];
-char mess[BUFFERSIZE];
+// char recMess[BUFFERSIZE];
+// char mess[BUFFERSIZE];
 
 // volatile int start;
 
@@ -37,7 +37,7 @@ void handleIncomingMessage(const unsigned int & id, const std::string & data)
 	printf("Entering handle, id = %u, communication type = %d, packet = %s\n", id, cin.type, (char *) data.c_str());
 	switch (cin.type)
 	{
-		case com_type::USERNAME_DECLARATION:
+		case USERNAME_DECLARATION:
 			printf(" - username is : %s\n", cin.msg.c_str());
 
 			{
@@ -67,6 +67,7 @@ int main (int argc, const char * argv[])
 		std::cerr << "Error: An error occurred while initializing ENet." << std::endl;
 		exit(EXIT_FAILURE);
 	}
+	atexit(enet_deinitialize);
 
 	address.host = ENET_HOST_ANY;
 	address.port = PORT;
@@ -87,9 +88,9 @@ int main (int argc, const char * argv[])
 				case ENET_EVENT_TYPE_CONNECT:
 					printf ("A new client connected from %u.%u.%u.%u : %u\n", 
 						(char) event.peer->address.host & (0xFF),
-						(char) event.peer->address.host & (0xFF << 8),
-						(char) event.peer->address.host & (0xFF << 16),
-						(char) event.peer->address.host & (0xFF << 24),
+						(char) (event.peer->address.host & (0xFF << 8)) >> 8,
+						(char) (event.peer->address.host & (0xFF << 16)) >> 16,
+						(char) (event.peer->address.host & (0xFF << 24)) >> 24,
 						(unsigned int) event.peer->address.port
 					);
 
@@ -136,5 +137,4 @@ int main (int argc, const char * argv[])
 			}
 		}
 	}
-	atexit(enet_deinitialize);
 }
