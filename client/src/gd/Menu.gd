@@ -9,7 +9,7 @@ var Msg
 
 var network
 var mplayer
-var serverIP = "10.64.8.21"
+var serverIP = IP.get_local_addresses()[0]
 var port = 4242
 var player_id 
 
@@ -27,30 +27,31 @@ var player_info = {}
 var my_info = { name = "Ton Daron" }
 
 func _ready():
-	installNetworkCallback(serverIP)
+	print(serverIP)
+	installNetworkCallback()
 	_connect_to_server()
 
-func installNetworkCallback(serverAddress):
+func installNetworkCallback():
 	network=NetworkedMultiplayerENet.new()
-	get_tree().connect("network_peer_connected",\
-		self,"_player_connected")
-	get_tree().connect("network_peer_disconnected",\
-		self,"_player_disconnected")
-	get_tree().connect("connection_failed",self,\
-		"_connected_fail")
-	get_tree().connect("server_disconnected",self,\
-		"_server_disconnected")
+	#if get_tree().connect("network_peer_connected",self,"_player_connected") != OK:
+	#	print("Error while connect peer")
+	#get_tree().connect("network_peer_disconnected",\
+	#	self,"_player_disconnected")
+	#get_tree().connect("connection_failed",self,\
+	#	"_connected_fail")
+	#get_tree().connect("server_disconnected",self,\
+	#	"_server_disconnected")
 
 func _connect_to_server():
-	get_tree().connect("connected_to_server",\
-		self,"_connected_ok")
+	#if get_tree().connect("connected_to_server",self,"_connected_ok") != OK:
+	#	print("Error connecting to server")
 	network.create_client(serverIP,port)
 	get_tree().set_network_peer(network)
 	#player_id = get_tree().get_rpc_sender_id()
 	mplayer=get_tree().multiplayer
-	network.connect("peer_connected",self,"_Peer_Connected")
-	network.connect("peer_disconnected",self,"_Peer_Disconnected")
-	mplayer.connect("network_peer_packet",self,"_on_packet_received")
+	#network.connect("peer_connected",self,"_Peer_Connected")
+	#network.connect("peer_disconnected",self,"_Peer_Disconnected")
+	#mplayer.connect("network_peer_packet",self,"_on_packet_received")
 	print("Connected to server")
 
 
@@ -69,7 +70,7 @@ func _on_Host_pressed() -> void:
 		popup3.show()
 	if username_valid:
 		Msg = "Hi I am "+ username + " and I am connected"
-		sendToServer(Msg)
+		sendToServer("Hello")
 		if get_tree().change_scene("res://src/tscn/Game.tscn") != OK:
 			print("Unexpected error with the scene changement")
 
