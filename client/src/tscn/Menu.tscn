@@ -1,34 +1,49 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://src/gd/Menu.gd" type="Script" id=1]
 [ext_resource path="res://data/img/backgrounds/background-menu.jpg" type="Texture" id=2]
+[ext_resource path="res://src/tscn/Logo.tscn" type="PackedScene" id=3]
 
 [node name="Menu" type="Control"]
-anchor_left = 0.00146317
-anchor_right = 1.00146
-anchor_bottom = 1.0
+margin_right = 1920.0
+margin_bottom = 1080.0
 script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": true
 }
 
+[node name="Viewport" type="Viewport" parent="."]
+size = Vector2( 800, 450 )
+transparent_bg = true
+handle_input_locally = false
+render_direct_to_screen = true
+render_target_v_flip = true
+gui_disable_input = true
+
+[node name="Spatial" parent="Viewport" instance=ExtResource( 3 )]
+
 [node name="Background" type="TextureRect" parent="."]
 anchor_left = -0.00246859
-anchor_right = -0.00246859
-margin_left = -0.527954
-margin_top = 0.495911
-margin_right = 3839.47
-margin_bottom = 2400.5
+anchor_top = 0.00478516
+anchor_right = 0.53
+anchor_bottom = 0.602
+margin_left = 4.73969
+margin_top = -5.16797
+margin_right = 902.4
+margin_bottom = 429.84
 texture = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Logo" type="Sprite" parent="Background"]
+position = Vector2( 512, 120 )
+
 [node name="Username" type="VBoxContainer" parent="Background"]
 margin_left = 300.0
-margin_top = 160.0
+margin_top = 220.0
 margin_right = 725.0
-margin_bottom = 202.0
+margin_bottom = 262.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -52,9 +67,9 @@ __meta__ = {
 
 [node name="Buttons" type="VBoxContainer" parent="Background"]
 margin_left = 200.0
-margin_top = 300.0
+margin_top = 400.0
 margin_right = 825.0
-margin_bottom = 370.0
+margin_bottom = 470.0
 rect_scale = Vector2( 1, 2 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -81,9 +96,9 @@ text = "Quit"
 visible = true
 modulate = Color( 1, 0, 0, 1 )
 margin_left = 400.0
-margin_top = 215.0
+margin_top = 270.0
 margin_right = 660.0
-margin_bottom = 225.0
+margin_bottom = 280.0
 __meta__ = {
 "_edit_use_anchors_": false,
 "_editor_description_": ""
@@ -99,9 +114,9 @@ __meta__ = {
 visible = true
 modulate = Color( 0.101961, 1, 0, 1 )
 margin_left = 450.0
-margin_top = 215.0
+margin_top = 270.0
 margin_right = 579.0
-margin_bottom = 225.0
+margin_bottom = 280.0
 
 [node name="Label" type="Label" parent="Background/Popup2"]
 margin_top = 0.495941
@@ -113,9 +128,9 @@ text = "Stylé ton pseudo bg."
 visible = true
 modulate = Color( 1, 0, 0, 1 )
 margin_left = 370.0
-margin_top = 215.0
+margin_top = 270.0
 margin_right = 630.0
-margin_bottom = 225.0
+margin_bottom = 280.0
 __meta__ = {
 "_edit_use_anchors_": false
 }

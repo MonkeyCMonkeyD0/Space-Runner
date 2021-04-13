@@ -105,3 +105,8 @@ func _on_Username_text_entered(new_text) -> void:
 		
 func _on_Quit_pressed():
 	get_tree().quit()
+
+# Appling texture to veiwport
+func _process(delta):
+	var texture = $Viewport.get_texture()
+	$Background/Logo.texture = texture
