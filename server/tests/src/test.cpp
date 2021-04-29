@@ -1,22 +1,37 @@
 #include <iostream>
 #include <vector>
+#include <sstream>
+#include <string>
 
-// #include "../../src/Knapsack.hpp"
-#include "../../src/KnapThread.hpp"
+#include "../../src/PlanetCreator.hpp"
 
 
 int main(int argc, char const *argv[])
 {
-	std::vector<unsigned int> 	w = {70, 73, 77, 80, 82, 87, 90, 94, 98, 106, 110, 113, 115, 118, 120},
-								p = {135, 139, 149, 150, 156, 163, 173, 184, 192, 201, 210, 214, 221, 229, 240};
-	KnapThread kt(w, p, 750, 10, 0.3, 30000);
-	kt.run();
-
-	std::cout << "Optimal solution found = ";
-	kt.print() << std::endl;
+	PlanetCreator pc;
+	for (const auto & s : pc.broadcast_strings())
+		std::cout << s << std::endl;
 
 	return 0;
 }
+
+
+// #include "../../src/Knapsack.hpp"
+// #include "../../src/KnapThread.hpp"
+
+
+// int main(int argc, char const *argv[])
+// {
+// 	std::vector<unsigned int> 	w = {70, 73, 77, 80, 82, 87, 90, 94, 98, 106, 110, 113, 115, 118, 120},
+// 								p = {135, 139, 149, 150, 156, 163, 173, 184, 192, 201, 210, 214, 221, 229, 240};
+// 	KnapThread kt(w, p, 750, 10, 0.3, 30000);
+// 	kt.run();
+
+// 	std::cout << "Optimal solution found = ";
+// 	kt.print() << std::endl;
+
+// 	return 0;
+// }
 
 
 // void test_func(std::mutex * iomutex, int thread_num, std::string msg)
