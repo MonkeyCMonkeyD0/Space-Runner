@@ -53,7 +53,7 @@ std::vector<std::string> PlanetCreator::broadcast_strings() const
 {
 	std::stringstream ss;
 	std::vector<std::string> vect;
-	for (unsigned int i = 0; i < this->get().size(); ++i) {
+	for (short int i = 0; i < this->get().size(); ++i) {
 		this->print(i, ss << std::setfill('0') << std::setw(2) << i << ':');
 		vect.push_back(ss.str());
 		ss.str(std::string());
@@ -93,7 +93,7 @@ unsigned int PlanetCreator::random_color() const
 	unsigned int res = 0;
 	unsigned short int tmp;
 	std::random_device rd;
-	std::uniform_int_distribution<unsigned int> distrib(0, 65536);
+	std::uniform_int_distribution<unsigned short int> distrib(0, 65536);
 	for (char dec = 16; dec >= 0; dec -= 8) {
 		tmp = distrib(rd);
 		res += (unsigned int) floor(sqrt(tmp)) << dec;
