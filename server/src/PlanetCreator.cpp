@@ -93,7 +93,7 @@ unsigned int PlanetCreator::random_color() const
 	unsigned int res = 0;
 	unsigned short int tmp;
 	std::random_device rd;
-	std::uniform_int_distribution<unsigned short int> distrib(0, 65536);
+	std::uniform_int_distribution<unsigned short int> distrib(0, 65535);
 	for (char dec = 16; dec >= 0; dec -= 8) {
 		tmp = distrib(rd);
 		res += (unsigned int) floor(sqrt(tmp)) << dec;
