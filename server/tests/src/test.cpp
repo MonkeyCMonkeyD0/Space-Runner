@@ -5,13 +5,19 @@
 
 
 #include "../../src/Blockchain.hpp"
+#include "../../src/BlockThread.hpp"
 
 int main(int argc, char const *argv[])
 {
 	Blockchain bc;
-	bc.add_Block("test1");
-	bc.add_Block("test2");
-	bc.add_Block("test3");
+	bc.add_Block("test1", true);
+	bc.add_Block("test2", true);
+	bc.add_Block("test3", true);
+
+	BlockThread bt;
+	bt.add_Block("test1", true);
+	bt.add_Block("test2", true);
+	bt.add_Block("test3", true);
 
 	return 0;
 }

@@ -2,10 +2,10 @@
 #define BLOCKCHAIN_HPP
 
 #include <iostream>
+#include <string>
 
-#include "SHA256.hpp"
 
-#define PREFIXE_LEN 4
+#define PREFIXE_LEN 5
 
 
 typedef struct Block
@@ -19,19 +19,24 @@ typedef struct Block
 class Blockchain {
 
 public:
+
 	Blockchain();
 	~Blockchain();
 
-	void add_Block(const std::string &);
-	std::ostream & print(std::ostream & out = std::cout);
+	void add_Block(const std::string &, const bool & debug = false);
+	std::ostream & print(std::ostream & out = std::cout) const;
+	const Block * get_first() const { return this->first; }
+	const Block * get_last() const { return this->last; }
 
 protected:
-	void mine_last();
 
-private:
 	static std::string prefixe;
 	Block * first;
 	Block * last;
+
+	virtual void mine_last(const bool & debug = false);
+
+private:
 
 	static std::ostream & print_Block(const Block *, std::ostream & out = std::cout);
 

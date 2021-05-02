@@ -1,3 +1,5 @@
+#include "SHA256.hpp"
+
 #include "Blockchain.hpp"
 
 
@@ -31,7 +33,7 @@ Blockchain::~Blockchain()
 }
 
 
-std::ostream & Blockchain::print(std::ostream & out)
+std::ostream & Blockchain::print(std::ostream & out) const
 {
 	for (Block * ptr = this->first; ptr != NULL; ptr = ptr->next)
 		Blockchain::print_Block(ptr, out);
@@ -47,7 +49,7 @@ std::ostream & Blockchain::print_Block(const Block * ptr, std::ostream & out)
 	return out;
 }
 
-void Blockchain::add_Block(const std::string & msg)
+void Blockchain::add_Block(const std::string & msg, const bool & debug)
 {
 	Block * b_ptr = new Block;
 	b_ptr->nonce = 0;
@@ -62,14 +64,16 @@ void Blockchain::add_Block(const std::string & msg)
 		this->last->next = b_ptr;
 
 	this->last = b_ptr;
-	this->mine_last();
+	this->mine_last(debug);
 
-	std::cout << "Created ";
-	Blockchain::print_Block(this->last, std::cout);
+	if (debug) {
+		std::cout << "Created ";
+		Blockchain::print_Block(this->last, std::cout);
+	}
 }
 
 
-void Blockchain::mine_last()
+void Blockchain::mine_last(const bool & debug)
 {
 	std::string input;
 	std::string data;

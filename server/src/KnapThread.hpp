@@ -3,7 +3,6 @@
 
 #include <vector>
 #include <thread>
-#include <mutex>
 
 #include "Knapsack.hpp"
 
@@ -27,7 +26,6 @@ public:
 private:
 
 	unsigned int num_cpus;
-	std::mutex iomutex;
 	std::pair<unsigned long long, int> best_ind;
 
 	std::vector<std::thread> threads;

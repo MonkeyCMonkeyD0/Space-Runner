@@ -118,7 +118,7 @@ void Knapsack::run(const bool & debug)
 	std::uniform_int_distribution<unsigned int> distrib_gs(0, this->geneSize - 1);
 
 	for (unsigned int iteration = 0; iteration < this->maxIteration; ++iteration) {
-		
+
 		this->evaluation();
 
 		if (debug) {
