@@ -13,7 +13,7 @@ KnapThread::KnapThread(std::vector<unsigned int> weights, std::vector<unsigned i
 	Knapsack(weights, profits, max_weight, population, survival_rate, (unsigned int) max_iteration / std::thread::hardware_concurrency())
 {
 	this->num_cpus = std::thread::hardware_concurrency();
-	std::cout << "Launching " << this->num_cpus << " threads\n";
+	std::cout << "Launching " << this->num_cpus << " threads" << std::endl;
 
 	this->threads = std::vector<std::thread>(this->num_cpus);
 	this->bests = std::vector<std::pair<unsigned long long, int>>(this->num_cpus);
@@ -46,7 +46,7 @@ void KnapThread::run(const bool & debug)
 		}
 	}
 
-	for (auto& t : threads)
+	for (auto& t : this->threads)
 		t.join();
 
 	delete iomutex;

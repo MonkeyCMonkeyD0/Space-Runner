@@ -3,17 +3,37 @@
 #include <sstream>
 #include <string>
 
-#include "../../src/PlanetCreator.hpp"
 
+#include "../../src/Blockchain.hpp"
+#include "../../src/BlockThread.hpp"
 
 int main(int argc, char const *argv[])
 {
-	PlanetCreator pc;
-	for (const auto & s : pc.broadcast_strings())
-		std::cout << s << std::endl;
+	Blockchain bc;
+	bc.add_Block("test1", true);
+	bc.add_Block("test2", true);
+	bc.add_Block("test3", true);
+
+	BlockThread bt;
+	bt.add_Block("test1", true);
+	bt.add_Block("test2", true);
+	bt.add_Block("test3", true);
 
 	return 0;
 }
+
+
+// #include "../../src/PlanetCreator.hpp"
+
+
+// int main(int argc, char const *argv[])
+// {
+// 	PlanetCreator pc;
+// 	for (const auto & s : pc.broadcast_strings())
+// 		std::cout << s << std::endl;
+
+// 	return 0;
+// }
 
 
 // #include "../../src/Knapsack.hpp"
