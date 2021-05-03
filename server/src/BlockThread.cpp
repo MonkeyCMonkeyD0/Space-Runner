@@ -13,8 +13,10 @@ void BlockThread::mine_last(const bool & debug)
 {
 	this->found = false;
 	this->num_cpus = std::thread::hardware_concurrency() - 1;
-	std::cout << "Launching " << this->num_cpus << " threads." << std::endl;
 	std::vector<std::thread> threads(this->num_cpus);
+
+	if (debug)
+		std::cout << "Launching " << this->num_cpus << " threads." << std::endl;
 
 	cpu_set_t cpus;
 	std::mutex * iomutex = new std::mutex;
@@ -42,8 +44,7 @@ void BlockThread::mine_last(const bool & debug)
 
 void BlockThread::mine_inst(std::mutex * iomutex, const unsigned short int & thread_num, const bool & debug)
 {
-	unsigned long int th_nonce_bounds = thread_num * BATCH_SIZE;
-	unsigned long int th_nonce;
+	unsigned long int th_nonce = thread_num;
 	std::string input;
 	std::string data;
 	std::string hash;
@@ -54,31 +55,23 @@ void BlockThread::mine_inst(std::mutex * iomutex, const unsigned short int & thr
 		data = this->get_last()->message + this->get_last()->prev->hash;
 
 	while (!this->found) {
+		input = std::to_string(th_nonce) + data;
+		hash = sha256(input);
 
-		if (debug) {
-			std::lock_guard<std::mutex> iolock(*iomutex);
-			std::cout << "Thread #" << thread_num << " mining with nonce = " << th_nonce_bounds << std::endl;
-		}
+		if (this->found)
+			break;
+		else if (hash.substr(0, PREFIXE_LEN) == Blockchain::prefixe) {
+			this->found = true;
+			this->last->nonce = th_nonce;
+			this->last->hash = hash;
 
-		for (th_nonce = th_nonce_bounds; th_nonce < th_nonce_bounds + BATCH_SIZE; ++th_nonce) {
-			input = std::to_string(th_nonce) + data;
-			hash = sha256(input);
-
-			if (this->found)
-				break;
-			else if (hash.substr(0, PREFIXE_LEN) == Blockchain::prefixe) {
-				this->found = true;
-				this->last->nonce = th_nonce;
-				this->last->hash = hash;
-
-				if (debug) {
-					std::lock_guard<std::mutex> iolock(*iomutex);
-					std::cout << "Thread #" << thread_num << " found correct nonce = " << this->get_last()->nonce << std::endl;
-				}
-				break;
+			if (debug) {
+				std::lock_guard<std::mutex> iolock(*iomutex);
+				std::cout << "Thread #" << thread_num << " found correct nonce = " << this->get_last()->nonce << std::endl;
 			}
+			break;
 		}
 
-		th_nonce_bounds += this->num_cpus * BATCH_SIZE;
+		th_nonce += this->num_cpus;
 	}
 }

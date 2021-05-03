@@ -14,7 +14,7 @@ ENetHost * server;
 ENetPeer * peer;
 ENetEvent event;
 
-std::map<unsigned int, std::string> clients;
+std::map<unsigned int, unsigned short int> clients;
 
 pthread_mutex_t lock_mutex = PTHREAD_MUTEX_INITIALIZER;
 pthread_cond_t started_cond = PTHREAD_COND_INITIALIZER;

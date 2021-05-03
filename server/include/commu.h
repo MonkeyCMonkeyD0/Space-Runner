@@ -57,5 +57,4 @@ char * commu::to_buf() const
 	return buf;
 }
 
-
 #endif

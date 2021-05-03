@@ -1,23 +1,32 @@
 #include <iostream>
 #include <vector>
-#include <sstream>
+// #include <sstream>
 #include <string>
-
+#include <chrono>
 
 #include "../../src/Blockchain.hpp"
 #include "../../src/BlockThread.hpp"
 
+
 int main(int argc, char const *argv[])
 {
 	Blockchain bc;
+	auto tstart = std::chrono::high_resolution_clock::now();
 	bc.add_Block("test1", true);
 	bc.add_Block("test2", true);
 	bc.add_Block("test3", true);
+	auto tend = std::chrono::high_resolution_clock::now();
+	auto ms_int = std::chrono::duration_cast<std::chrono::milliseconds>(tend - tstart);
+	std::cout << "Execution in " << ms_int.count() << " ms." << std::endl;
 
 	BlockThread bt;
+	tstart = std::chrono::high_resolution_clock::now();
 	bt.add_Block("test1", true);
 	bt.add_Block("test2", true);
 	bt.add_Block("test3", true);
+	tend = std::chrono::high_resolution_clock::now();
+	ms_int = std::chrono::duration_cast<std::chrono::milliseconds>(tend - tstart);
+	std::cout << "Execution in " << ms_int.count() << " ms." << std::endl;
 
 	return 0;
 }

@@ -6,9 +6,6 @@
 #include "Blockchain.hpp"
 
 
-#define BATCH_SIZE 25000
-
-
 class BlockThread : public Blockchain {
 
 public:
