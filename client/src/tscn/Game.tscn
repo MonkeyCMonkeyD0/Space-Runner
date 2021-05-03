@@ -1,6 +1,8 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=17 format=2]
 
+[ext_resource path="res://data/obj/NASARV2.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://src/gd/Game.gd" type="Script" id=2]
+[ext_resource path="res://src/tscn/NASA.gd" type="Script" id=3]
 [ext_resource path="res://src/gd/Planet_manager.gd" type="Script" id=4]
 [ext_resource path="res://data/img/backgrounds/background-game.jpg" type="Texture" id=7]
 [ext_resource path="res://data/img/textures/spaceship1/Spaceship_metalness.jpg" type="Texture" id=8]
@@ -58,6 +60,12 @@ __meta__ = {
 
 [node name="Spatial" type="Spatial" parent="."]
 
+[node name="NASA" type="MeshInstance" parent="Spatial"]
+transform = Transform( -8.12974e-08, -0.500298, 0, -8.12974e-08, 1.32795e-14, -0.500521, 0.499, -8.15089e-08, -8.15452e-08, 70.545, 0, 0 )
+mesh = ExtResource( 1 )
+material/0 = null
+script = ExtResource( 3 )
+
 [node name="Spaceship" type="MeshInstance" parent="Spatial"]
 transform = Transform( 0.02, 0, 0, 0, 0.02, 0, 0, 0, 0.02, 0, 0, 0 )
 material_override = SubResource( 1 )
@@ -99,6 +107,9 @@ text = "Menu"
 
 [node name="CameraRef" type="Spatial" parent="."]
 transform = Transform( -1.62921e-08, 0, -0.1, 0, 0.1, 0, 0.1, 0, -1.62921e-08, 1.86265e-09, 0, -1.62838e-16 )
+
+[node name="MeshInstance" type="MeshInstance" parent="CameraRef"]
+transform = Transform( -1.62921e-06, 0, 10, 0, 10, 0, -10, 0, -1.62921e-06, 4.66301e-15, 0, 1.86265e-08 )
 
 [node name="Camera" type="Camera" parent="CameraRef"]
 transform = Transform( 10, -1.13687e-13, 2.27374e-13, 0, 9.39693, 3.4202, -4.54747e-13, -3.4202, 9.39693, 1.06581e-14, 1, 2 )
