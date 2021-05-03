@@ -70,7 +70,7 @@ func _on_Host_pressed() -> void:
 		popup3.show()
 	if username_valid:
 		Msg = "Hi I am "+ username + " and I am connected"
-		sendToServer("Hello")
+		sendToServer(Msg)
 		if get_tree().change_scene("res://src/tscn/Game.tscn") != OK:
 			print("Unexpected error with the scene changement")
 

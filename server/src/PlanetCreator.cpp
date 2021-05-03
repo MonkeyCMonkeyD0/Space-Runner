@@ -53,7 +53,7 @@ std::vector<std::string> PlanetCreator::broadcast_strings() const
 {
 	std::stringstream ss;
 	std::vector<std::string> vect;
-	for (short int i = 0; i < this->get().size(); ++i) {
+	for (short int i = 0; i < (short int) this->get().size(); ++i) {
 		this->print(i, ss << std::setfill('0') << std::setw(2) << i << ':');
 		vect.push_back(ss.str());
 		ss.str(std::string());

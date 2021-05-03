@@ -23,6 +23,7 @@ void sendBroadcast(const commu & c)
 
 void handleIncomingMessage(const unsigned int & id, const std::string & data)
 {
+
 	if (pthread_mutex_lock(&lock_mutex) != 0)
 		std::cerr << "Error: error in pthread_mutex_lock in producer()" << std::endl;
 
@@ -62,18 +63,23 @@ void handleIncomingMessage(const unsigned int & id, const std::string & data)
 int main (int argc, const char * argv[]) 
 {
 	printf(" - enet_initialize()\n");
+
 	if (enet_initialize() != 0)
 	{
 		std::cerr << "Error: An error occurred while initializing ENet." << std::endl;
 		exit(EXIT_FAILURE);
 	}
-	atexit(enet_deinitialize);
+
+
+	//atexit(enet_deinitialize);
 
 	address.host = ENET_HOST_ANY;
-	address.port = PORT;
+	address.port = 4242;
 
 	printf(" - enet_host_create()\n");
 	server = enet_host_create(&address, 32, 2, 0, 0);
+
+
 	if (server == NULL)
 	{
 		std::cerr << "Error: An error occurred while trying to create an ENet server host." << std::endl;
@@ -81,7 +87,7 @@ int main (int argc, const char * argv[])
 	}
 
 	printf("Starting main loop.\n");
-	while (true) {
+	while (true) {	
 		while (enet_host_service(server, &event, TOMAX) > 0) {
 			switch (event.type)
 			{
