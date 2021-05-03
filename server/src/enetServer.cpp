@@ -114,17 +114,21 @@ int main (int argc, const char * argv[])
 					break;
 
 				case ENET_EVENT_TYPE_RECEIVE:
-					printf("A packet of length %d containing '%s' was received from %u on channel %d.\n", 
-						(int) event.packet->dataLength, 
-						(char *) event.packet->data, 
-						(int) event.peer->connectID,
-						(int) event.channelID
-					);
+					std::cout 
+						<< "Length : "	<< (int) event.packet->dataLength << std::endl
+						<< "Content : "<<  (char*)(event.packet->data) << std::endl
+						<< "Peer : "	<< event.peer->connectID << std::endl
+						<< "Channel : "<<(int) event.channelID <<
+					std::endl;
 
-					{
+					peer=event.peer;
+					strcpy(recMess,(char*)(event.packet->data)+9);
+
+					std::cout<< "New message received : " << recMess << std::endl;
+					/*{
 						std::thread th(handleIncomingMessage, (unsigned int) event.peer->connectID, std::string((char *) event.packet->data));
 						th.detach();
-					}
+					}*/
 
 					enet_packet_destroy(event.packet);
 					break;
