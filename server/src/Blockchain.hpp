@@ -5,7 +5,7 @@
 #include <string>
 
 
-#define PREFIXE_LEN 5
+#define PREFIXE_LEN 4
 
 
 typedef struct Block

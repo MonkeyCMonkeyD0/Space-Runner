@@ -1,5 +1,5 @@
-#ifndef JEU_HPP
-#define JEU_HPP
+#ifndef GAME_HPP
+#define GAME_HPP
 
 #include <vector>
 
@@ -13,13 +13,13 @@ unsigned int maxit = 1000;
 
 
 
-class Jeu {
+class Game {
 
 public:
 
 	char mess[400];
 
-	Jeu();
+	Game();
 
 	void initGame();
 

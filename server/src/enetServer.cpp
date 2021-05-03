@@ -41,7 +41,7 @@ void handleIncomingMessage(const unsigned int & id, const std::string & data)
 			printf(" - username is : %s\n", cin.msg.c_str());
 
 			{
-				clients[id] = cin.msg;
+				game->addPlayer(clients[id], cin.msg);
 
 				std::string users_name;
 				for (const auto & it : clients)
@@ -98,7 +98,7 @@ int main (int argc, const char * argv[])
 						if (clients.find(event.peer->connectID) != clients.end())
 							printf("Client %u just reconnected.\n", (unsigned int) event.peer->connectID);
 						else if (clients.size() <= MAXPLAYER)
-							clients[event.peer->connectID] = "";
+							clients[event.peer->connectID] = clients.size() + 1;
 						else {
 							std::cerr << "Error: too many client already connected." << std::endl;
 							enet_peer_disconnect(event.peer, 0);
