@@ -42,7 +42,7 @@ void handleIncomingMessage(const unsigned int & id, const std::string & data)
 			printf(" - username is : %s\n", cin.msg.c_str());
 
 			{
-				game->addPlayer(clients[id], cin.msg);
+				//game->addPlayer(clients[id], cin.msg);
 
 				std::string users_name;
 				for (const auto & it : clients)

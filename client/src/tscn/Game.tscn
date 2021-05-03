@@ -1,9 +1,10 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://data/obj/NASARV2.obj" type="ArrayMesh" id=1]
 [ext_resource path="res://src/gd/Game.gd" type="Script" id=2]
 [ext_resource path="res://src/tscn/NASA.gd" type="Script" id=3]
 [ext_resource path="res://src/gd/Planet_manager.gd" type="Script" id=4]
+[ext_resource path="res://data/img/NASA/RV.png" type="Texture" id=5]
 [ext_resource path="res://data/img/backgrounds/background-game.jpg" type="Texture" id=7]
 [ext_resource path="res://data/img/textures/spaceship1/Spaceship_metalness.jpg" type="Texture" id=8]
 [ext_resource path="res://data/img/textures/spaceship1/Spaceship_normal_map.jpg" type="Texture" id=9]
@@ -13,6 +14,9 @@
 [ext_resource path="res://data/img/textures/spaceship1/Spaceship_emition.jpg" type="Texture" id=13]
 [ext_resource path="res://data/img/textures/spaceship1/Spaceship Ambiant_Oclusion.jpg" type="Texture" id=14]
 [ext_resource path="res://src/gd/Spaceship.gd" type="Script" id=15]
+
+[sub_resource type="SpatialMaterial" id=4]
+albedo_texture = ExtResource( 5 )
 
 [sub_resource type="SpatialMaterial" id=1]
 resource_name = "Material"
@@ -62,6 +66,7 @@ __meta__ = {
 
 [node name="NASA" type="MeshInstance" parent="Spatial"]
 transform = Transform( -8.12974e-08, -0.500298, 0, -8.12974e-08, 1.32795e-14, -0.500521, 0.499, -8.15089e-08, -8.15452e-08, 70.545, 0, 0 )
+material_override = SubResource( 4 )
 mesh = ExtResource( 1 )
 material/0 = null
 script = ExtResource( 3 )
