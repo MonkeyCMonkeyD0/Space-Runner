@@ -3,6 +3,8 @@
 
 #include <vector>
 #include <thread>
+#include <threadextend.h>
+#include <mutex>
 
 #include "Knapsack.hpp"
 

@@ -4,7 +4,7 @@
 
 #include <vector>
 #include <string>
-
+#include <cstring>
 
 #define BUFFERSIZE 500
 #define PORT 8080 //4242

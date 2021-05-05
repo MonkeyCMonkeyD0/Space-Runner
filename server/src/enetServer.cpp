@@ -23,6 +23,7 @@ void sendBroadcast(const commu & c)
 
 void handleIncomingMessage(const unsigned int & id, const std::string & data)
 {
+
 	if (pthread_mutex_lock(&lock_mutex) != 0)
 		std::cerr << "Error: error in pthread_mutex_lock in producer()" << std::endl;
 
@@ -41,7 +42,7 @@ void handleIncomingMessage(const unsigned int & id, const std::string & data)
 			printf(" - username is : %s\n", cin.msg.c_str());
 
 			{
-				game->addPlayer(clients[id], cin.msg);
+				//game->addPlayer(clients[id], cin.msg);
 
 				std::string users_name;
 				for (const auto & it : clients)
@@ -62,18 +63,23 @@ void handleIncomingMessage(const unsigned int & id, const std::string & data)
 int main (int argc, const char * argv[]) 
 {
 	printf(" - enet_initialize()\n");
+
 	if (enet_initialize() != 0)
 	{
 		std::cerr << "Error: An error occurred while initializing ENet." << std::endl;
 		exit(EXIT_FAILURE);
 	}
-	atexit(enet_deinitialize);
+
+
+	//atexit(enet_deinitialize);
 
 	address.host = ENET_HOST_ANY;
-	address.port = PORT;
+	address.port = 4242;
 
 	printf(" - enet_host_create()\n");
 	server = enet_host_create(&address, 32, 2, 0, 0);
+
+
 	if (server == NULL)
 	{
 		std::cerr << "Error: An error occurred while trying to create an ENet server host." << std::endl;
@@ -81,7 +87,7 @@ int main (int argc, const char * argv[])
 	}
 
 	printf("Starting main loop.\n");
-	while (true) {
+	while (true) {	
 		while (enet_host_service(server, &event, TOMAX) > 0) {
 			switch (event.type)
 			{
@@ -108,17 +114,21 @@ int main (int argc, const char * argv[])
 					break;
 
 				case ENET_EVENT_TYPE_RECEIVE:
-					printf("A packet of length %d containing '%s' was received from %u on channel %d.\n", 
-						(int) event.packet->dataLength, 
-						(char *) event.packet->data, 
-						(int) event.peer->connectID,
-						(int) event.channelID
-					);
+					std::cout 
+						<< "Length : "	<< (int) event.packet->dataLength << std::endl
+						<< "Content : "<<  (char*)(event.packet->data) << std::endl
+						<< "Peer : "	<< event.peer->connectID << std::endl
+						<< "Channel : "<<(int) event.channelID <<
+					std::endl;
 
-					{
+					peer=event.peer;
+					strcpy(recMess,(char*)(event.packet->data)+9);
+
+					std::cout<< "New message received : " << recMess << std::endl;
+					/*{
 						std::thread th(handleIncomingMessage, (unsigned int) event.peer->connectID, std::string((char *) event.packet->data));
 						th.detach();
-					}
+					}*/
 
 					enet_packet_destroy(event.packet);
 					break;

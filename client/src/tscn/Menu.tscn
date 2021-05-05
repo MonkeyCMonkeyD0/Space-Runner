@@ -23,14 +23,14 @@ gui_disable_input = true
 [node name="Spatial" parent="Viewport" instance=ExtResource( 3 )]
 
 [node name="Background" type="TextureRect" parent="."]
-anchor_left = -0.00246859
-anchor_top = 0.00478516
-anchor_right = 0.53
-anchor_bottom = 0.602
-margin_left = 4.73969
-margin_top = -5.16797
-margin_right = 902.4
-margin_bottom = 429.84
+anchor_left = 0.00496397
+anchor_top = 0.00258292
+anchor_right = 0.537433
+anchor_bottom = 0.599798
+margin_left = -2.39556
+margin_top = 1.96728
+margin_right = 895.265
+margin_bottom = 436.975
 texture = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
