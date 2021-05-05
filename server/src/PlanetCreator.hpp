@@ -23,6 +23,7 @@ struct planet
 class PlanetCreator {
 
 public:
+
 	PlanetCreator();
 
 	std::vector<struct planet> get() const;
@@ -31,6 +32,7 @@ public:
 	std::vector<std::string> broadcast_strings() const;
 
 private:
+
 	std::vector<struct planet> planets;
 
 	struct planet create(const unsigned short int &, const unsigned short int &, const unsigned short int &, const unsigned char &) const;

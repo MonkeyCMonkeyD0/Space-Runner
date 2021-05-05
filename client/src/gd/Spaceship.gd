@@ -8,11 +8,11 @@ func _process(delta):
 		move_forward(delta)
 	if Input.is_key_pressed(KEY_RIGHT):
 		rotate_right(delta)
-	elif Input.is_key_pressed(KEY_LEFT):
+	if Input.is_key_pressed(KEY_LEFT):
 		rotate_left(delta)
-	elif Input.is_key_pressed(KEY_UP):
+	if Input.is_key_pressed(KEY_UP):
 		rotate_up(delta)
-	elif Input.is_key_pressed(KEY_DOWN):
+	if Input.is_key_pressed(KEY_DOWN):
 		rotate_down(delta)
 
 func move_forward(delta) -> void:
