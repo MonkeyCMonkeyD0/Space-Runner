@@ -1,5 +1,4 @@
-#ifndef PLAYER_HPP
-#define PLAYER_HPP
+#pragma once
 
 #include <iostream>
 #include <vector>
@@ -13,16 +12,8 @@ typedef struct item
 	unsigned short int price, weight;
 } item;
 
-void print_item(const item * it, std::ostream & out = std::cout)
-{
-	out << "Item : " << it->name << " worth " << it->price << "$ & weight " << it->weight << "kg." << std::endl;
-}
-
-std::string com_item_string(const item * it)
-{
-	return it->name + "_P" +  std::to_string(it->price) + "_W" + std::to_string(it->weight);
-}
-
+void print_item(const item * it, std::ostream & out = std::cout);
+std::string com_item_string(const item * it);
 
 
 class Player {
@@ -58,5 +49,3 @@ private:
 	std::vector<item *> inventory;
 
 };
-
-#endif

@@ -5,6 +5,18 @@
 #include "Player.hpp"
 
 
+
+void print_item(const item * it, std::ostream & out)
+{
+	out << "Item : " << it->name << " worth " << it->price << "$ & weight " << it->weight << "kg." << std::endl;
+}
+
+std::string com_item_string(const item * it)
+{
+	return it->name + "_P" +  std::to_string(it->price) + "_W" + std::to_string(it->weight);
+}
+
+
 Player::Player(const unsigned int & id, const std::string & name, const bool & host) : username(name), enet_ID(id), host(host)
 {
 	this->x = 0;
@@ -56,8 +68,11 @@ std::ostream & Player::print(std::ostream & out) const
 	if (this->host)
 		out << " is a host";
 	out << std::endl << '(' << this->x << ',' << this->y << ',' << this->z << ')';
-	out << this->planet ? " on planet : ":
-	out << (unsigned short int) this->planet : " in space";
+	if(this->planet)
+		out << " on planet : " << (unsigned short int) this->planet;
+	else
+		out << " in space";
+	
 	out << std::endl << "capacity : " << this->get_capacity() << std::endl;
 	for (const auto & it : this->inventory)
 		print_item(it);
