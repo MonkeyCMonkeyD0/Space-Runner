@@ -24,7 +24,6 @@ std::string com_item_string(const item * it)
 }
 
 
-
 class Player {
 
 public:
