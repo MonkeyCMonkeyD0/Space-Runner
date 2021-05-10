@@ -1,9 +1,9 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include <algorithm>
 
 #include "Player.hpp"
-
 
 
 void print_item(const item * it, std::ostream & out)
@@ -53,7 +53,7 @@ unsigned short int Player::get_capacity() const
 
 void Player::set_spaceship(const unsigned char & ship_type, const unsigned char & ship)
 {
-	this->spaceship = (ship + ship_type) << 4;
+	this->spaceship = ship + (ship_type << 4);
 }
 
 void Player::set_capacity(const unsigned short int & c)
@@ -99,18 +99,31 @@ std::string Player::com_inv_string() const
 	std::string inv = this->get_username() + ':';
 	for (unsigned short i = 0; i < this->inventory.size(); ++i)
 		inv += com_item_string(this->inventory[i]) + ',';
-
 	return inv;
 }
 
 
-void Player::add_item(const item *)
+bool Player::add_item(item * it)
 {
-
+	unsigned short int sum = 0;
+	for (const auto * i : this->inventory) {
+		sum += i->weight;
+	}
+	if ((unsigned int) sum + it->weight > this->capacity)
+		return false;
+	else {
+		this->inventory.push_back(it);
+		return true;
+	}
 }
 
-void Player::rm_item(const item *)
+bool Player::rm_item(item * it)
 {
-
+	std::vector<item *>::iterator i = std::find(this->inventory.begin(), this->inventory.end(), it);
+	if (i == this->inventory.end())
+		return false;
+	else {
+		this->inventory.erase(i);
+		return true;
+	}
 }
-

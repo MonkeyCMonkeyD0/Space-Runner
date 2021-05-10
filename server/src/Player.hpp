@@ -15,6 +15,7 @@ typedef struct item
 void print_item(const item * it, std::ostream & out = std::cout);
 std::string com_item_string(const item * it);
 
+
 class Player {
 
 public:
@@ -33,8 +34,8 @@ public:
 	std::string com_pos_string() const;
 	std::string com_inv_string() const;
 
-	void add_item(const item *);
-	void rm_item(const item *);
+	bool add_item(item *);
+	bool rm_item(item *);
 
 private:
 

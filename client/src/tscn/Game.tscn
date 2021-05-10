@@ -5,22 +5,22 @@
 [ext_resource path="res://src/tscn/NASA.gd" type="Script" id=3]
 [ext_resource path="res://src/gd/Planet_manager.gd" type="Script" id=4]
 [ext_resource path="res://data/img/NASA/RV.png" type="Texture" id=5]
+[ext_resource path="res://data/img/spaceships/ship_2_1/Spaceship Ambiant_Oclusion.jpg" type="Texture" id=6]
 [ext_resource path="res://data/img/backgrounds/background-game.jpg" type="Texture" id=7]
-[ext_resource path="res://data/img/textures/spaceship1/Spaceship_metalness.jpg" type="Texture" id=8]
-[ext_resource path="res://data/img/textures/spaceship1/Spaceship_normal_map.jpg" type="Texture" id=9]
-[ext_resource path="res://data/obj/Ships/Spaceship1.obj" type="ArrayMesh" id=10]
-[ext_resource path="res://data/img/textures/spaceship1/Spaceship_color.jpg" type="Texture" id=11]
-[ext_resource path="res://data/img/textures/spaceship1/Spaceship_rough.jpg" type="Texture" id=12]
-[ext_resource path="res://data/img/textures/spaceship1/Spaceship_emition.jpg" type="Texture" id=13]
-[ext_resource path="res://data/img/textures/spaceship1/Spaceship Ambiant_Oclusion.jpg" type="Texture" id=14]
+[ext_resource path="res://data/img/spaceships/ship_2_1/Spaceship_metalness.jpg" type="Texture" id=8]
+[ext_resource path="res://data/obj/spaceships/ship_2_1.obj" type="ArrayMesh" id=9]
+[ext_resource path="res://data/img/spaceships/ship_2_1/Spaceship_color.jpg" type="Texture" id=10]
+[ext_resource path="res://data/img/spaceships/ship_2_1/Spaceship_emition.jpg" type="Texture" id=11]
+[ext_resource path="res://data/img/spaceships/ship_2_1/Spaceship_rough.jpg" type="Texture" id=12]
+[ext_resource path="res://data/img/spaceships/ship_2_1/Spaceship_normal_map.jpg" type="Texture" id=13]
 [ext_resource path="res://src/gd/Spaceship.gd" type="Script" id=15]
 
 [sub_resource type="SpatialMaterial" id=1]
 albedo_texture = ExtResource( 5 )
 
 [sub_resource type="SpatialMaterial" id=2]
-albedo_texture = ExtResource( 11 )
-metallic = 0.8
+albedo_texture = ExtResource( 10 )
+metallic = 1.0
 metallic_specular = 1.0
 metallic_texture = ExtResource( 8 )
 metallic_texture_channel = 3
@@ -32,13 +32,13 @@ emission = Color( 0, 0, 0, 1 )
 emission_energy = 1.0
 emission_operator = 0
 emission_on_uv2 = false
-emission_texture = ExtResource( 13 )
+emission_texture = ExtResource( 11 )
 normal_enabled = true
 normal_scale = 1.0
-normal_texture = ExtResource( 9 )
+normal_texture = ExtResource( 13 )
 ao_enabled = true
 ao_light_affect = 1.0
-ao_texture = ExtResource( 14 )
+ao_texture = ExtResource( 6 )
 ao_on_uv2 = false
 ao_texture_channel = 3
 
@@ -73,7 +73,7 @@ script = ExtResource( 3 )
 [node name="Spaceship" type="MeshInstance" parent="Spatial"]
 transform = Transform( 0.02, 0, 0, 0, 0.02, 0, 0, 0, 0.02, 0, 0, 0 )
 material_override = SubResource( 2 )
-mesh = ExtResource( 10 )
+mesh = ExtResource( 9 )
 material/0 = null
 material/1 = null
 script = ExtResource( 15 )
