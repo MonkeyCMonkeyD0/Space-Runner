@@ -4,7 +4,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
-
+#include <cstring>
 
 
 typedef struct item
@@ -20,7 +20,7 @@ void print_item(const item * it, std::ostream & out = std::cout)
 
 std::string com_item_string(const item * it)
 {
-	return it->name + "_P" + std::string(it->price) + "_W" + std::string(it->weight);
+	return it->name + "_P" +  std::to_string(it->price) + "_W" + std::to_string(it->weight);
 }
 
 
@@ -43,8 +43,8 @@ public:
 	std::string com_pos_string() const;
 	std::string com_inv_string() const;
 
-	void add_item(const item &);
-	void rm_item(const item &);
+	void add_item(const item *);
+	void rm_item(const item *);
 
 private:
 
