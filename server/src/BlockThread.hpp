@@ -1,5 +1,4 @@
-#ifndef BLOCKTHREAD_HPP
-#define BLOCKTHREAD_HPP
+#pragma once
 
 #include <mutex>
 
@@ -24,5 +23,3 @@ private:
 	void mine_inst(std::mutex *, const unsigned short int &, const bool &);
 
 };
-
-#endif

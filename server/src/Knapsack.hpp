@@ -1,5 +1,4 @@
-#ifndef KNAPSACK_HPP
-#define KNAPSACK_HPP
+#pragma once
 
 #include <ostream>
 #include <vector>
@@ -56,5 +55,3 @@ private:
 	unsigned long long crossover (const unsigned long long &, const unsigned long long &, const unsigned int &) const;
 
 };
-
-#endif

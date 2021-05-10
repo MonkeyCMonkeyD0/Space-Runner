@@ -1,5 +1,4 @@
-#ifndef PLANETCREATOR_HPP
-#define PLANETCREATOR_HPP
+#pragma once
 
 #include <vector>
 #include <iostream>
@@ -42,5 +41,3 @@ private:
 	static char shapes[];
 
 };
-
-#endif

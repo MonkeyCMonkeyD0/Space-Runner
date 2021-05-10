@@ -1,8 +1,6 @@
-#ifndef SHA256_HPP
-#define SHA256_HPP
+#pragma once
 
 #include <string>
-
 
 #define SHA2_SHFR(x, n)		(x >> n)
 #define SHA2_ROTR(x, n)		((x >> n) | (x << ((sizeof(x) << 3) - n)))
@@ -59,5 +57,3 @@ protected:
 };
  
 std::string sha256(std::string input);
-
-#endif

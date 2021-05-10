@@ -1,5 +1,4 @@
-#ifndef BLOCKCHAIN_HPP
-#define BLOCKCHAIN_HPP
+#pragma once
 
 #include <iostream>
 #include <string>
@@ -41,5 +40,3 @@ private:
 	static std::ostream & print_Block(const Block *, std::ostream & out = std::cout);
 
 };
-
-#endif
