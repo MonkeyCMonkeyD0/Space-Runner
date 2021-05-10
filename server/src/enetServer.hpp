@@ -1,5 +1,4 @@
-#ifndef ENETSERVER_HPP
-#define ENETSERVER_HPP
+#pragma once
 
 #include <map>
 #include <string>
@@ -29,5 +28,3 @@ char mess[500];
 
 int fsm;
 int num;
-
-#endif

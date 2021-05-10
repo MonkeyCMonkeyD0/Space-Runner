@@ -1,5 +1,5 @@
-#ifndef KNAP_THREAD_HPP
-#define KNAP_THREAD_HPP
+#pragma once
+
 
 #include <vector>
 #include <thread>
@@ -36,5 +36,3 @@ private:
 	void run_inst(std::mutex *, const int &, const bool & debug = false);
 
 };
-
-#endif

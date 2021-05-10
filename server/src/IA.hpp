@@ -1,5 +1,5 @@
-#ifndef IA_HPP
-#define IA_HPP
+#pragma once
+
 
 #include "Player.hpp"
 
@@ -11,5 +11,3 @@ public:
 
 };
 
-
-#endif

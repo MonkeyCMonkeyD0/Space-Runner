@@ -1,5 +1,5 @@
-#ifndef GAME_HPP
-#define GAME_HPP
+#pragma once
+
 
 #include <vector>
 
@@ -27,4 +27,3 @@ private :
 
 };
 
-#endif

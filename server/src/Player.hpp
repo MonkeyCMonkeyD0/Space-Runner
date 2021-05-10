@@ -1,6 +1,4 @@
-#ifndef PLAYER_HPP
-#define PLAYER_HPP
-
+#pragma once
 
 class Player {
 
@@ -10,4 +8,3 @@ public:
 
 };
 
-#endif

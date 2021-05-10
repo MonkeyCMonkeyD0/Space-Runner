@@ -1,5 +1,4 @@
-#ifndef SHA256_HPP
-#define SHA256_HPP
+#pragma once
 
 #include <string>
 
@@ -60,4 +59,3 @@ protected:
  
 std::string sha256(std::string input);
 
-#endif

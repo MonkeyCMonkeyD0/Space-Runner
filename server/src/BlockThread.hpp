@@ -1,5 +1,4 @@
-#ifndef BLOCKTHREAD_HPP
-#define BLOCKTHREAD_HPP
+#pragma once
 
 #include <mutex>
 
@@ -25,4 +24,3 @@ private:
 
 };
 
-#endif
