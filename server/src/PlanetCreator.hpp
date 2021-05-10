@@ -5,7 +5,7 @@
 #include <iostream>
 #include <string>
 
-#define PLANETDIST 3
+#define PLANETDIST 30
 #define NBPLANET 20
 #define NBTEXTURE 12
 
@@ -23,6 +23,7 @@ struct planet
 class PlanetCreator {
 
 public:
+
 	PlanetCreator();
 
 	std::vector<struct planet> get() const;
@@ -31,8 +32,9 @@ public:
 	std::vector<std::string> broadcast_strings() const;
 
 private:
-	std::vector<struct planet> planets;
 
+	std::vector<struct planet> planets;
+	std::vector<int> palier;
 	struct planet create(const unsigned short int &, const unsigned short int &, const unsigned short int &, const unsigned char &) const;
 	char random_shape(const unsigned char & proba = 10) const;
 	unsigned int random_color() const;

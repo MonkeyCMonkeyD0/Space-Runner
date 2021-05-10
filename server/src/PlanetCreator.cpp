@@ -2,6 +2,7 @@
 #include <iomanip>
 #include <sstream>
 #include <cmath>
+#include <math.h>
 
 #include "PlanetCreator.hpp"
 
@@ -14,14 +15,41 @@ PlanetCreator::PlanetCreator()
 	unsigned short int coord[3] = {0, 0, 0};
 	unsigned char rad;
 	std::random_device rd;
-	std::uniform_int_distribution<unsigned char> distrib_rad(1, 5);
-	std::uniform_int_distribution<unsigned short int> distrib_coord(0, 2);
+	std::uniform_int_distribution<unsigned char> distrib_rad(5,10);
+	//std::uniform_int_distribution<unsigned short int> distrib_coord(0, 2);
 
-	this->planets.push_back(this->create(0, 0, 0, 5));
-	for (unsigned int i = 0; i < NBPLANET; ++i) {
-		rad = distrib_rad(rd);
-		coord[distrib_coord(rd)] += PLANETDIST + this->planets.back().radius + rad;
-		this->planets.push_back(this->create(coord[0], coord[1], coord[2], rad));
+	int R = 40;
+	int radius;
+
+	this->palier.push_back(3);
+	int N = NBPLANET;
+
+	while(N>0) {
+		N -= palier[palier.size()-1];
+		if (N>0)
+			palier.push_back(round(palier[palier.size()-1] * ((R+PLANETDIST)/R)*((R+PLANETDIST)/R)));
+		else {
+			palier[palier.size()-1] += N;
+			N = -1;
+		}
+		R += PLANETDIST;
+	}
+
+	int phi = M_PI * (3 - sqrt(5));
+	R = 40;
+
+	for (unsigned int i = 0; i < palier.size(); i++) {
+		for (unsigned int j = 0; j < i; j++) {
+			if (i == 1)
+				coord[1] = 0;
+			else
+				coord[1] = R*(1 - 2*j/(i-1));
+			radius = sqrt(R*R - coord[1]*coord[1]);
+			coord[0] = cos(phi*j)*radius;
+			coord[2] = sin(phi*j)*radius;
+			this->planets.push_back(this->create(coord[0], coord[1], coord[2], rad));
+		}
+		R += PLANETDIST;
 	}
 }
 
