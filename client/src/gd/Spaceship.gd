@@ -4,7 +4,7 @@ var SPEED = 500
 var SPEED_ROT = 2
 
 func _process(delta):
-	if Input.is_key_pressed(KEY_SPACE):	
+	if Input.is_key_pressed(KEY_SPACE):
 		move_forward(delta)
 	if Input.is_key_pressed(KEY_RIGHT):
 		rotate_right(delta)

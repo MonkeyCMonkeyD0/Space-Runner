@@ -12,7 +12,7 @@
 void BlockThread::mine_last(const bool & debug)
 {
 	this->found = false;
-	this->num_cpus = std::thread::hardware_concurrency() - 1;
+	this->num_cpus = std::thread::hardware_concurrency() - 2;
 	std::vector<std::thread> threads(this->num_cpus);
 
 	if (debug)
@@ -28,7 +28,7 @@ void BlockThread::mine_last(const bool & debug)
 		);
 
 		CPU_ZERO(&cpus);
-		CPU_SET(i + 1, &cpus);
+		CPU_SET(i + 2, &cpus);
 
 		int rc = pthread_setaffinity_np(threads[i].native_handle(), sizeof(cpu_set_t), &cpus);
 		if (rc) {

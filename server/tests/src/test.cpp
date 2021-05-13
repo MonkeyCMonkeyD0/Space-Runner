@@ -3,33 +3,61 @@
 // #include <sstream>
 #include <string>
 #include <chrono>
+#include <ctime>
 
-#include "../../src/Blockchain.hpp"
-#include "../../src/BlockThread.hpp"
-
+#include "../../src/IA.hpp"
 
 int main(int argc, char const *argv[])
 {
-	Blockchain bc;
-	auto tstart = std::chrono::high_resolution_clock::now();
-	bc.add_Block("test1", true);
-	bc.add_Block("test2", true);
-	bc.add_Block("test3", true);
-	auto tend = std::chrono::high_resolution_clock::now();
-	auto ms_int = std::chrono::duration_cast<std::chrono::milliseconds>(tend - tstart);
-	std::cout << "Execution in " << ms_int.count() << " ms." << std::endl;
+	IA ia;
 
-	BlockThread bt;
-	tstart = std::chrono::high_resolution_clock::now();
-	bt.add_Block("test1", true);
-	bt.add_Block("test2", true);
-	bt.add_Block("test3", true);
-	tend = std::chrono::high_resolution_clock::now();
-	ms_int = std::chrono::duration_cast<std::chrono::milliseconds>(tend - tstart);
-	std::cout << "Execution in " << ms_int.count() << " ms." << std::endl;
+	std::vector<item *> list_it;
 
+	for (unsigned short int i = 0; i < 11; ++i) {
+		item * it = new item{"it" + std::to_string(i), static_cast<unsigned short>(i*20+10), static_cast<unsigned short>(i*10+10)};
+		list_it.push_back(it);
+	}
+
+	ia.item_choice(list_it);
+	ia.item_choice(list_it);
+	ia.item_choice(list_it);
+	ia.item_choice(list_it);
+
+	std::cout << ia.com_inv_string() << std::endl;
+
+	for (const auto & i : list_it)
+		delete i;
 	return 0;
 }
+
+
+
+// #include "../../src/Blockchain.hpp"
+// #include "../../src/BlockThread.hpp"
+
+
+// int main(int argc, char const *argv[])
+// {
+// 	Blockchain bc;
+// 	auto tstart = std::chrono::high_resolution_clock::now();
+// 	bc.add_Block("test1", true);
+// 	bc.add_Block("test2", true);
+// 	bc.add_Block("test3", true);
+// 	auto tend = std::chrono::high_resolution_clock::now();
+// 	auto ms_int = std::chrono::duration_cast<std::chrono::milliseconds>(tend - tstart);
+// 	std::cout << "Execution in " << ms_int.count() << " ms." << std::endl;
+
+// 	BlockThread bt;
+// 	tstart = std::chrono::high_resolution_clock::now();
+// 	bt.add_Block("test1", true);
+// 	bt.add_Block("test2", true);
+// 	bt.add_Block("test3", true);
+// 	tend = std::chrono::high_resolution_clock::now();
+// 	ms_int = std::chrono::duration_cast<std::chrono::milliseconds>(tend - tstart);
+// 	std::cout << "Execution in " << ms_int.count() << " ms." << std::endl;
+
+// 	return 0;
+// }
 
 
 // #include "../../src/PlanetCreator.hpp"
@@ -168,15 +196,18 @@ int main(int argc, char const *argv[])
 // 	pthread_exit(NULL);
 // }
 
+// #include "../../src/KnapThread.hpp"
+
 // int main(int argc, char const *argv[])
 // {
-// 	std::vector<unsigned int> 	w = {70, 73, 77, 80, 82, 87, 90, 94, 98, 106, 110, 113, 115, 118, 120},
-// 								p = {135, 139, 149, 150, 156, 163, 173, 184, 192, 201, 210, 214, 221, 229, 240};
-// 	Knapsack knap1(w, p, 750, 50, 0.3, 30000);
-// 	knap1.run();
+// 	std::vector<unsigned short int> w = {500, 100, 2000, 500, 100, 2000},
+// 									p = {100, 200, 300, 100, 200, 300};
+
+// 	KnapThread knap(w, p, 750, 50, 0.3, 100);
+// 	knap.run();
 
 // 	std::cout << "Optimal solution found = ";
-// 	knap1.print() << std::endl;
+// 	knap.print() << std::endl;
 
 // 	return 0;
 // }

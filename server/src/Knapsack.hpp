@@ -10,10 +10,10 @@ class Knapsack {
 public:
 
 	Knapsack(
-		std::vector<unsigned int> weights,
-		std::vector<unsigned int> profits,
+		std::vector<unsigned short int> weights,
+		std::vector<unsigned short int> profits,
 		unsigned int max_weight,
-		unsigned int population = 25,
+		unsigned short int population = 25,
 		double survival_rate = 0.3,
 		unsigned int max_iteration = 100
 	);
@@ -32,16 +32,17 @@ public:
 
 protected:
 
+	unsigned int maxIteration;
+
 	int fitness (unsigned long long) const;
 	static bool cmp(const std::pair<unsigned long long, int> &, const std::pair<unsigned long long, int> &);
 
 private:
 
-	std::vector<unsigned int> weights;
-	std::vector<unsigned int> profits;
+	std::vector<unsigned short int> weights;
+	std::vector<unsigned short int> profits;
 	unsigned int maxWeight;
-	unsigned int population;
-	unsigned int maxIteration;
+	unsigned short int population;
 	unsigned int geneSize;
 	double survivalRate;
 
