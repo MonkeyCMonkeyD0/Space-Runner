@@ -12,8 +12,17 @@ typedef struct item
 	unsigned short int price, weight;
 } item;
 
-void print_item(const item * it, std::ostream & out = std::cout);
-std::string com_item_string(const item * it);
+void print_item(const item *, std::ostream & out = std::cout);
+std::string com_item_string(const item *);
+
+
+typedef struct point
+{
+	float x, y, z;
+} point;
+
+point sum(const point &, const point &);
+point normalize(const point &);
 
 
 class Player {
@@ -23,11 +32,13 @@ public:
 	Player(const unsigned int &, const std::string &, const bool & host = false);
 
 	std::string get_username() const;
+	unsigned int get_capacity() const;
+	std::vector<item *> get_inventory() const;
+	point get_pos() const;
 	void set_pos(const float &, const float &, const float &);
 	void set_planet(const unsigned char &);
-	unsigned short int get_capacity() const;
 	void set_spaceship(const unsigned char &, const unsigned char &);
-	void set_capacity(const unsigned short int &);
+	void set_capacity(const unsigned int &);
 
 	std::ostream & print(std::ostream & out = std::cout) const;
 	std::string com_decl_string() const;
@@ -42,10 +53,10 @@ private:
 	std::string username;
 	unsigned int enet_ID;
 	bool host;
-	float x, y, z;
+	point pos;
 	unsigned char planet;
 	unsigned char spaceship;
-	unsigned short int capacity;
+	unsigned int capacity;
 	std::vector<item *> inventory;
 
 };

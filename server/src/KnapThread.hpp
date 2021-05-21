@@ -13,12 +13,12 @@ class KnapThread : public Knapsack {
 public:
 
 	KnapThread(
-		std::vector<unsigned int> weights,
-		std::vector<unsigned int> profits,
+		std::vector<unsigned short int> weights,
+		std::vector<unsigned short int> profits,
 		unsigned int max_weight,
-		unsigned int population = 25,
-		double survival_rate = 0.3,
-		unsigned int max_iteration = 100
+		unsigned int max_iteration = 1000,
+		unsigned short int population = 25,
+		double survival_rate = 0.3
 	);
 
 	unsigned long long get() const;

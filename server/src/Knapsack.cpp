@@ -7,12 +7,12 @@
 #include "Knapsack.hpp"
 
 
-Knapsack::Knapsack(std::vector<unsigned int> weights, std::vector<unsigned int> profits, unsigned int max_weight, unsigned int population, double survival_rate, unsigned int max_iteration) : 
+Knapsack::Knapsack(std::vector<unsigned short int> weights, std::vector<unsigned short int> profits, unsigned int max_weight, unsigned short int population, double survival_rate, unsigned int max_iteration) : 
+	maxIteration(max_iteration),
 	weights(weights),
 	profits(profits),
 	maxWeight(max_weight),
 	population(population),
-	maxIteration(max_iteration),
 	geneSize(weights.size()),
 	survivalRate(survival_rate)
 {
@@ -38,7 +38,7 @@ void Knapsack::add_pop()
 
 int Knapsack::fitness(unsigned long long gene) const
 {
-	unsigned int sum_w = 0, sum_p = 0;
+	int sum_w = 0, sum_p = 0;
 	for (unsigned int i = this->geneSize; gene > 0 && i > 0; --i) {
 		sum_w += (gene % 2) * this->weights[i-1];
 		sum_p += (gene % 2) * this->profits[i-1];
@@ -101,7 +101,6 @@ unsigned long long Knapsack::mutation(unsigned long long gene, const unsigned in
 
 	for (unsigned int i = 0; i < n; ++i)
 		gene ^= 1UL << distrib(rd);
-
 	return gene;
 }
 

@@ -9,14 +9,15 @@
 #include "KnapThread.hpp"
 
 
-KnapThread::KnapThread(std::vector<unsigned int> weights, std::vector<unsigned int> profits, unsigned int max_weight, unsigned int population, double survival_rate, unsigned int max_iteration) :
-	Knapsack(weights, profits, max_weight, population, survival_rate, (unsigned int) max_iteration / std::thread::hardware_concurrency())
+KnapThread::KnapThread(std::vector<unsigned short int> weights, std::vector<unsigned short int> profits, unsigned int max_weight, unsigned int max_iteration, unsigned short int population, double survival_rate) :
+	Knapsack(weights, profits, max_weight, population, survival_rate)
 {
-	this->num_cpus = std::thread::hardware_concurrency();
+	this->num_cpus = std::thread::hardware_concurrency() - 2;
 	std::cout << "Launching " << this->num_cpus << " threads" << std::endl;
 
 	this->threads = std::vector<std::thread>(this->num_cpus);
 	this->bests = std::vector<std::pair<unsigned long long, int>>(this->num_cpus);
+	this->maxIteration = (unsigned int) max_iteration / this->num_cpus;
 }
 
 unsigned long long KnapThread::get() const
@@ -37,7 +38,7 @@ void KnapThread::run(const bool & debug)
 		);
 
 		CPU_ZERO(&cpus);
-		CPU_SET(i, &cpus);
+		CPU_SET(i + 2, &cpus);
 
 		int rc = pthread_setaffinity_np(this->threads[i].native_handle(), sizeof(cpu_set_t), &cpus);
 		if (rc) {
