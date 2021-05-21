@@ -38,7 +38,7 @@ void Knapsack::add_pop()
 
 int Knapsack::fitness(unsigned long long gene) const
 {
-	int sum_w = 0, sum_p = 0;
+	unsigned int sum_w = 0, sum_p = 0;
 	for (unsigned int i = this->geneSize; gene > 0 && i > 0; --i) {
 		sum_w += (gene % 2) * this->weights[i-1];
 		sum_p += (gene % 2) * this->profits[i-1];

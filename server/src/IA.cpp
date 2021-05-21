@@ -27,7 +27,7 @@ void IA::item_choice(const std::vector<item *> & new_items)
 	unsigned long long int result_new = kth.get() & ((1 << new_items.size()) - 1);
 	unsigned long long int result_inv = (kth.get() - result_new) >> new_items.size();
 
-	for (short int i = 0, bit = this->get_inventory().size() - 1; i < this->get_inventory().size() && bit >= 0; --bit) {
+	for (size_t i = 0, bit = this->get_inventory().size() - 1; i < this->get_inventory().size() && bit >= 0; --bit) {
 		if (result_inv & (1 << bit))
 			++i;
 		else

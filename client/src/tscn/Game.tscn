@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://src/gd/Game.gd" type="Script" id=2]
 [ext_resource path="res://src/gd/Planet_manager.gd" type="Script" id=4]

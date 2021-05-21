@@ -22,18 +22,13 @@ var SPEED_ROT = 2
 func _ready():
 	print(serverIP)
 	_connect_to_server()
-	#send_username(mplayer,"Aissam")
+	#send_username("Aissam")
 
 
-func send_username(Msg):
-	var mess = "xxxxxxxx0"+Msg
-	sendToServer(mplayer,mess)
-	print("message_sent")
-	usr_sent = true
 
 func _process(delta):
 	#if network.is_connected():
-	send_username("Aissam")
+	#send_username("Aissam")
 		
 	if Input.is_key_pressed(KEY_SPACE):	
 		move_forward(delta)
@@ -45,9 +40,11 @@ func _process(delta):
 		rotate_up(delta)
 	if Input.is_key_pressed(KEY_DOWN):
 		rotate_down(delta)
-	#if Input.is_key_pressed(KEY_A):
+	if Input.is_key_pressed(KEY_A):
+		send_username("Nawelle")
+	if Input.is_key_pressed(KEY_B):
+		send_pos()
 		
-
 func move_forward(delta) -> void:
 	translation += transform.basis.x * SPEED * delta
 
@@ -74,17 +71,13 @@ func sendToServer(player,mess):
 	print(mess)
 	player.send_bytes(mess.to_ascii())
 
-remote func send_pos() -> void:
-	sendToServer(mplayer,"xxxxxxxx0"+"Aissam123456")
-	#rpc_unreliable("setPosition", global_transform.origin)
-	#player_info['type'] = ""
-	#rset(player_info['type'], "USERNAME_DECLARATION")
-	#var id = get_tree().get_rpc_sender_id()
-	# Store the info
-	#print(id)
-	#player_info[id] = "name"
-		#if (event.get_event_type() == GDNetEvent.RECEIVE):
-		#	print(event.get_var())
+func send_username(Msg):
+	var mess = "xxxxxxxx0"+Msg
+	sendToServer(mplayer,mess)
+	
+func send_pos():
+	var mess = "xxxxxxxx5"+String(1000000000000*translation.x)
+	sendToServer(mplayer,mess)
 
 func _connect_to_server():
 	network.create_client(serverIP,port)

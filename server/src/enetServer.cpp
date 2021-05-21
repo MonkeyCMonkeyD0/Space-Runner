@@ -35,12 +35,12 @@ void handleIncomingMessage(const unsigned int & id, const std::string & data)
 	
 	commu cin(data);
 
-	strcpy(recMess, data.c_str() );
+	//strcpy(recMess, data.c_str() );
 	printf("Entering handle, id = %u, communication type = %d, packet = %s\n", id, cin.type, (char *) data.c_str());
 	switch (cin.type)
 	{
 		case USERNAME_DECLARATION:
-			printf(" - username is : %s\n", cin.msg.c_str());
+			printf(" - Username is : %s\n", cin.msg.c_str());
 
 			{
 				//game->addPlayer(clients[id], cin.msg);
@@ -55,6 +55,9 @@ void handleIncomingMessage(const unsigned int & id, const std::string & data)
 
 			break;
 
+		case SPACESHIP_POSITION:
+			printf(" - Position is x : %s\n",cin.msg.c_str());
+			break;
 		default:
 			printf("Cannot understand message |%s| received from %u.\n", cin.msg.c_str(), id);
 			break;
@@ -123,6 +126,7 @@ int main (int argc, const char * argv[])
 					std::endl;*/
 
 					peer=event.peer;
+					
 					strcpy(recMess,(char*)(event.packet->data)+8);
 
 					std::cout<< "New message received : " << recMess << std::endl;
