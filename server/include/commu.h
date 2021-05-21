@@ -35,7 +35,7 @@ public:
 
 	char * to_buf() const;
 };
-
+ 
 
 commu::commu(const std::string & buffer) : 
 	type(com_type(buffer[9] - '0')), msg(buffer.substr(10)) {}

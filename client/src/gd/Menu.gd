@@ -1,18 +1,10 @@
 extends Control
 
-
-var lObject=[]
-var Total_weight
-var Total_profits
-var finished
-var Msg
-
-var network
-var mplayer
+var network = NetworkedMultiplayerENet.new()
+var mplayer 
 var serverIP = IP.get_local_addresses()[0]
 var port = 4242
-var player_id 
-
+var Msg
 var username = ""
 var username_valid = false
 onready var popup1 = get_node("Background/Popup1")
@@ -24,30 +16,8 @@ onready var popup3 = get_node("Background/Popup3")
 # Player info, associate ID to data
 var player_info = {}
 # Info we send to other players
-var my_info = { name = "Ton Daron" }
+var my_info = { name : "Ton Daron" }
 
-func _ready():
-	print(serverIP)
-	installNetworkCallback()
-	_connect_to_server()
-
-func installNetworkCallback():
-	network=NetworkedMultiplayerENet.new()
-
-func _connect_to_server():
-	network.create_client(serverIP,port)
-	get_tree().set_network_peer(network)
-	mplayer=get_tree().multiplayer
-	print("Connected to server")
-
-
-
-
-#func _Peer_Connected(player_id):
-#	print("User " + str(player_id) + " Connected")
-
-func sendToServer(mess):
-	mplayer.send_bytes(mess.to_ascii())
 
 func _on_Host_pressed() -> void:
 	if len(username)==0:
@@ -55,11 +25,13 @@ func _on_Host_pressed() -> void:
 		popup2.hide()
 		popup3.show()
 	if username_valid:
-		Msg = "Hi I am "+ username + " and I am connected"
-		sendToServer(Msg)
+		#Msg = "Hi I am "+ username + " and I am connected"
+		#sendToServer(mplayer, Msg)
+		_connect_to_server()
+		sendToServer(mplayer,"xxxxxxxxx0"+username)
 		if get_tree().change_scene("res://src/tscn/Game.tscn") != OK:
 			print("Unexpected error with the scene changement")
-
+		
 func _on_Join_pressed() -> void:
 	if len(username)==0:
 		popup1.hide()
@@ -89,10 +61,26 @@ func _on_Username_text_entered(new_text) -> void:
 		popup3.hide()
 		popup1.show()
 		
+func get_username():
+	return username		
+		
 func _on_Quit_pressed():
 	get_tree().quit()
 
-# Appling texture to veiwport
+
+func sendToServer(player,mess):
+	print(mess)
+	player.send_bytes(mess.to_ascii())
+
+remote func send_pos() -> void:
+	sendToServer(mplayer,"xxxxxxxxx0")
+
+func _connect_to_server():
+	network.create_client(serverIP,port)
+	get_tree().set_network_peer(network)
+	mplayer = get_tree().multiplayer
+	print("Connected to server")
+	
 func _process(delta):
 	var texture = $Viewport.get_texture()
 	$Background/Logo.texture = texture

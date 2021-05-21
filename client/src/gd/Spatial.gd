@@ -9,7 +9,7 @@ var rng = RandomNumberGenerator.new()
 var nodeId = 0
 
 # Preloads script to be attached
-const my_script = preload("res://godot/src/Planete.gd")
+var my_script = load("res://godot/src/gd/Planete.gd")
 
 func _ready():  # Runs when scene is initialized
 	rng.randomize()

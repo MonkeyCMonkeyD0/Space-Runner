@@ -15,7 +15,7 @@
 
 
 void sendBroadcast(const commu & c)
-{
+{   
 	char * buffer = c.to_buf();
 	ENetPacket * packet = enet_packet_create(buffer, strlen(buffer) + 1, ENET_PACKET_FLAG_RELIABLE);
 	enet_host_broadcast (server, 1, packet);
@@ -32,9 +32,10 @@ void handleIncomingMessage(const unsigned int & id, const std::string & data)
 
 	if (pthread_mutex_unlock(&lock_mutex) != 0)
 		std::cerr << "Error: error in pthread_mutek_unlock in producer()" << std::endl;
-
+	
 	commu cin(data);
 
+	strcpy(recMess, data.c_str() );
 	printf("Entering handle, id = %u, communication type = %d, packet = %s\n", id, cin.type, (char *) data.c_str());
 	switch (cin.type)
 	{
@@ -114,21 +115,21 @@ int main (int argc, const char * argv[])
 					break;
 
 				case ENET_EVENT_TYPE_RECEIVE:
-					std::cout 
+					/*std::cout 
 						<< "Length : "	<< (int) event.packet->dataLength << std::endl
 						<< "Content : "<<  (char*)(event.packet->data) << std::endl
 						<< "Peer : "	<< event.peer->connectID << std::endl
 						<< "Channel : "<<(int) event.channelID <<
-					std::endl;
+					std::endl;*/
 
 					peer=event.peer;
-					strcpy(recMess,(char*)(event.packet->data)+9);
+					strcpy(recMess,(char*)(event.packet->data)+8);
 
 					std::cout<< "New message received : " << recMess << std::endl;
-					/*{
-						std::thread th(handleIncomingMessage, (unsigned int) event.peer->connectID, std::string((char *) event.packet->data));
+					{
+						std::thread th(handleIncomingMessage, (unsigned int) event.peer->connectID, recMess);
 						th.detach();
-					}*/
+					}
 
 					enet_packet_destroy(event.packet);
 					break;
