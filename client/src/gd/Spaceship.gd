@@ -11,6 +11,7 @@ var usr_sent = false
 
 var network = NetworkedMultiplayerENet.new()
 var mplayer 
+#var serverIP = "10.64.9.3"
 var serverIP = IP.get_local_addresses()[0]
 var port = 4242
 var player_info = {}
@@ -76,7 +77,10 @@ func send_username(Msg):
 	sendToServer(mplayer,mess)
 	
 func send_pos():
-	var mess = "xxxxxxxx5"+String(1000000000000*translation.x)
+	#-- Plus facile à traiter pour l'envoi d'entiers
+	var pos_x = stepify(translation.x,0.00001)
+	var Msg = String(pos_x)
+	var mess = "xxxxxxxx5"+String((len(Msg)+3)*pos_x)
 	sendToServer(mplayer,mess)
 
 func _connect_to_server():
@@ -84,3 +88,6 @@ func _connect_to_server():
 	get_tree().set_network_peer(network)
 	mplayer = get_tree().multiplayer
 	print("Connected to server")
+
+func round_to_dec(num, digit):
+	return round(num * pow(10.0, digit)) / pow(10.0, digit)

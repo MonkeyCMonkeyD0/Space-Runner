@@ -52,12 +52,15 @@ void handleIncomingMessage(const unsigned int & id, const std::string & data)
 				commu cout(com_type::USERNAME_DECLARATION, users_name);
 				sendBroadcast(cout);
 			}
-
 			break;
 
 		case SPACESHIP_POSITION:
-			printf(" - Position is x : %s\n",cin.msg.c_str());
+			{
+				int pos_x = std::stoi(cin.msg.c_str());
+				printf(" - Position is x : %d\n",pos_x);
+			}
 			break;
+		
 		default:
 			printf("Cannot understand message |%s| received from %u.\n", cin.msg.c_str(), id);
 			break;
@@ -77,8 +80,12 @@ int main (int argc, const char * argv[])
 
 	//atexit(enet_deinitialize);
 
-	address.host = ENET_HOST_ANY;
+	address.host = 0 ;
+	//if(address.host)
+	std::cout << address.host << std::endl;
 	address.port = 4242;
+	if(address.port)
+		std::cout << address.port << std::endl;
 
 	printf(" - enet_host_create()\n");
 	server = enet_host_create(&address, 32, 2, 0, 0);
