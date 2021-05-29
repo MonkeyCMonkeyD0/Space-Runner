@@ -1,7 +1,10 @@
 extends MeshInstance
 
-var menu = load("res://src/gd/Menu.gd")
+onready var Click = get_node("Click_sound")
+onready var acceleration = get_node("Acceleration_sound")
+onready var not_acceleration = get_node("!Acceleration_sound")
 
+var menu = load("res://src/gd/Menu.gd")
 
 var lObject=[]
 var Total_weight
@@ -19,13 +22,12 @@ var player_info = {}
 var SPEED = 500
 var SPEED_ROT = 2
 
-
 func _ready():
 	print(serverIP)
 	_connect_to_server()
 	#send_username("Aissam")
-
-
+	acceleration.playing = false
+	not_acceleration.playing = false
 
 func _process(delta):
 	#if network.is_connected():
@@ -33,6 +35,11 @@ func _process(delta):
 		
 	if Input.is_key_pressed(KEY_SPACE):	
 		move_forward(delta)
+	else:
+		if acceleration.playing:
+			acceleration.stop()
+			not_acceleration.play()
+	
 	if Input.is_key_pressed(KEY_RIGHT):
 		rotate_right(delta)
 	if Input.is_key_pressed(KEY_LEFT):
@@ -47,8 +54,12 @@ func _process(delta):
 		send_pos()
 		
 func move_forward(delta) -> void:
+	
+	if not_acceleration.playing:
+		not_acceleration.stop()
+		acceleration.play()
 	translation += transform.basis.x * SPEED * delta
-
+	
 func rotate_right(delta) -> void:
 	rotate_object_local(Vector3(1, 0, 0), SPEED_ROT * delta)
 

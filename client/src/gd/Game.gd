@@ -2,7 +2,6 @@ extends Control
 
 const menu = preload("res://src/gd/Menu.gd")
 
-
 func _on_Quit_pressed() -> void:
 	get_tree().quit()
 
