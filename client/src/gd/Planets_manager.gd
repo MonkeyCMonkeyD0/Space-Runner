@@ -38,6 +38,5 @@ func _ready() -> void:
 		# Scrpit associer au MeshIstance
 		planet.set_script(MY_SCRIPT)
 		# On ajoute le meshInstance planet au noeud courant (Planet_manager)
-
-		planet.create_trimesh_collision()
+		planet.create_convex_collision()
 		add_child(planet)
