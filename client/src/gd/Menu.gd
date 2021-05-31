@@ -51,7 +51,7 @@ func _on_Join_pressed() -> void:
 
 func _on_Username_text_entered(new_text) -> void:
 	username = new_text
-	if len(username) <= 10 && len(username) > 0:
+	if len(username) <= 18 && len(username) > 0:
 		username_valid = true
 		popup1.hide()
 		popup3.hide()
