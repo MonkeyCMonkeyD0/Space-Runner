@@ -35,13 +35,13 @@ public:
 
 	char * to_buf() const;
 };
-
+ 
 
 commu::commu(const std::string & buffer) : 
-	type(com_type(buffer[9] - '0')), msg(buffer.substr(10)) {}
+	type(com_type(buffer[9] - '0')), msg(buffer.substr(10)) {std::cout << "String " <<std::endl;}
 
 commu::commu(const char * buffer) : 
-	type(com_type(buffer[9] - '0')), msg(std::string(buffer + 10)) {}
+	type(com_type(buffer[9] - '0')), msg(std::string(buffer + 10)) {std::cout << "Char* " <<std::endl;}
 
 commu::commu(const com_type & type, const std::string & msg) : 
 	type(type), msg(msg) {}
