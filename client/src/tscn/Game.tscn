@@ -58,8 +58,6 @@ var SPEED_ROT = 2
 func _ready():
 	print(serverIP)
 	_connect_to_server()
-	OS.delay_msec(2000)
-	send_username(\"Ton crane\")
 	acceleration.playing = false
 	not_acceleration.playing = false
 
@@ -126,11 +124,12 @@ func send_pos():
 	_send_pos(pos_axis)
 
 func _send_pos(axis):
-	var pos_dict = {axis[0] : \"x\", axis[1] : \"y\", axis[2]: \"z\"}
-	var mess
-	for axe in axis:
-		mess = \"xxxxxxx\"+pos_dict[axe]+\"5\"+String((len(String(axe))+3)*axe)
-		sendToServer(mplayer,mess)	
+	#var pos_dict = {axis[0] : \"x\", axis[1] : \"y\", axis[2]: \"z\"}
+	var mess = \"user:(\"+String(axis[0])+\",\"+String(axis[1])+\",\"+String(axis[2])+\")\"
+	mess = \"xxxxxxxx5\"+mess
+	#for axe in axis:
+	#	mess = \"xxxxxxx\"+pos_dict[axe]+\"5\"+String((len(String(axe))+3)*axe)
+	sendToServer(mplayer,mess)	
 
 func _connect_to_server():
 	network.create_client(serverIP,port)

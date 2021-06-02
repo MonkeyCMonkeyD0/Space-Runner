@@ -13,9 +13,9 @@
 
 // volatile int start;
 
-int pos_x = 0;
-int pos_y = 0;
-int pos_z = 0;
+float pos_x = 0;
+float pos_y = 0;
+float pos_z = 0;
 
 
 void sendBroadcast(const commu & c)
@@ -58,34 +58,10 @@ void handleIncomingMessage(const unsigned int & id, const std::string & data)
 
 		case SPACESHIP_POSITION:
 			{
-				// Reception bloquante ? On ne reçoit que z
-				switch (((char *) data.c_str())[8])
-				{
-					case 'x':
-					{
-						pos_x = std::stoi(cin.msg.c_str());
-						//std::cout << " - Position is x :" << pos_x << std::endl;
-						break;
-					 }
-					case 'y' :
-					{
-						pos_y = std::stoi(cin.msg.c_str());
-						//std::cout << " - Position is y :" << pos_y << std::endl;
-						break;
-					}
-					case 'z' :
-					{
-						pos_z = std::stoi(cin.msg.c_str());
-						//std::cout << " - Position is z :" << pos_z << std::endl;
-						break;
-					}
-					default: 
-						break;
-				}
-				std::cout << "x : " << pos_x << " y : "<< pos_y << " z : " << pos_z << std::endl;
+				sscanf(cin.msg.c_str(),"user:(%f,%f,%f)", &pos_x,&pos_y,&pos_z);
+				std::cout << "x : " << pos_x << " y : " << pos_y << " z : " << pos_z << std::endl;
 			}
 			break;
-		
 		default:
 			printf("Cannot understand message |%s| received from %u.\n", cin.msg.c_str(), id);
 			break;
@@ -161,7 +137,7 @@ int main (int argc, const char * argv[])
 					
 					strcpy(recMess,(char*)(event.packet->data)+8);
 
-					std::cout<< "New message received : " << recMess << std::endl;
+					//std::cout<< "New message received : " << recMess << std::endl;
 					{
 						std::thread th(handleIncomingMessage, (unsigned int) event.peer->connectID, recMess);
 						th.detach();
