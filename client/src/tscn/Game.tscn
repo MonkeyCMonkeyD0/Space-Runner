@@ -68,6 +68,7 @@ func _process(delta):
 		
 	if Input.is_key_pressed(KEY_SPACE):	
 		move_forward(delta)
+		send_pos()
 	else:
 		if acceleration.playing:
 			reactor_l.lifetime = LIFETIME_REACTOR_NOT_ACTIVE 
@@ -87,8 +88,6 @@ func _process(delta):
 		rotate_down(delta)
 	if Input.is_key_pressed(KEY_A):
 		send_username(\"Nawelle\")
-	if Input.is_key_pressed(KEY_B):
-		send_pos()
 		
 func move_forward(delta) -> void:
 	if not_acceleration.playing:
@@ -124,10 +123,19 @@ func send_username(Msg):
 	
 func send_pos():
 	#-- Plus facile à traiter pour l'envoi d'entiers
-	var pos_x = stepify(translation.x,0.00001)
-	var Msg = String(pos_x)
-	var mess = \"xxxxxxxx5\"+String((len(Msg)+3)*pos_x)
-	sendToServer(mplayer,mess)
+	var pos_axis = [stepify(translation.x,0.00001), stepify(translation.y,0.00001),stepify(translation.z,0.00001)]
+	_send_pos(pos_axis)
+	#var Msg = String(pos_x)
+	#var mess = \"xxxxxxxx5\"+String((len(Msg)+3)*pos_x)
+	#sendToServer(mplayer,mess)
+
+func _send_pos(axis):
+	var pos_dict = {axis[0] : \"x\", axis[1] : \"y\", axis[2]: \"z\"}
+	var Msg = String(axis)
+	var mess
+	for axe in axis:
+		mess = \"xxxxxxx\"+pos_dict[axe]+\"5\"+String((len(Msg)+3)*axe)
+	sendToServer(mplayer,mess)	
 
 func _connect_to_server():
 	network.create_client(serverIP,port)

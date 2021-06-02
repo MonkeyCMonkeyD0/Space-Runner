@@ -56,8 +56,34 @@ void handleIncomingMessage(const unsigned int & id, const std::string & data)
 
 		case SPACESHIP_POSITION:
 			{
-				int pos_x = std::stoi(cin.msg.c_str());
-				printf(" - Position is x : %d\n",pos_x);
+				// Reception bloquante ? On ne reçoit que z
+				int pos_x = 0;
+				int pos_y = 0;
+				int pos_z = 0;
+				switch (((char *) data.c_str())[8])
+				{
+					case 'x':
+					{
+						pos_x = std::stoi(cin.msg.c_str());
+						//std::cout << " - Position is x :" << pos_x << std::endl;
+						break;
+					 }
+					case 'y' :
+					{
+						pos_y = std::stoi(cin.msg.c_str());
+						//std::cout << " - Position is y :" << pos_y << std::endl;
+						break;
+					}
+					case 'z' :
+					{
+						pos_z = std::stoi(cin.msg.c_str());
+						//std::cout << " - Position is z :" << pos_z << std::endl;
+						break;
+					}
+					default: 
+						break;
+				}
+				std::cout << "x : " << pos_x << " y : "<<pos_y << " z : " << pos_z << std::endl;
 			}
 			break;
 		
