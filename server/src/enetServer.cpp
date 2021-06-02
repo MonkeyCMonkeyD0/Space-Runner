@@ -13,6 +13,10 @@
 
 // volatile int start;
 
+int pos_x = 0;
+int pos_y = 0;
+int pos_z = 0;
+
 
 void sendBroadcast(const commu & c)
 {   
@@ -34,9 +38,7 @@ void handleIncomingMessage(const unsigned int & id, const std::string & data)
 		std::cerr << "Error: error in pthread_mutek_unlock in producer()" << std::endl;
 	
 	commu cin(data);
-
-	//strcpy(recMess, data.c_str() );
-	printf("Entering handle, id = %u, communication type = %d, packet = %s\n", id, cin.type, (char *) data.c_str());
+	//printf("Entering handle, id = %u, communication type = %d, packet = %s\n", id, cin.type, (char *) data.c_str());
 	switch (cin.type)
 	{
 		case USERNAME_DECLARATION:
@@ -57,9 +59,6 @@ void handleIncomingMessage(const unsigned int & id, const std::string & data)
 		case SPACESHIP_POSITION:
 			{
 				// Reception bloquante ? On ne reçoit que z
-				int pos_x = 0;
-				int pos_y = 0;
-				int pos_z = 0;
 				switch (((char *) data.c_str())[8])
 				{
 					case 'x':
@@ -83,7 +82,7 @@ void handleIncomingMessage(const unsigned int & id, const std::string & data)
 					default: 
 						break;
 				}
-				std::cout << "x : " << pos_x << " y : "<<pos_y << " z : " << pos_z << std::endl;
+				std::cout << "x : " << pos_x << " y : "<< pos_y << " z : " << pos_z << std::endl;
 			}
 			break;
 		
