@@ -84,7 +84,7 @@ int main (int argc, const char * argv[])
 	address.host = 0 ;
 	//if(address.host)
 	std::cout << address.host << std::endl;
-	address.port = 4242;
+	address.port = PORT;
 	if(address.port)
 		std::cout << address.port << std::endl;
 
