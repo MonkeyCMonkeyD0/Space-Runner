@@ -1,6 +1,7 @@
 extends Control
 
 const menu = preload("res://src/gd/Menu.gd")
+var menu_node = preload("res://src/tscn/Menu.tscn")
 
 func _on_Quit_pressed() -> void:
 	get_tree().quit()
@@ -15,5 +16,5 @@ func _connect_from_game():
 	#menu.mplayer = get_tree().multiplayer
 	print(menu)
 
-
-# Called when the node enters the scene tree for the first time.
+func _ready():
+	print(menu_node.instance().get_node(".").get_username())

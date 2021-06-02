@@ -20,6 +20,7 @@ var player_info = {}
 var my_info = { name : "Ton Daron" }
 
 func _ready():
+	print(get_path())
 	var texture = $Viewport.get_texture()
 	$Background/Logo.texture = texture
 
@@ -68,11 +69,10 @@ func _on_Username_text_entered(new_text) -> void:
 		popup1.show()
 		
 func get_username():
-	return username		
+	return username
 		
 func _on_Quit_pressed():
 	get_tree().quit()
-
 
 func sendToServer(player,mess):
 	print(mess)
