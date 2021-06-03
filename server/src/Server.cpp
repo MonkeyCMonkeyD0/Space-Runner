@@ -1,0 +1,164 @@
+#include "Server.hpp"
+
+Server::Server(int port)
+{
+	this->initialize();
+	this->_address.port = port;
+	this->_address.host = 0;
+	this->create_host();
+}
+
+Server::~Server(){}
+
+
+ENetAddress  Server::get_address()
+{
+	return this->_address;
+}
+ENetHost* Server::get_host()
+{
+	return this->_server;
+}
+ENetPeer* Server::get_peer()
+{
+	return this->_peer;
+}
+ENetEvent Server::get_event()
+{
+	return this->_event;
+}
+
+
+
+void Server::set_address(ENetAddress address)
+{
+	this->_address = address;
+}
+void Server::set_host(ENetHost * server)
+{
+	this->_server = server;
+}
+void Server::set_peer(ENetPeer * peer)
+{
+	this->_peer = peer;
+}
+void Server::set_event(ENetEvent event)
+{
+	this->_event = event;
+}
+
+void Server::sendBroadcast(const commu & c)
+{
+	this->buffer = c.to_buf();
+	ENetPacket * packet = enet_packet_create(this->buffer, strlen(this->buffer) + 1, ENET_PACKET_FLAG_RELIABLE);
+	enet_host_broadcast(this->_server, 1, packet);
+}
+
+void Server::handleIncomingMessage(const unsigned int & id, const std::string & data)
+{
+
+	if (pthread_mutex_lock(&this->lock_mutex) != 0)
+		std::cerr << "Error: error in pthread_mutex_lock in producer()" << std::endl;
+
+	if (pthread_cond_broadcast(&this->started_cond) != 0)
+		std::cerr << "Error: error in pthread_cond_broadcast in producer()" << std::endl;
+
+	if (pthread_mutex_unlock(&this->lock_mutex) != 0)
+		std::cerr << "Error: error in pthread_mutek_unlock in producer()" << std::endl;
+	
+	commu cin(data);
+	//printf("Entering handle, id = %u, communication type = %d, packet = %s\n", id, cin.type, (char *) data.c_str());
+	switch (cin.type)
+	{
+		case USERNAME_DECLARATION:
+			printf(" - Username is : %s\n", cin.msg.c_str());
+
+			{
+				//game->addPlayer(clients[id], cin.msg);
+
+				std::string users_name;
+				for (const auto & it : clients)
+					users_name += it.second + '_';
+				users_name[users_name.size() - 1] = '\0';
+				commu cout(com_type::USERNAME_DECLARATION, users_name);
+				sendBroadcast(cout);
+			}
+			break;
+
+		case SPACESHIP_POSITION:
+			{
+				float pos_x, pos_y, pos_z;
+				sscanf(cin.msg.c_str(),"user:(%f,%f,%f)", &pos_x,&pos_y,&pos_z);
+				std::cout << "x : " << pos_x << " y : " << pos_y << " z : " << pos_z << std::endl;
+			}
+			break;
+		default:
+			printf("Cannot understand message |%s| received from %u.\n", cin.msg.c_str(), id);
+			break;
+	}
+}
+
+void Server::run()
+{
+	while (true) {	
+		while (enet_host_service(this->_server, &this->_event, TOMAX) > 0) {
+			switch (this->get_event().type)
+			{
+				case ENET_EVENT_TYPE_CONNECT:
+					printf ("A new client connected from %u.%u.%u.%u : %u\n", 
+						(char) this->_event.peer->address.host & (0xFF),
+						(char) (this->_event.peer->address.host & (0xFF << 8)) >> 8,
+						(char) (this->_event.peer->address.host & (0xFF << 16)) >> 16,
+						(char) (this->_event.peer->address.host & (0xFF << 24)) >> 24,
+						(unsigned int) this->_event.peer->address.port
+					);
+
+					{
+						if (clients.find(this->_event.peer->connectID) != clients.end())
+							printf("Client %u just reconnected.\n", (unsigned int) this->_event.peer->connectID);
+						else if (clients.size() <= MAXPLAYER)
+							clients[this->_event.peer->connectID] = clients.size() + 1;
+						else {
+							std::cerr << "Error: too many client already connected." << std::endl;
+							enet_peer_disconnect(this->_event.peer, 0);
+						}
+					}
+
+					break;
+
+				case ENET_EVENT_TYPE_RECEIVE:
+					/*std::cout 
+						<< "Length : "	<< (int) event.packet->dataLength << std::endl
+						<< "Content : "<<  (char*)(event.packet->data) << std::endl
+						<< "Peer : "	<< event.peer->connectID << std::endl
+						<< "Channel : "<<(int) event.channelID <<
+					std::endl;*/
+
+					this->set_peer(this->_event.peer);
+					
+					strcpy(this->recMess,(char*)(this->_event.packet->data)+8);
+
+					//std::cout<< "New message received : " << recMess << std::endl;
+					{
+						std::thread th(&Server::handleIncomingMessage,this, (unsigned int) this->_event.peer->connectID, this->recMess);
+						th.detach();
+					}
+
+					enet_packet_destroy(this->_event.packet);
+					break;
+
+				case ENET_EVENT_TYPE_DISCONNECT:
+					printf ("%d disconnected.\n", (unsigned int) this->_event.peer->connectID);
+					
+					{
+						this->_event.peer->data = NULL;
+					}
+
+					break;
+
+				default:
+					break;
+			}
+		}
+	}	
+}

@@ -1,5 +1,3 @@
-#ifndef COMMU_H
-#define COMMU_H
 #pragma once
 
 #include <vector>
@@ -58,4 +56,3 @@ char * commu::to_buf() const
 	return buf;
 }
 
-#endif
