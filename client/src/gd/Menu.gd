@@ -35,6 +35,7 @@ func _on_Host_pressed() -> void:
 		Click.play()
 		_connect_to_server()
 		sendToServer(mplayer,"xxxxxxxxx0"+username)
+		save(username)
 		if get_tree().change_scene("res://src/tscn/Game.tscn") != OK:
 			print("Unexpected error with the scene changement")
 		
@@ -48,7 +49,6 @@ func _on_Join_pressed() -> void:
 		Click.play()
 		if get_tree().change_scene("res://src/tscn/Game.tscn") != OK:
 			print("Unexpected error with the scene changement")
-
 
 func _on_Username_text_entered(new_text) -> void:
 	username = new_text
@@ -86,3 +86,9 @@ func _connect_to_server():
 	get_tree().set_network_peer(network)
 	mplayer = get_tree().multiplayer
 	print("Connected to server")
+
+func save(content):
+	var file = File.new()
+	file.open("res://src/dat/save_game.dat", File.WRITE)
+	file.store_string(content)
+	file.close()

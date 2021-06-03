@@ -16,5 +16,15 @@ func _connect_from_game():
 	#menu.mplayer = get_tree().multiplayer
 	print(menu)
 
+func pull_save():
+	var file = File.new()
+	file.open("res://src/dat/save_game.dat", File.READ)
+	var content = file.get_as_text()
+	file.close()
+	return content
+
 func _ready():
-	print(menu_node.instance().get_node(".").get_username())
+	print("Entered in game")
+	
+	print(pull_save())
+
