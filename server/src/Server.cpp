@@ -91,11 +91,13 @@ void Server::handleIncomingMessage(const unsigned int & id, const std::string & 
 
 		case SPACESHIP_POSITION:
 			{
+				int id;
 				float pos_x, pos_y, pos_z;
-				sscanf(cin.msg.c_str(),"user:(%f,%f,%f)", &pos_x,&pos_y,&pos_z);
-				std::cout << "x : "<< pos_x << std::endl;
-				std::cout << "y : "<< pos_y << std::endl;
-				std::cout << "z : "<< pos_z << std::endl;
+				sscanf(cin.msg.c_str(),"%d:(%f,%f,%f)",&id ,&pos_x,&pos_y,&pos_z);
+				std::cout << id << " position : " << std::endl;
+				std::cout << "\t x : "<< pos_x << std::endl;
+				std::cout << "\t y : "<< pos_y << std::endl;
+				std::cout << "\t z : "<< pos_z << std::endl;
 			}
 			break;
 		default:

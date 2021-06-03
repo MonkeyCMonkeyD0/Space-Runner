@@ -25,6 +25,5 @@ func pull_save():
 
 func _ready():
 	print("Entered in game")
-	
-	print(pull_save())
+	print(pull_save()+" is connected")
 
