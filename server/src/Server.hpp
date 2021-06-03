@@ -41,26 +41,8 @@ public:
 
 	void sendBroadcast(const commu & c);
 	void handleIncomingMessage(const unsigned int & id, const std::string & data);
-	
-	void initialize()
-	{
-		printf(" - enet_initialize()\n");
-		if (enet_initialize() != 0)
-		{
-			std::cerr << "Error: An error occurred while initializing ENet." << std::endl;
-			exit(EXIT_FAILURE);
-		}
-	}
-	void create_host()
-	{ 
-		this->_server = enet_host_create(& this->_address, 32, 2, 0, 0);
-		if (this->_server == NULL)
-		{
-			std::cerr << "Error: An error occurred while trying to create an ENet server host." << std::endl;
-			exit(EXIT_FAILURE);
-		}
-	}
-
+	void initialize();
+	void create_host();
 	void run();
 
 	Server(int port);
