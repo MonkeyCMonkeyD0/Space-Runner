@@ -89,7 +89,9 @@ void Server::handleIncomingMessage(const unsigned int & id, const std::string & 
 			{
 				float pos_x, pos_y, pos_z;
 				sscanf(cin.msg.c_str(),"user:(%f,%f,%f)", &pos_x,&pos_y,&pos_z);
-				std::cout << "x : " << pos_x << " y : " << pos_y << " z : " << pos_z << std::endl;
+				std::cout << "x : "<< pos_x << std::endl;
+				std::cout << "y : "<< pos_y << std::endl;
+				std::cout << "z : "<< pos_z << std::endl;
 			}
 			break;
 		default:
