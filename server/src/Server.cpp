@@ -89,6 +89,13 @@ void Server::handleIncomingMessage(const unsigned int & id, const std::string & 
 			}
 			break;
 
+		case PLANET_DECLARATION:
+			{
+				std::cout << "Planète reçue" << std::endl;
+				std::cout << cin.msg.c_str() << std::endl;
+				//this->planete_position.push_back({pos_x,pos_y,pos_z})
+			}
+
 		case SPACESHIP_POSITION:
 			{
 				int id;

@@ -4,12 +4,36 @@ var nodeId
 var pos_x
 var pos_y
 var pos_z
+var cpt = 0
 var rng = RandomNumberGenerator.new()
+
+var network = NetworkedMultiplayerENet.new()
+var mplayer 
+var serverIP = IP.get_local_addresses()[0]
+var port = 8080
 
 const MY_SCRIPT = preload("res://src/gd/Planet.gd")
 const NUMBER_PLANET = 20
 
+
+func wait(sec):
+	var t = Timer.new()
+	t.set_wait_time(sec)
+	t.set_one_shot(true)
+	self.add_child(t)
+	t.start()
+	yield(t, "timeout")
+
+
 func _ready() -> void:
+	_connect_to_server()
+	var t = Timer.new()
+	t.set_wait_time(10)
+	t.set_one_shot(true)
+	self.add_child(t)
+	t.start()
+	yield(t, "timeout")
+	
 	rng.randomize() # On randomise
 
 	for i in range(NUMBER_PLANET):
@@ -51,3 +75,19 @@ func _ready() -> void:
 		# On ajoute le meshInstance planet au noeud courant (Planet_manager)
 		planet.create_convex_collision()
 		add_child(planet)
+		send_declaration()
+
+func send_declaration():
+	cpt += 1
+	var mess = "xxxxxxxx1"+"planete N°"+String(cpt)
+	sendToServer(mplayer,mess)
+
+
+func _connect_to_server():
+	network.create_client(serverIP,port)
+	get_tree().set_network_peer(network)
+	mplayer = get_tree().multiplayer
+	print("Connected from planete")
+
+func sendToServer(player,mess):
+	player.send_bytes(mess.to_ascii())

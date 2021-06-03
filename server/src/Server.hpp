@@ -4,6 +4,7 @@
 #include <map>
 #include <string>
 #include <enet/enet.h>
+#include <vector>
 #include <threadextend.h>
 #include <commu.h>
 
@@ -16,12 +17,13 @@ class Server {
 
 public:
 
-	Server(int port);
+	Server(int port = 8080);
 	// Server(Server & server);
 	~Server();
 
 	char recMess[500];
 	std::map<unsigned int, unsigned short int> clients;
+	std::vector<float *> planete_positions;
 	pthread_mutex_t lock_mutex = PTHREAD_MUTEX_INITIALIZER;
 	pthread_cond_t started_cond = PTHREAD_COND_INITIALIZER;
 
@@ -50,10 +52,3 @@ private:
 	char * buffer;
 
 };
-
-
-int main (int argc, const char * argv[]) 
-{
-	Server Server(8080);
-	Server.run();
-}

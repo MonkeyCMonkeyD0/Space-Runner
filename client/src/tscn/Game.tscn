@@ -126,7 +126,6 @@ func send_pos():
 func _send_pos(axis):
 	var mess = \"01\"+\":(\"+String(axis[0])+\",\"+String(axis[1])+\",\"+String(axis[2])+\")\"
 	mess = \"xxxxxxxx5\"+mess
-	print(mess)
 	sendToServer(mplayer,mess)	
 
 func _connect_to_server():

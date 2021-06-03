@@ -9,9 +9,11 @@ OBJ_DIR = bin
 LIB_DIR = lib
 TST_DIR = tests
 
+
 SRC = $(wildcard $(SRC_DIR)/*.cpp)
 OBJ = $(SRC:$(SRC_DIR)/%.cpp=$(OBJ_DIR)/%.o)
 SAVES = $(wildcard *.txt)
+LIB = $(LIB_DIR)/libgames.a
 
 
 EXEC = enetServer
@@ -20,7 +22,8 @@ EXEC = enetServer
 all: $(EXEC)
 
 $(EXEC): $(OBJ)
-	$(CC) $(CCFLAGS) $(CFLAGS) $(LFLAGS) $^ -o $@ $(LDFLAGS)
+	ar -cr $(LIB) $(OBJ)
+	$(CC) $(CCFLAGS) $(CFLAGS) $(LFLAGS) $(LIB) -o $@ $(LDFLAGS)
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
 	@mkdir -p $(OBJ_DIR)
@@ -42,7 +45,7 @@ testcase:
 	@cd $(TST_DIR); make
 
 clean: cleantest
-	@rm -Rf $(OBJ_DIR) $(EXEC)
+	@rm -Rf $(OBJ_DIR) $(EXEC) $(LIB)
 	@echo "Removed obj and exe from server"
 # $(LIB_OBJ)
 
