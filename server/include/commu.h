@@ -1,5 +1,3 @@
-#ifndef COMMU_H
-#define COMMU_H
 #pragma once
 
 #include <vector>
@@ -38,10 +36,10 @@ public:
  
 
 commu::commu(const std::string & buffer) : 
-	type(com_type(buffer[9] - '0')), msg(buffer.substr(10)) {std::cout << "String " <<std::endl;}
+	type(com_type(buffer[9] - '0')), msg(buffer.substr(10)) {}
 
 commu::commu(const char * buffer) : 
-	type(com_type(buffer[9] - '0')), msg(std::string(buffer + 10)) {std::cout << "Char* " <<std::endl;}
+	type(com_type(buffer[9] - '0')), msg(std::string(buffer + 10)) {}
 
 commu::commu(const com_type & type, const std::string & msg) : 
 	type(type), msg(msg) {}
@@ -58,4 +56,3 @@ char * commu::to_buf() const
 	return buf;
 }
 
-#endif

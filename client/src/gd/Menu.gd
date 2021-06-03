@@ -2,9 +2,9 @@ extends Control
 
 var network = NetworkedMultiplayerENet.new()
 var mplayer 
-#var serverIP = IP.get_local_addresses()[0]
-var serverIP = "10.64.15.114"
-var port = 4242
+var serverIP = IP.get_local_addresses()[0]
+#var serverIP = "10.64.15.114"
+var port = 8080
 var Msg
 var username = ""
 var username_valid = false
@@ -20,6 +20,7 @@ var player_info = {}
 var my_info = { name : "Ton Daron" }
 
 func _ready():
+	print(get_path())
 	var texture = $Viewport.get_texture()
 	$Background/Logo.texture = texture
 
@@ -29,11 +30,9 @@ func _on_Host_pressed() -> void:
 		popup2.hide()
 		popup3.show()
 	if username_valid:
-		#Msg = "Hi I am "+ username + " and I am connected"
-		#sendToServer(mplayer, Msg)
 		Click.play()
 		_connect_to_server()
-		sendToServer(mplayer,"xxxxxxxxx0"+username)
+		save(username)
 		if get_tree().change_scene("res://src/tscn/Game.tscn") != OK:
 			print("Unexpected error with the scene changement")
 		
@@ -43,11 +42,9 @@ func _on_Join_pressed() -> void:
 		popup2.hide()
 		popup3.show()
 	if username_valid:
-		#mplayer.send_bytes(my_info)
 		Click.play()
 		if get_tree().change_scene("res://src/tscn/Game.tscn") != OK:
 			print("Unexpected error with the scene changement")
-
 
 func _on_Username_text_entered(new_text) -> void:
 	username = new_text
@@ -68,11 +65,10 @@ func _on_Username_text_entered(new_text) -> void:
 		popup1.show()
 		
 func get_username():
-	return username		
+	return username
 		
 func _on_Quit_pressed():
 	get_tree().quit()
-
 
 func sendToServer(player,mess):
 	print(mess)
@@ -86,3 +82,9 @@ func _connect_to_server():
 	get_tree().set_network_peer(network)
 	mplayer = get_tree().multiplayer
 	print("Connected to server")
+
+func save(content):
+	var file = File.new()
+	file.open("res://src/dat/save_game.dat", File.WRITE)
+	file.store_string(content)
+	file.close()

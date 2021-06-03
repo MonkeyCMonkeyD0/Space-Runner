@@ -1,6 +1,7 @@
 extends Control
 
 const menu = preload("res://src/gd/Menu.gd")
+var menu_node = preload("res://src/tscn/Menu.tscn")
 
 func _on_Quit_pressed() -> void:
 	get_tree().quit()
@@ -15,5 +16,14 @@ func _connect_from_game():
 	#menu.mplayer = get_tree().multiplayer
 	print(menu)
 
+func pull_save():
+	var file = File.new()
+	file.open("res://src/dat/save_game.dat", File.READ)
+	var content = file.get_as_text()
+	file.close()
+	return content
 
-# Called when the node enters the scene tree for the first time.
+func _ready():
+	print("Entered in game")
+	print(pull_save()+" is connected")
+
