@@ -9,24 +9,37 @@
 
 int main(int argc, char const *argv[])
 {
-	IA ia;
+	// IA ia;
 
-	std::vector<item *> list_it;
+	// std::vector<item *> list_it;
 
-	for (unsigned short int i = 0; i < 11; ++i) {
-		item * it = new item{"it" + std::to_string(i), static_cast<unsigned short>(i*20+10), static_cast<unsigned short>(i*10+10)};
-		list_it.push_back(it);
+	// for (unsigned short int i = 0; i < 11; ++i) {
+	// 	item * it = new item{"it" + std::to_string(i), static_cast<unsigned short>(i*20+10), static_cast<unsigned short>(i*10+10)};
+	// 	list_it.push_back(it);
+	// }
+
+	// ia.item_choice(list_it);
+	// ia.item_choice(list_it);
+	// ia.item_choice(list_it);
+	// ia.item_choice(list_it);
+
+	// std::cout << ia.com_inv_string() << std::endl;
+
+	// for (const auto & i : list_it)
+	// 	delete i;
+
+	std::vector<point> pla;
+	for (float i = 1.0; i < 11.0; i += 1) {
+		pla.push_back(point{i,i,i});
 	}
 
-	ia.item_choice(list_it);
-	ia.item_choice(list_it);
-	ia.item_choice(list_it);
-	ia.item_choice(list_it);
+	IA ia(pla);
 
-	std::cout << ia.com_inv_string() << std::endl;
+	ia.update_planet(point{1.0,1.0,1.0});
+	ia.update_pos(0.1);
+	ia.update_pos(0.1);
+	ia.update_pos(0.1);
 
-	for (const auto & i : list_it)
-		delete i;
 	return 0;
 }
 

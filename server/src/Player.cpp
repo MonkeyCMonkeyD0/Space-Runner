@@ -18,6 +18,11 @@ std::string com_item_string(const item * it)
 }
 
 
+bool equal(const point & p1, const point & p2)
+{
+	return p1.x == p2.x && p1.y == p2.y && p1.z == p2.z;
+}
+
 point sum(const point & p1, const point & p2)
 {
 	return point{p1.x + p2.x, p1.y + p2.y, p1.z + p2.z};
@@ -27,6 +32,14 @@ point normalize(const point & p)
 {
 	float norm = sqrt(p.x * p.x + p.y * p.y + p.z * p.z);
 	return point{p.x / norm, p.y / norm, p.z / norm};
+}
+
+float dist(const point & p1, const point & p2)
+{
+	return sqrt(
+		(p1.x - p2.x) * (p1.x - p2.x) + \
+		(p1.y - p2.y) * (p1.y - p2.y) + \
+		(p1.z - p2.z) * (p1.z - p2.z));
 }
 
 

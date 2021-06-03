@@ -15,7 +15,7 @@
 
 
 void sendBroadcast(const commu & c)
-{   
+{
 	char * buffer = c.to_buf();
 	ENetPacket * packet = enet_packet_create(buffer, strlen(buffer) + 1, ENET_PACKET_FLAG_RELIABLE);
 	enet_host_broadcast (server, 1, packet);
@@ -77,19 +77,15 @@ int main (int argc, const char * argv[])
 		exit(EXIT_FAILURE);
 	}
 
-
-	//atexit(enet_deinitialize);
-
 	address.host = 0 ;
 	//if(address.host)
-	std::cout << address.host << std::endl;
+	// std::cout << address.host << std::endl;
 	address.port = 4242;
-	if(address.port)
-		std::cout << address.port << std::endl;
+	// if(address.port)
+	// 	std::cout << address.port << std::endl;
 
 	printf(" - enet_host_create()\n");
 	server = enet_host_create(&address, 32, 2, 0, 0);
-
 
 	if (server == NULL)
 	{
@@ -132,9 +128,9 @@ int main (int argc, const char * argv[])
 						<< "Channel : "<<(int) event.channelID <<
 					std::endl;*/
 
-					peer=event.peer;
+					peer = event.peer;
 					
-					strcpy(recMess,(char*)(event.packet->data)+8);
+					strcpy(recMess, (char*) (event.packet->data) + 8);
 
 					std::cout<< "New message received : " << recMess << std::endl;
 					{

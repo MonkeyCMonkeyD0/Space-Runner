@@ -21,8 +21,10 @@ typedef struct point
 	float x, y, z;
 } point;
 
+bool equal(const point &, const point &);
 point sum(const point &, const point &);
 point normalize(const point &);
+float dist(const point &, const point &);
 
 
 class Player {
