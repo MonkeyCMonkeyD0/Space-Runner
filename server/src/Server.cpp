@@ -15,33 +15,37 @@ ENetAddress  Server::get_address()
 {
 	return this->_address;
 }
+
 ENetHost* Server::get_host()
 {
 	return this->_server;
 }
+
 ENetPeer* Server::get_peer()
 {
 	return this->_peer;
 }
+
 ENetEvent Server::get_event()
 {
 	return this->_event;
 }
 
-
-
 void Server::set_address(ENetAddress address)
 {
 	this->_address = address;
 }
+
 void Server::set_host(ENetHost * server)
 {
 	this->_server = server;
 }
+
 void Server::set_peer(ENetPeer * peer)
 {
 	this->_peer = peer;
 }
+
 void Server::set_event(ENetEvent event)
 {
 	this->_event = event;
@@ -97,6 +101,26 @@ void Server::handleIncomingMessage(const unsigned int & id, const std::string & 
 		default:
 			printf("Cannot understand message |%s| received from %u.\n", cin.msg.c_str(), id);
 			break;
+	}
+}
+
+void Server::initialize()
+{
+	printf(" - enet_initialize()\n");
+	if (enet_initialize() != 0)
+	{
+		std::cerr << "Error: An error occurred while initializing ENet." << std::endl;
+		exit(EXIT_FAILURE);
+	}
+}
+
+void Server::create_host()
+{ 
+	this->_server = enet_host_create(& this->_address, 32, 2, 0, 0);
+	if (this->_server == NULL)
+	{
+		std::cerr << "Error: An error occurred while trying to create an ENet server host." << std::endl;
+		exit(EXIT_FAILURE);
 	}
 }
 
