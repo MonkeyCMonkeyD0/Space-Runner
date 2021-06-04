@@ -17,7 +17,7 @@ SAVES = $(wildcard *.txt)
 LIB = $(LIB_DIR)/libgames.a
 
 
-EXEC = enetServer
+EXEC = server
 
 all: $(EXEC)
 
