@@ -1,28 +1,60 @@
 #pragma once
 
+
+
+#include <vector>
+#include <string>
+#include <cstring>
 #include <iostream>
 #include <map>
-#include <string>
 #include <enet/enet.h>
 #include <vector>
 #include <threadextend.h>
-#include <commu.h>
-
 #include "KnapThread.hpp"
 
 #define MAXPLAYER 15
 
+#define BUFFERSIZE 500
+#define PORT 8080 //4242
+#define TOMAX 0
+
+
+
+
+typedef enum type : char
+{
+	USERNAME_DECLARATION,
+	PLANET_DECLARATION,
+	RESSOURCE_DECLARATION,
+	SPACESHIP_DECLARATION,
+	RESSOURCE_CHOICE,
+	SPACESHIP_POSITION
+} com_type;
+
+class commu {
+
+public:
+
+	com_type type;
+	std::string msg;
+
+	commu(const std::string & buffer);
+	commu(const char * buffer);
+	commu(const com_type & type, const std::string & msg);
+
+	char * to_buf() const;
+};
 
 class Server {
 
 public:
 
-	Server(int port = 8080);
+	Server(int port);
 	// Server(Server & server);
 	~Server();
 
 	char recMess[500];
-	std::map<unsigned int, unsigned short int> clients;
+	std::map<unsigned int, unsigned short int> _clients;
 	std::vector<float *> planete_positions;
 	pthread_mutex_t lock_mutex = PTHREAD_MUTEX_INITIALIZER;
 	pthread_cond_t started_cond = PTHREAD_COND_INITIALIZER;
