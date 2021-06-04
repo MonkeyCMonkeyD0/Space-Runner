@@ -9,7 +9,7 @@
 
 #include "IA.hpp"
 
-#define MV_SPEED 5
+#define MV_SPEED 500
 #define GAMMA 5
 #define N 8000
 
@@ -19,7 +19,6 @@ unsigned char IA::nb_ia = 1;
 IA::IA(const std::vector<point> & p, difficulty d) : 
 	Player(0, "IA num " + std::to_string(IA::nb_ia++)), dif(d), planets(p)
 {
-	this->set_pos(0.0,0.0,0.0);
 	this->find_optimal_path(this->planets, false);
 }
 
@@ -64,7 +63,6 @@ void IA::update_pos(const float & delta_time)
 		this->get_pos().y + this->dir.y * MV_SPEED * delta_time, 
 		this->get_pos().z + this->dir.z * MV_SPEED * delta_time
 	);
-	std::cout << this->com_pos_string() << std::endl;
 }
 
 void IA::update_planet(const point & removed_planet)

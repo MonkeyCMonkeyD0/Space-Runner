@@ -45,7 +45,7 @@ float dist(const point & p1, const point & p2)
 
 Player::Player(const unsigned int & id, const std::string & name, const bool & host) : username(name), enet_ID(id), host(host)
 {
-	this->pos = {0, 0, 0};
+	this->set_pos(0.0, 0.0, 0.0);
 	this->planet = 0;
 	this->spaceship = 0x11;
 	this->capacity = 750;
