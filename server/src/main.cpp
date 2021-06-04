@@ -3,9 +3,9 @@
 #include "BlockThread.hpp"
 #include "Game.hpp"
 #include "IA.hpp"
+#include "Knapsack.hpp"
 #include "KnapThread.hpp"
 #include "PlanetCreator.hpp"
-#include "Planete.hpp"
 #include "Player.hpp"
 #include "SHA256.hpp"
 
