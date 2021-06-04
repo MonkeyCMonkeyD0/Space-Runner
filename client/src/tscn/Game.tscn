@@ -59,6 +59,13 @@ func _ready():
 	print(serverIP)
 	username = pull_save()
 	_connect_to_server()
+	var t = Timer.new()
+	t.set_wait_time(3)
+	t.set_one_shot(true)
+	self.add_child(t)
+	t.start()
+	yield(t, \"timeout\")
+	send_username(username)
 	acceleration.playing = false
 	not_acceleration.playing = false
 
@@ -96,6 +103,7 @@ func move_forward(delta) -> void:
 		reactor_r.amount = AMOUNT_REACTOR_ACTIVE
 		not_acceleration.stop()
 		acceleration.play()
+		
 	move_and_slide(transform.basis.x * SPEED * delta)
 	
 func rotate_right(delta) -> void:

@@ -27,12 +27,6 @@ func wait(sec):
 
 func _ready() -> void:
 	_connect_to_server()
-	var t = Timer.new()
-	t.set_wait_time(10)
-	t.set_one_shot(true)
-	self.add_child(t)
-	t.start()
-	yield(t, "timeout")
 	
 	rng.randomize() # On randomise
 
@@ -75,18 +69,24 @@ func _ready() -> void:
 		# On ajoute le meshInstance planet au noeud courant (Planet_manager)
 		planet.create_convex_collision()
 		add_child(planet)
-		send_declaration()
+		#send_declaration(planet)
 
-func send_declaration():
+func send_declaration(planet):
 	cpt += 1
-	var mess = "xxxxxxxx1"+"planete N°"+String(cpt)
+	var mess = "xxxxxxxx1"+"planete N "+String(cpt)
 	sendToServer(mplayer,mess)
 
+func _on_packet_received(id, packet):
+	var mess=packet.get_string_from_ascii()
+	match mess[0]:
+		'0':
+			print(mess)
 
 func _connect_to_server():
 	network.create_client(serverIP,port)
 	get_tree().set_network_peer(network)
 	mplayer = get_tree().multiplayer
+	mplayer.connect("network_peer_packet",self,"_on_packet_received")
 	print("Connected from planete")
 
 func sendToServer(player,mess):

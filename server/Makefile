@@ -22,6 +22,7 @@ EXEC = enetServer
 all: $(EXEC)
 
 $(EXEC): $(OBJ)
+	#ar -cr $(LIB) $(OBJ)
 	$(CC) $(CCFLAGS) $(CFLAGS) $(LFLAGS) $(OBJ) -o $@ $(LDFLAGS)
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp

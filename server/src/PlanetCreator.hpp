@@ -5,7 +5,7 @@
 #include <string>
 
 #define PLANETDIST 30
-#define NBPLANET 20
+#define NBPLANET 15
 #define NBTEXTURE 12
 
 
@@ -33,7 +33,7 @@ public:
 private:
 
 	std::vector<struct planet> planets;
-	std::vector<int> palier;
+	std::vector<float> palier;
 	struct planet create(const unsigned short int &, const unsigned short int &, const unsigned short int &, const unsigned char &) const;
 	char random_shape(const unsigned char & proba = 10) const;
 	unsigned int random_color() const;
