@@ -5,13 +5,13 @@
 #include <string>
 
 #define PLANETDIST 30
-#define NBPLANET 15
+#define NBPLANET 20
 #define NBTEXTURE 12
 
 
 struct planet
 {
-	unsigned short int x, y, z;
+	float x, y, z;
 	unsigned char radius, texture;
 	char shape;
 	unsigned int color;
@@ -30,11 +30,13 @@ public:
 	std::ostream & print(const unsigned int &, std::ostream & out = std::cout) const;
 	std::vector<std::string> broadcast_strings() const;
 
+	void initialize();
+
 private:
 
 	std::vector<struct planet> planets;
 	std::vector<float> palier;
-	struct planet create(const unsigned short int &, const unsigned short int &, const unsigned short int &, const unsigned char &) const;
+	struct planet create(const float &, const float &, const float &, const unsigned char &) const;
 	char random_shape(const unsigned char & proba = 10) const;
 	unsigned int random_color() const;
 

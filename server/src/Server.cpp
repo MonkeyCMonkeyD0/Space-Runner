@@ -82,22 +82,21 @@ void Server::handleIncomingMessage(const unsigned int & id, const std::string & 
 				//game->addPlayer(clients[id], cin.msg);
 				std::string users_name;
 				//this->_clients[0].second = cin.msg.c_str();
-
 				for (const auto & it : this->_clients)
 					users_name += it.second + '_';
+
 				users_name[users_name.size() - 1] = '\0';
 
 
-				commu cout(com_type::USERNAME_DECLARATION, "Connexion recue de "+users_name);
+				commu cout(com_type::USERNAME_DECLARATION, "Connexion recue de "+std::string(cin.msg.c_str()));
 				this->sendBroadcast(cout);
 			}
 			break;
 
 		case PLANET_DECLARATION:
 			{
-				std::cout << "Planète reçue" << std::endl;
-				std::cout << cin.msg.c_str() << std::endl;
-				//this->planete_position.push_back({pos_x,pos_y,pos_z})
+				commu cout(com_type::USERNAME_DECLARATION, "Connexion recue de "+std::string(cin.msg.c_str()));
+				this->sendBroadcast(cout);
 			}
 			break;
 		case SPACESHIP_POSITION:
@@ -156,7 +155,9 @@ void Server::run()
 						if (this->_clients.find(this->_event.peer->connectID) != this->_clients.end())
 							printf("Client %u just reconnected.\n", (unsigned int) this->_event.peer->connectID);
 						else if (this->_clients.size() <= MAXPLAYER)
+						{
 							this->_clients[this->_event.peer->connectID] = this->_clients.size() + 1;
+						}
 						else {
 							std::cerr << "Error: too many client already connected." << std::endl;
 							enet_peer_disconnect(this->_event.peer, 0);

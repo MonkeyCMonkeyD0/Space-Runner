@@ -4,11 +4,17 @@ CFLAGS = -I../include/
 # LFLAGS = -L../lib/
 LDFLAGS = -pthread -lenet
 
+
 SRC_DIR = src
 OBJ_DIR = bin
+MAIN = $(SRC_DIR)/test.cpp 
 LIB_DIR = ../lib
 
-EXEC = enetServer
+SRC = $(filter-out $(MAIN),  $(wildcard $(SRC_DIR)/*.cpp))
+OBJ = $(SRC:$(SRC_DIR)/%.cpp=$(OBJ_DIR)/%.o)
+SAVES = $(wildcard *.txt)
+
+
 SRC = $(wildcard ../$(SRC_DIR)/*.cpp)
 OBJ = $(SRC:../$(SRC_DIR)/%.cpp=../$(OBJ_DIR)/%.o)
 SRC_TST = $(wildcard $(SRC_DIR)/*.cpp)
@@ -21,8 +27,8 @@ EXEC_TEST = test
 
 all: $(EXEC_TEST)
 
-$(EXEC_TEST): $(OBJ_TST)
-	$(CC) $(CCFLAGS) $(CFLAGS) $(LFLAGS) $^ -o $@ $(LDFLAGS)
+$(EXEC_TEST): $(OBJ)
+	$(CC) $(CCFLAGS) $(CFLAGS) $(LFLAGS) $(filter-out ../bin/main.o, $(OBJ)) $(MAIN) -o $@ $(LDFLAGS)
 
 ../$(OBJ_DIR)/%.o: ../$(SRC_DIR)/%.cpp
 	@mkdir -p ../$(OBJ_DIR)

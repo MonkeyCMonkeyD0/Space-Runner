@@ -12,6 +12,7 @@
 #include <threadextend.h>
 #include "KnapThread.hpp"
 
+
 #define MAXPLAYER 15
 
 #define BUFFERSIZE 500

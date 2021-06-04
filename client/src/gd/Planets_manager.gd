@@ -75,13 +75,7 @@ func send_declaration(planet):
 	cpt += 1
 	var mess = "xxxxxxxx1"+"planete N "+String(cpt)
 	sendToServer(mplayer,mess)
-
-func _on_packet_received(id, packet):
-	var mess=packet.get_string_from_ascii()
-	match mess[0]:
-		'0':
-			print(mess)
-
+	
 func _connect_to_server():
 	network.create_client(serverIP,port)
 	get_tree().set_network_peer(network)

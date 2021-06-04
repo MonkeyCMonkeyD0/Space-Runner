@@ -11,8 +11,16 @@
 int main(int argc, char const *argv[])
 {
 
-	Server Server(8080);
-	Server.run();
+	PlanetCreator planetes;
+
+	for(size_t i = 0; i < planetes.get().size(); i++)
+	{
+		planetes.print(i);
+		std::cout << std::endl;
+	}
+
+	//Server Server(8080);
+	//Server.run();
 }
 /*
 

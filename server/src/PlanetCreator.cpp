@@ -13,6 +13,12 @@ char PlanetCreator::shapes[] = {'S', 'T', 'D', 'C'}; // Sphere Torus Disc Cube
 
 PlanetCreator::PlanetCreator()
 {
+	this->initialize();
+}
+
+
+void PlanetCreator::initialize()
+{
 	float coord[3] = {0, 0, 0};
 	float R = 40;
 	float N = NBPLANET;
@@ -32,7 +38,7 @@ PlanetCreator::PlanetCreator()
 		}
 		R += PLANETDIST;
 		//std::cout << palier[palier.size()-1] << std::endl;
-		std::cout << palier[palier.size()-1] << std::endl;
+		//std::cout << palier[palier.size()-1] << std::endl;
 	}
 	//std::cout << palier.size() << std::endl;
 
@@ -49,7 +55,7 @@ PlanetCreator::PlanetCreator()
 			coord[0] = cos(phi * j) * radius;
 			coord[2] = sin(phi * j) * radius;
 			this->planets.push_back(this->create(coord[0], coord[1], coord[2], R));
-			std::cout << "x : " << coord[0] << ", y : " <<  coord[1] << ", z : " << coord[2] << std::endl;
+			//std::cout << "x : " << coord[0] << ", y : " <<  coord[1] << ", z : " << coord[2] << std::endl;
 		}
 		R += PLANETDIST;
 	}
@@ -93,11 +99,14 @@ std::vector<std::string> PlanetCreator::broadcast_strings() const
 }
 
 
-struct planet PlanetCreator::create(const unsigned short int & x, const unsigned short int & y, const unsigned short int & z, const unsigned char & rad) const
+struct planet PlanetCreator::create(const float & x, const float & y, const float & z, const unsigned char & rad) const
 {
 	std::random_device rd;
 	std::uniform_int_distribution<unsigned int> distrib(0, 9);
 	std::uniform_int_distribution<char> distrib_texture(1, 12);
+
+	//cpt++;
+	//std::cout << "planete created : "<<cpt << std::endl;
 
 	struct planet p = {x, y, z, rad};
 	p.shape = this->random_shape();

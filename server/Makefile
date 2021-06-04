@@ -8,9 +8,10 @@ SRC_DIR = src
 OBJ_DIR = bin
 LIB_DIR = lib
 TST_DIR = tests
+MAIN = $(SRC_DIR)/main.cpp
 
 
-SRC = $(wildcard $(SRC_DIR)/*.cpp)
+SRC = $(filter-out $(MAIN),  $(wildcard $(SRC_DIR)/*.cpp))
 OBJ = $(SRC:$(SRC_DIR)/%.cpp=$(OBJ_DIR)/%.o)
 SAVES = $(wildcard *.txt)
 LIB = $(LIB_DIR)/libgames.a
@@ -18,12 +19,10 @@ LIB = $(LIB_DIR)/libgames.a
 
 EXEC = enetServer
 
-
 all: $(EXEC)
 
 $(EXEC): $(OBJ)
-	#ar -cr $(LIB) $(OBJ)
-	$(CC) $(CCFLAGS) $(CFLAGS) $(LFLAGS) $(OBJ) -o $@ $(LDFLAGS)
+	$(CC) $(CCFLAGS) $(CFLAGS) $(LFLAGS) $(OBJ) $(MAIN) -o $@ $(LDFLAGS)
 
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
 	@mkdir -p $(OBJ_DIR)
