@@ -1,4 +1,6 @@
 #include "Server.hpp"
+#include "PlanetCreator.hpp"
+
 
 Server::Server(int port)
 {
@@ -136,6 +138,16 @@ void Server::create_host()
 	}
 }
 
+void Server::planete_declaration(PlanetCreator & P)
+{
+	std::vector<std::string> vect = P.broadcast_strings();
+	for (auto str : P.broadcast_strings())
+	{
+		commu send_planets(PLANET_DECLARATION, str);
+		this->sendBroadcast(send_planets);
+	}
+}
+
 void Server::run()
 {
 	while (true) {	
@@ -150,7 +162,6 @@ void Server::run()
 						(char) (this->_event.peer->address.host & (0xFF << 24)) >> 24,
 						(unsigned int) this->_event.peer->address.port
 					);
-
 					{
 						if (this->_clients.find(this->_event.peer->connectID) != this->_clients.end())
 							printf("Client %u just reconnected.\n", (unsigned int) this->_event.peer->connectID);
@@ -167,6 +178,7 @@ void Server::run()
 					break;
 
 				case ENET_EVENT_TYPE_RECEIVE:
+				{
 					/*std::cout 
 						<< "Length : "	<< (int) event.packet->dataLength << std::endl
 						<< "Content : "<<  (char*)(event.packet->data) << std::endl
@@ -179,13 +191,15 @@ void Server::run()
 					strcpy(this->recMess,(char*)(this->_event.packet->data)+8);
 
 					//std::cout<< "New message received : " << recMess << std::endl;
-					{
-						std::thread th(&Server::handleIncomingMessage,this, (unsigned int) this->_event.peer->connectID, this->recMess);
-						th.detach();
-					}
+						{
+							std::thread th(&Server::handleIncomingMessage,this, (unsigned int) this->_event.peer->connectID, this->recMess);
+							th.detach();
+						}
+					PlanetCreator P;
+					this->planete_declaration(P);
 
 					enet_packet_destroy(this->_event.packet);
-					break;
+				}break;
 
 				case ENET_EVENT_TYPE_DISCONNECT:
 					printf ("%d disconnected.\n", (unsigned int) this->_event.peer->connectID);

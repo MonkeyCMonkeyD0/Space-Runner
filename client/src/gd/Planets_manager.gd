@@ -4,7 +4,7 @@ var nodeId
 var pos_x
 var pos_y
 var pos_z
-var cpt = 0
+var list_str = []
 var rng = RandomNumberGenerator.new()
 
 var network = NetworkedMultiplayerENet.new()
@@ -68,13 +68,7 @@ func _ready() -> void:
 
 		# On ajoute le meshInstance planet au noeud courant (Planet_manager)
 		planet.create_convex_collision()
-		add_child(planet)
-		#send_declaration(planet)
-
-func send_declaration(planet):
-	cpt += 1
-	var mess = "xxxxxxxx1"+"planete N "+String(cpt)
-	sendToServer(mplayer,mess)
+		add_child(planet)	
 	
 func _connect_to_server():
 	network.create_client(serverIP,port)
@@ -85,3 +79,10 @@ func _connect_to_server():
 
 func sendToServer(player,mess):
 	player.send_bytes(mess.to_ascii())
+
+
+func _on_packet_received(id, packet):
+	var mess = packet.get_string_from_ascii()
+	print(mess)
+	list_str.append(mess)
+

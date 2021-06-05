@@ -11,15 +11,10 @@
 int main(int argc, char const *argv[])
 {
 
-	PlanetCreator planetes;
 
-	for(size_t i = 0; i < planetes.get().size(); i++)
-	{
-		planetes.print(i);
-		std::cout << std::endl;
-	}
 
-	//Server Server(8080);
+	//for(auto str : vect)
+	//	server.sendBroadcast()
 	//Server.run();
 }
 /*
