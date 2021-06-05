@@ -56,6 +56,7 @@ void Server::sendBroadcast(const commu & c)
 	this->buffer = c.to_buf();
 	ENetPacket * packet = enet_packet_create(this->buffer, strlen(this->buffer) + 1, ENET_PACKET_FLAG_RELIABLE);
 	enet_host_broadcast(this->_server, 1, packet);
+	std::cout << "Message sent" << std::endl;
 }
 
 void Server::handleIncomingMessage(const unsigned int & id, const std::string & data)
@@ -78,23 +79,25 @@ void Server::handleIncomingMessage(const unsigned int & id, const std::string & 
 			printf(" - Username is : %s\n", cin.msg.c_str());
 			{
 				//game->addPlayer(clients[id], cin.msg);
-
 				std::string users_name;
-				for (const auto & it : clients)
+				//this->_clients[0].second = cin.msg.c_str();
+				for (const auto & it : this->_clients)
 					users_name += it.second + '_';
+
 				users_name[users_name.size() - 1] = '\0';
-				commu cout(com_type::USERNAME_DECLARATION, users_name);
-				sendBroadcast(cout);
+
+
+				commu cout(com_type::USERNAME_DECLARATION, "Connexion recue de "+std::string(cin.msg.c_str()));
+				this->sendBroadcast(cout);
 			}
 			break;
 
 		case PLANET_DECLARATION:
 			{
-				std::cout << "Planète reçue" << std::endl;
-				std::cout << cin.msg.c_str() << std::endl;
-				//this->planete_position.push_back({pos_x,pos_y,pos_z})
+				commu cout(com_type::USERNAME_DECLARATION, "Connexion recue de "+std::string(cin.msg.c_str()));
+				this->sendBroadcast(cout);
 			}
-
+			break;
 		case SPACESHIP_POSITION:
 			{
 				int id;
@@ -148,10 +151,12 @@ void Server::run()
 					);
 
 					{
-						if (clients.find(this->_event.peer->connectID) != clients.end())
+						if (this->_clients.find(this->_event.peer->connectID) != this->_clients.end())
 							printf("Client %u just reconnected.\n", (unsigned int) this->_event.peer->connectID);
-						else if (clients.size() <= MAXPLAYER)
-							clients[this->_event.peer->connectID] = clients.size() + 1;
+						else if (this->_clients.size() <= MAXPLAYER)
+						{
+							this->_clients[this->_event.peer->connectID] = this->_clients.size() + 1;
+						}
 						else {
 							std::cerr << "Error: too many client already connected." << std::endl;
 							enet_peer_disconnect(this->_event.peer, 0);
@@ -192,4 +197,28 @@ void Server::run()
 			}
 		}
 	}	
+}
+
+
+commu::commu(const std::string & buffer) : 
+	type(com_type(buffer[9] - '0')), msg(buffer.substr(10)) {}
+
+commu::commu(const char * buffer) : 
+	type(com_type(buffer[9] - '0')), msg(std::string(buffer + 10)) {}
+
+commu::commu(const com_type & type, const std::string & msg) : 
+	type(type), msg(msg) {}
+
+
+//commu cout(PLANET_DECLARATION,"")
+
+char * commu::to_buf() const
+{
+	std::string buffer = "________";
+	buffer += (char) 0x04;
+	buffer += (char) this->type + '0';
+	buffer += this->msg;
+	char * buf = new char[buffer.size()];
+	strcpy(buf, buffer.c_str());
+	return buf;
 }

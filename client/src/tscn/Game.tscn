@@ -59,6 +59,13 @@ func _ready():
 	print(serverIP)
 	username = pull_save()
 	_connect_to_server()
+	var t = Timer.new()
+	t.set_wait_time(3)
+	t.set_one_shot(true)
+	self.add_child(t)
+	t.start()
+	yield(t, \"timeout\")
+	send_username(username)
 	acceleration.playing = false
 	not_acceleration.playing = false
 
@@ -85,9 +92,6 @@ func _process(delta):
 	if Input.is_key_pressed(KEY_DOWN):
 		rotate_down(delta)
 		
-	if Input.is_key_pressed(KEY_A):
-		send_username(username)
-		
 func move_forward(delta) -> void:
 	if not_acceleration.playing:
 		reactor_l.lifetime = LIFETIME_REACTOR_ACTIVE
@@ -96,6 +100,7 @@ func move_forward(delta) -> void:
 		reactor_r.amount = AMOUNT_REACTOR_ACTIVE
 		not_acceleration.stop()
 		acceleration.play()
+		
 	move_and_slide(transform.basis.x * SPEED * delta)
 	
 func rotate_right(delta) -> void:
@@ -133,6 +138,15 @@ func _connect_to_server():
 	get_tree().set_network_peer(network)
 	mplayer = get_tree().multiplayer
 	print(\"Connected to server\")
+
+
+func _on_packet_received(id, packet):
+	var mess=packet.get_string_from_ascii()
+	match mess[0]:
+		'0':
+			print(mess)
+		'1':
+			print(mess)
 
 func round_to_dec(num, digit):
 	return round(num * pow(10.0, digit)) / pow(10.0, digit)

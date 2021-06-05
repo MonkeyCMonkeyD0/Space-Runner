@@ -5,10 +5,26 @@
 #include <chrono>
 #include <ctime>
 
-#include "../../src/IA.hpp"
+#include "../../src/PlanetCreator.hpp"
+#include "../../src/Server.hpp"
 
 int main(int argc, char const *argv[])
 {
+
+	PlanetCreator planetes;
+
+	for(size_t i = 0; i < planetes.get().size(); i++)
+	{
+		planetes.print(i);
+		std::cout << std::endl;
+	}
+
+	//Server Server(8080);
+	//Server.run();
+}
+/*
+
+
 	// IA ia;
 
 	// std::vector<item *> list_it;
@@ -41,7 +57,7 @@ int main(int argc, char const *argv[])
 	ia.update_pos(0.1);
 
 	return 0;
-}
+}*/
 
 
 

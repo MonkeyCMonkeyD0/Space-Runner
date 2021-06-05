@@ -3,6 +3,7 @@
 #include <sstream>
 #include <cmath>
 #include <math.h>
+#include <iostream>
 
 #include "PlanetCreator.hpp"
 
@@ -12,45 +13,52 @@ char PlanetCreator::shapes[] = {'S', 'T', 'D', 'C'}; // Sphere Torus Disc Cube
 
 PlanetCreator::PlanetCreator()
 {
-	// unsigned short int coord[3] = {0, 0, 0};
-	// unsigned char rad;
-	// std::random_device rd;
-	// std::uniform_int_distribution<unsigned char> distrib_rad(5,10);
-	// //std::uniform_int_distribution<unsigned short int> distrib_coord(0, 2);
+	this->initialize();
+}
 
-	// int R = 40;
-	// int radius;
 
-	// this->palier.push_back(3);
-	// int N = NBPLANET;
+void PlanetCreator::initialize()
+{
+	float coord[3] = {0, 0, 0};
+	float R = 40;
+	float N = NBPLANET;
+	float radius;
+	this->palier.push_back(3);
 
-	// while(N>0) {
-	// 	N -= palier[palier.size()-1];
-	// 	if (N>0)
-	// 		palier.push_back(round(palier[palier.size()-1] * ((R + PLANETDIST) / R) * ((R + PLANETDIST) / R)));
-	// 	else {
-	// 		palier[palier.size()-1] += N;
-	// 		N = -1;
-	// 	}
-	// 	R += PLANETDIST;
-	// }
+	while(N>0) {
+		N -= palier[palier.size()-1];
+		if (N>0)
+		{
+			palier.push_back(round(palier[palier.size()-1] * ((R + PLANETDIST) / R) * ((R + PLANETDIST) / R)));
+		}
 
-	// int phi = M_PI * (3 - sqrt(5));
-	// R = 40;
+		else {
+			palier[palier.size()-1] += N;
+			N = -1;
+		}
+		R += PLANETDIST;
+		//std::cout << palier[palier.size()-1] << std::endl;
+		//std::cout << palier[palier.size()-1] << std::endl;
+	}
+	//std::cout << palier.size() << std::endl;
 
-	// for (unsigned int i = 0; i < palier.size(); i++) {
-	// 	for (unsigned int j = 0; j < i; j++) {
-	// 		if (i == 1)
-	// 			coord[1] = 0;
-	// 		else
-	// 			coord[1] = R * (1 - 2 * j / (i - 1));
-	// 		radius = sqrt(R * R - coord[1] * coord[1]);
-	// 		coord[0] = cos(phi * j) * radius;
-	// 		coord[2] = sin(phi * j) * radius;
-	// 		this->planets.push_back(this->create(coord[0], coord[1], coord[2], rad));
-	// 	}
-	// 	R += PLANETDIST;
-	// }
+	float phi = M_PI * (3.0 - sqrt(5.0));
+	R = 40;
+
+	for (auto i : palier) {
+		for (unsigned int j = 0; j < i; j++) {
+			if (i == 1)
+				coord[1] = 0;
+			else
+				coord[1] = R * (1 - 2 * j / (i - 1));
+			radius = sqrt(R * R - coord[1] * coord[1]);
+			coord[0] = cos(phi * j) * radius;
+			coord[2] = sin(phi * j) * radius;
+			this->planets.push_back(this->create(coord[0], coord[1], coord[2], R));
+			//std::cout << "x : " << coord[0] << ", y : " <<  coord[1] << ", z : " << coord[2] << std::endl;
+		}
+		R += PLANETDIST;
+	}
 }
 
 
@@ -91,11 +99,14 @@ std::vector<std::string> PlanetCreator::broadcast_strings() const
 }
 
 
-struct planet PlanetCreator::create(const unsigned short int & x, const unsigned short int & y, const unsigned short int & z, const unsigned char & rad) const
+struct planet PlanetCreator::create(const float & x, const float & y, const float & z, const unsigned char & rad) const
 {
 	std::random_device rd;
 	std::uniform_int_distribution<unsigned int> distrib(0, 9);
 	std::uniform_int_distribution<char> distrib_texture(1, 12);
+
+	//cpt++;
+	//std::cout << "planete created : "<<cpt << std::endl;
 
 	struct planet p = {x, y, z, rad};
 	p.shape = this->random_shape();
