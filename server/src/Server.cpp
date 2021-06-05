@@ -69,14 +69,13 @@ void Server::handleIncomingMessage(const unsigned int & id, const std::string & 
 
 	if (pthread_mutex_unlock(&this->lock_mutex) != 0)
 		std::cerr << "Error: error in pthread_mutek_unlock in producer()" << std::endl;
-	
+
 	commu cin(data);
 	//printf("Entering handle, id = %u, communication type = %d, packet = %s\n", id, cin.type, (char *) data.c_str());
 	switch (cin.type)
 	{
 		case USERNAME_DECLARATION:
 			printf(" - Username is : %s\n", cin.msg.c_str());
-
 			{
 				//game->addPlayer(clients[id], cin.msg);
 
@@ -162,16 +161,15 @@ void Server::run()
 					break;
 
 				case ENET_EVENT_TYPE_RECEIVE:
-					/*std::cout 
+					/* std::cout 
 						<< "Length : "	<< (int) event.packet->dataLength << std::endl
-						<< "Content : "<<  (char*)(event.packet->data) << std::endl
+						<< "Content : "<< (char*) (event.packet->data) << std::endl
 						<< "Peer : "	<< event.peer->connectID << std::endl
 						<< "Channel : "<<(int) event.channelID <<
-					std::endl;*/
+					std::endl; */
 
 					this->set_peer(this->_event.peer);
-					
-					strcpy(this->recMess,(char*)(this->_event.packet->data)+8);
+					strcpy(this->recMess, (char*) (this->_event.packet->data) + 8);
 
 					//std::cout<< "New message received : " << recMess << std::endl;
 					{
@@ -184,11 +182,9 @@ void Server::run()
 
 				case ENET_EVENT_TYPE_DISCONNECT:
 					printf ("%d disconnected.\n", (unsigned int) this->_event.peer->connectID);
-					
 					{
 						this->_event.peer->data = NULL;
 					}
-
 					break;
 
 				default:
