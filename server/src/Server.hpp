@@ -10,8 +10,7 @@
 
 #include <threadextend.h>
 
-#include "KnapThread.hpp"
-
+#include "Game.hpp"
 
 #define MAXPLAYER 15
 #define TOMAX 0
@@ -24,7 +23,8 @@ typedef enum type : char
 	RESSOURCE_DECLARATION,
 	SPACESHIP_DECLARATION,
 	RESSOURCE_CHOICE,
-	SPACESHIP_POSITION
+	SPACESHIP_POSITION,
+	ERROR_CHOICE
 } com_type;
 
 
@@ -38,7 +38,7 @@ public:
 
 	char * to_buf() const;
 	size_t size() const;
-	std::string debug() const;
+	std::string mess() const;
 
 private:
 
@@ -52,9 +52,10 @@ class Server {
 
 public:
 
-	Server(int port);
+	Server(int port, Game * g);
 	~Server();
 
+	Game * game;
 	char recMess[500];
 	std::map<unsigned int, unsigned short int> _clients;
 
@@ -68,8 +69,10 @@ public:
 	void set_peer(ENetPeer * peer);
 	void set_event(ENetEvent event);
 
+	void sendGameData();
 	void sendBroadcast(const commu & c);
 	void handleIncomingMessage(const unsigned int & id, const std::string & data);
+	void planete_declaration(PlanetCreator & P);
 	void initialize();
 	void create_host();
 	void run();
@@ -82,6 +85,5 @@ private:
 	ENetHost * _server;
 	ENetPeer * _peer;
 	ENetEvent _event;
-	bool end;
 
 };

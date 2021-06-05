@@ -1,4 +1,6 @@
 #include "Server.hpp"
+#include "PlanetCreator.hpp"
+
 
 
 commu::commu(const std::string & buffer) : 
@@ -33,7 +35,7 @@ std::string commu::debug() const
 }
 
 
-Server::Server(int port)
+Server::Server(int port, Game * g) : game(g)
 {
 	this->initialize();
 	this->_address.port = port;
@@ -82,6 +84,15 @@ void Server::set_event(ENetEvent event)
 	this->_event = event;
 }
 
+void Server::sendGameData()
+{
+	// TO DO
+	// Envoyer les planetes
+	// Envoyer les items
+	// Envoyer les positions
+	// Envoyer les ships
+}
+
 void Server::sendBroadcast(const commu & c)
 {
 	ENetPacket * packet = enet_packet_create(c.to_buf(), c.size(), ENET_PACKET_FLAG_RELIABLE);
@@ -105,40 +116,52 @@ void Server::handleIncomingMessage(const unsigned int & id, const std::string & 
 	switch (cin.type)
 	{
 		case USERNAME_DECLARATION:
-			std::cout << " - Username is : " << cin.debug() << std::endl;
+			std::cout << " - Username is : " << cin.mess() << std::endl;
 			{
-				std::string users_name;
-				// this->_clients[0].second = cin.msg.c_str();
-				for (const auto & it : this->_clients)
+				this->game->addPlayer(id, cin.mess());
+				commu cout(com_type::USERNAME_DECLARATION, this->game->broadUsernames());
+				this->sendBroadcast(cout);
+
+				//A ajouter dans game pour la fonction broadUsernames()
+					/* std::string users_name;
+					for (const auto & it : this->_clients)
 					users_name += it.second + '_';
-				users_name[users_name.size() - 1] = '\0';
-
-				// commu cout(com_type::USERNAME_DECLARATION, "Connexion recue de "+std::string(cin.msg.c_str()));
-				// this->sendBroadcast(cout);
-			}
-			break;
-
-		case PLANET_DECLARATION:
-			{
-				// commu cout(com_type::USERNAME_DECLARATION, "Connexion recue de "+std::string(cin.msg.c_str()));
-				// this->sendBroadcast(cout);
+					users_name[users_name.size() - 1] = '\0';
+					*/
 			}
 			break;
 
 		case SPACESHIP_POSITION:
 			{
-				int id;
 				float pos_x, pos_y, pos_z;
-				sscanf(cin.debug(),"(%f,%f,%f)", &id, &pos_x ,&pos_y, &pos_z);
-				std::cout << id << " position : " << std::endl;
-				std::cout << "\t x : "<< pos_x << std::endl;
-				std::cout << "\t y : "<< pos_y << std::endl;
-				std::cout << "\t z : "<< pos_z << std::endl;
+				sscanf(cin.mess(), "(%f,%f,%f)", &pos_x ,&pos_y, &pos_z);
+
+				this->game->setPlayerPos(id, pos_x ,pos_y, pos_z);
+				commu cout(com_type::SPACESHIP_POSITION, this->game->broadPositions());
+				this->sendBroadcast(cout);
+			}
+			break;
+
+		case RESSOURCE_CHOICE:
+			{
+				this->game->updatePlayerItems(id, cin.mess())
+				if (this->game->asError()) {
+					commu cout(com_type::ERROR_CHOICE, this->game->getChoiceError());
+					this->sendBroadcast(cout);
+				}
+				else if (this->game->asShipUpdate()) {
+					commu cout(com_type::SPACESHIP_DECLARATION, this->game->broadSpaceships());
+					this->sendBroadcast(cout);
+				}
+				if (this->game->asEmptyPlanet()) {
+					commu cout(com_type::PLANET_DECLARATION, this->game->getRemovedPlanet());
+					this->sendBroadcast(cout);
+				}
 			}
 			break;
 
 		default:
-			printf("Cannot understand message |%s| received from %u.\n", cin.debug(), id);
+			printf("Cannot understand message |%s| received from %u.\n", cin.mess(), id);
 			break;
 	}
 }
@@ -163,8 +186,20 @@ void Server::create_host()
 	}
 }
 
+void Server::planete_declaration(PlanetCreator & P)
+{
+	std::vector<std::string> vect = P.broadcast_strings();
+	for (auto str : P.broadcast_strings())
+	{
+		commu send_planets(PLANET_DECLARATION, str);
+		this->sendBroadcast(send_planets);
+	}
+}
+
 void Server::run()
 {
+	this->sendGameData();
+
 	while (true) {
 		while (enet_host_service(this->_server, &this->_event, TOMAX) > 0) {
 			switch (this->get_event().type)
@@ -192,7 +227,7 @@ void Server::run()
 					break;
 
 				case ENET_EVENT_TYPE_RECEIVE:
-					/* std::cout 
+					/*std::cout 
 						<< "Length : "	<< (int) event.packet->dataLength << std::endl
 						<< "Content : "<< (char*) (event.packet->data) << std::endl
 						<< "Peer : "	<< event.peer->connectID << std::endl
@@ -201,9 +236,10 @@ void Server::run()
 
 					this->set_peer(this->_event.peer);
 					strcpy(this->recMess, (char*) (this->_event.packet->data) + 8);
+					// std::cout<< "New message received : " << this->recMess << std::endl;
 
 					{
-						std::thread th(&Server::handleIncomingMessage,this, (unsigned int) this->_event.peer->connectID, this->recMess);
+						std::thread th(&Server::handleIncomingMessage, this, (unsigned int) this->_event.peer->connectID, this->recMess);
 						th.detach();
 					}
 
