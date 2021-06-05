@@ -1,5 +1,38 @@
 #include "Server.hpp"
 
+
+commu::commu(const std::string & buffer) : 
+	type(com_type(buffer[9] - '0')), msg(buffer.substr(10)) {}
+
+commu::commu(const char * buffer) : 
+	type(com_type(buffer[9] - '0')), msg(std::string(buffer + 10)) {}
+
+commu::commu(const com_type & type, const std::string & msg) : 
+	type(type), msg(msg) {}
+
+
+char * commu::to_buf() const
+{
+	std::string buffer = "________";
+	buffer += (char) 0x04;
+	buffer += (char) this->type + '0';
+	buffer += this->msg;
+	char * buf = new char[buffer.size()];
+	strcpy(buf, buffer.c_str());
+	return buf;
+}
+
+size_t commu::size() const
+{
+	return this->msg.size() + 1;
+}
+
+std::string commu::debug() const
+{
+	return this->msg;
+}
+
+
 Server::Server(int port)
 {
 	this->initialize();
@@ -7,8 +40,6 @@ Server::Server(int port)
 	this->_address.host = 0;
 	this->create_host();
 }
-
-Server::~Server(){}
 
 
 ENetAddress  Server::get_address()
@@ -53,15 +84,13 @@ void Server::set_event(ENetEvent event)
 
 void Server::sendBroadcast(const commu & c)
 {
-	this->buffer = c.to_buf();
-	ENetPacket * packet = enet_packet_create(this->buffer, strlen(this->buffer) + 1, ENET_PACKET_FLAG_RELIABLE);
+	ENetPacket * packet = enet_packet_create(c.to_buf(), c.size(), ENET_PACKET_FLAG_RELIABLE);
 	enet_host_broadcast(this->_server, 1, packet);
-	std::cout << "Message sent" << std::endl;
+	// std::cout << "Message sent" << std::endl;
 }
 
 void Server::handleIncomingMessage(const unsigned int & id, const std::string & data)
 {
-
 	if (pthread_mutex_lock(&this->lock_mutex) != 0)
 		std::cerr << "Error: error in pthread_mutex_lock in producer()" << std::endl;
 
@@ -72,45 +101,44 @@ void Server::handleIncomingMessage(const unsigned int & id, const std::string & 
 		std::cerr << "Error: error in pthread_mutek_unlock in producer()" << std::endl;
 
 	commu cin(data);
-	//printf("Entering handle, id = %u, communication type = %d, packet = %s\n", id, cin.type, (char *) data.c_str());
+	// printf("Entering handle, id = %u, communication type = %d, packet = %s\n", id, cin.type, (char *) data.c_str());
 	switch (cin.type)
 	{
 		case USERNAME_DECLARATION:
-			printf(" - Username is : %s\n", cin.msg.c_str());
+			std::cout << " - Username is : " << cin.debug() << std::endl;
 			{
-				//game->addPlayer(clients[id], cin.msg);
 				std::string users_name;
-				//this->_clients[0].second = cin.msg.c_str();
+				// this->_clients[0].second = cin.msg.c_str();
 				for (const auto & it : this->_clients)
 					users_name += it.second + '_';
-
 				users_name[users_name.size() - 1] = '\0';
 
-
-				commu cout(com_type::USERNAME_DECLARATION, "Connexion recue de "+std::string(cin.msg.c_str()));
-				this->sendBroadcast(cout);
+				// commu cout(com_type::USERNAME_DECLARATION, "Connexion recue de "+std::string(cin.msg.c_str()));
+				// this->sendBroadcast(cout);
 			}
 			break;
 
 		case PLANET_DECLARATION:
 			{
-				commu cout(com_type::USERNAME_DECLARATION, "Connexion recue de "+std::string(cin.msg.c_str()));
-				this->sendBroadcast(cout);
+				// commu cout(com_type::USERNAME_DECLARATION, "Connexion recue de "+std::string(cin.msg.c_str()));
+				// this->sendBroadcast(cout);
 			}
 			break;
+
 		case SPACESHIP_POSITION:
 			{
 				int id;
 				float pos_x, pos_y, pos_z;
-				sscanf(cin.msg.c_str(),"%d:(%f,%f,%f)",&id ,&pos_x,&pos_y,&pos_z);
+				sscanf(cin.debug(),"(%f,%f,%f)", &id, &pos_x ,&pos_y, &pos_z);
 				std::cout << id << " position : " << std::endl;
 				std::cout << "\t x : "<< pos_x << std::endl;
 				std::cout << "\t y : "<< pos_y << std::endl;
 				std::cout << "\t z : "<< pos_z << std::endl;
 			}
 			break;
+
 		default:
-			printf("Cannot understand message |%s| received from %u.\n", cin.msg.c_str(), id);
+			printf("Cannot understand message |%s| received from %u.\n", cin.debug(), id);
 			break;
 	}
 }
@@ -137,26 +165,24 @@ void Server::create_host()
 
 void Server::run()
 {
-	while (true) {	
+	while (true) {
 		while (enet_host_service(this->_server, &this->_event, TOMAX) > 0) {
 			switch (this->get_event().type)
 			{
 				case ENET_EVENT_TYPE_CONNECT:
 					printf ("A new client connected from %u.%u.%u.%u : %u\n", 
-						(char) this->_event.peer->address.host & (0xFF),
-						(char) (this->_event.peer->address.host & (0xFF << 8)) >> 8,
-						(char) (this->_event.peer->address.host & (0xFF << 16)) >> 16,
-						(char) (this->_event.peer->address.host & (0xFF << 24)) >> 24,
-						(unsigned int) this->_event.peer->address.port
+						(char) this->get_event().peer->address.host & (0xFF),
+						(char) (this->get_event().peer->address.host & (0xFF << 8)) >> 8,
+						(char) (this->get_event().peer->address.host & (0xFF << 16)) >> 16,
+						(char) (this->get_event().peer->address.host & (0xFF << 24)) >> 24,
+						(unsigned int) this->get_event().peer->address.port
 					);
 
 					{
 						if (this->_clients.find(this->_event.peer->connectID) != this->_clients.end())
 							printf("Client %u just reconnected.\n", (unsigned int) this->_event.peer->connectID);
 						else if (this->_clients.size() <= MAXPLAYER)
-						{
 							this->_clients[this->_event.peer->connectID] = this->_clients.size() + 1;
-						}
 						else {
 							std::cerr << "Error: too many client already connected." << std::endl;
 							enet_peer_disconnect(this->_event.peer, 0);
@@ -176,7 +202,6 @@ void Server::run()
 					this->set_peer(this->_event.peer);
 					strcpy(this->recMess, (char*) (this->_event.packet->data) + 8);
 
-					//std::cout<< "New message received : " << recMess << std::endl;
 					{
 						std::thread th(&Server::handleIncomingMessage,this, (unsigned int) this->_event.peer->connectID, this->recMess);
 						th.detach();
@@ -197,28 +222,4 @@ void Server::run()
 			}
 		}
 	}	
-}
-
-
-commu::commu(const std::string & buffer) : 
-	type(com_type(buffer[9] - '0')), msg(buffer.substr(10)) {}
-
-commu::commu(const char * buffer) : 
-	type(com_type(buffer[9] - '0')), msg(std::string(buffer + 10)) {}
-
-commu::commu(const com_type & type, const std::string & msg) : 
-	type(type), msg(msg) {}
-
-
-//commu cout(PLANET_DECLARATION,"")
-
-char * commu::to_buf() const
-{
-	std::string buffer = "________";
-	buffer += (char) 0x04;
-	buffer += (char) this->type + '0';
-	buffer += this->msg;
-	char * buf = new char[buffer.size()];
-	strcpy(buf, buffer.c_str());
-	return buf;
 }
