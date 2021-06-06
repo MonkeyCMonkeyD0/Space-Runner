@@ -116,7 +116,7 @@ void Server::sendBroadcast(const commu & c)
 {
 	ENetPacket * packet = enet_packet_create(c.to_buf(), c.size(), ENET_PACKET_FLAG_RELIABLE);
 	enet_host_broadcast(this->_server, 1, packet);
-	// std::cout << "Message sent" << std::endl;
+	std::cout << c.mess_str() << std::endl;
 }
 
 
@@ -124,7 +124,7 @@ void Server::sendPlanetes()
 {
 	for (auto str : this->game->planets->broadcast_strings())
 	{
-		std::cout << PLANET_DECLARATION << str << std::endl;
+		//std::cout << PLANET_DECLARATION << str << std::endl;
 		this->sendBroadcast(commu(PLANET_DECLARATION, str));
 	}
 }

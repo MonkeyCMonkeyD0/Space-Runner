@@ -10,12 +10,10 @@
 
 char PlanetCreator::shapes[] = {'S', 'T', 'D', 'C'}; // Sphere Torus Disc Cube
 
-
 PlanetCreator::PlanetCreator()
 {
 	this->initialize();
 }
-
 
 void PlanetCreator::initialize()
 {
@@ -61,7 +59,6 @@ void PlanetCreator::initialize()
 	}
 }
 
-
 std::vector<struct planet> PlanetCreator::get() const
 {
 	return this->planets;
@@ -72,16 +69,14 @@ struct planet PlanetCreator::get(const unsigned int & index) const
 	return this->planets[index];
 }
 
-
 std::ostream & PlanetCreator::print(const unsigned int & index, std::ostream & out) const
 {
 	out << '(' << this->get(index).x << ',' << this->get(index).y << ',' << this->get(index).z << ')'
-		<< "_r" << (short int) this->get(index).radius
-		<< "_s" << (char) this->get(index).shape
 		<< "_c#" << std::setfill('0') << std::setw(6) << std::hex << this->get(index).color << std::dec
 		<< "_t" << (short int) this->get(index).texture
 		<< "_m" << (short int) this->get(index).metallic
-		<< "_h" << (short int) this->get(index).roughness;
+		<< "_h" << (short int) this->get(index).roughness << "_________";
+
 	return out;
 }
 
@@ -97,7 +92,6 @@ std::vector<std::string> PlanetCreator::broadcast_strings() const
 	}
 	return vect;
 }
-
 
 struct planet PlanetCreator::create(const float & x, const float & y, const float & z, const unsigned char & rad) const
 {
@@ -116,7 +110,6 @@ struct planet PlanetCreator::create(const float & x, const float & y, const floa
 	p.roughness = distrib(rd);
 	return p;
 }
-
 
 char PlanetCreator::random_shape(const unsigned char & proba) const
 {
