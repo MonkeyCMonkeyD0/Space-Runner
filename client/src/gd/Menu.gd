@@ -20,7 +20,6 @@ var player_info = {}
 var my_info = { name : "Ton Daron" }
 
 func _ready():
-	print(get_path())
 	var texture = $Viewport.get_texture()
 	$Background/Logo.texture = texture
 

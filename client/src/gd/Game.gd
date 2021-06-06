@@ -10,7 +10,6 @@ func _on_Menu_pressed():
 	if get_tree().change_scene("res://src/tscn/Menu.tscn") != OK:
 		print("Unexpected error with the scene changement")
 
-
 func pull_save():
 	var file = File.new()
 	file.open("res://src/dat/save_game.dat", File.READ)
