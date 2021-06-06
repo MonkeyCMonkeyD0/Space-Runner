@@ -1,10 +1,12 @@
 #include "Server.hpp"
-//#include "PlanetCreator.hpp"
 
 int main (int argc, const char * argv[]) 
 {
-	//PlanetCreator planet;
-	Server Server(8080);
-	Server.run();
+	Game *g = new Game();
+	
+	Server server(8080,g);
+
+
+	server.run();
 	return 0;
 }

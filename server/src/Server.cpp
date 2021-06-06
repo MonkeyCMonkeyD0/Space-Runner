@@ -29,11 +29,23 @@ size_t commu::size() const
 	return this->msg.size() + 1;
 }
 
-std::string commu::debug() const
+std::string commu::mess_str() const
 {
 	return this->msg;
 }
 
+
+const char* commu::mess_chr()
+{
+	const char * chr = this->msg.c_str();
+	return chr;
+}
+
+
+com_type commu::get_type() const
+{
+	return this->type;
+}
 
 Server::Server(int port, Game * g) : game(g)
 {
@@ -42,6 +54,8 @@ Server::Server(int port, Game * g) : game(g)
 	this->_address.host = 0;
 	this->create_host();
 }
+
+Server::~Server(){}
 
 
 ENetAddress  Server::get_address()
@@ -86,11 +100,10 @@ void Server::set_event(ENetEvent event)
 
 void Server::sendGameData()
 {
-	// TO DO
-	// Envoyer les planetes
-	// Envoyer les items
-	// Envoyer les positions
-	// Envoyer les ships
+	this->sendPlanetes();
+	this->sendItems();
+	this->sendPositions();
+	//this->ship_declaration();
 }
 
 void Server::sendBroadcast(const commu & c)
@@ -99,6 +112,28 @@ void Server::sendBroadcast(const commu & c)
 	enet_host_broadcast(this->_server, 1, packet);
 	// std::cout << "Message sent" << std::endl;
 }
+
+
+void Server::sendPlanetes()
+{
+	for (auto str : this->game->planets->broadcast_strings())
+		this->sendBroadcast(commu(PLANET_DECLARATION, str));
+}
+
+void Server::sendItems()
+{
+	std::string items = "weights:";
+	items += this->game->broadVal(this->game->weights);
+	items += "\nprofits:";
+	items += this->game->broadVal(this->game->profits);
+	this->sendBroadcast(commu(RESSOURCE_DECLARATION,items));
+}
+
+void Server:: sendPositions()
+{
+	this->sendBroadcast(commu(SPACESHIP_POSITION,this->game->broadPositions()));
+}
+
 
 void Server::handleIncomingMessage(const unsigned int & id, const std::string & data)
 {
@@ -113,14 +148,14 @@ void Server::handleIncomingMessage(const unsigned int & id, const std::string & 
 
 	commu cin(data);
 	// printf("Entering handle, id = %u, communication type = %d, packet = %s\n", id, cin.type, (char *) data.c_str());
-	switch (cin.type)
+	switch (cin.get_type())
 	{
 		case USERNAME_DECLARATION:
-			std::cout << " - Username is : " << cin.mess() << std::endl;
+			std::cout << " - Username is : " << cin.mess_str() << std::endl;
 			{
-				this->game->addPlayer(id, cin.mess());
-				commu cout(com_type::USERNAME_DECLARATION, this->game->broadUsernames());
-				this->sendBroadcast(cout);
+				//this->game->addPlayer(id, cin.mess_str());
+				//commu cout(com_type::USERNAME_DECLARATION, this->game->broadUsernames());
+				//this->sendBroadcast(cout);
 
 				//A ajouter dans game pour la fonction broadUsernames()
 					/* std::string users_name;
@@ -134,17 +169,17 @@ void Server::handleIncomingMessage(const unsigned int & id, const std::string & 
 		case SPACESHIP_POSITION:
 			{
 				float pos_x, pos_y, pos_z;
-				sscanf(cin.mess(), "(%f,%f,%f)", &pos_x ,&pos_y, &pos_z);
+				sscanf(cin.mess_chr(), "(%f,%f,%f)", &pos_x ,&pos_y, &pos_z);
 
 				this->game->setPlayerPos(id, pos_x ,pos_y, pos_z);
-				commu cout(com_type::SPACESHIP_POSITION, this->game->broadPositions());
-				this->sendBroadcast(cout);
+				//commu cout(com_type::SPACESHIP_POSITION, this->game->broadPositions());
+				//this->sendBroadcast(cout);
 			}
 			break;
 
 		case RESSOURCE_CHOICE:
 			{
-				this->game->updatePlayerItems(id, cin.mess())
+				/*this->game->updatePlayerItems(id, cin.mess())
 				if (this->game->asError()) {
 					commu cout(com_type::ERROR_CHOICE, this->game->getChoiceError());
 					this->sendBroadcast(cout);
@@ -156,12 +191,12 @@ void Server::handleIncomingMessage(const unsigned int & id, const std::string & 
 				if (this->game->asEmptyPlanet()) {
 					commu cout(com_type::PLANET_DECLARATION, this->game->getRemovedPlanet());
 					this->sendBroadcast(cout);
-				}
+				}*/
 			}
 			break;
 
 		default:
-			printf("Cannot understand message |%s| received from %u.\n", cin.mess(), id);
+			printf("Cannot understand message |%s| received from %u.\n", cin.mess_chr(), id);
 			break;
 	}
 }
@@ -186,20 +221,9 @@ void Server::create_host()
 	}
 }
 
-void Server::planete_declaration(PlanetCreator & P)
-{
-	std::vector<std::string> vect = P.broadcast_strings();
-	for (auto str : P.broadcast_strings())
-	{
-		commu send_planets(PLANET_DECLARATION, str);
-		this->sendBroadcast(send_planets);
-	}
-}
-
 void Server::run()
 {
 	this->sendGameData();
-
 	while (true) {
 		while (enet_host_service(this->_server, &this->_event, TOMAX) > 0) {
 			switch (this->get_event().type)

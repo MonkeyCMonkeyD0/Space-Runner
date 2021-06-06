@@ -10,6 +10,7 @@
 
 #include <threadextend.h>
 
+#include "PlanetCreator.hpp"
 #include "Game.hpp"
 
 #define MAXPLAYER 15
@@ -38,13 +39,14 @@ public:
 
 	char * to_buf() const;
 	size_t size() const;
-	std::string mess() const;
+	std::string mess_str() const; /* renvoi le même messaĝe en string ou char* */
+	const char* mess_chr();             /* selon les besoins                   */
+	com_type get_type() const;
 
 private:
 
 	com_type type;
 	std::string msg;
-
 };
 
 
@@ -70,9 +72,13 @@ public:
 	void set_event(ENetEvent event);
 
 	void sendGameData();
+	void sendPlanetes();
+	void sendItems();
+	void sendPositions();
+
 	void sendBroadcast(const commu & c);
 	void handleIncomingMessage(const unsigned int & id, const std::string & data);
-	void planete_declaration(PlanetCreator & P);
+	
 	void initialize();
 	void create_host();
 	void run();
