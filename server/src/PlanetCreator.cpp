@@ -97,7 +97,7 @@ struct planet PlanetCreator::create(const float & x, const float & y, const floa
 {
 	std::random_device rd;
 	std::uniform_int_distribution<unsigned int> distrib(0, 9);
-	std::uniform_int_distribution<char> distrib_texture(1, 12);
+	std::uniform_int_distribution<char> distrib_texture(1, 9);
 
 	//cpt++;
 	//std::cout << "planete created : "<<cpt << std::endl;
