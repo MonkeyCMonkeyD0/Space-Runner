@@ -85,6 +85,7 @@ public:
 
 private:
 
+	bool is_started, pos_upadate;
 	pthread_mutex_t lock_mutex = PTHREAD_MUTEX_INITIALIZER;
 	pthread_cond_t started_cond = PTHREAD_COND_INITIALIZER;
 	ENetAddress _address;

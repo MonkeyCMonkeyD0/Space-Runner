@@ -11,6 +11,7 @@ var network = NetworkedMultiplayerENet.new()
 var mplayer 
 var serverIP = IP.get_local_addresses()[0]
 var port = 8080
+var mess
 
 const MY_SCRIPT = preload("res://src/gd/Planet.gd")
 const NUMBER_PLANET = 20
@@ -77,12 +78,12 @@ func _connect_to_server():
 	mplayer.connect("network_peer_packet",self,"_on_packet_received")
 	print("Connected from planete")
 
-func sendToServer(player,mess):
-	player.send_bytes(mess.to_ascii())
+func sendToServer(player,string):
+	player.send_bytes(string.to_ascii())
 
 
 func _on_packet_received(id, packet):
-	var mess = packet.get_string_from_ascii()
-	print(mess)
-	list_str.append(mess)
+	mess = packet.get_string_from_ascii()
+	if mess[0] == '1':
+		list_str.append(mess)
 

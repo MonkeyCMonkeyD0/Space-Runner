@@ -37,8 +37,8 @@ public:
 	bool asEmptyPlanet();
 
 	std::vector<item*> itemCreator();
-	std::string broadVal(std::vector<unsigned int>);
 
+	std::vector<std::string> broadItems();
 	std::string broadUsernames();
 	std::string broadPositions();
 	/*std::string getChoiceError();*/

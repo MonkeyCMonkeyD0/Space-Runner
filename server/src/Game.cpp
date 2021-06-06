@@ -67,13 +67,14 @@ bool Game::asEmptyPlanet()
 	return false;
 }
 
-std::string Game::broadVal(std::vector<unsigned int> vect)
+std::vector<std::string> Game::broadItems()
 {
-	std::string str;
-	for(auto val : vect)
-		str = std::to_string(val) + "__";
+	std::vector<std::string> vect_items;
 
-	return str;
+	for(auto val : this->items)
+		vect_items.push_back(com_item_string(val));
+
+	return vect_items;
 }
 
 std::string Game::broadUsernames()
@@ -90,7 +91,7 @@ std::string Game::broadPositions()
 {
 	std::string str;
 	for (auto p : this->players)
-		str += p->com_pos_string() + "\n";
+		str += "5_"+p->com_pos_string() + "\n";
 
 	return str;
 }

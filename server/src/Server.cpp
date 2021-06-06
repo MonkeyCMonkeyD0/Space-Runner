@@ -47,7 +47,7 @@ com_type commu::get_type() const
 	return this->type;
 }
 
-Server::Server(int port, Game * g) : game(g)
+Server::Server(int port, Game * g) : game(g), is_started(false), pos_upadate(false)
 {
 	this->initialize();
 	this->_address.port = port;
@@ -100,10 +100,16 @@ void Server::set_event(ENetEvent event)
 
 void Server::sendGameData()
 {
-	this->sendPlanetes();
-	this->sendItems();
-	this->sendPositions();
-	//this->ship_declaration();
+	if (!this->is_started)
+	{
+		std::cout << "first send" << std::endl;
+		this->sendPlanetes();
+		this->sendItems();
+		this->is_started = true;
+	}
+/*	if(pos_upadate)
+		this->sendPositions();
+*/	//this->ship_declaration();
 }
 
 void Server::sendBroadcast(const commu & c)
@@ -117,16 +123,19 @@ void Server::sendBroadcast(const commu & c)
 void Server::sendPlanetes()
 {
 	for (auto str : this->game->planets->broadcast_strings())
+	{
+		std::cout << PLANET_DECLARATION << str << std::endl;
 		this->sendBroadcast(commu(PLANET_DECLARATION, str));
+	}
 }
 
 void Server::sendItems()
 {
-	std::string items = "weights:";
-	items += this->game->broadVal(this->game->weights);
-	items += "\nprofits:";
-	items += this->game->broadVal(this->game->profits);
-	this->sendBroadcast(commu(RESSOURCE_DECLARATION,items));
+	for (auto item : this->game->broadItems())
+	{
+		std::cout << RESSOURCE_DECLARATION <<item << std::endl;
+		this->sendBroadcast(commu(RESSOURCE_DECLARATION,item));
+	}
 }
 
 void Server:: sendPositions()
@@ -153,9 +162,10 @@ void Server::handleIncomingMessage(const unsigned int & id, const std::string & 
 		case USERNAME_DECLARATION:
 			std::cout << " - Username is : " << cin.mess_str() << std::endl;
 			{
-				//this->game->addPlayer(id, cin.mess_str());
-				//commu cout(com_type::USERNAME_DECLARATION, this->game->broadUsernames());
-				//this->sendBroadcast(cout);
+				this->sendGameData();
+				this->game->addPlayer(id, cin.mess_str());
+				commu cout(com_type::USERNAME_DECLARATION, this->game->broadUsernames());
+				this->sendBroadcast(cout);
 
 				//A ajouter dans game pour la fonction broadUsernames()
 					/* std::string users_name;
@@ -168,12 +178,13 @@ void Server::handleIncomingMessage(const unsigned int & id, const std::string & 
 
 		case SPACESHIP_POSITION:
 			{
+				this->pos_upadate = true;
 				float pos_x, pos_y, pos_z;
 				sscanf(cin.mess_chr(), "(%f,%f,%f)", &pos_x ,&pos_y, &pos_z);
-
 				this->game->setPlayerPos(id, pos_x ,pos_y, pos_z);
-				//commu cout(com_type::SPACESHIP_POSITION, this->game->broadPositions());
-				//this->sendBroadcast(cout);
+				commu cout(com_type::SPACESHIP_POSITION, this->game->broadPositions());
+				this->sendBroadcast(cout);
+				this->pos_upadate = false;
 			}
 			break;
 
@@ -223,7 +234,8 @@ void Server::create_host()
 
 void Server::run()
 {
-	this->sendGameData();
+	//if(!is_started)
+	//	this->sendGameData();
 	while (true) {
 		while (enet_host_service(this->_server, &this->_event, TOMAX) > 0) {
 			switch (this->get_event().type)
@@ -252,10 +264,10 @@ void Server::run()
 
 				case ENET_EVENT_TYPE_RECEIVE:
 					/*std::cout 
-						<< "Length : "	<< (int) event.packet->dataLength << std::endl
-						<< "Content : "<< (char*) (event.packet->data) << std::endl
-						<< "Peer : "	<< event.peer->connectID << std::endl
-						<< "Channel : "<<(int) event.channelID <<
+						<< "Length : "	<< (int) this->_event.packet->dataLength << std::endl
+						<< "Content : "<< (char*) (this->_event.packet->data) << std::endl
+						<< "Peer : "	<< this->_event.peer->connectID << std::endl
+						<< "Channel : "<<(int) this->_event.channelID <<
 					std::endl; */
 
 					this->set_peer(this->_event.peer);

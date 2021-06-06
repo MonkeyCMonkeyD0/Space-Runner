@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://src/gd/Space_music.gd" type="Script" id=1]
 [ext_resource path="res://src/gd/Game.gd" type="Script" id=2]
@@ -14,6 +14,7 @@
 [ext_resource path="res://data/img/spaceships/ship_2_1/Spaceship_rough.jpg" type="Texture" id=12]
 [ext_resource path="res://data/img/spaceships/ship_2_1/Spaceship_normal_map.jpg" type="Texture" id=13]
 [ext_resource path="res://data/img/fire_frame.png" type="Texture" id=14]
+[ext_resource path="res://src/gd/Items_manager.gd" type="Script" id=15]
 
 [sub_resource type="PanoramaSky" id=1]
 radiance_size = 0
@@ -44,6 +45,7 @@ var Total_weight
 var Total_profits
 var finished
 var username
+var mess
 
 var network = NetworkedMultiplayerENet.new()
 var mplayer 
@@ -117,11 +119,11 @@ func rotate_down(delta) -> void:
 
 ############################################################
 
-func sendToServer(player,mess):
-	player.send_bytes(mess.to_ascii())
+func sendToServer(player,string):
+	player.send_bytes(string.to_ascii())
 
 func send_username(Msg):
-	var mess = \"xxxxxxxx0\"+Msg
+	mess = \"xxxxxxxx0\"+Msg
 	sendToServer(mplayer,mess)
 	
 func send_pos():
@@ -129,7 +131,7 @@ func send_pos():
 	_send_pos(pos_axis)
 
 func _send_pos(axis):
-	var mess = \"01\"+\":(\"+String(axis[0])+\",\"+String(axis[1])+\",\"+String(axis[2])+\")\"
+	mess = \"01\"+\":(\"+String(axis[0])+\",\"+String(axis[1])+\",\"+String(axis[2])+\")\"
 	mess = \"xxxxxxxx5\"+mess
 	sendToServer(mplayer,mess)	
 
@@ -141,12 +143,8 @@ func _connect_to_server():
 
 
 func _on_packet_received(id, packet):
-	var mess=packet.get_string_from_ascii()
-	match mess[0]:
-		'0':
-			print(mess)
-		'1':
-			print(mess)
+	mess=packet.get_string_from_ascii()
+	print(mess)
 
 func round_to_dec(num, digit):
 	return round(num * pow(10.0, digit)) / pow(10.0, digit)
@@ -331,6 +329,10 @@ script = ExtResource( 1 )
 
 [node name="Planets_manager" type="Node" parent="Spatial"]
 script = ExtResource( 4 )
+
+[node name="Items_manager" type="Node2D" parent="Spatial"]
+position = Vector2( -0.768799, 2 )
+script = ExtResource( 15 )
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 margin_right = 40.0
