@@ -34,6 +34,7 @@ public:
 	Player(const unsigned int &, const std::string &, const bool & host = false);
 
 	std::string get_username() const;
+	unsigned int get_ID() const;
 	unsigned int get_capacity() const;
 	std::vector<item *> get_inventory() const;
 	point get_pos() const;

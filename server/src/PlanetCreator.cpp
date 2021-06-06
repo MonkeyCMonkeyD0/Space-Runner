@@ -41,7 +41,7 @@ void PlanetCreator::initialize()
 	//std::cout << palier.size() << std::endl;
 
 	float phi = M_PI * (3.0 - sqrt(5.0));
-	R = 40;
+	R = 20;
 
 	for (auto i : palier) {
 		for (unsigned int j = 0; j < i; j++) {

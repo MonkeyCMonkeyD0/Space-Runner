@@ -44,7 +44,11 @@ void Game::addPlayer(unsigned short int id, std::string name)
 }
 void Game::setPlayerPos(unsigned short int id, float pos_x, float pos_y ,float pos_z)
 {
-
+	for (auto p : this->players)
+	{
+		if (p->get_ID() == id)
+			p->set_pos(pos_x, pos_y, pos_z);
+	}
 }
 void Game::updatePlayerItems(unsigned short int id, std::string items)
 { 

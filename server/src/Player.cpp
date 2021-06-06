@@ -14,7 +14,7 @@ void print_item(const item * it, std::ostream & out)
 
 std::string com_item_string(const item * it)
 {
-	return it->name + "_P" +  std::to_string(it->price) + "_W" + std::to_string(it->weight);
+	return it->name + "_P" +  std::to_string(it->price) + "_W" + std::to_string(it->weight) + "_________";
 }
 
 
@@ -71,6 +71,11 @@ std::vector<item *> Player::get_inventory() const
 point Player::get_pos() const
 {
 	return this->pos;
+}
+
+unsigned int Player::get_ID() const
+{
+	return this->enet_ID;
 }
 
 void Player::set_pos(const float & x, const float & y, const float & z)

@@ -180,6 +180,7 @@ void Server::handleIncomingMessage(const unsigned int & id, const std::string & 
 			{
 				this->pos_upadate = true;
 				float pos_x, pos_y, pos_z;
+				std::cout << cin.mess_chr() << std::endl;
 				sscanf(cin.mess_chr(), "(%f,%f,%f)", &pos_x ,&pos_y, &pos_z);
 				this->game->setPlayerPos(id, pos_x ,pos_y, pos_z);
 				commu cout(com_type::SPACESHIP_POSITION, this->game->broadPositions());
@@ -273,12 +274,10 @@ void Server::run()
 					this->set_peer(this->_event.peer);
 					strcpy(this->recMess, (char*) (this->_event.packet->data) + 8);
 					// std::cout<< "New message received : " << this->recMess << std::endl;
-
 					{
 						std::thread th(&Server::handleIncomingMessage, this, (unsigned int) this->_event.peer->connectID, this->recMess);
 						th.detach();
 					}
-
 					enet_packet_destroy(this->_event.packet);
 					break;
 
