@@ -116,31 +116,25 @@ void Server::sendBroadcast(const commu & c)
 {
 	ENetPacket * packet = enet_packet_create(c.to_buf(), c.size(), ENET_PACKET_FLAG_RELIABLE);
 	enet_host_broadcast(this->_server, 1, packet);
-	std::cout << c.mess_str() << std::endl;
 }
 
 
 void Server::sendPlanetes()
 {
 	for (auto str : this->game->planets->broadcast_strings())
-	{
-		//std::cout << PLANET_DECLARATION << str << std::endl;
 		this->sendBroadcast(commu(PLANET_DECLARATION, str));
-	}
 }
 
 void Server::sendItems()
 {
 	for (auto item : this->game->broadItems())
-	{
-		std::cout << RESSOURCE_DECLARATION <<item << std::endl;
 		this->sendBroadcast(commu(RESSOURCE_DECLARATION,item));
-	}
 }
 
 void Server:: sendPositions()
 {
-	this->sendBroadcast(commu(SPACESHIP_POSITION,this->game->broadPositions()));
+	for (auto user : this->game->broadPositions())
+		this->sendBroadcast(commu(SPACESHIP_POSITION,user));
 }
 
 
@@ -164,8 +158,6 @@ void Server::handleIncomingMessage(const unsigned int & id, const std::string & 
 			{
 				this->sendGameData();
 				this->game->addPlayer(id, cin.mess_str());
-				commu cout(com_type::USERNAME_DECLARATION, this->game->broadUsernames());
-				this->sendBroadcast(cout);
 
 				//A ajouter dans game pour la fonction broadUsernames()
 					/* std::string users_name;
@@ -178,14 +170,13 @@ void Server::handleIncomingMessage(const unsigned int & id, const std::string & 
 
 		case SPACESHIP_POSITION:
 			{
-				this->pos_upadate = true;
+				//this->pos_upadate = true;
 				float pos_x, pos_y, pos_z;
-				std::cout << cin.mess_chr() << std::endl;
 				sscanf(cin.mess_chr(), "(%f,%f,%f)", &pos_x ,&pos_y, &pos_z);
 				this->game->setPlayerPos(id, pos_x ,pos_y, pos_z);
-				commu cout(com_type::SPACESHIP_POSITION, this->game->broadPositions());
-				this->sendBroadcast(cout);
-				this->pos_upadate = false;
+				std::cout << "id in serveur: " << id << std::endl;
+				std::cout << cin.mess_str() << std::endl;
+				//this->pos_upadate = false;
 			}
 			break;
 

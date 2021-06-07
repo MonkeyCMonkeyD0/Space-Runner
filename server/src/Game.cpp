@@ -40,15 +40,12 @@ void Game::addPlayer(unsigned short int id, std::string name)
 		host = false;
 
 	Player *P = new Player(id, name, host);
-	this->players.push_back(P);
+	this->players[id] = P;
 }
 void Game::setPlayerPos(unsigned short int id, float pos_x, float pos_y ,float pos_z)
 {
-	for (auto p : this->players)
-	{
-		if (p->get_ID() == id)
-			p->set_pos(pos_x, pos_y, pos_z);
-	}
+	std::cout << "id game : "<< id << std::endl;
+	this->players[id]->set_pos(pos_x, pos_y, pos_z);
 }
 void Game::updatePlayerItems(unsigned short int id, std::string items)
 { 
@@ -81,23 +78,24 @@ std::vector<std::string> Game::broadItems()
 	return vect_items;
 }
 
-std::string Game::broadUsernames()
+std::vector<std::string> Game::broadUsernames()
 {
-	std::string str = "host:"+this->players[0]->get_username();
-	str += "\nplayers:\n";
-	for(auto user : this->players)
-		str += "\n"+user->get_username();
+	std::vector<std::string> vect_users;
 
-	return str;
+	for(auto user : this->players)
+		vect_users.push_back(user.second->com_decl_string());
+
+	return vect_users;
 }
 
-std::string Game::broadPositions()
+std::vector<std::string> Game::broadPositions()
 {
-	std::string str;
-	for (auto p : this->players)
-		str += "5_"+p->com_pos_string() + "\n";
+	std::vector<std::string> vect_pos;
 
-	return str;
+	for(auto user : this->players)
+		vect_pos.push_back(user.second->com_pos_string());
+
+	return vect_pos;
 }
 
 /*

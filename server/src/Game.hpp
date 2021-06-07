@@ -3,7 +3,7 @@
 #include "Player.hpp"
 
 #include <vector>
-
+#include <map>
 
 
 class Game {
@@ -14,7 +14,7 @@ public:
 								profits = {135,139,149,150,156,163,173,184,192,201,210,214,221,229,240};
 	
 	std::vector<item*> items;
-	std::vector<Player*> players; 
+	std::map<unsigned int, Player*> players; 
 
 	unsigned int capacity;
 	unsigned int popsize;
@@ -39,8 +39,8 @@ public:
 	std::vector<item*> itemCreator();
 
 	std::vector<std::string> broadItems();
-	std::string broadUsernames();
-	std::string broadPositions();
+	std::vector<std::string> broadUsernames();
+	std::vector<std::string> broadPositions();
 	/*std::string getChoiceError();*/
 
 	PlanetCreator *planets;
