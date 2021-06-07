@@ -47,7 +47,7 @@ com_type commu::get_type() const
 	return this->type;
 }
 
-Server::Server(int port, Game * g) : game(g), is_started(false), pos_upadate(false)
+Server::Server(int port, Game * g) : game(g), is_started(false), pos_update(false), nb_players(0)
 {
 	this->initialize();
 	this->_address.port = port;
@@ -118,6 +118,13 @@ void Server::sendBroadcast(const commu & c)
 	enet_host_broadcast(this->_server, 1, packet);
 }
 
+/*void Server::sendID(const commu & c, int id)
+{
+	ENetPacket * packet = enet_packet_create(c.to_buf(), c.size(), ENET_PACKET_FLAG_RELIABLE);
+	enet_host_send(this->_server, id, packet);
+}
+*/
+
 
 void Server::sendPlanetes()
 {
@@ -156,9 +163,12 @@ void Server::handleIncomingMessage(const unsigned int & id, const std::string & 
 		case USERNAME_DECLARATION:
 			std::cout << " - Username is : " << cin.mess_str() << std::endl;
 			{
+				std::cout << cin.mess_str() << std::endl,
 				this->sendGameData();
-				this->game->addPlayer(id, cin.mess_str());
-
+				this->nb_players++;
+				this->game->addPlayer(this->nb_players, cin.mess_str());
+				for(auto e : this->game->players)
+					std::cout << e.first << "  -  " << e.second->com_decl_string() << std::endl;
 				//A ajouter dans game pour la fonction broadUsernames()
 					/* std::string users_name;
 					for (const auto & it : this->_clients)
@@ -170,13 +180,14 @@ void Server::handleIncomingMessage(const unsigned int & id, const std::string & 
 
 		case SPACESHIP_POSITION:
 			{
-				//this->pos_upadate = true;
+				this->pos_update = true;
+				int idd;
 				float pos_x, pos_y, pos_z;
-				sscanf(cin.mess_chr(), "(%f,%f,%f)", &pos_x ,&pos_y, &pos_z);
-				this->game->setPlayerPos(id, pos_x ,pos_y, pos_z);
-				std::cout << "id in serveur: " << id << std::endl;
+				sscanf(cin.mess_chr(), "%d:(%f,%f,%f)",&idd ,&pos_x ,&pos_y, &pos_z);
+				this->game->setPlayerPos(idd, pos_x ,pos_y, pos_z);
+				std::cout << "id in serveur: " << idd << std::endl;
 				std::cout << cin.mess_str() << std::endl;
-				//this->pos_upadate = false;
+				this->pos_update = false;
 			}
 			break;
 

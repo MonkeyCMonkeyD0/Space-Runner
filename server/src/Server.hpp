@@ -60,6 +60,8 @@ public:
 	Game * game;
 	char recMess[500];
 	std::map<unsigned int, unsigned short int> _clients;
+	bool is_started, pos_update;
+	int nb_players;
 
 	ENetAddress get_address();
 	ENetHost* get_host();
@@ -76,6 +78,7 @@ public:
 	void sendItems();
 	void sendPositions();
 
+	//void sendID(const commu & c, int id);
 	void sendBroadcast(const commu & c);
 	void handleIncomingMessage(const unsigned int & id, const std::string & data);
 	
@@ -85,7 +88,6 @@ public:
 
 private:
 
-	bool is_started, pos_upadate;
 	pthread_mutex_t lock_mutex = PTHREAD_MUTEX_INITIALIZER;
 	pthread_cond_t started_cond = PTHREAD_COND_INITIALIZER;
 	ENetAddress _address;

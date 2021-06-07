@@ -27,4 +27,3 @@ func _on_packet_received(id, packet):
 	mess = packet.get_string_from_ascii()
 	if mess[0] == '2':
 		list_str.append(mess)
-		print(mess)

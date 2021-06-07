@@ -61,5 +61,4 @@ private:
 	unsigned char spaceship;
 	unsigned int capacity;
 	std::vector<item *> inventory;
-
 };
